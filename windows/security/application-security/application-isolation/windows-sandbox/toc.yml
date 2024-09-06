@@ -1,0 +1,7 @@
+items:
+  - name: Overview
+    href: windows-sandbox-overview.md
+  - name: Windows Sandbox architecture
+    href: windows-sandbox-architecture.md
+  - name: Windows Sandbox configuration
+    href: windows-sandbox-configure-using-wsb-file.md
