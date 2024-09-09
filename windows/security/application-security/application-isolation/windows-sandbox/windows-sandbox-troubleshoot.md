@@ -4,3 +4,5 @@ description: Troubleshoot Windows Sandbox
 ms.topic: troubleshooting
 ms.date: 09/09/2024
 ---
+
+# Troubleshoot Windows Sandbox
