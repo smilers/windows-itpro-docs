@@ -1,0 +1,26 @@
+### YamlMime:FAQ
+metadata:
+  title: Windows Sandbox frequently asked questions (FAQ)
+  description: Use these frequently asked questions (FAQ) to learn important details about Windows Sandbox.
+  author: vinaypamnani-msft
+  ms.author: vinpa
+  ms.topic: faq
+  ms.date: 09/09/2024
+
+title: Common questions about Windows Sandbox
+summary: Windows Sandbox (WSB) provides a lightweight desktop environment to safely run applications in isolation. This feature provides a safe and secure space for testing and debugging apps, exploring unknown files, or experimenting with tools since software installed inside the Windows Sandbox environment remains "sandboxed" and runs separately from the host machine.
+
+sections:
+
+  - name: Concepts
+    questions:
+      - question: Who can use WSB?
+        answer: |
+          WSB can be used by anyone without any technical skills in various scenarios where users need a secure, clean environment for testing or running potentially harmful software. Here are some ways in which you can leverage WSB:
+
+          - *Clean environment for software testing*: Test or debug your applications in WSB's clean environment to identify and resolve bugs or compatibility issues.
+          - *Secure web browsing*: Use WSB for secure web browsing, especially when accessing unfamiliar or potentially dangerous websites without putting your system at risk of malware infection.
+          - *Running Untrusted Applications*: Mitigate security risks by running untrusted applications or files, such as email attachments in WSB.
+          - *Test software features risk-free*: Easily test out software without the need for installing or uninstalling on your host machine.
+          - *Maintaining multiple dev environments*: Streamline your development process by utilizing WSB to maintain multiple sandboxes for different development environments
+          - *Privacy Protection*: Users concerned about online privacy can use Windows Sandbox for activities like social media browsing or online shopping to prevent tracking cookies and other privacy-invading techniques.
