@@ -1,6 +1,7 @@
 items:
-  - name: Overview
+  - name: What is Windows Sandbox?
     href: windows-sandbox-overview.md
+    expanded: true
     items:
     - name: Compare versions
       href: windows-sandbox-versions.md
@@ -9,13 +10,13 @@ items:
   - name: Install Windows Sandbox
     href: windows-sandbox-install.md
   - name: Use Windows Sandbox
-    href: windows-sandbox-use.md
+    href: windows-sandbox-configure-using-wsb-file.md
   - name: Tutorials
     items:
-    - name: Configuration file
-      href: windows-sandbox-configure-using-wsb-file.md
+    - name: Sample configuration files
+      href: windows-sandbox-sample-configuration.md
   - name: WindowsSandbox Policy CSP
-    href: /windows/client-management/mdm/policy-csp-windowssandbox.md
+    href: /windows/client-management/mdm/policy-csp-windowssandbox
   - name: Frequently asked questions
     href: windows-sandbox-faq.yml
   - name: Troubleshooting
