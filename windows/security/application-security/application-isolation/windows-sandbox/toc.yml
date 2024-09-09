@@ -1,15 +1,16 @@
 items:
-  - name: What is Windows Sandbox?
-    href: windows-sandbox-overview.md
+  - name: Overview
     expanded: true
     items:
+    - name: What is Windows Sandbox?
+      href: windows-sandbox-overview.md
     - name: Compare versions
       href: windows-sandbox-versions.md
     - name: Architecture
       href: windows-sandbox-architecture.md
   - name: Install Windows Sandbox
     href: windows-sandbox-install.md
-  - name: Use Windows Sandbox
+  - name: Use & configure Windows Sandbox
     href: windows-sandbox-configure-using-wsb-file.md
   - name: Tutorials
     items:

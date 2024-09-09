@@ -16,12 +16,11 @@ ms.date: 09/09/2024
 - At least two CPU cores (four cores with hyper-threading recommended)
 
 > [!NOTE]
-> Windows Sandbox is currently not supported on Windows Home edition.
-> Beginning in Windows 11, version 24H2, all inbox store apps like calculator, photos, notepad and terminal are not available inside Windows Sandbox. Ability to use these apps will be added soon.
+> Beginning in Windows 11, version 24H2, inbox store apps like Calculator, Photos, Notepad and Terminal are not available inside Windows Sandbox. Ability to use these apps will be added soon.
 
 ## Installation
 
-1. Ensure that your machine is using Windows 10 Pro or Enterprise, build version 18305 or Windows 11.
+1. Ensure that your machine is using Windows 11 or Windows 10, version 1903 or later.
 
 2. Enable virtualization on the machine.
 
@@ -50,3 +49,11 @@ ms.date: 09/09/2024
    > Beginning in Windows 11, version 24H2, Windows Sandbox adheres to the mouse settings of the host system.
    >
    > If you are on an older build and if the host system is set to use a left-handed mouse, you must apply these settings in Windows Sandbox manually when Windows Sandbox starts. Alternatively, you can use a sandbox configuration file to run a logon command to swap the mouse setting. For an example, see [Example 3](windows-sandbox-configure-using-wsb-file.md#example-3).
+
+## Try WSB preview features by joining the Windows Insider Program
+
+To try the most recent features or updates to WSB, join the [Windows Insiders Program](https://insider.windows.com/getting-started). Once you have joined Windows Insiders, you can choose the channel you would like to receive preview builds from inside the Windows settings menu. You can choose from:
+
+- **Dev channel**: Most recent updates, but low stability.
+- **Beta channel**: Ideal for early adopters, more reliable builds than the Dev channel.
+- **Release Preview channel**: Preview fixes and key features on the next version of Windows just before its available to the general public.
