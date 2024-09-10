@@ -7,7 +7,7 @@ ms.date: 09/09/2024
 
 # Troubleshoot Windows Sandbox
 
-This article lists some common issues with Windows Sandbox and possible solutions. To submit feedback about Windows Sandbox, see [Where can I provide feedback?](windows-sandbox-faq.yml#feedback)
+This article lists some common issues with Windows Sandbox and possible solutions. To submit feedback about Windows Sandbox, see [Where can I provide feedback?](windows-sandbox-faq.yml##where-can-i-provide-feedback)
 
 | Error | Possible Solution |
 |--|--|

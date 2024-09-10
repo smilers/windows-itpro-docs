@@ -14,7 +14,7 @@ items:
     href: windows-sandbox-configure-using-wsb-file.md
   - name: Sample configuration files
     href: windows-sandbox-sample-configuration.md
-  - name: WindowsSandbox Policy CSP
+  - name: WindowsSandbox Policy CSP 🔗
     href: /windows/client-management/mdm/policy-csp-windowssandbox
   - name: Frequently asked questions
     href: windows-sandbox-faq.yml
