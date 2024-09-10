@@ -7,13 +7,13 @@ ms.date: 09/09/2024
 
 # Use and configure Windows Sandbox
 
-To launch a Windows Sandbox with default settings, simply Locate and select Windows Sandbox on the Start menu or search for 'Windows Sandbox'. This launches a basic Sandbox with 4GB memory with the following properties:
+To launch a Windows Sandbox with default settings, locate and select Windows Sandbox on the Start menu or search for 'Windows Sandbox'. This launches a basic Sandbox with 4GB memory with the following properties:
 
 - **vGPU (virtualized GPU)**: Enabled on non-ARM64 devices.
 - **Networking**: Enabled. The sandbox uses the Hyper-V default switch.
 - **Audio input**: Enabled. The sandbox shares the host's microphone input into the sandbox.
 - **Video input**: Disabled. The sandbox doesn't share the host's video input into the sandbox.
-- **Protected client**: Disabled. The sandbox doesn't have increased security settings on the Remote Desktop Protocol (RDP) session.
+- **Protected client**: Disabled. The sandbox doesn't use increased security settings on the Remote Desktop Protocol (RDP) session.
 - **Printer redirection**: Disabled. The sandbox doesn't share printers with the host.
 - **Clipboard redirection**: Enabled. The sandbox shares the host clipboard with the sandbox so that text and files can be pasted back and forth.
 
@@ -24,7 +24,7 @@ To launch a Windows Sandbox with default settings, simply Locate and select Wind
 
 You have the freedom to open files, install applications from the web, and perform various other tasks that benefit from an isolated clean environment.
 
-When you're finished experimenting, close the sandbox. A dialog box will prompt you to confirm the deletion of all sandbox content. Select "Ok" to proceed. Confirm that your host machine doesn't exhibit any of the modifications that you made in Windows Sandbox.
+When you're finished experimenting, close the sandbox. A dialog box prompts you to confirm the deletion of all sandbox content. Select **Ok** to proceed. Confirm that your host machine doesn't exhibit any of the modifications that you made in Windows Sandbox.
 
 ## Configure a custom Windows Sandbox
 
@@ -35,7 +35,7 @@ A configuration file enables the user to control the following aspects of Window
 - **vGPU (virtualized GPU)**: Enable or disable the virtualized GPU. If vGPU is disabled, the sandbox uses Windows Advanced Rasterization Platform (WARP).
 - **Networking**: Enable or disable network access within the sandbox.
 - **Mapped folders**: Share folders from the host with *read* or *write* permissions. Exposing host directories might allow malicious software to affect the system or steal data.
-- **Logon command**: A command that's executed when Windows Sandbox starts.
+- **Logon command**: A command to execute when Windows Sandbox starts.
 - **Audio input**: Shares the host's microphone input into the sandbox.
 - **Video input**: Shares the host's webcam input into the sandbox.
 - **Protected client**: Places increased security settings on the Remote Desktop Protocol (RDP) session to the sandbox.
@@ -107,7 +107,7 @@ Supported values:
 
 An array of folders, each representing a location on the host machine that is shared with the sandbox at the specified path. Currently, relative paths aren't supported.
 
-When using `<Mappedfolders>` to map folders, the folders are mapped prior to the execution of the [Logon command](#logon-command).
+When using `<Mappedfolders>` to map folders, the folders are mapped before the execution of the [Logon command](#logon-command).
 
 ```xml
 <MappedFolders>
@@ -123,7 +123,7 @@ When using `<Mappedfolders>` to map folders, the folders are mapped prior to the
 ```
 
 - **HostFolder**: Specifies the folder on the host machine to share into the sandbox. The folder must already exist on the host, or the container fails to start.
-- **SandboxFolder**: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it is created. If no sandbox folder is specified, the folder is mapped to the container desktop.
+- **SandboxFolder**: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it gets created. If no sandbox folder is specified, the folder is mapped to the container desktop.
 - **ReadOnly**: If *true*, enforces read-only access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
 
 > [!NOTE]
@@ -154,8 +154,8 @@ Enables or disables audio input to the sandbox.
 
 Supported values:
 
-- **Enable**: Enables audio input in the sandbox. If this value is set, the sandbox can receive audio input from the user. Applications that use a microphone may require this capability.
-- **Disable**: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone may not function properly with this setting.
+- **Enable**: Enables audio input in the sandbox. If this value is set, the sandbox can receive audio input from the user. Applications that use a microphone might require this capability.
+- **Disable**: Disables audio input in the sandbox. If this value is set, the sandbox can't receive audio input from the user. Applications that use a microphone might not function properly with this setting.
 - **Default**: This value is the default value for audio input support. Currently, this default value denotes that audio input is enabled.
 
 > [!NOTE]
@@ -172,8 +172,8 @@ Enables or disables video input to the sandbox.
 Supported values:
 
 - **Enable**: Enables video input in the sandbox.
-- **Disable**: Disables video input in the sandbox. Applications that use video input may not function properly in the sandbox.
-- **Default**: This value is the default value for video input support. Currently, this default value denotes that video input is disabled. Applications that use video input may not function properly in the sandbox.
+- **Disable**: Disables video input in the sandbox. Applications that use video input might not function properly in the sandbox.
+- **Default**: This value is the default value for video input support. Currently, this default value denotes that video input is disabled. Applications that use video input might not function properly in the sandbox.
 
 > [!NOTE]
 > There may be security implications of exposing host video input to the container.
@@ -231,4 +231,4 @@ Specifies the amount of memory that the sandbox can use in megabytes (MB).
 <MemoryInMB>value</MemoryInMB>
 ```
 
-If the memory value specified is insufficient to boot a sandbox, it is automatically increased to the required minimum amount.
+If the memory value specified is insufficient to boot a sandbox, it's automatically increased to the required minimum amount.

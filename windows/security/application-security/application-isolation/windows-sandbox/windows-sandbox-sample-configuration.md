@@ -73,7 +73,7 @@ C:\temp\vscode.exe /verysilent /suppressmsgboxes
 </Configuration>
 ```
 
-## Example 3 - Mapping Folders and running a PowerShell script as a LogOn Command
+## Example 3 - Mapping Folders and running a PowerShell script as a Logon Command
 
 The following config file runs a PowerShell script as a logon command to swap the primary mouse button for left-handed users.
 

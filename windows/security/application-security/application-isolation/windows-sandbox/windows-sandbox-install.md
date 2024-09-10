@@ -52,7 +52,7 @@ ms.date: 09/09/2024
 
 ## Try WSB preview features by joining the Windows Insider Program
 
-To try the most recent features or updates to WSB, join the [Windows Insiders Program](https://insider.windows.com/getting-started). Once you have joined Windows Insiders, you can choose the channel you would like to receive preview builds from inside the Windows settings menu. You can choose from:
+To try the most recent features or updates to WSB, join the [Windows Insiders Program](https://insider.windows.com/getting-started). After joining the Windows Insiders Program, you can choose the channel you would like to receive preview builds from inside the Windows settings menu. You can choose from:
 
 - **Dev channel**: Most recent updates, but low stability.
 - **Beta channel**: Ideal for early adopters, more reliable builds than the Dev channel.
