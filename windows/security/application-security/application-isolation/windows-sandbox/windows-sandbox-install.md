@@ -48,7 +48,7 @@ ms.date: 09/09/2024
    > [!NOTE]
    > Beginning in Windows 11, version 24H2, Windows Sandbox adheres to the mouse settings of the host system.
    >
-   > If you are on an older build and if the host system is set to use a left-handed mouse, you must apply these settings in Windows Sandbox manually when Windows Sandbox starts. Alternatively, you can use a sandbox configuration file to run a logon command to swap the mouse setting. For an example, see [Example 3](windows-sandbox-configure-using-wsb-file.md#example-3).
+   > If you are on an older build and if the host system is set to use a left-handed mouse, you must apply these settings in Windows Sandbox manually when Windows Sandbox starts. Alternatively, you can use a sandbox configuration file to run a logon command to swap the mouse setting. For an example, see [Example 3](windows-sandbox-sample-configuration.md#example-3---mapping-folders-and-running-a-powershell-script-as-a-logon-command).
 
 ## Try WSB preview features by joining the Windows Insider Program
 
