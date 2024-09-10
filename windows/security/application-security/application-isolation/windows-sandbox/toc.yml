@@ -12,10 +12,8 @@ items:
     href: windows-sandbox-install.md
   - name: Use & configure Windows Sandbox
     href: windows-sandbox-configure-using-wsb-file.md
-  - name: Tutorials
-    items:
-    - name: Sample configuration files
-      href: windows-sandbox-sample-configuration.md
+  - name: Sample configuration files
+    href: windows-sandbox-sample-configuration.md
   - name: WindowsSandbox Policy CSP
     href: /windows/client-management/mdm/policy-csp-windowssandbox
   - name: Frequently asked questions
