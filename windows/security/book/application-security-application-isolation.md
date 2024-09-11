@@ -38,7 +38,7 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 
 :::image type="icon" source="images/learn-more.svg" border="false"::: **Learn more:**
 
-- [Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)
+- [Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox)
 - [Windows Sandbox is a new lightweight desktop environment tailored for safely
 running applications in isolation](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/windows-sandbox/ba-p/301849)
 
