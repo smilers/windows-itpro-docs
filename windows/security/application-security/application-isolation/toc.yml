@@ -13,4 +13,4 @@ items:
 - name: App containers 🔗
   href: /virtualization/windowscontainers/about
 - name: Windows Sandbox
-  href: windows-sandbox/toc.yml
+  href: windows-sandbox/index.md
