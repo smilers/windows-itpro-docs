@@ -112,7 +112,7 @@ When using `<Mappedfolders>` to map folders, the folders are mapped before the e
 ```xml
 <MappedFolders>
   <MappedFolder>
-    <HostFolder>absolute path to the host folder</HostFolder>
+    <HostFolder>absolute or relative path to the host folder</HostFolder>
     <SandboxFolder>absolute path to the sandbox folder</SandboxFolder>
     <ReadOnly>value</ReadOnly>
   </MappedFolder>
