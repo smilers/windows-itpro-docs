@@ -9,7 +9,7 @@ ms.date: 09/09/2024
 
 To launch a Windows Sandbox with default settings, locate and select Windows Sandbox on the Start menu or search for 'Windows Sandbox'. This launches a basic Sandbox with maximum capacity of 4GB memory with the following properties:
 
-- **vGPU (virtualized GPU)**: Enabled on non-ARM64 devices.
+- **vGPU (virtualized GPU)**: Enabled on non-Arm64 devices.
 - **Networking**: Enabled. The sandbox uses the Hyper-V default switch.
 - **Audio input**: Enabled. The sandbox shares the host's microphone input into the sandbox.
 - **Video input**: Disabled. The sandbox doesn't share the host's video input into the sandbox.

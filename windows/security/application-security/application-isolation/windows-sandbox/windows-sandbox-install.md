@@ -9,7 +9,7 @@ ms.date: 09/09/2024
 
 ## Prerequisites
 
-- ARM64 (for Windows 11, version 22H2 and later) or AMD64 architecture
+- Arm64 (for Windows 11, version 22H2 and later) or AMD64 architecture
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)
 - At least 1 GB of free disk space (SSD recommended)

@@ -50,11 +50,11 @@ The exec command executes a command in the sandbox. The command takes two argume
 > [!NOTE]
 > Currently, there is no support for process I/O meaning that there is no way to retrieve the output of a command run in Sandbox.
 
-Commands in Windows Sandbox can be executed in the system context or in the context of the currently logged on user. However, there is no way to log on a user without an active RDP session. Therefore, there currently is no way to execute commands in the user context unless there is an active RDP session.
+Commands in Windows Sandbox can be executed in the system context or in the context of the currently logged on user. However, there's no way to sign-in a user without an active RDP session. Therefore, there currently is no way to execute commands in the user context unless there's an active RDP session.
 
 - `--id <id>` (REQUIRED): ID of the Windows Sandbox environment.
 - `-c, --command <command>` (REQUIRED): The command to execute within Windows Sandbox.
-- `-r, --run-as <ExistingLogin|System>` (REQUIRED): Specifies the user context to execute the command within. If the System option is selected, the command will run in the system context. If the ExistingLogin option is selected, the command will run in the currently active user session or fail if there is no active user session.
+- `-r, --run-as <ExistingLogin|System>` (REQUIRED): Specifies the user context to execute the command within. If the System option is selected, the command runs in the system context. If the ExistingLogin option is selected, the command runs in the currently active user session or fails if there's no active user session.
 - `-d, --working-directory <directory>`: Directory to execute command in.
 
 ```cmd
@@ -76,9 +76,9 @@ wsb stop --id 12345678-1234-1234-1234-1234567890AB
 The map command maps a host folder to a folder in the sandbox. The command takes three arguments: the sandbox ID, the host path, and the sandbox path. The host path should be a folder. The sandbox path can be either an existing or a new folder. The share command allows the user to share files and folders between the host and the sandbox. An Additional, `--allow-write` option can be used to allow or disallow the Windows Sandbox environment to write to the folder.
 
 - `--id <id>` (REQUIRED): ID of the Windows Sandbox environment.
-- `-f, --host-path <host-path>` (REQUIRED): Path to folder that will be mapped from the host.
+- `-f, --host-path <host-path>` (REQUIRED): Path to folder that is mapped from the host.
 - `-s, --sandbox-path <sandbox-path>` (REQUIRED): Path to the folder within the Windows Sandbox.
-- `-w, --allow-write`: If specified, the Windows Sandbox environment will be allowed to write to the shared folder.
+- `-w, --allow-write`: If specified, the Windows Sandbox environment is allowed to write to the shared folder.
 
 ```cmd
 wsb map --id 12345678-1234-1234-1234-1234567890AB -f C:\host\folder -s C:\sandbox\folder --allow-write
