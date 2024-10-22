@@ -4,7 +4,7 @@ items:
 - name: Overview
   expanded: true
   items:
-  - name: Compare versions
+  - name: Windows Sandbox versions
     href: windows-sandbox-versions.md
   - name: Architecture
     href: windows-sandbox-architecture.md
@@ -12,6 +12,8 @@ items:
   href: windows-sandbox-install.md
 - name: Use & configure Windows Sandbox
   href: windows-sandbox-configure-using-wsb-file.md
+- name: Windows Sandbox command line interface
+  href: windows-sandbox-cli.md
 - name: Tutorials
   items:
   - name: Sample configuration files

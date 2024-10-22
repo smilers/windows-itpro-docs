@@ -75,9 +75,9 @@ C:\temp\vscode.exe /verysilent /suppressmsgboxes
 
 ## Example 3 - Mapping Folders and running a PowerShell script as a Logon Command
 
-The following config file runs a PowerShell script as a logon command to swap the primary mouse button for left-handed users.
+Beginning in Windows 11, version 24H2, Windows Sandbox adheres to the mouse settings of the host system. If you are on an older build and if the host system is set to use a left-handed mouse, you must apply these settings in Windows Sandbox manually when Windows Sandbox starts. Alternatively, you can use a sandbox configuration file to run a logon command to swap the mouse setting.
 
-`C:\sandbox` folder on the host is mapped to the `C:\sandbox` folder in the sandbox, so the `SwapMouse.ps1` script can be referenced in the sandbox configuration file.
+In this example, the `C:\sandbox` folder on the host is mapped to the `C:\sandbox` folder in the sandbox, so the `SwapMouse.ps1` script can be referenced in the sandbox configuration file.
 
 ### SwapMouse.ps1
 

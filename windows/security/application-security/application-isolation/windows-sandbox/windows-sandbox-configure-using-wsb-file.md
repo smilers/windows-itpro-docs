@@ -7,7 +7,7 @@ ms.date: 09/09/2024
 
 # Use and configure Windows Sandbox
 
-To launch a Windows Sandbox with default settings, locate and select Windows Sandbox on the Start menu or search for 'Windows Sandbox'. This launches a basic Sandbox with 4GB memory with the following properties:
+To launch a Windows Sandbox with default settings, locate and select Windows Sandbox on the Start menu or search for 'Windows Sandbox'. This launches a basic Sandbox with maximum capacity of 4GB memory with the following properties:
 
 - **vGPU (virtualized GPU)**: Enabled on non-ARM64 devices.
 - **Networking**: Enabled. The sandbox uses the Hyper-V default switch.
@@ -231,4 +231,4 @@ Specifies the amount of memory that the sandbox can use in megabytes (MB).
 <MemoryInMB>value</MemoryInMB>
 ```
 
-If the memory value specified is insufficient to boot a sandbox, it's automatically increased to the required minimum amount.
+If the memory value specified is insufficient to boot a sandbox, it's automatically increased to the required minimum amount of 2048 MB.
