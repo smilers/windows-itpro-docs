@@ -5,7 +5,7 @@ metadata:
   author: vinaypamnani-msft
   ms.author: vinpa
   ms.topic: faq
-  ms.date: 09/09/2024
+  ms.date: 10/23/2024
 
 title: Common questions about Windows Sandbox
 summary: Windows Sandbox (WSB) provides a lightweight desktop environment to safely run applications in isolation. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows Sandbox.
@@ -29,21 +29,21 @@ sections:
       - question: What's the difference between a Hyper-V virtual machine (VM) and Windows Sandbox?
         answer: |
           1. **Lightweight and Temporary**:
-              - **Windows Sandbox**: It's a lightweight, disposable environment that runs within your existing Windows installation. You can quickly launch it, test applications, and discard it without affecting your main system.
-              - **Hyper-V VMs**: Hyper-V VMs are more heavyweight. They require dedicated resources (CPU, memory, disk space) and take longer to set up.
+              - Windows Sandbox: It's a lightweight, disposable environment that runs within your existing Windows installation. You can quickly launch it, test applications, and discard it without affecting your main system.
+              - Hyper-V VMs: Hyper-V VMs are more heavyweight. They require dedicated resources (CPU, memory, disk space) and take longer to set up.
           1. **Security Isolation**:
-              - **Windows Sandbox**: Provides a secure, isolated environment for testing untrusted software. Any changes made within the sandbox are discarded when you close it.
-              - **Hyper-V VMs**: While VMs also offer isolation, they persistently store changes unless you revert them manually.
+              - Windows Sandbox: Provides a secure, isolated environment for testing untrusted software. Any changes made within the sandbox are discarded when you close it.
+              - Hyper-V VMs: While VMs also offer isolation, they persistently store changes unless you revert them manually.
           1. **Resource Efficiency**:
-              - **Windows Sandbox**: More resource efficient than full VM. It adjusts memory usage according to the demand. It also reuses many of the host’s read only OS files.
-              - **Hyper-V VMs**: VMs have fixed resource allocations, which can impact overall system performance.
+              - Windows Sandbox: More resource efficient than full VM. It adjusts memory usage according to the demand. It also reuses many of the host's read only OS files.
+              - Hyper-V VMs: VMs have fixed resource allocations, which can impact overall system performance.
           1. **Ease of Use**:
-              - **Windows Sandbox**: Simple to use—just open it, test your software, and close it. No complex setup or management.
-              - **Hyper-V VMs**: Require more configuration, including setting up virtual switches, network adapters, and managing VM snapshots.
+              - Windows Sandbox: Simple to use—just open it, test your software, and close it. No complex setup or management.
+              - Hyper-V VMs: Require more configuration, including setting up virtual switches, network adapters, and managing VM snapshots.
 
       - question: What applications aren't supported inside a Windows Sandbox?
         answer: |
-          Inbox apps (for example, Store, Notepad) and Optional features turned on via 'Turn Windows Features On or Off' are not supported.
+          Inbox apps (for example, Store, Notepad) and Optional features turned on via 'Turn Windows Features On or Off' aren't supported.
           While Store apps can be installed, you can't download them directly from the Store since the Store app isn't available in the Sandbox. However, if you have an `.appx` package, you can still install those apps.
 
   - name: Usage
@@ -59,11 +59,11 @@ sections:
 
       - question: Installing the latest version of Windows Sandbox fails. How do I fix this?
         answer: |
-          Ensure that your device has access to the Internet, Windows Update and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails initially, installation continues in the background while the user can still use the app. Additionally, the app is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install it manually.
+          Ensure that your device has access to the Internet, Windows Update, and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails initially, installation continues in the background while the user can still use the app. Additionally, the app is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install it manually.
 
-      - question: How do I know which version of Windows Sandbox I am running?
+      - question: How do I know which version of Windows Sandbox am I running?
         answer: |
-          Run `Get-AppxPackage -Name WindowsSandbox | Select-Object Version` in a PowerShell prompt. If the version is empty, you are running an older version of Windows Sandbox. If this returns a set of digits, you are running the newer version.
+          Run `Get-AppxPackage -Name WindowsSandbox | Select-Object Version` in a PowerShell prompt. If the version is empty, you're running an older version of Windows Sandbox. If it returns a version number, you're running the newer version.
           Alternatively, if your Windows Sandbox app has a '...' button in the top-right corner that opens a drop-down menu, you're using the new version.
 
       - question: How do I save the Sandbox state?
