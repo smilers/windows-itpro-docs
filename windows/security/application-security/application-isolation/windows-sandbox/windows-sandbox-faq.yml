@@ -14,6 +14,7 @@ sections:
 
   - name: Concepts
     questions:
+
       - question: Who can use WSB?
         answer: |
           WSB can be used in various scenarios by anyone without any technical skills. Here are some ways in which you can use WSB:
@@ -40,6 +41,14 @@ sections:
               - **Windows Sandbox**: Simple to use—just open it, test your software, and close it. No complex setup or management.
               - **Hyper-V VMs**: Require more configuration, including setting up virtual switches, network adapters, and managing VM snapshots.
 
+      - question: What applications aren't supported inside a Windows Sandbox?
+        answer: |
+          Inbox apps (for example, Store, Notepad) and Optional features turned on via 'Turn Windows Features On or Off' are not supported.
+          While Store apps can be installed, you can't download them directly from the Store since the Store app isn't available in the Sandbox. However, if you have an `.appx` package, you can still install those apps.
+
+  - name: Usage
+    questions:
+
       - question: Why can I not change certain settings using a config file?
         answer: |
           You can't make changes to properties if they're controlled by Group Policy. Contact your IT Administrator for more details.
@@ -64,11 +73,6 @@ sections:
       - question: How can I open Windows Sandbox with a different OS version?
         answer: |
           Windows Sandbox only allows you to use the same build as your host OS. This allows us to keep Windows Sandbox 'lightweight'.
-
-      - question: What applications aren't supported inside a Windows Sandbox?
-        answer: |
-          Inbox apps (for example, Store, Notepad) and Optional features turned on via 'Turn Windows Features On or Off' are not supported.
-          While Store apps can be installed, you can't download them directly from the Store since the Store app isn't available in the Sandbox. However, if you have an `.appx` package, you can still install those apps.
 
       - question: How do I uninstall Windows Sandbox?
         answer: |
