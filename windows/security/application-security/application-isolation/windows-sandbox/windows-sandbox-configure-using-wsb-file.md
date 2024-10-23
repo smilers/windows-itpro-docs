@@ -107,7 +107,7 @@ Supported values:
 
 An array of folders, each representing a location on the host machine that is shared with the sandbox at the specified path. Currently, relative paths aren't supported.
 
-When using `<Mappedfolders>` to map folders, the folders are mapped before the execution of the [Logon command](#logon-command).
+When using `<Mappedfolders>` to map folders, the folders are mapped before the execution of the [Logon command](#logon-command). Beginning in Windows 11, version 23H2, you can use environment variables in the path.
 
 ```xml
 <MappedFolders>
@@ -123,11 +123,11 @@ When using `<Mappedfolders>` to map folders, the folders are mapped before the e
 ```
 
 - **HostFolder**: Specifies the folder on the host machine to share into the sandbox. The folder must already exist on the host, or the container fails to start.
-- **SandboxFolder**: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it gets created. If no sandbox folder is specified, the folder is mapped to the container desktop.
+- **SandboxFolder**: Specifies the destination in the sandbox to map the folder to. If the folder doesn't exist, it gets created. If no sandbox folder is specified, the folder is mapped to the container user's desktop. The default user of Sandbox is `WDAGUtilityAccount`.
 - **ReadOnly**: If *true*, enforces read-only access to the shared folder from within the container. Supported values: *true*/*false*. Defaults to *false*.
 
 > [!NOTE]
-> Files and folders mapped in from the host can be compromised by apps in the sandbox or potentially affect the host. Changes made during a Sandbox session to a mapped folder with write-permissions will persist after a Sandbox is disposed.
+> Files and folders mapped from the host can be compromised by apps in the sandbox or potentially affect the host. Changes made during a Sandbox session to a mapped folder with write-permissions will persist after a Sandbox is disposed.
 
 ### Logon command
 

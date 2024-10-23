@@ -20,7 +20,7 @@ Starting with Windows 11, version 24H2, a newer version of Windows Sandbox is av
 
 - Windows Sandbox must already be installed. If it isn't already installed, [install Windows Sandbox](windows-sandbox-install.md).
 - Device must be running Windows 11, version 24H2, with KB10D or later.
-- Microsoft Store and Windows Update must be accessible.
+- Internet access for Microsoft Store and Windows Update.
 
 ### Upgrade
 
@@ -29,4 +29,4 @@ Starting with Windows 11, version 24H2, a newer version of Windows Sandbox is av
 - Once the installation is complete, you're directed to the updated version of the app.
 
 > [!NOTE]
-> If the upgrade fails on the first try, the installation continues in the background while you use the older version of the app. Additionally, the app is queued in the "Updates & downloads" section of the Microsoft Store app for users who wish to manually install it.
+> If the upgrade fails on the first try, the installation continues in the background while you use the older version of the app. Additionally, the app is queued in the "Updates & downloads" section of the Microsoft Store app for users who wish to install it manually.

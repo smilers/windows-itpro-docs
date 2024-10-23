@@ -48,6 +48,32 @@ sections:
         answer: |
           Today, Windows Sandbox only allows users to launch one Sandbox instance at a time.
 
+      - question: Installing the latest version of Windows Sandbox fails. How do I fix this?
+        answer: |
+          Ensure that your device has access to the Internet, Windows Update and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails initially, installation continues in the background while the user can still use the app. Additionally, the app is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install it manually.
+
+      - question: How do I know which version of Windows Sandbox I am running?
+        answer: |
+          Run `Get-AppxPackage -Name WindowsSandbox | Select-Object Version` in a PowerShell prompt. If the version is empty, you are running an older version of Windows Sandbox. If this returns a set of digits, you are running the newer version.
+          Alternatively, if your Windows Sandbox app has a '...' button in the top-right corner that opens a drop-down menu, you're using the new version.
+
+      - question: How do I save the Sandbox state?
+        answer: |
+          Windows Sandbox is temporary; closing it deletes all software, files, and state.
+
+      - question: How can I open Windows Sandbox with a different OS version?
+        answer: |
+          Windows Sandbox only allows you to use the same build as your host OS. This allows us to keep Windows Sandbox 'lightweight'.
+
+      - question: What applications aren't supported inside a Windows Sandbox?
+        answer: |
+          Inbox apps (for example, Store, Notepad) and Optional features turned on via 'Turn Windows Features On or Off' are not supported.
+          While Store apps can be installed, you can't download them directly from the Store since the Store app isn't available in the Sandbox. However, if you have an `.appx` package, you can still install those apps.
+
+      - question: How do I uninstall Windows Sandbox?
+        answer: |
+          Run the following PowerShell cmdlet to uninstall the app: `Get-AppxPackage -name WindowsSandbox | Remove-AppxPackage`
+
   - name: Feedback
     questions:
 
