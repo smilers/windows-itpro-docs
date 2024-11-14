@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 09/27/2024
+ms.date: 11/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -29,10 +29,17 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [EnablePhysicalDeviceAccessOnErrorScreens](clouddesktop-csp.md#userenablephysicaldeviceaccessonerrorscreens)
 - [EnableBootToCloudSharedPCMode](clouddesktop-csp.md#deviceenableboottocloudsharedpcmode)
 
+## Connectivity
+
+- [UseCellularWhenWiFiPoor](policy-csp-connectivity.md#usecellularwhenwifipoor)
+- [DisableCellularSettingsPage](policy-csp-connectivity.md#disablecellularsettingspage)
+- [DisableCellularOperatorSettingsPage](policy-csp-connectivity.md#disablecellularoperatorsettingspage)
+
 ## DeclaredConfiguration CSP
 
 - [Document](declaredconfiguration-csp.md#hostcompletedocumentsdociddocument)
 - [Abandoned](declaredconfiguration-csp.md#hostcompletedocumentsdocidpropertiesabandoned)
+- [ConflictResolution](declaredconfiguration-csp.md#managementserviceconfigurationconflictresolution)
 
 ## DeliveryOptimization
 
@@ -51,6 +58,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [Progress](devicepreparation-csp.md#mdmproviderprogress)
 - [MdmAgentInstalled](devicepreparation-csp.md#mdmprovidermdmagentinstalled)
 - [RebootRequired](devicepreparation-csp.md#mdmproviderrebootrequired)
+
+## Display
+
+- [ConfigureMultipleDisplayMode](policy-csp-display.md#configuremultipledisplaymode)
 
 ## DMClient CSP
 
@@ -97,7 +108,6 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## PassportForWork CSP
 
-- [EnableWindowsHelloProvisioningForSecurityKeys](passportforwork-csp.md#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
 
 ## Reboot CSP
@@ -111,6 +121,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## SurfaceHub CSP
 
 - [ExchangeModernAuthEnabled](surfacehub-csp.md#deviceaccountexchangemodernauthenabled)
+
+## TextInput
+
+- [TouchKeyboardControllerModeAvailability](policy-csp-textinput.md#touchkeyboardcontrollermodeavailability)
 
 ## Update
 

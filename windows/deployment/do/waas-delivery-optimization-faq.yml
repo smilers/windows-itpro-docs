@@ -113,8 +113,8 @@ sections:
           For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache](../do/delivery-optimization-endpoints.md) for a list of all content endpoints needed.
       - question: My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?
         answer: | 
-          Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and [Microsoft Connected Cache](waas-microsoft-connected-cache.md) (MCC) servers, which are hosted within Internet Service Provider (ISP) networks. 
-          The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible.  
+          Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and [Microsoft Connected Cache](waas-microsoft-connected-cache.md) servers, which are hosted within Internet Service Provider (ISP) networks. 
+          The network of CDNs and Microsoft Connected Caches allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible.  
       - question: What is the recommended configuration for Delivery Optimization used with cloud proxies?
         answer: |
           The recommended configuration for Delivery Optimization peer-to-peer to work most efficiently along with cloud proxy solutions (for example, Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
@@ -131,8 +131,8 @@ sections:
           Delivery Optimization uses the cache content on the device to determine what's available for peering. For the upload source device, there's a limited number (4) of slots for cached content that's available for peering at a given time. Delivery Optimization contains logic that rotates the cached content in those slots.
       - question: Where does Delivery Optimization get content from first?
         answer: |
-          When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), the client connects to both MCC and peers in parallel. There is no prioritization between the two. Once downloading starts in parallel, Delivery Optimization 
-          will taper off requests to the HTTP source (CDN or MCC) when the peer connections are able to reach the target download speed. For background downloads, Delivery Optimization will drop HTTP connections if peers are meeting the minimum QoS speed. To manage delaying the default behavior
+          When Delivery Optimization client is configured to use peers and Microsoft Connected Cache, the client connects to both Connected Cache and peers in parallel. There is no prioritization between the two. Once downloading starts in parallel, Delivery Optimization 
+          will taper off requests to the HTTP source (CDN or Connected Cache) when the peer connections are able to reach the target download speed. For background downloads, Delivery Optimization will drop HTTP connections if peers are meeting the minimum QoS speed. To manage delaying the default behavior
           there are a collection of policies that can be used. For more information, see [Delivery Optimization delay policies](waas-delivery-optimization-reference.md#policies-to-prioritize-the-use-of-peer-to-peer-and-cache-server-sources).
       - question: Does Delivery Optimization use multicast?
         answer: |

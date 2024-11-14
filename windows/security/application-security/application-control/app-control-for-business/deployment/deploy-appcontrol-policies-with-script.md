@@ -22,7 +22,7 @@ You should now have one or more App Control policies converted into binary form.
 
 ## Deploying policies for Windows 11 22H2 and above, and Windows Server 2025 and above
 
-You can use the inbox [CiTool](../operations/citool-commands.md) to deploy signed and unsigned policies on Windows 11 22H2 and Windows Server 2025 with the following commands. Be sure to replace **&lt;Path to policy binary file to deploy&gt;** in the following example with the actual path to your App Control policy binary file.
+You can use the inbox [CiTool](../operations/citool-commands.md) to deploy signed and unsigned policies on Windows 11 22H2 and Windows Server 2025 with the following commands. Be sure to replace `<Path to policy binary file to deploy>` in the following example with the actual path to your App Control policy binary file.
 
 ```powershell
 # Policy binary files should be named as {GUID}.cip for multiple policy format files (where {GUID} = <PolicyId> from the Policy XML)
@@ -82,7 +82,7 @@ Use WMI to deploy policies on all other versions of Windows and Windows Server.
 
 ## Deploying signed policies
 
-If you're using [signed App Control policies](use-signed-policies-to-protect-appcontrol-against-tampering.md), the policies must be deployed into your device's EFI partition in addition to the locations outlined in the earlier sections. Unsigned App Control policies don't need to be present in the EFI partition.
+If you're using [signed App Control policies](use-signed-policies-to-protect-appcontrol-against-tampering.md), the policies must be deployed into your device's EFI partition.
 
 1. Mount the EFI volume and make the directory, if it doesn't exist, in an elevated PowerShell prompt:
 

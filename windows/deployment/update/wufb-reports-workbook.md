@@ -180,8 +180,8 @@ The **Delivery Optimization** tab provides a summarized view of bandwidth effici
 At the top of the report, tiles display the following information:
 
 - Total bandwidth savings percentage
-- The percentage of the saved bandwidth broken down by peer-to-peer and MCC
-- Device counts showing percentages of bytes delivered between peer-to-peer and MCC
+- The percentage of the saved bandwidth broken down by peer-to-peer and Microsoft Connected Cache
+- Device counts showing percentages of bytes delivered between peer-to-peer and Connected Cache
 - The breakdown of total downloaded GBs.
 
 The Delivery Optimization tab is further divided into the following groups:

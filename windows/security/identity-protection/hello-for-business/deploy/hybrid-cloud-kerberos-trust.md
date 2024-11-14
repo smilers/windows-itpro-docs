@@ -41,13 +41,13 @@ If you haven't deployed Microsoft Entra Kerberos, follow the instructions in the
 
 When Microsoft Entra Kerberos is enabled in an Active Directory domain, an *AzureADKerberos* computer object is created in the domain. This object:
 
-- Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
+- Appears as a read only domain controller (RODC) object, but isn't associated with any physical servers
 - Is only used by Microsoft Entra ID to generate TGTs for the Active Directory domain
 
   > [!NOTE]
   > Similar rules and restrictions used for RODCs apply to the AzureADKerberos computer object. For example, users that are direct or indirect members of priviliged built-in security groups won't be able to use cloud Kerberos trust.
 
-:::image type="content" source="images/azuread-kerberos-object.png" alt-text="Screenshot of the Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server.":::
+:::image type="content" source="images/azuread-kerberos-object.png" alt-text="Screenshot of the Active Directory Users and Computers console, showing the computer object representing the Microsoft Entra Kerberos server." lightbox="images/azuread-kerberos-object.png":::
 
 For more information about how Microsoft Entra Kerberos works with Windows Hello for Business cloud Kerberos trust, see [Windows Hello for Business authentication technical deep dive](../how-it-works-authentication.md#microsoft-entra-hybrid-join-authentication-using-cloud-kerberos-trust).
 

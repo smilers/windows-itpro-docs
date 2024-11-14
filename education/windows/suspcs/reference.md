@@ -1,8 +1,8 @@
 ---
 title: Set up School PCs app technical reference overview
-description: Describes the purpose of the Set up School PCs app for Windows 10 devices.
+description: Describes the purpose of the Set up School PCs app for Windows devices.
 ms.topic: overview
-ms.date: 01/16/2024
+ms.date: 10/29/2024
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -12,12 +12,12 @@ appliesto:
 
 The **Set up School PCs** app helps you configure new Windows 10 PCs for school use. The app, which is available for Windows 10 version 1703 and later, configures and saves school-optimized settings, apps, and policies into a single provisioning package. You can then save the package to a USB drive and distribute it to your school PCs.
 
-If your school uses Microsoft Entra ID or Office 365, the Set up
+If your school uses Microsoft Entra ID or Microsoft 365, the Set up
 School PCs app will create a setup file. This file joins the PC to your Microsoft Entra tenant. The app also helps set up PCs for use with or without Internet connectivity.
 
 ## Join devices to Microsoft Entra ID
 
-If your school uses Microsoft Entra ID or Office 365, the Set up School PCs app creates a setup file that joins your PC to your Microsoft Entra ID tenant.
+If your school uses Microsoft Entra ID or Microsoft 365, the Set up School PCs app creates a setup file that joins your PC to your Microsoft Entra ID tenant.
 
 The app also helps set up PCs for use with or without Internet connectivity.
 

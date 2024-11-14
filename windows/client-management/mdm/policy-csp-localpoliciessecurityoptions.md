@@ -1,7 +1,7 @@
 ---
 title: LocalPoliciesSecurityOptions Policy CSP
 description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -388,9 +388,26 @@ Audit: Audit the use of Backup and Restore privilege This security setting deter
 |:--|:--|
 | Format | `b64` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | List (Delimiter: ``) |
-| Default Value  | 00 |
+| Default Value  | AA== |
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-DFProperties-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| AQ== | Enable. |
+| AA== (Default) | Disable. |
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-AllowedValues-End -->
+
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit: Audit the use of Backup and Restore privilege |
+| Path | Windows Settings > Security Settings > Local Policies > Security Options |
+<!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-GpMapping-End -->
 
 <!-- Audit_AuditTheUseOfBackupAndRestoreprivilege-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->

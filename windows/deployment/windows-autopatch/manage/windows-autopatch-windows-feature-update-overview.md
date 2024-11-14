@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview
 description: This article explains how Windows feature updates are managed
-ms.date: 09/16/2024
+ms.date: 10/30/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -20,6 +20,9 @@ ms.collection:
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
 Windows Autopatch provides tools to assist with the controlled roll out of annual Windows feature updates. These policies provide tools to allow version targeting, phased releases, and even Windows 10 to Windows 11 update options. For more information about how to configure feature update profiles, see [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates).
+
+> [!IMPORTANT]
+> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Multi-phase feature update
 

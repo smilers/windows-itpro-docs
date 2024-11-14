@@ -96,19 +96,19 @@ More options available that control the impact Delivery Optimization has on your
 
 #### Policies to prioritize the use of peer-to-peer and cache server sources
 
-When Delivery Optimization client is configured to use peers and Microsoft Connected Cache (MCC), to achieve the best possible content delivery experience, the client connects to both MCC and peers in parallel. If the desired content can't be obtained from MCC or peers, Delivery Optimization will automatically fall back to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or MCC sources by delaying the immediate fallback to HTTP source, which is the default behavior.
+When Delivery Optimization client is configured to use peers and Microsoft Connected Cache, to achieve the best possible content delivery experience, the client connects to both Connected Cache and peers in parallel. If the desired content can't be obtained from Connected Cache or peers, Delivery Optimization will automatically fall back to the HTTP source to get the requested content. There are four settings that allow you to prioritize peer-to-peer or Connected Cache sources by delaying the immediate fallback to HTTP source, which is the default behavior.
 
 ##### Peer-to-peer delay fallback settings
 
 - [Delay foreground download from HTTP (in secs)](#delay-foreground-download-from-http-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use P2P.
 - [Delay background download from HTTP (in secs)](#delay-background-download-from-http-in-secs) allows you to delay the use of an HTTP source in a background download that is allowed to use P2P.
 
-##### Microsoft Connected Cache (MCC) delay fallback settings
+##### Microsoft Connected Cache delay fallback settings
 
 - [Delay foreground download cache server fallback (in secs)](#delay-foreground-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use a cache server.
 - [Delay background download cache server fallback (in secs)](#delay-background-download-cache-server-fallback-in-secs) allows you to delay the use of an HTTP source in a background  download that is allowed to use a cache server.
 
-**If both peer-to-peer and MCC are configured, the peer-to-peer delay settings will take precedence over the cache server delay settings.** This setting allows Delivery Optimization to discover peers first then recognize the fallback setting for the MCC cache server.
+**If both peer-to-peer and Connected Cache are configured, the peer-to-peer delay settings will take precedence over the cache server delay settings.** This setting allows Delivery Optimization to discover peers first then recognize the fallback setting for the Connected Cache cache server.
 
 #### System resource usage
 

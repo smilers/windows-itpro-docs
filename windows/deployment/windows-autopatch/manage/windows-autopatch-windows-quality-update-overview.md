@@ -1,7 +1,7 @@
 ---
 title: Windows quality updates overview
 description: This article explains how Windows quality updates are managed
-ms.date: 09/16/2024
+ms.date: 10/30/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: conceptual
@@ -54,7 +54,7 @@ The service level objective for each of these states is calculated as:
 > Targeted deployment ring refers to the deployment ring value of the device in question. If a device has a five day deferral with a two day deadline, and two day grace period, the SLO for the device would be calculated to `5 + 2 + 5 = 12`-day service level objective from the second Tuesday of the month. The five day reporting period is one established by Windows Autopatch to allow enough time for device check-in reporting and data evaluation within the service.
 
 > [!IMPORTANT]
-> Windows Autopatch supports registering [Windows 10 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/) devices that are being currently serviced by the [Windows LTSC](/windows/release-health/release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
+> Windows Autopatch supports registering [Windows 10 and Windows 11 Long-Term Servicing Channel (LTSC)](/windows/whats-new/ltsc/overview) devices that are being currently serviced by the [Windows 10 LTSC](/windows/release-health/release-information) or [Windows 11 LTSC](/windows/release-health/windows11-release-information). The service only supports managing the [Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md) workload for devices currently serviced by the LTSC. Windows Update for Business service and Windows Autopatch don't offer Windows feature updates for devices that are part of the LTSC. You must either use [LTSC media](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) or the [Configuration Manager Operating System Deployment capabilities to perform an in-place upgrade](/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager) for Windows devices that are part of the LTSC.
 
 ## Out of Band releases
 
@@ -62,11 +62,11 @@ The service level objective for each of these states is calculated as:
 
 Windows Autopatch schedules and deploys required Out of Band (OOB) updates released outside of the normal schedule.
 
-For the deployment rings that pass quality updates deferral date, the OOB release schedule is expedited and deployed on the same day. For the deployment rings that have deferral upcoming, OOBs are released as per the set deferral dates.
+For the deployment rings that pass quality updates deferral date, the OOB release schedule is expedited and deployed on the same day. For the deployment rings that have deferral upcoming, OOBs are released as per the specified deferral dates.
 
 ## Pause and resume a release
 
-The service-level pause is driven by the various software update deployment-related signals Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
+The service-level pause is driven by the various software update deployment-related signals. Windows Autopatch receives from Windows Update for Business, and several other product groups within Microsoft.
 
 If Windows Autopatch detects a significant issue with a release, we might decide to pause that release.
 
@@ -81,10 +81,8 @@ If Windows Autopatch detects a significant issue with a release, we might decide
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Select **Devices** from the left navigation menu.
 1. Under the **Manage updates** section, select **Windows updates**.
-1. In the **Windows updates** blade, select the **Quality updates** tab.
-1. Select the Autopatch group or deployment ring that you want to pause or resume. Select either: **Pause** or **Resume**. Alternatively, you can select the **horizontal ellipses (...)** of the Autopatch group or deployment ring you want to pause or resume. Select, **Pause, or **Resume** from the dropdown menu.
-1. Optional. Enter the justification about why you're pausing or resuming the selected update.
-1. Optional. Select **This pause is related to Windows Update**. When you select this checkbox, you must provide information about how the pause is related to Windows Update.
+1. In the **Windows updates** blade, select the **Update rings** tab.
+1. Select the Autopatch group or deployment ring that you want to pause or resume. Select either: **Pause** or **Resume**. Alternatively, you can select the **horizontal ellipses (...)** of the Autopatch group or deployment ring you want to pause or resume. Select, **Pause**, or **Resume** from the dropdown menu.
 1. If you're resuming an update, you can select one or more Autopatch groups or deployment rings.
 1. Select **Pause or Resume deployment**.
 

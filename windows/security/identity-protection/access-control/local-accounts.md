@@ -6,6 +6,7 @@ ms.topic: concept-article
 appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2025</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
@@ -230,27 +231,27 @@ The following table shows the Group Policy and registry settings that are used t
 1. In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**
 1. Ensure that UAC is enabled and that UAC restrictions apply to the default Administrator account by following these steps:
 
-  - Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\, and &gt; **Security Options**
-  - Double-click **User Account Control: Run all administrators in Admin Approval Mode** &gt; **Enabled** &gt; **OK**
-  - Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**
+   - Navigate to the Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\, and &gt; **Security Options**
+   - Double-click **User Account Control: Run all administrators in Admin Approval Mode** &gt; **Enabled** &gt; **OK**
+   - Double-click **User Account Control: Admin Approval Mode for the Built-in Administrator account** &gt; **Enabled** &gt; **OK**
 
 1. Ensure that the local account restrictions are applied to network interfaces by following these steps:
 
-  - Navigate to *Computer Configuration\Preferences and Windows Settings*, and > **Registry**
-  - Right-click **Registry**, and &gt; **New** &gt; **Registry Item**
-  - In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**
-  - Ensure that the **Hive** box is set to **HKEY_LOCAL_MACHINE**
-  - Select (**…**), browse to the following location for **Key Path** &gt; **Select** for: `SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
-  - In the **Value name** area, type `LocalAccountTokenFilterPolicy`
-  - In the **Value type** box, from the drop-down list, select **REG_DWORD** to change the value
-  - In the **Value data** box, ensure that the value is set to **0**
-  - Verify this configuration, and &gt; **OK**
+   - Navigate to *Computer Configuration\Preferences and Windows Settings*, and > **Registry**
+   - Right-click **Registry**, and &gt; **New** &gt; **Registry Item**
+   - In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**
+   - Ensure that the **Hive** box is set to **HKEY_LOCAL_MACHINE**
+   - Select (**…**), browse to the following location for **Key Path** &gt; **Select** for: `SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`
+   - In the **Value name** area, type `LocalAccountTokenFilterPolicy`
+   - In the **Value type** box, from the drop-down list, select **REG_DWORD** to change the value
+   - In the **Value data** box, ensure that the value is set to **0**
+   - Verify this configuration, and &gt; **OK**
 
 1. Link the GPO to the first **Workstations** organizational unit (OU) by doing the following:
 
-  - Navigate to the `*Forest*\<Domains>\*Domain*\*OU*` path
-  - Right-click the **Workstations > Link an existing GPO**
-  - Select the GPO that you created, and &gt; **OK**
+   - Navigate to the `*Forest*\<Domains>\*Domain*\*OU*` path
+   - Right-click the **Workstations > Link an existing GPO**
+   - Select the GPO that you created, and &gt; **OK**
 
 1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy
 1. Create links to all other OUs that contain workstations
@@ -291,9 +292,9 @@ The following table shows the Group Policy settings that are used to deny networ
 1. Select **Add User or Group**, type **Local account and member of Administrators group**, and &gt; **OK**
 1. Link the GPO to the first **Workstations** OU as follows:
 
-  - Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path
-  - Right-click the **Workstations** OU, and &gt; **Link an existing GPO**
-  - Select the GPO that you created, and &gt; **OK**
+   - Navigate to the &lt;*Forest*&gt;\\Domains\\&lt;*Domain*&gt;\\OU path
+   - Right-click the **Workstations** OU, and &gt; **Link an existing GPO**
+   - Select the GPO that you created, and &gt; **OK**
 
 1. Test the functionality of enterprise applications on the workstations in that first OU and resolve any issues caused by the new policy
 1. Create links to all other OUs that contain workstations

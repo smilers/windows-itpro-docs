@@ -1,7 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -156,7 +156,7 @@ FIPS compliance can be configured through the System cryptography. Use FIPS comp
 <!-- DisconnectOnLockLegacyAuthn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2461] and later <br> ✅ [10.0.25398.887] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4474] and later <br> ✅ Windows 11, version 21H2 with [KB5037770](https://support.microsoft.com/help/5037770) [10.0.22000.2960] and later <br> ✅ Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) [10.0.22621.3593] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisconnectOnLockLegacyAuthn-Applicability-End -->
 
 <!-- DisconnectOnLockLegacyAuthn-OmaUri-Begin -->
@@ -217,7 +217,7 @@ This policy applies only when using legacy authentication to authenticate to the
 <!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2461] and later <br> ✅ [10.0.25398.887] and later <br> ✅ Windows 10, version 2004 [10.0.19041.4474] and later <br> ✅ Windows 11, version 21H2 with [KB5037770](https://support.microsoft.com/help/5037770) [10.0.22000.2960] and later <br> ✅ Windows 11, version 22H2 with [KB5037771](https://support.microsoft.com/help/5037771) [10.0.22621.3593] and later <br> ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisconnectOnLockMicrosoftIdentityAuthn-Applicability-End -->
 
 <!-- DisconnectOnLockMicrosoftIdentityAuthn-OmaUri-Begin -->
