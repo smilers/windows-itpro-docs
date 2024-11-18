@@ -156,6 +156,7 @@ Each version of Windows client adds new features and functionality. Occasionally
 
 | Feature | Description |
 |---------|-------------|
+| NTLMv1 </br> [24H2][24H2] <!--9544861--> | NTLMv1 is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. |
 | **WordPad** </br> [24H2][24H2]| WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. <!--8254696, 8494641--> |
 | **Alljoyn** </br> [24H2][24H2] | Microsoft's implementation of AllJoyn, which included the [Windows.Devices.AllJoyn API namespace](/uwp/api/windows.devices.alljoyn), a [Win32 API](/windows/win32/api/_alljoyn/), a [management configuration service provider (CSP)](/windows/client-management/mdm/alljoynmanagement-csp), and an [Alljoyn Router Service](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#alljoyn-router-service) is retired.<!--8396030--> |
 
