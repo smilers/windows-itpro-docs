@@ -28,7 +28,7 @@ Before deploying Connected Cache to a Linux host machine, ensure that the host m
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 
     >[!Note]
-    >* If you are deploying your cache node to a host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `-proxyTlsCertificatePath [path to certificate]` to the provisioning command.
+    >* If you are deploying your cache node to a host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `proxyTlsCertificatePath="/path/to/pem/file"` to the provisioning command.
 
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
 1. Run the provisioning command on the host machine.
@@ -48,7 +48,7 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 
     >[!Note]
-    >* If you are deploying your cache node to a host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `-proxyTlsCertificatePath [path to certificate]` to the provisioning command.
+    >* If you are deploying your cache node to a host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `proxyTlsCertificatePath="/path/to/pem/file"` to the provisioning command.
 
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
 1. Replace the values in the following provisioning command before running it on the host machine.
