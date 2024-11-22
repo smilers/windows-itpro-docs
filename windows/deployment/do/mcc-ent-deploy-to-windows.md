@@ -33,9 +33,9 @@ Before deploying Connected Cache to a Windows host machine, ensure that the host
 
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 1. Set the Execution Policy to *Unrestricted* to allow the provisioning scripts to run.
-1. Create a `$User` environment variable containing the username of the account you intend to designate as the Connected Cache runtime account. 
+1. Create a `$User` PowerShell variable containing the username of the account you intend to designate as the Connected Cache runtime account.
 
-    For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
+    For gMSAs, the `$User` PowerShell variable should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` PowerShell variable should be formatted as `"LocalMachineName\Username"`.
 
    If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
 
