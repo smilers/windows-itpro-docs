@@ -46,6 +46,10 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
 1. Save the resulting output. These values will be passed as parameters within the provisioning command.
 1. Download and extract the [Connected Cache provisioning package for Linux](https://aka.ms/MCC-Ent-InstallScript-Linux) to your host machine.
 1. Open a command line window *as administrator* on the host machine, then change directory to the extracted provisioning package.
+
+    >[!Note]
+    >* If you are deploying your cache node to a host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `-proxyTlsCertificatePath [path to certificate]` to the provisioning command.
+
 1. Set access permissions to allow the `provisionmcc.sh` script within the provisioning package directory to execute.
 1. Replace the values in the following provisioning command before running it on the host machine.
 
