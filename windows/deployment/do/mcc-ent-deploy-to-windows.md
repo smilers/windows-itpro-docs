@@ -33,7 +33,10 @@ Before deploying Connected Cache to a Windows host machine, ensure that the host
 
     For gMSAs, the value should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` should be formatted as `"LocalMachineName\Username"`.
 
-   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`. **Note**: You'll need to apply a local security policy to permit the Local User account to `Log on as a batch job`.
+   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+
+   >[!Note]
+   >* You'll need to apply a local security policy to permit the Local User account to `Log on as a batch job`.
 
 1. Run the provisioning command on the host machine.
 
