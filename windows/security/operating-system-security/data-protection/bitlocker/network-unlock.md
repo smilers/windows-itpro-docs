@@ -299,6 +299,8 @@ To update the certificates used by Network Unlock, administrators need to import
 Troubleshooting Network Unlock issues begins by verifying the environment. Many times, a small configuration issue can be the root cause of the failure. Items to verify include:
 
 - Verify that the client hardware is UEFI-based and is on firmware version 2.3.1 and that the UEFI firmware is in native mode without a Compatibility Support Module (CSM) for BIOS mode enabled. Verification can be done by checking that the firmware doesn't have an option enabled such as "Legacy mode" or "Compatibility mode" or that the firmware doesn't appear to be in a BIOS-like mode
+- If client hardware is a Secure Core device, you may need to disable Secure Core functionality
+
 - All required roles and services are installed and started
 - Public and private certificates have been published and are in the proper certificate containers. The presence of the Network Unlock certificate can be verified in the Microsoft Management Console (MMC.exe) on the WDS server with the certificate snap-ins for the local computer enabled. The client certificate can be verified by checking the registry key **`HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\SystemCertificates\FVE_NKP`** on the client computer
 - Group policy for Network Unlock is enabled and linked to the appropriate domains
