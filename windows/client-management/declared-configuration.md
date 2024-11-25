@@ -121,7 +121,7 @@ If the processing of declared configuration document fails, the errors are logge
 
 - If the Document ID doesn't match between the `<LocURI>` and inside DeclaredConfiguration document, Admin event log shows an error message similar to:
 
-    `MDM Declared Configuration: End document parsing from CSP: Document Id: (DCA000B5-397D-40A1-AABF-40B25078A7F91), Scenario: (MSFTVPN), Version: (A0), Enrollment Id: (DAD70CC2-365B-450D-A8AB-2EB23F4300CC), Current User: (S-1-5-21-3436249567-4017981746-3373817415-1001), Schema: (1.0), Download URL: (), Scope: (0x1), Enroll Type: (0x1A), File size: (0xDE2), CSP Count: (0x1), URI Count: (0xF), Action Requested: (0x0), Model: (0x1), Result:(0x8000FFFF) Catastrophic failure.`
+    `MDM Declared Configuration: End document parsing from CSP: Document Id: (DCA000B5-397D-40A1-AABF-40B25078A7F91), Scenario: (TESTVPN), Version: (A0), Enrollment Id: (DAD70CC2-365B-450D-A8AB-2EB23F4300CC), Current User: (S-1-5-21-1004336348-1177238915-682003330-1234), Schema: (1.0), Download URL: (), Scope: (0x1), Enroll Type: (0x1A), File size: (0xDE2), CSP Count: (0x1), URI Count: (0xF), Action Requested: (0x0), Model: (0x1), Result:(0x8000FFFF) Catastrophic failure.`
 
 - Any typo in the OMA-URI results in a failure. In this example, `TrafficFilterList` is specified instead of `TrafficFilterLists`, and Admin event log shows an error message similar to:
 
