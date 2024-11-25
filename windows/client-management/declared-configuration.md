@@ -129,4 +129,4 @@ If the processing of declared configuration document fails, the errors are logge
 
     There's also another warning message in operational channel:
 
-    `MDM Declared Configuration: Function (DeclaredConfigurationExtension_PolicyCSPConfigureGivenCurrentDoc) operation (ErrorAtDocLevel: one or more CSPs failed) failed with (Unknown Win32 Error code: 0x82d00007)`
+    `MDM Declared Configuration: Function (DeclaredConfigurationExtension_PolicyCSPConfigureGivenCurrentDoc) operation (ErrorAtDocLevel: one or more CSPs failed) failed with (Unknown Win32 Error code: 0x82d00007).`
