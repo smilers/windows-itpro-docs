@@ -1,6 +1,6 @@
 ---
-title: Cloud services
-description: Windows 11 security book - Cloud services chapter.
+title: Windows 11 security book - Cloud services
+description: Cloud services chapter.
 ms.topic: overview
 ms.date: 11/18/2024
 ---

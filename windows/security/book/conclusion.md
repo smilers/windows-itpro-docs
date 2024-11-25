@@ -1,5 +1,5 @@
 ---
-title: Conclusion
+title: Windows 11 security book - Conclusion
 description: Windows 11 security book conclusion.
 ms.topic: overview
 ms.date: 11/18/2024
