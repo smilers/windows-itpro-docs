@@ -91,7 +91,7 @@ A **Virtualization-based security enclave** is a software-based trusted executio
 [LINK-6]: /windows/win32/secauthz/app-isolation-packaging-with-vs
 [LINK-7]: https://blogs.windows.com/windowsdeveloper/2024/03/06/sandboxing-python-with-win32-app-isolation/
 [LINK-8]: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/feature-mapping-table?source=recommendations
-[LINK-9]: /windows/security/application-security/application-isolation/windows-sandbox/index
+[LINK-9]: /windows/security/application-security/application-isolation/windows-sandbox
 [LINK-10]: /windows/security/operating-system-security/network-security/windows-firewall/hyper-v-firewall
 [LINK-11]: /windows/wsl/networking#dns-tunneling
 [LINK-12]: /windows/wsl/networking#auto-proxy
