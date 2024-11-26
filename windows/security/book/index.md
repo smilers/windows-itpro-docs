@@ -1,6 +1,6 @@
 ---
-title: Windows security book introduction
-description: Windows security book introduction
+title: Windows 11 security book - Windows security book introduction
+description: Windows 11 security book introduction.
 ms.topic: overview
 ms.date: 11/18/2024
 ---

@@ -1,6 +1,6 @@
 ---
-title: Cloud services - Protect your work information
-description: Windows 11 security book - Cloud services chapter - Protect your work information.
+title: Windows 11 security book - Cloud services - Protect your work information
+description: Cloud services chapter - Protect your work information.
 ms.topic: overview
 ms.date: 11/04/2024
 ---
@@ -49,7 +49,7 @@ Every Windows device has a built-in local administrator account that must be sec
 - [Microsoft Entra ID documentation][LINK-1]
 - [Microsoft Entra plans and pricing][LINK-2]
 
-### :::image type="icon" source="images/microsoft-entra-private-access.svg" border="false":::  Microsoft Entra Private Access
+### Microsoft Entra Private Access
 
 Microsoft Entra Private Access provides organizations the ability to manage and give users access to private or internal fully qualified domain names (FQDNs) and IP addresses. With Private Access, you can modernize how your organization's users access private apps and resources. Remote workers don't need to use a VPN to access these resources if they have the Global Secure Access Client installed. The client quietly and seamlessly connects them to the resources they need.
 
@@ -57,7 +57,7 @@ Microsoft Entra Private Access provides organizations the ability to manage and 
 
 - [Microsoft Entra Private Access][LINK-4]
 
-### :::image type="icon" source="images/microsoft-entra-internet-access.svg" border="false":::  Microsoft Entra Internet Access
+### Microsoft Entra Internet Access
 
 Microsoft Entra Internet Access provides an identity-centric Secure Web Gateway (SWG) solution for Software as a Service (SaaS) applications and other Internet traffic. It protects users, devices, and data from the Internet's wide threat landscape with best-in-class security controls and visibility through Traffic Logs.
 
@@ -168,7 +168,7 @@ With Windows enrollment attestation, Microsoft Entra and Microsoft Intune certif
 
 - [Windows enrollment attestation][LINK-13]
 
-### :::image type="icon" source="images/microsoft-cloud-pki.svg" border="false"::: Microsoft Cloud PKI
+### Microsoft Cloud PKI
 
 Microsoft Cloud PKI is a cloud-based service included in the Microsoft Intune Suite<sup>[\[4\]](conclusion.md#footnote4)</sup> that simplifies and automates the management of a Public Key Infrastructure (PKI) for organizations. It eliminates the need for on-premises servers, hardware, and connectors, making it easier to set up and manage a PKI compared to, for instance, Microsoft Active Directory Certificate Services (AD CS) combined with the Certificate Connector for Microsoft Intune.
 
@@ -185,7 +185,7 @@ With Microsoft Cloud PKI, organizations can accelerate their digital transformat
 
 - [Overview of Microsoft Cloud PKI for Microsoft Intune](/mem/intune/protect/microsoft-cloud-pki-overview)
 
-### :::image type="icon" source="images/endpoint-privilege-management.svg" border="false"::: Endpoint Privilege Management (EPM)
+### Endpoint Privilege Management (EPM)
 
 Intune Endpoint Privilege Management supports organizations' Zero Trust journeys by helping them achieve a broad user base running with least privilege, while still permitting users to run elevated tasks allowed by the organization to remain productive.
 

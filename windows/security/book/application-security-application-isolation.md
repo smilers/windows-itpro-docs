@@ -1,6 +1,6 @@
 ---
-title: Application isolation
-description: Windows 11 security book - Application isolation.
+title: Windows 11 security book - Application isolation
+description: Application isolation.
 ms.topic: overview
 ms.date: 11/18/2024
 ---
@@ -29,9 +29,9 @@ The first factor relates to implementing methods to manage access to files and p
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 
-- [Win32 app isolation][LINK-4]
+- [Win32 app isolation overview][LINK-4]
 - [Application Capability Profiler (ACP)][LINK-5]
-- [Learn how to adopt Win32 app isolation with Visual Studio][LINK-6]
+- [Packaging a Win32 app isolation application with Visual Studio][LINK-6]
 - [Sandboxing Python with Win32 app isolation][LINK-7]
 
 ## App containers
@@ -86,9 +86,9 @@ A **Virtualization-based security enclave** is a software-based trusted executio
 
 [LINK-1]: /windows/win32/secauthz/implementing-an-appcontainer
 [LINK-2]: /windows/win32/secauthz/access-control-lists
-[LINK-4]: https://github.com/microsoft/win32-app-isolation
-[LINK-5]: https://github.com/microsoft/win32-app-isolation/blob/main/docs/profiler/application-capability-profiler.md
-[LINK-6]: https://github.com/microsoft/win32-app-isolation/blob/main/docs/packaging/packaging-with-visual-studio.md
+[LINK-4]: /windows/win32/secauthz/app-isolation-overview
+[LINK-5]: /windows/win32/secauthz/app-isolation-capability-profiler
+[LINK-6]: /windows/win32/secauthz/app-isolation-packaging-with-vs
 [LINK-7]: https://blogs.windows.com/windowsdeveloper/2024/03/06/sandboxing-python-with-win32-app-isolation/
 [LINK-8]: /windows/apps/windows-app-sdk/migrate-to-windows-app-sdk/feature-mapping-table?source=recommendations
 [LINK-9]: /windows/security/threat-protection/windows-sandbox/windows-sandbox-overview

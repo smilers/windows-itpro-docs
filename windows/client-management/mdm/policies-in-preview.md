@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 11/05/2024
+ms.date: 11/22/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -137,9 +137,15 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## WindowsAI
 
+- [DisableAIDataAnalysis](policy-csp-windowsai.md#disableaidataanalysis)
 - [SetCopilotHardwareKey](policy-csp-windowsai.md#setcopilothardwarekey)
+- [SetDenyAppListForRecall](policy-csp-windowsai.md#setdenyapplistforrecall)
+- [SetDenyUriListForRecall](policy-csp-windowsai.md#setdenyurilistforrecall)
+- [SetMaximumStorageSpaceForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots)
+- [SetMaximumStorageDurationForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragedurationforrecallsnapshots)
 - [DisableImageCreator](policy-csp-windowsai.md#disableimagecreator)
 - [DisableCocreator](policy-csp-windowsai.md#disablecocreator)
+- [AllowRecallEnablement](policy-csp-windowsai.md#allowrecallenablement)
 
 ## WindowsLicensing CSP
 

@@ -150,7 +150,7 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
         "book/**/*.md": [
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
+          "<a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
         ],
         "hardware-security/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
@@ -251,7 +251,7 @@
         "security-foundations/certification/**/*.md": "paoloma"
       },
       "ms.collection": {
-        "book/*.md": "tier3",
+        "book/*.md": "tier1",
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
@@ -259,9 +259,6 @@
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
         "security-foundations/certification/**/*.md": "tier3",
         "threat-protection/auditing/*.md": "tier3"
-      },
-      "ROBOTS": {
-        "book/*.md": "NOINDEX"
       }
     },
     "template": [],

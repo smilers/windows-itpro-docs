@@ -1,11 +1,11 @@
 ---
-title: Operating System security
-description: Windows 11 security book - Operating System security chapter.
+title: Windows 11 security book - Virus and threat protection
+description: Operating System security chapter - Virus and threat protection.
 ms.topic: overview
 ms.date: 11/18/2024
 ---
 
-# Virus and threat protection
+# Virus and threat protection in Windows 11
 
 :::image type="content" source="images/operating-system.png" alt-text="Diagram containing a list of security features." lightbox="images/operating-system.png" border="false":::
 

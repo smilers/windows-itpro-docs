@@ -1,6 +1,6 @@
 ---
-title: Security foundation
-description: Windows 11 security book - Security foundation chapter.
+title: Windows 11 security book - Secure Future Initiative and offensive research
+description: Security foundation chapter - Secure Future Initiative and offensive research.
 ms.topic: overview
 ms.date: 11/18/2024
 ---

@@ -1,6 +1,6 @@
 ---
-title: Identity protection - Advanced credential protection
-description: Windows 11 security book - Identity protection chapter.
+title: Windows 11 security book - Advanced credential protection
+description: Identity protection chapter - Advanced credential protection.
 ms.topic: overview
 ms.date: 11/18/2024
 ---

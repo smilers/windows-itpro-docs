@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/05/2024
+ms.date: 11/22/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -15,28 +15,103 @@ ms.date: 11/05/2024
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- WindowsAI-Editable-End -->
 
+<!-- AllowRecallEnablement-Begin -->
+## AllowRecallEnablement
+
+<!-- AllowRecallEnablement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowRecallEnablement-Applicability-End -->
+
+<!-- AllowRecallEnablement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/AllowRecallEnablement
+```
+<!-- AllowRecallEnablement-OmaUri-End -->
+
+<!-- AllowRecallEnablement-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to determine whether the Recall optional component is available for end users to enable on their device. By default, Recall is disabled for managed commercial devices. Recall isn't available on managed devices by default, and individual users can't enable Recall on their own.
+
+- If this policy isn't configured, end users will have the Recall component in a disabled state.
+
+- If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart.
+
+- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users are able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+<!-- AllowRecallEnablement-Description-End -->
+
+<!-- AllowRecallEnablement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRecallEnablement-Editable-End -->
+
+<!-- AllowRecallEnablement-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowRecallEnablement-DFProperties-End -->
+
+<!-- AllowRecallEnablement-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Recall isn't available. |
+| 1 (Default) | Recall is available. |
+<!-- AllowRecallEnablement-AllowedValues-End -->
+
+<!-- AllowRecallEnablement-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowRecallEnablement |
+| Friendly Name | Allow Recall to be enabled |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows AI |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
+| Registry Value Name | AllowRecallEnablement |
+| ADMX File Name | WindowsCopilot.admx |
+<!-- AllowRecallEnablement-GpMapping-End -->
+
+<!-- AllowRecallEnablement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRecallEnablement-Examples-End -->
+
+<!-- AllowRecallEnablement-End -->
+
 <!-- DisableAIDataAnalysis-Begin -->
 ## DisableAIDataAnalysis
 
 <!-- DisableAIDataAnalysis-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DisableAIDataAnalysis-Applicability-End -->
 
 <!-- DisableAIDataAnalysis-OmaUri-Begin -->
 ```User
 ./User/Vendor/MSFT/Policy/Config/WindowsAI/DisableAIDataAnalysis
 ```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableAIDataAnalysis
+```
 <!-- DisableAIDataAnalysis-OmaUri-End -->
 
 <!-- DisableAIDataAnalysis-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to control whether Windows saves snapshots of the screen and analyzes the user's activity on their device.
+This policy setting allows you to determine whether snapshots of the screen can be saved for use with Recall. By default, snapshots for Recall aren't enabled. IT administrators can't, on their own, enable saving snapshots on behalf of their users. The choice to enable saving snapshots requires individual user opt-in consent.
 
-- If you enable this policy setting, Windows won't be able to save snapshots and users won't be able to search for or browse through their historical device activity using Recall.
+- If the policy isn't configured, snapshots won't be saved for use with Recall.
 
-- If you disable or don't configure this policy setting, Windows will save snapshots of the screen and users will be able to search for or browse through a timeline of their past activities using Recall.
+- If you enable this policy, snapshots won't be saved for use with Recall. If snapshots were previously saved on the device, they'll be deleted when this policy is enabled.
+
+If you set this policy to disabled, end users will have a choice to save snapshots of their screen and use Recall to find things they've seen on their device.
 <!-- DisableAIDataAnalysis-Description-End -->
 
 <!-- DisableAIDataAnalysis-Editable-Begin -->
@@ -68,8 +143,8 @@ This policy setting allows you to control whether Windows saves snapshots of the
 | Name | Value |
 |:--|:--|
 | Name | DisableAIDataAnalysis |
-| Friendly Name | Turn off Saving Snapshots for Windows |
-| Location | User Configuration |
+| Friendly Name | Turn off saving snapshots for use with Recall |
+| Location | Computer and User Configuration |
 | Path | Windows Components > Windows AI |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
 | Registry Value Name | DisableAIDataAnalysis |
@@ -222,7 +297,7 @@ This policy setting allows you to control whether Image Creator functionality is
 <!-- SetCopilotHardwareKey-OmaUri-End -->
 
 <!-- SetCopilotHardwareKey-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting determines which app opens when the user presses the Copilot key on their keyboard.
 
 - If the policy is enabled, the specified app will open when the user presses the Copilot key. Users can change the key assignment in Settings.
@@ -249,7 +324,11 @@ This policy setting determines which app opens when the user presses the Copilot
 | Name | Value |
 |:--|:--|
 | Name | SetCopilotHardwareKey |
-| Path | WindowsCopilot > AT > WindowsComponents > WindowsCopilot |
+| Friendly Name | Set Copilot Hardware Key |
+| Location | User Configuration |
+| Path | Windows Components > Windows Copilot |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CopilotKey |
+| ADMX File Name | WindowsCopilot.admx |
 <!-- SetCopilotHardwareKey-GpMapping-End -->
 
 <!-- SetCopilotHardwareKey-Examples-Begin -->
@@ -258,11 +337,296 @@ This policy setting determines which app opens when the user presses the Copilot
 
 <!-- SetCopilotHardwareKey-End -->
 
+<!-- SetDenyAppListForRecall-Begin -->
+## SetDenyAppListForRecall
+
+<!-- SetDenyAppListForRecall-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetDenyAppListForRecall-Applicability-End -->
+
+<!-- SetDenyAppListForRecall-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsAI/SetDenyAppListForRecall
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/SetDenyAppListForRecall
+```
+<!-- SetDenyAppListForRecall-OmaUri-End -->
+
+<!-- SetDenyAppListForRecall-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows you to define a list of apps that won't be included in snapshots for Recall.
+
+Users are able to add additional applications to exclude from snapshots using Recall settings.
+
+The list can include Application User Model IDs (AUMID) or name of the executable file.
+
+Use a semicolon-separated list of apps to define the deny app list for Recall.
+
+For example: `code.exe;Microsoft.WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
+
+> [!IMPORTANT]
+> When configuring this policy setting, changes won't take effect until the device restarts.
+<!-- SetDenyAppListForRecall-Description-End -->
+
+<!-- SetDenyAppListForRecall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetDenyAppListForRecall-Editable-End -->
+
+<!-- SetDenyAppListForRecall-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- SetDenyAppListForRecall-DFProperties-End -->
+
+<!-- SetDenyAppListForRecall-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetDenyAppListForRecall |
+| Friendly Name | Set a list of apps to be filtered from snapshots for Recall |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Windows AI |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
+| Registry Value Name | SetDenyAppListForRecall |
+| ADMX File Name | WindowsCopilot.admx |
+<!-- SetDenyAppListForRecall-GpMapping-End -->
+
+<!-- SetDenyAppListForRecall-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetDenyAppListForRecall-Examples-End -->
+
+<!-- SetDenyAppListForRecall-End -->
+
+<!-- SetDenyUriListForRecall-Begin -->
+## SetDenyUriListForRecall
+
+<!-- SetDenyUriListForRecall-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetDenyUriListForRecall-Applicability-End -->
+
+<!-- SetDenyUriListForRecall-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsAI/SetDenyUriListForRecall
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/SetDenyUriListForRecall
+```
+<!-- SetDenyUriListForRecall-OmaUri-End -->
+
+<!-- SetDenyUriListForRecall-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting lets you define a list of URIs that won't be included in snapshots for Recall when a supported browser is used. People within your organization can use Recall settings to add more websites to the list. Define the list using a semicolon to separate URIs.
+
+For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`.
+
+Adding `https://www.WoodgroveBank.com` to the list would also filter `https://Account.WoodgroveBank.com` and `https://www.WoodgroveBank.com/Account`.
+
+> [!IMPORTANT]
+> Changes to this policy take effect after device restart.
+<!-- SetDenyUriListForRecall-Description-End -->
+
+<!-- SetDenyUriListForRecall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetDenyUriListForRecall-Editable-End -->
+
+<!-- SetDenyUriListForRecall-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- SetDenyUriListForRecall-DFProperties-End -->
+
+<!-- SetDenyUriListForRecall-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetDenyUriListForRecall |
+| Friendly Name | Set a list of URIs to be filtered from snapshots for Recall |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Windows AI |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
+| Registry Value Name | SetDenyUriListForRecall |
+| ADMX File Name | WindowsCopilot.admx |
+<!-- SetDenyUriListForRecall-GpMapping-End -->
+
+<!-- SetDenyUriListForRecall-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetDenyUriListForRecall-Examples-End -->
+
+<!-- SetDenyUriListForRecall-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-Begin -->
+## SetMaximumStorageDurationForRecallSnapshots
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetMaximumStorageDurationForRecallSnapshots-Applicability-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsAI/SetMaximumStorageDurationForRecallSnapshots
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/SetMaximumStorageDurationForRecallSnapshots
+```
+<!-- SetMaximumStorageDurationForRecallSnapshots-OmaUri-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control the maximum amount of time (in days) that Windows saves snapshots for Recall.
+
+When the policy is enabled, you can configure the maximum storage duration to be 30, 60, 90, or 180 days.
+
+When this policy isn't configured, a time frame isn't set for deleting snapshots.
+
+Snapshots aren't deleted until the maximum storage allocation for Recall is reached, and then the oldest snapshots are deleted first.
+<!-- SetMaximumStorageDurationForRecallSnapshots-Description-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetMaximumStorageDurationForRecallSnapshots-Editable-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- SetMaximumStorageDurationForRecallSnapshots-DFProperties-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Let the OS define the maximum amount of time the snapshots will be saved. |
+| 30 | 30 days. |
+| 60 | 60 days. |
+| 90 | 90 days. |
+| 180 | 180 days. |
+<!-- SetMaximumStorageDurationForRecallSnapshots-AllowedValues-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetMaximumStorageDurationForRecallSnapshots |
+| Friendly Name | Set maximum duration for storing snapshots used by Recall |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Windows AI |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
+| Registry Value Name | SetMaximumStorageDurationForRecallSnapshots |
+| ADMX File Name | WindowsCopilot.admx |
+<!-- SetMaximumStorageDurationForRecallSnapshots-GpMapping-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetMaximumStorageDurationForRecallSnapshots-Examples-End -->
+
+<!-- SetMaximumStorageDurationForRecallSnapshots-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Begin -->
+## SetMaximumStorageSpaceForRecallSnapshots
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Applicability-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/WindowsAI/SetMaximumStorageSpaceForRecallSnapshots
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/SetMaximumStorageSpaceForRecallSnapshots
+```
+<!-- SetMaximumStorageSpaceForRecallSnapshots-OmaUri-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to control the maximum amount of disk space that can be used by Windows to save snapshots for Recall.
+
+You can set the maximum amount of disk space for snapshots to be 10, 25, 50, 75, 100, or 150 GB.
+
+When this setting isn't configured, the OS configures the storage allocation for snapshots based on the device storage capacity.
+
+25 GB is allocated when the device storage capacity is 256 GB. 75 GB is allocated when the device storage capacity is 512 GB. 150 GB is allocated when the device storage capacity is 1 TB or higher.
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Description-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Editable-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- SetMaximumStorageSpaceForRecallSnapshots-DFProperties-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Let the OS define the maximum storage amount based on hard drive storage size. |
+| 10000 | 10GB. |
+| 25000 | 25GB. |
+| 50000 | 50GB. |
+| 75000 | 75GB. |
+| 100000 | 100GB. |
+| 150000 | 150GB. |
+<!-- SetMaximumStorageSpaceForRecallSnapshots-AllowedValues-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetMaximumStorageSpaceForRecallSnapshots |
+| Friendly Name | Set maximum storage for snapshots used by Recall |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Windows AI |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsAI |
+| Registry Value Name | SetMaximumStorageSpaceForRecallSnapshots |
+| ADMX File Name | WindowsCopilot.admx |
+<!-- SetMaximumStorageSpaceForRecallSnapshots-GpMapping-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetMaximumStorageSpaceForRecallSnapshots-Examples-End -->
+
+<!-- SetMaximumStorageSpaceForRecallSnapshots-End -->
+
 <!-- TurnOffWindowsCopilot-Begin -->
 ## TurnOffWindowsCopilot
-
-> [!NOTE]
-> This policy is deprecated and may be removed in a future release.
 
 <!-- TurnOffWindowsCopilot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -282,7 +646,7 @@ This policy setting allows you to turn off Windows Copilot.
 
 - If you enable this policy setting, users won't be able to use Copilot. The Copilot icon won't appear on the taskbar either.
 
-- If you disable or don't configure this policy setting, users will be able to use Copilot when it's available to them.
+- If you disable or don't configure this policy setting, users are able to use Copilot when it's available to them.
 <!-- TurnOffWindowsCopilot-Description-End -->
 
 <!-- TurnOffWindowsCopilot-Editable-Begin -->
