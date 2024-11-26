@@ -53,19 +53,14 @@ netsh advfirewall set allprofiles logging filename %SystemRoot%\System32\LogFile
 
 ### Disable Windows Firewall
 
-Microsoft recommends that you don't disable Windows Firewall because you lose other benefits provided by the service, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, [Windows Service Hardening](https://go.microsoft.com/fwlink/?linkid=104976), and [boot time filters](https://blogs.technet.microsoft.com/networking/2009/03/24/stopping-the-windows-authenticating-firewall-service-and-the-boot-time-policy/).
-Disabling Windows Firewall can also cause problems, including:
+Microsoft recommends that you don't disable Windows Firewall because you lose other benefits, such as the ability to use Internet Protocol security (IPsec) connection security rules, network protection from attacks that employ network fingerprinting, Windows Service Hardening, and [boot time filters][BTF]. Non-Microsoft firewall software can programmatically disable only the [rule types][FWRC] of Windows Firewall that need to be disabled for compatibility. You shouldn't disable the firewall yourself for this purpose. 
+If disabling Windows Firewall is required, don't disable it by stopping the Windows Firewall service (in the Services snap-in, the display name is Windows Defender Firewall and the service name is MpsSvc). Stopping the Windows Firewall service isn't supported by Microsoft and can cause problems, including:
 
 - Start menu can stop working
 - Modern applications can fail to install or update
 - Activation of Windows via phone fails
 - Application or OS incompatibilities that depend on Windows Firewall
 
-Microsoft recommends disabling Windows Firewall only when installing a non-Microsoft firewall, and resetting Windows Firewall back to defaults when the non-Microsoft software is disabled or removed.
-If disabling Windows Firewall is required, don't disable it by stopping the Windows Firewall service (in the **Services** snap-in, the display name is Windows Firewall and the service name is MpsSvc).
-Stopping the Windows Firewall service isn't supported by Microsoft.
-Non-Microsoft firewall software can programmatically disable only the parts of Windows Firewall that need to be disabled for compatibility.
-You shouldn't disable the firewall yourself for this purpose.
 The proper method to disable the Windows Firewall is to disable the Windows Firewall Profiles and leave the service running.
 Use the following procedure to turn off the firewall, or disable the Group Policy setting **Computer Configuration|Administrative Templates|Network|Network Connections|Windows Firewall|Domain Prolfile|Windows Firewall:Protect all network connections**.
 For more information, see [Windows Firewall deployment guide](windows-firewall-with-advanced-security-deployment-guide.md).
@@ -569,3 +564,6 @@ netsh advfirewall firewall add rule name="Inbound Secure Bypass Rule" dir=in sec
 ```
 
 ---
+[BTF]: /windows/win32/fwp/basic-operation
+[MFWC]: /windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line
+[FWRC]: /windows/win32/api/icftypes/ne-icftypes-net_fw_rule_category

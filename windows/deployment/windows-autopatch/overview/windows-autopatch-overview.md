@@ -1,7 +1,7 @@
 ---
 title: What is Windows Autopatch?
 description: Details what the service is and shortcuts to articles.
-ms.date: 09/27/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -49,7 +49,9 @@ The goal of Windows Autopatch is to deliver software updates to registered devic
 | [Windows quality updates](../manage/windows-autopatch-windows-quality-update-overview.md) | With Windows Autopatch, you can manage Windows quality update profiles for Windows 10 and later devices. You can expedite a specific Windows quality update using targeted policies. |
 | [Windows feature updates](../manage/windows-autopatch-windows-feature-update-overview.md) | Windows Autopatch provides tools to assist with the controlled roll out of annual Windows feature updates. |
 | [Driver and firmware updates](../manage/windows-autopatch-manage-driver-and-firmware-updates.md) | You can manage and control your driver and firmware updates with Windows Autopatch.|
+| [Hotpatch updates](../manage/windows-autopatch-hotpatch-updates.md) | Install [Monthly B release security updates](/windows/deployment/update/release-cycle#monthly-security-update-release) without requiring you to restart the device. |
 | [Intune reports](/mem/intune/fundamentals/reports) | Use Intune reports to monitor the health and activity of endpoints in your organization.|
+| [Hotpatch quality update report](../monitor/windows-autopatch-hotpatch-quality-update-report.md) | Hotpatch quality update report provides a per policy level view of the current update statuses for all devices that receive Hotpatch updates. |
 
 > [!IMPORTANT]
 > Microsoft 365 Business Premium and Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5) do **not** have access to all Windows Autopatch features. For more information, see [Features and capabilities](../overview/windows-autopatch-overview.md#features-and-capabilities).
@@ -70,7 +72,7 @@ In addition to the features included in [Business Premium and A3+ licenses](#bus
 | [Microsoft Edge updates](../manage/windows-autopatch-edge.md) | Windows Autopatch configures eligible devices to benefit from Microsoft Edge's progressive rollouts on the Stable channel. |
 | [Microsoft Teams updates](../manage/windows-autopatch-teams.md) | Windows Autopatch allows eligible devices to benefit from the standard automatic update channel. |
 | [Policy health and remediation](../monitor/windows-autopatch-policy-health-and-remediation.md) | When Windows Autopatch detects policies in the tenant are either missing or modified that affects the service, Windows Autopatch raises alerts and detailed recommended actions to ensure healthy operation of the service. |
-| Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate Windows Autopatch managed devices that are Not up to Date and resolve any device alerts to bring Windows Autopatch managed devices back into compliance. |
+| Enhanced [Windows quality and feature update reports](../monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview.md) and [device alerts](../monitor/windows-autopatch-device-alerts.md) | Using Windows quality and feature update reports, you can monitor and remediate managed devices that are Not up to Date and resolve any device alerts to bring managed devices back into compliance. |
 | [Submit support requests](../manage/windows-autopatch-support-request.md) with the Windows Autopatch Service Engineering Team | When you activate additional Autopatch features, you can submit, manage, and edit support requests. |
 
 ## Communications

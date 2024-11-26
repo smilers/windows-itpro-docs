@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server</a>
-ms.date: 11/06/2024
+ms.date: 11/11/2024
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -40,8 +40,49 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://catalog.update.microsoft.com). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. Check various parts of the results to be sure you've identified the files needed. The following tables show the key values to search for or look for in the results. 
 
+
+### Windows Server 2025 Dynamic Update packages
+**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update. 
+
+| Update packages                   |Title                                                                                 |
+|-----------------------------------|--------------------------------------------------------------------------------------|
+|Safe OS Dynamic Update             | YYYY-MM Safe OS Dynamic Update for Microsoft server operating system version 24H2    |
+|Setup Dynamic Update               | YYYY-MM Setup Dynamic Update for Microsoft server operating system version 24H2      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Microsoft server operating system version 24H2         |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system version 24H2    |
+
+### Windows Server, version 23H2 Dynamic Update packages
+**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update. Azure Stack HCI, version 23H2 has a similar format.
+
+| Update packages                   |Title                                                                                 |
+|-----------------------------------|--------------------------------------------------------------------------------------|
+|Safe OS Dynamic Update             | YYYY-MM Safe OS Dynamic Update for Microsoft server operating system version 23H2    |
+|Setup Dynamic Update               | YYYY-MM Setup Dynamic Update for Microsoft server operating system version 23H2      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Microsoft server operating system version 23H2         |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system version 23H2    |
+
+### Azure Stack HCI, version 22H2 Dynamic Update packages
+**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+
+| Update packages                   |Title                                                          |Product                                                                |Description       |
+|-----------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Microsoft server operating system, version 22H2             |Windows Safe OS Dynamic Update                | ComponentUpdate  |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Microsoft server operating system, version 22H2             |Windows 10 and later Dynamic Update           | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Microsoft server operating system, version 22H2          |                                              |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system, version 22H2     |                                              |                  |
+
+### Windows Server 2022 later Dynamic Update packages
+**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+
+| Update packages                   |Title                                                          |Product                                                                |Description       |
+|-----------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Microsoft server operating system, version 21H2             |Windows Safe OS Dynamic Update                | ComponentUpdate  |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Microsoft server operating system, version 21H2             |Windows 10 and later Dynamic Update           | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Microsoft server operating system, version 21H2          |                                              |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system, version 21H2     |                                              |                  |
+
 ### Windows 11, version 22H2 and later Dynamic Update packages
-**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update.Titles below are for Windows 11, version 22H2. Windows 11, version 23H2 and 24H2 have a similar format.
+**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update. Titles below are for Windows 11, version 22H2. Windows 11, version 23H2 and 24H2 have a similar format.
 
 | Update packages                   |Title                                                          |
 |-----------------------------------|---------------------------------------------------------------|
@@ -49,7 +90,6 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Setup Dynamic Update               | YYYY-MM Setup Dynamic Update for Windows 11 Version 22H2      |
 |Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11 Version 22H2         |
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |
-
 
 ### Windows 11, version 21H2 Dynamic Update packages
 **Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.

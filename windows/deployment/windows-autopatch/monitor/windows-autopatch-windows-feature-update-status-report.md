@@ -1,7 +1,7 @@
 ---
 title: Feature update status report
-description: Provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 09/16/2024
+description: Provides a per device view of the current Windows OS upgrade status for all Intune devices.
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection:
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-The Feature update status report provides a per device view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
+The Feature update status report provides a per device view of the current Windows OS upgrade status for all Intune devices.
 
 **To view the Feature update status report:**
 
@@ -31,6 +31,9 @@ The Feature update status report provides a per device view of the current Windo
 ## Report information
 
 ### Default columns
+
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Pause status column from being displayed**. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
 
 The following information is available as default columns in the Feature update status report:
 

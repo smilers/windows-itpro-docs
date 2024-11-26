@@ -39,7 +39,7 @@ The following policy settings are applied at the device level when you deploy a 
 
 ## User policy settings
 
-The following policy settings are applied to any nonadministrator account when you deploy a restricted user experience:
+The following policy settings are applied to targeted user accounts when you deploy a restricted user experience:
 
 | Type    | Path                                                                             | Name/Description                                                  |
 |---------|----------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -47,8 +47,9 @@ The following policy settings are applied to any nonadministrator account when y
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HidePeopleBar`                           | Hide People Bar from appearing on taskbar                         |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentlyAddedApps`                   | Hide recently added apps from appearing on the Start menu         |
 | **CSP** | `./User/Vendor/MSFT/Policy/Config/Start/HideRecentJumplists`                     | Hide recent jumplists from appearing on the Start menu/taskbar    |
+| **GPO** | User Configuration\Administrative Templates\Desktop                              | Hide and disable all items on the desktop                         |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Clear history of recently opened documents on exit                |
-| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Disable showing balloon notifications as toast                    |
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Disable showing balloon notifications as toasts                   |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not allow pinning items in Jump Lists                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not allow pinning programs to the Taskbar                      |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Do not display or track items in Jump Lists from remote locations |
@@ -69,21 +70,23 @@ The following policy settings are applied to any nonadministrator account when y
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Notification and Action Center                             |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Quick Settings                                             |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove Run menu from Start Menu                                   |
-| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Remove the Security and Maintenance icon                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Turn off all balloon notifications                                |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar               | Turn off feature advertisement balloon notifications              |
+| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications | Hide the TaskView button                                          |
 | **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications | Turn off toast notifications                                      |
 | **GPO** | User Configuration\Administrative Templates\System\Ctrl+Alt+Del Options          | Remove Change Password                                            |
 | **GPO** | User Configuration\Administrative Templates\System\Ctrl+Alt+Del Options          | Remove Logoff                                                     |
 | **GPO** | User Configuration\Administrative Templates\System\Ctrl+Alt+Del Options          | Remove Task Manager                                               |
+| **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Prevent access to drives from My Computer                         |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove *Map network drive* and *Disconnect Network Drive*         |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\File Explorer     | Remove File Explorer's default context menu                       |
+| **GPO** | User Configuration\Administrative Templates\Windows Components\Windows Copilot   | Turn off Windows Copilot                                          |
 
 The following policy settings are applied to the kiosk account when you configure a kiosk experience with Microsoft Edge:
 
 | Type    | Path                                                                              | Name/Description                                       |
 |---------|-----------------------------------------------------------------------------------|--------------------------------------------------------|
-| **GPO** | User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications  | Run only specified Windows applications > `msedge.exe` |
+| **GPO** | User Configuration\Administrative Templates\System                                | Run only specified Windows applications > `msedge.exe` |
 | **GPO** | User Configuration\Administrative Templates\System                                | Turn off toast notifications                           |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\Attachment Manager | Default risk level for file attachments > High risk    |
 | **GPO** | User Configuration\Administrative Templates\Windows Components\Attachment Manager | Inclusion list for low file types > `.pdf;.epub`       |
