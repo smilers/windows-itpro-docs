@@ -93,7 +93,7 @@ MBR2GPT: Validation completed successfully
 
 In the following example:
 
-1. Using DiskPart, the current disk partition layout is displayed before the conversion. Three partitions are present on the MBR disk (disk 0):
+1. Using DiskPart the current disk partition layout is displayed before the conversion. Three partitions are present on the MBR disk (disk 0):
 
     - A system reserved partition.
     - A Windows partition.
