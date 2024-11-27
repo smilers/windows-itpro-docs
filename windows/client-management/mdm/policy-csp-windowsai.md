@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/22/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -38,7 +38,7 @@ This policy setting allows you to determine whether the Recall optional componen
 
 - If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart.
 
-- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users are able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
 <!-- AllowRecallEnablement-Description-End -->
 
 <!-- AllowRecallEnablement-Editable-Begin -->
@@ -360,7 +360,7 @@ This policy setting determines which app opens when the user presses the Copilot
 <!-- Description-Source-ADMX -->
 This policy allows you to define a list of apps that won't be included in snapshots for Recall.
 
-Users are able to add additional applications to exclude from snapshots using Recall settings.
+Users will be able to add additional applications to exclude from snapshots using Recall settings.
 
 The list can include Application User Model IDs (AUMID) or name of the executable file.
 
@@ -429,7 +429,7 @@ For example: `code.exe;Microsoft.WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 <!-- Description-Source-ADMX -->
 This policy setting lets you define a list of URIs that won't be included in snapshots for Recall when a supported browser is used. People within your organization can use Recall settings to add more websites to the list. Define the list using a semicolon to separate URIs.
 
-For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`.
+For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`
 
 Adding `https://www.WoodgroveBank.com` to the list would also filter `https://Account.WoodgroveBank.com` and `https://www.WoodgroveBank.com/Account`.
 
@@ -646,7 +646,7 @@ This policy setting allows you to turn off Windows Copilot.
 
 - If you enable this policy setting, users won't be able to use Copilot. The Copilot icon won't appear on the taskbar either.
 
-- If you disable or don't configure this policy setting, users are able to use Copilot when it's available to them.
+- If you disable or don't configure this policy setting, users will be able to use Copilot when it's available to them.
 <!-- TurnOffWindowsCopilot-Description-End -->
 
 <!-- TurnOffWindowsCopilot-Editable-Begin -->

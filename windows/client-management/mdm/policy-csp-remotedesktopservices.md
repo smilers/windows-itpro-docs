@@ -1,7 +1,7 @@
 ---
 title: RemoteDesktopServices Policy CSP
 description: Learn more about the RemoteDesktopServices Area in Policy CSP.
-ms.date: 11/05/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -197,7 +197,7 @@ This policy applies only when using legacy authentication to authenticate to the
 | Name | Value |
 |:--|:--|
 | Name | TS_DISCONNECT_ON_LOCK_POLICY |
-| Friendly Name |  Disconnect remote session on lock for legacy authentication |
+| Friendly Name | Disconnect remote session on lock for legacy authentication |
 | Location | Computer Configuration |
 | Path | Windows Components > Remote Desktop Services > Remote Desktop Session Host > Security |
 | Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
