@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/26/2024
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -90,7 +90,7 @@ This policy setting allows you to determine whether the Recall optional componen
 <!-- DisableAIDataAnalysis-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableAIDataAnalysis-Applicability-End -->
 
 <!-- DisableAIDataAnalysis-OmaUri-Begin -->
@@ -219,6 +219,68 @@ This policy setting allows you to control whether Cocreator functionality is dis
 
 <!-- DisableCocreator-End -->
 
+<!-- DisableGenerativeFill-Begin -->
+## DisableGenerativeFill
+
+<!-- DisableGenerativeFill-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableGenerativeFill-Applicability-End -->
+
+<!-- DisableGenerativeFill-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableGenerativeFill
+```
+<!-- DisableGenerativeFill-OmaUri-End -->
+
+<!-- DisableGenerativeFill-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether generative fill functionality is disabled in the Windows Paint app.
+
+- If this policy is enabled, generative fill functionality won't be accessible in the Paint app.
+
+- If this policy is disabled or not configured, users will be able to access generative fill functionality.
+<!-- DisableGenerativeFill-Description-End -->
+
+<!-- DisableGenerativeFill-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableGenerativeFill-Editable-End -->
+
+<!-- DisableGenerativeFill-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableGenerativeFill-DFProperties-End -->
+
+<!-- DisableGenerativeFill-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Generative fill is enabled. |
+| 1 | Generative fill is disabled. |
+<!-- DisableGenerativeFill-AllowedValues-End -->
+
+<!-- DisableGenerativeFill-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableGenerativeFill |
+| Path | WindowsAI > AT > WindowsComponents > Paint |
+<!-- DisableGenerativeFill-GpMapping-End -->
+
+<!-- DisableGenerativeFill-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableGenerativeFill-Examples-End -->
+
+<!-- DisableGenerativeFill-End -->
+
 <!-- DisableImageCreator-Begin -->
 ## DisableImageCreator
 
@@ -287,7 +349,7 @@ This policy setting allows you to control whether Image Creator functionality is
 <!-- SetCopilotHardwareKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5044380](https://support.microsoft.com/help/5044380) [10.0.22621.4391] and later |
 <!-- SetCopilotHardwareKey-Applicability-End -->
 
 <!-- SetCopilotHardwareKey-OmaUri-Begin -->
@@ -627,6 +689,9 @@ When this setting isn't configured, the OS configures the storage allocation for
 
 <!-- TurnOffWindowsCopilot-Begin -->
 ## TurnOffWindowsCopilot
+
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
 
 <!-- TurnOffWindowsCopilot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
