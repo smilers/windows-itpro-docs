@@ -1,7 +1,7 @@
 ---
 title: ADMX_ControlPanelDisplay Policy CSP
 description: Learn more about the ADMX_ControlPanelDisplay Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -519,7 +519,7 @@ Prevents users from changing the background image shown when the machine is lock
 
 By default, users can change the background image shown when the machine is locked or displaying the logon screen.
 
-If you enable this setting, the user won't be able to change their lock screen and logon image, and they will instead see the default image.
+If you enable this setting, the user won't be able to change their lock screen and logon image, and they'll instead see the default image.
 <!-- CPL_Personalization_NoChangingLockScreen-Description-End -->
 
 <!-- CPL_Personalization_NoChangingLockScreen-Editable-Begin -->
