@@ -1,7 +1,7 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-ms.date: 09/11/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -6951,7 +6951,7 @@ Interior node for all managed app setting values.
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed. App. Settings container.
+The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the `Managed.App.Settings` container.
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-AppStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
@@ -8193,7 +8193,7 @@ This node is only supported in the user context.
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed. App. Settings container.
+The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the `Managed.App.Settings` container.
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-nonStore-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
@@ -9495,7 +9495,7 @@ This node is only supported in the user context.
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-Begin -->
 <!-- Description-Source-DDF -->
-The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the Managed. App. Settings container.
+The SettingValue and data represent a key value pair to be configured for the app. The node represents the name of the key and the data represents the value. You can find this value in LocalSettings in the `Managed.App.Settings` container.
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Description-End -->
 
 <!-- User-AppManagement-System-{PackageFamilyName}-AppSettingPolicy-{SettingValue}-Editable-Begin -->
