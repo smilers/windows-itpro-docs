@@ -1,5 +1,5 @@
 ---
-title: Get and deploy Minecraft Education
+title: Deploy Minecraft Education To Windows Devices
 description: Learn how to obtain and distribute Minecraft Education to Windows devices.
 ms.topic: how-to
 ms.date: 04/10/2024
