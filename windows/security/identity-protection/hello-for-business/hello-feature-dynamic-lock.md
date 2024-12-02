@@ -49,3 +49,31 @@ You can configure Windows devices to use the **dynamic lock** using a Group Poli
   The `rssiMin` attribute value signal indicates the strength needed for the device to be considered *in-range*. The default value of `-10` enables a user to move about an average size office or cubicle without triggering Windows to lock the device. The `rssiMaxDelta` has a default value of `-10`, which instruct Windows to lock the device once the signal strength weakens by more than measurement of 10.
 
   RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
+
+## Configure Dynamic lock with Microsoft Intune
+
+To configure Dynamic lock using Microsoft Intune, follow these steps:
+
+1. Open the Microsoft Intune admin center and navigate to Devices > Windows > Configuration policies.
+1. Create a new policy:
+   - Platform: Windows 10 and later
+   - Profile type: Templates - Custom
+   - Select Create
+1. Configure the profile:
+   - Name: Provide a name for the profile.
+   - Description: (Optional) Add a description.
+1. Add OMA-URI settings:
+   - Enable Dynamic lock:
+     - Name: Enable Dynamic lock
+     - Description: (Optional) This setting enables Dynamic lock
+     - OMA-URI: ./Device/Vendor/MSFT/PassportForWork/DynamicLock/DynamicLock
+     - Data type: Boolean
+     - Value: True
+   - Define the Dynamic lock signal rule:
+     - Name: Dynamic lock Signal Rule
+     - Description: (Optional) This setting configures Dynamic lock values
+     - OMA-URI: ./Device/Vendor/MSFT/PassportForWork/DynamicLock/Plugins
+     - Data type: String
+     - Value: `<rule schemaVersion="1.0"><signal type="bluetooth" scenario="Dynamic Lock" classOfDevice="512" rssiMin="-10" rssiMaxDelta="-10"/></rule>`
+1. Assign the profile to the appropriate groups.
+ 
