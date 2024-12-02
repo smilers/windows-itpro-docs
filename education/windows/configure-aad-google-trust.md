@@ -46,7 +46,7 @@ To test federation, the following prerequisites must be met:
 1. On the **Service provider detail's** page:
       - Select the option **Signed response**
       - Verify that the Name ID format is set to **PERSISTENT**
-      - Depending on how the Microsoft Entra users have been provisioned in Microsoft Entra ID, you might need to adjust the **Name ID** mapping
+      - Depending on how the Microsoft Entra users have been provisioned in Microsoft Entra ID, you might need to adjust the **Name ID** mapping\
         If using Google autoprovisioning, select **Basic Information > Primary email**
       - Select **Continue**
 1. On the **Attribute mapping** page, map the Google attributes to the Microsoft Entra attributes
