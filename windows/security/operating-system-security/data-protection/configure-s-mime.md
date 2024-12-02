@@ -68,4 +68,4 @@ When you receive a signed email, the app provides a feature to install correspon
 1. Select the digital signature icon in the reading pane
 1. Select **Install.**
 
-  :::image type="content" alt-text="Screenshot of the Windows Mail app, showing a message to install the sender's encryption certificate." source="images/install-cert.png":::
+    :::image type="content" alt-text="Screenshot of the Windows Mail app, showing a message to install the sender's encryption certificate." source="images/install-cert.png":::
