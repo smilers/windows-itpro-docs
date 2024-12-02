@@ -15,7 +15,7 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 08/27/2024
+  ms.date: 11/05/2024
   ms.localizationpriority: medium
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -34,6 +34,8 @@ landingContent:
       url: volume-activation/plan-for-volume-activation-client.md
     - text: Windows compatibility cookbook
       url: /windows/compatibility/
+    - text: Cloud-native Windows
+      url: /mem/solutions/cloud-native-endpoints/cloud-native-endpoints-overview
 
 - title: Prepare
   linkLists:

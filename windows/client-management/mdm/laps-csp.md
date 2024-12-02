@@ -1,7 +1,7 @@
 ---
 title: LAPS CSP
 description: Learn more about the LAPS CSP.
-ms.date: 09/27/2024
+ms.date: 11/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -325,7 +325,7 @@ Note if a custom managed local administrator account name is specified in this s
 <!-- Description-Source-DDF -->
 Use this setting to configure whether the password is encrypted before being stored in Active Directory.
 
-This setting is ignored if the password is currently being stored in Azure.
+This setting is ignored if the password is currently being stored in Microsoft Entra ID.
 
 This setting is only honored when the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 
@@ -387,7 +387,7 @@ If not specified, this setting defaults to True.
 <!-- Description-Source-DDF -->
 Use this setting to configure the name or SID of a user or group that can decrypt the password stored in Active Directory.
 
-This setting is ignored if the password is currently being stored in Azure.
+This setting is ignored if the password is currently being stored in Microsoft Entra ID.
 
 If not specified, the password will be decryptable by the Domain Admins group in the device's domain.
 

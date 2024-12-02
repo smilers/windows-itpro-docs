@@ -1,7 +1,7 @@
 ---
 title: DeclaredConfiguration CSP
 description: Learn more about the DeclaredConfiguration CSP.
-ms.date: 09/12/2024
+ms.date: 11/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -45,6 +45,8 @@ The following list shows the DeclaredConfiguration configuration service provide
       - [Results](#hostinventoryresults)
         - [{DocID}](#hostinventoryresultsdocid)
           - [Document](#hostinventoryresultsdociddocument)
+  - [ManagementServiceConfiguration](#managementserviceconfiguration)
+    - [ConflictResolution](#managementserviceconfigurationconflictresolution)
 <!-- DeclaredConfiguration-Tree-End -->
 
 <!-- Device-Host-Begin -->
@@ -727,6 +729,93 @@ The Document node's value is an XML based document containing a collection of se
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Examples-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-End -->
+
+<!-- Device-ManagementServiceConfiguration-Begin -->
+## ManagementServiceConfiguration
+
+<!-- Device-ManagementServiceConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-ManagementServiceConfiguration-Applicability-End -->
+
+<!-- Device-ManagementServiceConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration
+```
+<!-- Device-ManagementServiceConfiguration-OmaUri-End -->
+
+<!-- Device-ManagementServiceConfiguration-Description-Begin -->
+<!-- Description-Source-DDF -->
+The ManagementServiceConfiguration node that's used to control certain Windows Declared Configuration behavior.
+<!-- Device-ManagementServiceConfiguration-Description-End -->
+
+<!-- Device-ManagementServiceConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-Editable-End -->
+
+<!-- Device-ManagementServiceConfiguration-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-ManagementServiceConfiguration-DFProperties-End -->
+
+<!-- Device-ManagementServiceConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-Examples-End -->
+
+<!-- Device-ManagementServiceConfiguration-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Begin -->
+### ManagementServiceConfiguration/ConflictResolution
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Applicability-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/DeclaredConfiguration/ManagementServiceConfiguration/ConflictResolution
+```
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-OmaUri-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Description-Begin -->
+<!-- Description-Source-DDF -->
+This node controls to turn on conflict resolution on and off.
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Description-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Editable-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-DFProperties-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | The conflict resolution is OFF. |
+| 1 | The conflict resolution is ON. |
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-AllowedValues-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-Examples-End -->
+
+<!-- Device-ManagementServiceConfiguration-ConflictResolution-End -->
 
 <!-- DeclaredConfiguration-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

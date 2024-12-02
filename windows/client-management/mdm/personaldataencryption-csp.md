@@ -1,21 +1,21 @@
 ---
-title: PDE CSP
-description: Learn more about the PDE CSP.
+title: Personal Data Encryption CSP
+description: Learn more about the Personal Data Encryption CSP.
 ms.date: 01/18/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- PDE-Begin -->
-# PDE CSP
+# Personal Data Encryption CSP
 
 <!-- PDE-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The Personal Data Encryption (PDE) configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices. This CSP was added in Windows 11, version 22H2.
+The Personal Data Encryption configuration service provider (CSP) is used by the enterprise to protect data confidentiality of PCs and devices. This CSP was added in Windows 11, version 22H2.
 <!-- PDE-Editable-End -->
 
 <!-- PDE-Tree-Begin -->
-The following list shows the PDE configuration service provider nodes:
+The following list shows the Personal Data Encryption configuration service provider nodes:
 
 - ./User/Vendor/MSFT/PDE
   - [EnablePersonalDataEncryption](#enablepersonaldataencryption)
@@ -45,7 +45,7 @@ Allows the Admin to enable Personal Data Encryption. Set to '1' to set this poli
 
 <!-- User-EnablePersonalDataEncryption-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-The [UserDataProtectionManager Class](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) public API allows the applications running as the user to encrypt data as soon as this policy is enabled. However, prerequisites must be met for PDE to be enabled.
+The [UserDataProtectionManager Class](/uwp/api/windows.security.dataprotection.userdataprotectionmanager) public API allows the applications running as the user to encrypt data as soon as this policy is enabled. However, prerequisites must be met for Personal Data Encryption to be enabled.
 <!-- User-EnablePersonalDataEncryption-Editable-End -->
 
 <!-- User-EnablePersonalDataEncryption-DFProperties-Begin -->
@@ -93,10 +93,10 @@ The [UserDataProtectionManager Class](/uwp/api/windows.security.dataprotection.u
 
 <!-- User-Status-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-Reports the current status of Personal Data Encryption (PDE) for the user.
+Reports the current status of Personal Data Encryption for the user.
 
-- If prerequisites of PDE aren't met, then the status will be 0.
-- If all prerequisites are met for PDE, then PDE will be enabled and status will be 1.
+- If prerequisites of Personal Data Encryption aren't met, then the status will be 0.
+- If all prerequisites are met for Personal Data Encryption, then Personal Data Encryption will be enabled and status will be 1.
 <!-- User-Status-Editable-End -->
 
 <!-- User-Status-DFProperties-Begin -->

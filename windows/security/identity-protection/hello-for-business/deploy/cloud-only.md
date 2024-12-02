@@ -1,7 +1,7 @@
 ---
 title: Windows Hello for Business cloud-only deployment guide
 description: Learn how to deploy Windows Hello for Business in a cloud-only deployment scenario.
-ms.date: 03/12/2024
+ms.date: 11/22/2024
 ms.topic: tutorial
 ---
 

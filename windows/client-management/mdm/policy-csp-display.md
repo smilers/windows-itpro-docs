@@ -1,7 +1,7 @@
 ---
 title: Display Policy CSP
 description: Learn more about the Display Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 11/05/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -9,9 +9,71 @@ ms.date: 01/18/2024
 <!-- Display-Begin -->
 # Policy CSP - Display
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Display-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Display-Editable-End -->
+
+<!-- ConfigureMultipleDisplayMode-Begin -->
+## ConfigureMultipleDisplayMode
+
+<!-- ConfigureMultipleDisplayMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureMultipleDisplayMode-Applicability-End -->
+
+<!-- ConfigureMultipleDisplayMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/ConfigureMultipleDisplayMode
+```
+<!-- ConfigureMultipleDisplayMode-OmaUri-End -->
+
+<!-- ConfigureMultipleDisplayMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy set the default display to set the arrangement between cloning or extending.
+<!-- ConfigureMultipleDisplayMode-Description-End -->
+
+<!-- ConfigureMultipleDisplayMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureMultipleDisplayMode-Editable-End -->
+
+<!-- ConfigureMultipleDisplayMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- ConfigureMultipleDisplayMode-DFProperties-End -->
+
+<!-- ConfigureMultipleDisplayMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Default. |
+| 1 (Default) | Clone. |
+| 2 | Extend. |
+<!-- ConfigureMultipleDisplayMode-AllowedValues-End -->
+
+<!-- ConfigureMultipleDisplayMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureMultipleDisplayMode |
+| Path | Display > AT > System > DisplayCat |
+| Element Name | ConfigureMultipleDisplayModePrompt |
+<!-- ConfigureMultipleDisplayMode-GpMapping-End -->
+
+<!-- ConfigureMultipleDisplayMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureMultipleDisplayMode-Examples-End -->
+
+<!-- ConfigureMultipleDisplayMode-End -->
 
 <!-- DisablePerProcessDpiForApps-Begin -->
 ## DisablePerProcessDpiForApps

@@ -143,7 +143,7 @@ The following table lists the Windows 11 Enterprise features and their Windows e
 |**[Credential Guard][WIN-1]**|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**|Yes|Yes|
 |**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
-|**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|
+|**[Personal Data Encryption][WIN-3]**|❌|Yes|
 |**[Direct Access][WINS-1]**|Yes|Yes|
 |**[Always On VPN][WINS-2]**|Yes|Yes|
 |**[Windows Experience customization][WIN-4]**|❌|Yes|

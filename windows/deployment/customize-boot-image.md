@@ -1,6 +1,6 @@
 ---
 title: Customize Windows PE boot images
-description: This article describes how to customize a Windows PE (WinPE) boot image including updating it with the latest cumulative update, adding drivers, and adding optional components.
+description: This article describes how to customize a Windows PE (WinPE) boot image, including updating it with the latest cumulative update, adding drivers, and adding optional components.
 ms.service: windows-client
 ms.localizationpriority: medium
 author: frankroj
@@ -23,13 +23,13 @@ appliesto:
 
 The Windows PE (WinPE) boot images that are included with the Windows ADK have a minimal number of features and drivers. However the boot images can be customized by adding drivers, optional components, and applying the latest cumulative update.
 
-Microsoft recommends updating Windows PE boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. For example, the Windows PE boot image can be updated with the latest cumulative update to address the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
+Microsoft recommends updating Windows PE boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. For example, the Windows PE boot image can be updated with the latest cumulative update to address the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
 > [!TIP]
 >
 > The boot images from the [ADK 10.1.26100.1 (May 2024)](/windows-hardware/get-started/adk-install) and later already contain the cumulative update to address the BlackLotus UEFI bootkit vulnerability.
 
-This walkthrough describes how to customize a Windows PE boot image including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough goes over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
+This walkthrough describes how to customize a Windows PE boot image, including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough goes over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
 
 ## Prerequisites
 
@@ -332,7 +332,7 @@ The cumulative update installed later in this walkthrough doesn't affect drivers
     **Example**:
 
     ```powershell
-     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab" -Path "C:\Mount" -Verbose   
+     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-Scripting_en-us.cab" -Path "C:\Mount" -Verbose
     ```
 
     These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
@@ -668,7 +668,7 @@ For more information, see [copy](/windows-server/administration/windows-commands
 
 This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr boot files are available to the Windows ADK when creating bootable media via the Windows ADK. When these files are updated in the Windows ADK, products that use the Windows ADK to create bootable media, such as **Microsoft Deployment Toolkit (MDT)**, also have access to the updated bootmgr boot files.
 
-In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
+In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
 > [!TIP]
 >
@@ -839,7 +839,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
     ---
 
 1. Once the export has completed:
-  
+
     1. Delete the original updated boot image:
 
         ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
@@ -1295,4 +1295,4 @@ For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products
 
 - [Create bootable Windows PE media: Update the Windows PE add-on for the Windows ADK](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#update-the-windows-pe-add-on-for-the-windows-adk)
 - [Update Windows installation media with Dynamic Update: Update WinPE](/windows/deployment/update/media-dynamic-update#update-winpe)
-- [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932: Updating bootable media](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d?preview=true#updatebootable5025885)
+- [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932: Updating bootable media](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d)

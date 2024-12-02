@@ -35,7 +35,7 @@ Use this checklist to guide you through different aspects when modifying Deliver
     * System resources
     * Improve P2P efficiencies
   
-1. Using Connected Cache (MCC)
+1. Using Microsoft Connected Cache
 1. Choose where to set Delivery Optimization policies
 
 ## 1. Prerequisites to allow Delivery Optimization communication
@@ -189,7 +189,7 @@ Regardless of P2P, consider setting the following policies to avoid network disr
 > [!NOTE]
 > The absolute policies are recommended in low bandwidth environments.
 
-## 3. Using Connected Cache (MCC)
+## 3. Using Connected Cache
 
 :::image type="content" source="images/do-setup-connected-cache.png" alt-text="Screenshot of Delivery Optimization options when using Connected Cache." lightbox="images/do-setup-connected-cache.png":::
 

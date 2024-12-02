@@ -9,7 +9,7 @@ manager: aaroncz
 ms.topic: reference
 ms.subservice: itpro-fundamentals
 ms.date: 08/23/2024
-ms.collection: 
+ms.collection:
   - highpri
   - tier1
 appliesto:
@@ -38,6 +38,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Support removed |
 | ----------- | --------------------- | ------ |
+| Microsoft Defender Application Guard for Edge | [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is deprecated for Microsoft Edge for Business and is no longer available starting with Windows 11, version 24H2. | 24H2 |
 | WordPad <!--8254696, 8494641--> |  WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. We recommend Microsoft Word for rich text documents like .doc and .rtf and Windows Notepad for plain text documents like .txt.  If you're a developer and need information about the affected binaries, see [Resources for deprecated features](deprecated-features-resources.md#wordpad). | October 1, 2024 |
 | Alljoyn <!--8396030-->| Microsoft's implementation of AllJoyn, which included the [Windows.Devices.AllJoyn API namespace](/uwp/api/windows.devices.alljoyn), a [Win32 API](/windows/win32/api/_alljoyn/), a [management configuration service provider (CSP)](/windows/client-management/mdm/alljoynmanagement-csp), and an [Alljoyn Router Service](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#alljoyn-router-service) is retired. [AllJoyn](https://openconnectivity.org/technology/reference-implementation/alljoyn/), sponsored by AllSeen Alliance, was an open source discovery and communication protocol for Internet of Things scenarios such as turning on/off lights or reading temperatures. AllSeen Alliance promoted the AllJoyn project from 2013 until 2016 when it merged with the Open Connectivity Foundation (OCF), the sponsors of [Iotivity.org](https://iotivity.org/), another protocol for Internet of Things scenarios. Customers should refer to the [Iotivity.org](https://iotivity.org/) website for alternatives such as [Iotivity Lite](https://github.com/iotivity/iotivity-lite) or [Iotivity](https://github.com/iotivity/iotivity). | October 1, 2024 |
 | Update Compliance | Update Compliance, a cloud-based service for the Windows client, is retired. This service has been replaced with [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), which provides reporting on client compliance with Microsoft updates from the Azure portal.<!--7748874--> | March 31, 2023 |

@@ -1,7 +1,7 @@
 ---
 title: What is Shell Launcher?
 description: Learn how to configure devices with Shell Launcher.
-ms.date: 06/18/2024
+ms.date: 10/31/2024
 ms.topic: overview
 ---
 

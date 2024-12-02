@@ -1661,6 +1661,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/do/mcc-enterprise-appendix.md",
+      "redirect_url": "/windows/deployment/do/mcc-ent-early-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/do/mcc-enterprise-deploy.md",
+      "redirect_url": "/windows/deployment/do/mcc-ent-early-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/do/mcc-enterprise-prerequisites.md",
+      "redirect_url": "/windows/deployment/do/mcc-ent-early-preview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/do/mcc-enterprise-update-uninstall.md",
+      "redirect_url": "/windows/deployment/do/mcc-ent-early-preview",
+      "redirect_document_id": false
+    },          
+    {
       "source_path": "windows/deployment/planning/windows-10-deployment-considerations.md",
       "redirect_url": "/previous-versions/windows/it-pro/windows-10/deployment/planning/windows-10-deployment-considerations",
       "redirect_document_id": false
