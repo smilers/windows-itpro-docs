@@ -1,6 +1,6 @@
 ---
 title: Use Web Sign-In To Enable Passwordless Sign-In In Windows
-Description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
+description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
 ms.date: 12/02/2024
 ms.topic: how-to
 appliesto:
