@@ -34,7 +34,7 @@ Before deploying Connected Cache to a Windows host machine, ensure that the host
 1. Open a PowerShell window *as administrator* on the host machine, then change directory to the extracted provisioning package.
 
    >[!Note]
-   >* If you are deploying your cache node to a Windows host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `-proxyTlsCertificatePemFileName "path/to/pem/file"` to the provisioning command.
+   >* If you are deploying your cache node to a Windows host machine that uses a TLS-inspecting proxy (e.g. ZScaler), ensure that you've [configured the proxy settings](mcc-ent-create-resource-and-cache.md#proxy-settings) for your cache node, then place the proxy certificate file (.pem) in the extracted provisioning package directory and add `-proxyTlsCertificatePemFileName "mycert.pem"` to the provisioning command.
 
 1. Set the Execution Policy to *Unrestricted* to allow the provisioning scripts to run.
 1. Create a `$User` PowerShell variable containing the username of the account you intend to designate as the Connected Cache runtime account.
