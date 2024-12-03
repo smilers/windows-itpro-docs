@@ -19,6 +19,18 @@ ms.date: 10/30/2024
 
 This article contains instructions on how to troubleshoot different issues you may encounter while using Connected Cache. These issues are categorized by the task in which they may be encountered.
 
+## Known issues
+
+This section describes known issues with the latest release of Microsoft Connected Cache for Enterprise and Edcuation. See the [Release Notes page](mcc-ent-release-notes.md) for more details on the fixes included in the latest release.
+
+### Cache node monitoring chart in the Azure Portal user interface displays incorrect information
+
+### Script provisionmcconwsl.ps1 fails when executed on a Windows 11 host machine configured to use Japanese language
+
+In the Connected Cache installation script (provisionmcconwsl.ps1), the check processing is executed until the value of the last execution code (Last Result) of the installation task becomes 0 in the following processing. However, in Japanese OS, the return value is null because "Last Result" is displayed, and an exception occurs.
+
+As a temporary workaround, the above error does not occur by changing the language setting of the local administrator user from Japanese to English and then executing the script.
+
 ## Steps to obtain an Azure subscription ID
 
 <!--Using include file, get-azure-subscription.md, do/mcc-isp.md for shared content-->
