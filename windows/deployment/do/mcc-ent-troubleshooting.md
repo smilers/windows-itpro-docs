@@ -130,20 +130,27 @@ You can also reboot the IoT Edge runtime using `sudo systemctl restart iotedge`.
 
 ## Generating cache node diagnostic support bundle
 
-You can generate a support bundle with detailed diagnostic information by running the `collectMccDiagnostics.sh` script found in the MCC diagnostics folder.
+You can generate a support bundle with detailed diagnostic information by running the `collectMccDiagnostics.sh` script included in the installation package.
 
 For Windows host machines, you will need to do the following:
 
 1. Launch a PowerShell process as the account specified as the runtime account during the Connected Cache install
-1. Run `wsl -d Ubuntu-22.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
-1. Change directory to `path/to/collectMccDiagnostics.sh`
-1. Run the script
-1. Extract the generated support bundle from `path/to/support/bundle` to `path/to/windows/host`
+1. Change directory to the "MccScripts" directory within the extracted installation package and verify the presence of `collectmccdiagnostics.sh`
+1. Run `wsl bash collectmccdiagnostics.sh` to generate the diagnostic support bundle
+1. Once the script has completed, note the console output describing the location of the diagnostic support bundle
+
+    For example, "Successfully zipped package, please send file created at /etc/mccdiagnostics/support_bundle_2024_12_03__11_05_39__AM.tar.gz"
+1. Run the `wsl cp` command to copy the support bundle from the location within the Ubuntu distribution to the Windows host OS
+
+    For example, `wsl cp /etc/mccdiagnostics/support_bundle_2024_12_03__11_05_39__AM.tar.gz /mnt/c/mccwsl01/SupportBundles`
 
 For Linux host machines, you will need to do the following:
 
-1. Change directory to `path/to/collectMccDiagnostics.sh`
-1. Run the script
+1. Change directory to the "MccScripts" directory within the extracted installation package and verify the presence of `collectmccdiagnostics.sh`
+1. Run `collectmccdiagnostics.sh` to generate the diagnostic support bundle
+1. Once the script has completed, note the console output describing the location of the diagnostic support bundle
+
+    For example, "Successfully zipped package, please send file created at /etc/mccdiagnostics/support_bundle_2024_12_03__11_05_39__AM.tar.gz"
 
 ## Troubleshooting cache node monitoring
 
