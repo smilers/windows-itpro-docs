@@ -60,6 +60,16 @@ There are three types of installation log files:
 
 The Registered Task Transcript is usually the most useful for diagnosing the installation issue.
 
+### Collecting other Windows-hosted logs
+
+Once the cache node has been successfully installed on the Windows host machine, it will periodically write log files to the installation directory (`C:\mccwsl01\` by default).
+
+You can expect to see the following types of log files:
+
+1. **WSL_Mcc_Monitor_FromRegisteredTask_Transcript**: This log file records the output of the "MCC_Monitor_Task" scheduled task that is responsible for ensuring that the Connected Cache continues running.
+1. **WSL_Mcc_UserUninstall_Transcript**: This log file records the ouput of the "uninstallmcconwsl.ps1" script that the user can run to uninstall MCC software from the host machine.
+1. **WSL_Mcc_Uninstall_FromRegisteredTask_Transcript**: This log file records the output of the "MCC_Uninstall_Task" scheduled task that is responsible for uninstalling the MCC software from the host machine when called by the "uninstallmcconwsl.ps1" script.
+
 ### WSL2 fails to install with message "A specified logon session does not exist"
 
 If you are encountering this failure message when attempting to run the PowerShell command `wsl.exe --install --no-distribution` on your Windows host machine, verify that you are logged on as a local administrator and running the command from an elevated PowerShell window.
@@ -105,6 +115,23 @@ Once the Connected Cache software has been successfully deployed to the Linux ho
 If it shows the **edgeAgent** and **edgeHub** containers but doesn't show **MCC**, you can view the status of the IoT Edge security manager using `sudo iotedge system logs -- -f`.
 
 You can also reboot the IoT Edge runtime using `sudo systemctl restart iotedge`.
+
+## Generating cache node diagnostic support bundle
+
+You can generate a support bundle with detailed diagnostic information by running the `collectMccDiagnostics.sh` script found in the MCC diagnostics folder.
+
+For Windows host machines, you will need to do the following:
+
+1. Launch a PowerShell process as the account specified as the runtime account during the Connected Cache install
+1. Run `wsl -d Ubuntu-22.04-Mcc-Base` to access the Linux distribution that hosts the Connected Cache container
+1. Change directory to `path/to/collectMccDiagnostics.sh`
+1. Run the script
+1. Extract the generated support bundle from `path/to/support/bundle` to `path/to/windows/host`
+
+For Linux host machines, you will need to do the following:
+
+1. Change directory to `path/to/collectMccDiagnostics.sh`
+1. Run the script
 
 ## Troubleshooting cache node monitoring
 
