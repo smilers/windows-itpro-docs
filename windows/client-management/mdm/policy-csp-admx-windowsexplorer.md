@@ -1,7 +1,7 @@
 ---
 title: ADMX_WindowsExplorer Policy CSP
 description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -4468,7 +4468,7 @@ Shows or hides sleep from the power options menu.
 
 <!-- TryHarderPinnedLibrary-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows up to five Libraries or Search Connectors to be pinned to the "Search again" links and the Start menu links. The "Search again" links at the bottom of the Search Results view allow the user to reconduct a search but in a different location. To add a Library or Search Connector link, specify the path of the . Library-ms or .searchConnector-ms file in the "Location" text box (for example, "C:\sampleLibrary. Library-ms" for the Documents library, or "C:\sampleSearchConnector.searchConnector-ms" for a Search Connector). The pinned link will only work if this path is valid and the location contains the specified . Library-ms or .searchConnector-ms file.
+This policy setting allows up to five Libraries or Search Connectors to be pinned to the "Search again" links and the Start menu links. The "Search again" links at the bottom of the Search Results view allow the user to reconduct a search but in a different location. To add a Library or Search Connector link, specify the path of the `.Library-ms or .searchConnector-ms` file in the "Location" text box (for example, "C:\sampleLibrary.Library-ms" for the Documents library, or "C:\sampleSearchConnector.searchConnector-ms" for a Search Connector). The pinned link will only work if this path is valid and the location contains the specified `.Library-ms or .searchConnector-ms` file.
 
 You can add up to five additional links to the "Search again" links at the bottom of results returned in File Explorer after a search is executed. These links will be shared between Internet search sites and Search Connectors/Libraries. Search Connector/Library links take precedence over Internet search links.
 

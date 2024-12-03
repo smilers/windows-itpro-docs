@@ -1,7 +1,7 @@
 ---
 title: ADMX_MicrosoftDefenderAntivirus Policy CSP
 description: Learn more about the ADMX_MicrosoftDefenderAntivirus Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2938,7 +2938,7 @@ This policy setting allows you to manage whether or not end users can pause a sc
 
 <!-- Scan_ArchiveMaxDepth-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the maximum directory depth level into which archive files such as . ZIP or . CAB are unpacked during scanning. The default directory depth level is 0.
+This policy setting allows you to configure the maximum directory depth level into which archive files such as .ZIP or .CAB are unpacked during scanning. The default directory depth level is 0.
 
 - If you enable this setting, archive files will be scanned to the directory depth level specified.
 
@@ -2997,7 +2997,7 @@ This policy setting allows you to configure the maximum directory depth level in
 
 <!-- Scan_ArchiveMaxSize-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the maximum size of archive files such as . ZIP or . CAB that will be scanned. The value represents file size in kilobytes (KB). The default value is 0 and represents no limit to archive size for scanning.
+This policy setting allows you to configure the maximum size of archive files such as .ZIP or .CAB that will be scanned. The value represents file size in kilobytes (KB). The default value is 0 and represents no limit to archive size for scanning.
 
 - If you enable this setting, archive files less than or equal to the size specified will be scanned.
 
@@ -3056,7 +3056,7 @@ This policy setting allows you to configure the maximum size of archive files su
 
 <!-- Scan_DisableArchiveScanning-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as . ZIP or . CAB files.
+This policy setting allows you to configure scans for malicious software and unwanted software in archive files such as .ZIP or .CAB files.
 
 - If you enable or don't configure this setting, archive files will be scanned.
 
