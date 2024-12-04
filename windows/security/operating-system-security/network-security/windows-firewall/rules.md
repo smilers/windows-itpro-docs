@@ -35,7 +35,7 @@ When first installed, network applications and services issue a *listen call* sp
 - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
 - If the user isn't a local admin and they are prompted, block rules are created. It doesn't matter what option is selected
 
-To avoid this, **disable** the notification prompt. This can be done using [PowerShell or command prompt](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or in the Windows Firewall with Advanced Security console on the 'Customize Settings' tab of each profile.
+To disable the notification prompt, you can use the [command line](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or the **Windows Firewall with Advanced Security** console
   
   :::column-end:::
   :::column span="2":::
