@@ -36,14 +36,14 @@ When first installed, network applications and services issue a *listen call* sp
 - If the user isn't a local admin and they are prompted, block rules are created, no matter what option they chose.
 
 To avoid this, **disable** the notification prompt. This can be done using [PowerShell or command prompt](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or in the Windows Firewall with Advanced Security console on the 'Customize Settings' tab of each profile.
-
-  In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
   
   :::column-end:::
   :::column span="2":::
     :::image type="content" source="images/uac.png" alt-text="Screenshot showing the User Account Control (UAC) prompt to allow Microsoft Teams." border="false":::
   :::column-end:::
 :::row-end:::
+
+In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
 
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from non-Microsoft software should be determined by trusted app developers, the user, or the admin on behalf of the user.
