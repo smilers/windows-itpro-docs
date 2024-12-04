@@ -30,18 +30,20 @@ When first installed, network applications and services issue a *listen call* sp
 
 :::row:::
   :::column span="2":::
-    If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
+  If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
+  
+- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
+- If the user isn't a local admin and they are prompted, block rules are created, no matter what option they chose.
 
-    - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
-    - If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
+To avoid this, **disable** the notification prompt. This can be done using [PowerShell or command prompt](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or in the Windows Firewall with Advanced Security console on the 'Customize Settings' tab of each profile.
 
+  In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
+  
   :::column-end:::
   :::column span="2":::
     :::image type="content" source="images/uac.png" alt-text="Screenshot showing the User Account Control (UAC) prompt to allow Microsoft Teams." border="false":::
   :::column-end:::
 :::row-end:::
-
-In either of these scenarios, once the rules are added, they must be deleted to generate the prompt again. If not, the traffic continues to be blocked.
 
 > [!NOTE]
 > The firewall's default settings are designed for security. Allowing all inbound connections by default introduces the network to various threats. Therefore, creating exceptions for inbound connections from non-Microsoft software should be determined by trusted app developers, the user, or the admin on behalf of the user.
