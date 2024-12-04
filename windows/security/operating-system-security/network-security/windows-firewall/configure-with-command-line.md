@@ -32,19 +32,19 @@ netsh.exe advfirewall set allprofiles state on
 ### Control Windows Firewall behavior
 
 The global default settings can be defined through the command-line interface. These modifications are also available through the Windows Firewall console.
-The following scriptlets set the default inbound and outbound actions, specifies protected network connections, and allows notifications to be displayed to the user when a program is blocked from receiving inbound connections. It allows unicast response to multicast or broadcast network traffic, and it specifies logging settings for troubleshooting.
+The following scriptlets set the default inbound and outbound actions, specifies protected network connections, and disallows notifications to be displayed to the user when a program is blocked from receiving inbound connections. It allows unicast response to multicast or broadcast network traffic, and it specifies logging settings for troubleshooting.
 
 # [:::image type="icon" source="images/powershell.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
-Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow -NotifyOnListen True -AllowUnicastResponseToMulticast True -LogFileName %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log
+Set-NetFirewallProfile -DefaultInboundAction Block -DefaultOutboundAction Allow -NotifyOnListen False -AllowUnicastResponseToMulticast True -LogFileName %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log
 ```
 
 # [:::image type="icon" source="images/cmd.svg"::: **Command Prompt**](#tab/cmd)
 
 ```cmd
 netsh advfirewall set allprofiles firewallpolicy blockinbound,allowoutbound
-netsh advfirewall set allprofiles settings inboundusernotification enable
+netsh advfirewall set allprofiles settings inboundusernotification disable
 netsh advfirewall set allprofiles settings unicastresponsetomulticast enable
 netsh advfirewall set allprofiles logging filename %SystemRoot%\System32\LogFiles\Firewall\pfirewall.log
 ```
