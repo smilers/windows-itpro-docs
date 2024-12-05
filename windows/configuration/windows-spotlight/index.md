@@ -2,7 +2,7 @@
 title: Configure Windows spotlight
 description: Learn how to configure Windows spotlight using Group Policy and mobile device management (MDM) settings.
 ms.topic: how-to
-ms.date: 04/23/2024
+ms.date: 12/05/2024
 ms.author: paoloma
 author: paolomatarazzo
 appliesto:
