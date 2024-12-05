@@ -68,6 +68,18 @@ This node specifies the password for a new local user account. This setting can 
 Supported operation is Add.
 GET operation isn't supported.  This setting will report as failed when deployed from Intune.
 
+> [!WARNING]
+> The username is limited to 20 characters. 
+
+> [!WARNING]
+> The user creation will only be successful if a sufficiently strong password is selected. Special XML characters must be escaped, i.e.:
+
+| character | escape sequence |
+|:---|:---|
+| `<` | `&lt;` |
+| `>` | `&gt;` |
+| `&` | `&amp;` |
+
 <a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**
 This optional node specifies the local user group that a local user account should be joined to.  If the node isn't set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.
 
