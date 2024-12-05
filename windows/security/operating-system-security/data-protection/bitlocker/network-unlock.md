@@ -2,7 +2,7 @@
 title: Network Unlock
 description: Learn how BitLocker Network Unlock works and how to configure it.
 ms.topic: how-to
-ms.date: 06/18/2024
+ms.date: 12/05/2024
 ---
 
 # Network Unlock
