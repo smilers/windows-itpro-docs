@@ -18,13 +18,11 @@ ms.date: 10/30/2024
 
 Tracking the status and performance of your Connected Cache node is essential to making sure you're getting the most out of the service.
 
-For basic monitoring, navigate to the **Overview** tab. Here you can view a collection of predefined metrics and charts. All the monitoring in this section will function right after your Connected Cache node has been deployed.
+For basic monitoring, navigate to the **Overview** tab. Here you can view a collection of predefined metrics and charts. All the monitoring in this section will function right after your Connected Cache node has been deployed. You can view more details about each cache node by navigating to the **Cache Nodes** section under the **Cache Node Management** tab. This page displays cache node information such as Status, Host machine OS, Software Version, and Cache Node ID.
 
 For advanced monitoring, navigate to the **Metrics** section under the **Monitoring** tab. Here you can access more sampled metrics (hits, misses, inbound traffic) and specify different aggregations (count, avg, min, max, sum). You can then use this data to create customized charts and configure alerts.
 
 Using the two monitoring sections, you can gather essential insights into the health, performance, and efficiency of your Connected Cache nodes.
-
-You can view more details about each cache node by navigating to the **Cache Nodes** section under the **Cache Node Management** tab. This page displays cache node information such as Status, Host machine OS, Software Version, and Cache Node ID.
 
 ## Basic Monitoring
 
@@ -66,6 +64,20 @@ This chart displays the average egress in bits per second (b/s) that your select
 This chart displays the volume of each supported content type in bytes (B) that your selected Connected Cache nodes delivered over the specified timespan. See [Microsoft Connected Cache content and services endpoints](delivery-optimization-endpoints.md) for a complete list of supported content types.
 
 The content types displayed in the chart each have a distinct color and are sorted in descending order of volume. The bar chart is stacked such that you can visually compare total volume being delivered at different points in time.
+
+### Cache node details
+
+The **Cache Nodes** section under the **Cache Node Management** tab displays cache node information such as Status, Host machine OS, Software Version, and Cache Node ID.
+
+![Screenshot of cache node details in the Azure portal interface.](../images/mcc-ent-cache-node-details.png)
+
+| Metric | Description |
+| --- | --- |
+| Cache node name | The user-defined name of the cache node. |
+| Status | The heartbeat status of the cache node. |
+| OS | The host machine OS that this cache node is compatible with. |
+| Software version | The version number of the cache node's Connected Cache container. |
+| Cache node ID | The unique identifier of the cache node. |
 
 ## Advanced Monitoring
 
