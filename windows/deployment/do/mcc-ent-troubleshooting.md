@@ -21,15 +21,15 @@ This article contains instructions on how to troubleshoot different issues you m
 
 ## Known issues
 
-This section describes known issues with the latest release of Microsoft Connected Cache for Enterprise and Edcuation. See the [Release Notes page](mcc-ent-release-notes.md) for more details on the fixes included in the latest release.
+This section describes known issues with the latest release of Microsoft Connected Cache for Enterprise and Education. See the [Release Notes page](mcc-ent-release-notes.md) for more details on the fixes included in the latest release.
 
-### Cache node monitoring chart in the Azure Portal user interface displays incorrect information
+### Cache node monitoring chart in the Azure portal user interface displays incorrect information
 
 ### Script provisionmcconwsl.ps1 fails when executed on a Windows 11 host machine configured to use Japanese language
 
 In the Connected Cache installation script (provisionmcconwsl.ps1), the check processing is executed until the value of the last execution code (Last Result) of the installation task becomes 0 in the following processing. However, in Japanese OS, the return value is null because "Last Result" is displayed, and an exception occurs.
 
-As a temporary workaround, the above error does not occur by changing the language setting of the local administrator user from Japanese to English and then executing the script.
+As a temporary workaround, the above error doesn't occur by changing the language setting of the local administrator user from Japanese to English and then executing the script.
 
 ## Steps to obtain an Azure subscription ID
 
@@ -50,7 +50,7 @@ If you're encountering a validation error, check that you have filled out all re
 
 If your configuration doesn't appear to be taking effect, check that you have selected the **Save** option at the top of the configuration page in the Azure portal user interface.
 
-If you have changed the proxy configuration, you will need to re-provision the Connected Cache software on the host machine for the proxy configuration to take effect.
+If you have changed the proxy configuration, you'll need to re-provision the Connected Cache software on the host machine for the proxy configuration to take effect.
 
 ## Troubleshooting cache nodes created during early preview
 
@@ -62,7 +62,7 @@ As such, we strongly recommend you [recreate your existing resources in Azure](m
 
 ### Collecting Windows-hosted installation logs
 
-[Deploying a Connected Cache node to a Windows host machine](mcc-ent-deploy-to-windows.md) involves running a series of PowerShell scripts contained within the Windows provisioning package. These scripts will attempt to write log files to the installation directory specified in the provisioning command (`C:\mccwsl01\InstallLogs` by default).
+[Deploying a Connected Cache node to a Windows host machine](mcc-ent-deploy-to-windows.md) involves running a series of PowerShell scripts contained within the Windows provisioning package. These scripts attempt to write log files to the installation directory specified in the provisioning command (`C:\mccwsl01\InstallLogs` by default).
 
 There are three types of installation log files:
 
@@ -79,12 +79,12 @@ Once the cache node has been successfully installed on the Windows host machine,
 You can expect to see the following types of log files:
 
 1. **WSL_Mcc_Monitor_FromRegisteredTask_Transcript**: This log file records the output of the "MCC_Monitor_Task" scheduled task that is responsible for ensuring that the Connected Cache continues running.
-1. **WSL_Mcc_UserUninstall_Transcript**: This log file records the ouput of the "uninstallmcconwsl.ps1" script that the user can run to uninstall MCC software from the host machine.
+1. **WSL_Mcc_UserUninstall_Transcript**: This log file records the output of the "uninstallmcconwsl.ps1" script that the user can run to uninstall MCC software from the host machine.
 1. **WSL_Mcc_Uninstall_FromRegisteredTask_Transcript**: This log file records the output of the "MCC_Uninstall_Task" scheduled task that is responsible for uninstalling the MCC software from the host machine when called by the "uninstallmcconwsl.ps1" script.
 
-### WSL2 fails to install with message "A specified logon session does not exist"
+### WSL2 fails to install with message "A specified logon session doesn't exist"
 
-If you are encountering this failure message when attempting to run the PowerShell command `wsl.exe --install --no-distribution` on your Windows host machine, verify that you are logged on as a local administrator and running the command from an elevated PowerShell window.
+If you're encountering this failure message when attempting to run the PowerShell command `wsl.exe --install --no-distribution` on your Windows host machine, verify that you're logged on as a local administrator and running the command from an elevated PowerShell window.
 
 ### Updating the WSL2 kernel
 
@@ -132,21 +132,22 @@ You can also reboot the IoT Edge runtime using `sudo systemctl restart iotedge`.
 
 You can generate a support bundle with detailed diagnostic information by running the `collectMccDiagnostics.sh` script included in the installation package.
 
-For Windows host machines, you will need to do the following:
+For Windows host machines, you'll need to do the following:
 
 1. Launch a PowerShell process as the account specified as the runtime account during the Connected Cache install
-1. Change directory to the "MccScripts" directory within the extracted installation package and verify the presence of `collectmccdiagnostics.sh`
+1. Change directory to the "MccScripts" directory within the extracted Connected Cache provisioning package and verify the presence of `collectmccdiagnostics.sh`
 1. Run `wsl bash collectmccdiagnostics.sh` to generate the diagnostic support bundle
 1. Once the script has completed, note the console output describing the location of the diagnostic support bundle
 
     For example, "Successfully zipped package, please send file created at /etc/mccdiagnostics/support_bundle_2024_12_03__11_05_39__AM.tar.gz"
+
 1. Run the `wsl cp` command to copy the support bundle from the location within the Ubuntu distribution to the Windows host OS
 
     For example, `wsl cp /etc/mccdiagnostics/support_bundle_2024_12_03__11_05_39__AM.tar.gz /mnt/c/mccwsl01/SupportBundles`
 
-For Linux host machines, you will need to do the following:
+For Linux host machines, you'll need to do the following:
 
-1. Change directory to the "MccScripts" directory within the extracted installation package and verify the presence of `collectmccdiagnostics.sh`
+1. Change directory to the "MccScripts" directory within the extracted Connected Cache provisioning package and verify the presence of `collectmccdiagnostics.sh`
 1. Run `collectmccdiagnostics.sh` to generate the diagnostic support bundle
 1. Once the script has completed, note the console output describing the location of the diagnostic support bundle
 
@@ -162,4 +163,4 @@ If the issue persists, check that you have configured the Timespan and Cache nod
 
 ## Diagnose and Solve
 
-You can also use the **Diagnose and solve problems** functionality provided by the Azure portal interface. This tab within the Microsoft Connected Cache Azure resource will walk you through a few prompts to help narrow down the solution to your issue.
+You can also use the **Diagnose and solve problems** functionality provided by the Azure portal interface. This tab within the Microsoft Connected Cache Azure resource walks you through a few prompts to help narrow down the solution to your issue.
