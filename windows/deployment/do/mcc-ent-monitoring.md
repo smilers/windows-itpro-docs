@@ -18,25 +18,25 @@ ms.date: 10/30/2024
 
 Tracking the status and performance of your Connected Cache node is essential to making sure you're getting the most out of the service.
 
-For basic monitoring, navigate to the **Overview** tab. Here you'll be able to view a collection of predefined metrics and charts. All the monitoring in this section will function right after your Connected Cache node has been deployed.
+For basic monitoring, navigate to the **Overview** tab. Here you can view a collection of predefined metrics and charts. All the monitoring in this section will function right after your Connected Cache node has been deployed. You can view more details about each cache node by navigating to the **Cache Nodes** section under the **Cache Node Management** tab. This page displays cache node information such as Status, Host machine OS, Software Version, and Cache Node ID.
 
-For advanced monitoring, navigate to the **Metrics** section under the **Monitoring** tab. Here you'll be able to access more sampled metrics (hits, misses, inbound traffic) and specify different aggregations (count, avg, min, max, sum). You can then use this data to create customized charts and configure alerts.
+For advanced monitoring, navigate to the **Metrics** section under the **Monitoring** tab. Here you can access more sampled metrics (hits, misses, inbound traffic) and specify different aggregations (count, avg, min, max, sum). You can then use this data to create customized charts and configure alerts.
 
-Between the two monitoring sections, you'll be able to gather essential insights into the health, performance, and efficiency of your Connected Cache nodes.
+Using the two monitoring sections, you can gather essential insights into the health, performance, and efficiency of your Connected Cache nodes.
 
 ## Basic Monitoring
 
 ### Cache node summary
 
-Below are the metrics you'll find in the **Cache Node Summary** dashboard, along with their descriptions. This dashboard only reflects data received from cache nodes in the last 24 hours.
+Below are the metrics found in the **Cache Node Summary** dashboard, along with their descriptions. This dashboard only reflects data received from cache nodes in the last 24 hours.
 
 ![Screenshot of cache node summary in the Azure portal interface.](../images/mcc-ent-cache-node-summary.png)
 
 | Metric | Description |
 | --- | --- |
-| Healthy nodes | Your Connected Cache node will periodically send heartbeat messages to the Connected Cache service. If the Connected Cache service has received a heartbeat message from your Connected Cache node in the last 24 hours, the node will be labeled as healthy. |
-| Unhealthy nodes | If the Connected Cache service hasn't received a heartbeat message from your Connected Cache node in the last 24 hours, the node will be labeled as unhealthy. |
-| Max in | The maximum ingress in Megabits per second (Mbps) that your node has pulled from CDN endpoints in the last 24 hours. |
+| Healthy nodes | Your Connected Cache node will periodically send heartbeat messages to the Connected Cache service. If the Connected Cache service has received a heartbeat message from your Connected Cache node in the last 24 hours, the node is labeled as healthy. |
+| Unhealthy nodes | If the Connected Cache service hasn't received a heartbeat message from your Connected Cache node in the last 24 hours, the node is labeled as unhealthy. |
+| Max in | The maximum ingress in Megabits per second (Mbps) that your node has pulled from Content Delivery Network (CDN) endpoints in the last 24 hours. |
 | Max out | The minimum egress in Mbps that your node has sent to Windows devices in its network over the last 24 hours. |
 | Average in | The average ingress in Mbps that your node has pulled from CDN endpoints in the last 24 hours. |
 | Average out | The average egress in Mbps that your node has sent to Windows devices in its network over the last 24 hours. |
@@ -65,6 +65,20 @@ This chart displays the volume of each supported content type in bytes (B) that 
 
 The content types displayed in the chart each have a distinct color and are sorted in descending order of volume. The bar chart is stacked such that you can visually compare total volume being delivered at different points in time.
 
+### Cache node details
+
+The **Cache Nodes** section under the **Cache Node Management** tab displays cache node information such as Status, Host machine OS, Software Version, and Cache Node ID.
+
+![Screenshot of cache node details in the Azure portal interface.](../images/mcc-ent-cache-node-details.png)
+
+| Metric | Description |
+| --- | --- |
+| Cache node name | The user-defined name of the cache node. |
+| Status | The heartbeat status of the cache node. |
+| OS | The host machine OS that this cache node is compatible with. |
+| Software version | The version number of the cache node's Connected Cache container. |
+| Cache node ID | The unique identifier of the cache node. |
+
 ## Advanced Monitoring
 
 To expand upon the metrics shown in the Overview tab, navigate to the **Metrics** tab in the left side toolbar of Azure portal.
@@ -79,13 +93,13 @@ Listed below are the metrics you can access in this section:
 
 ### Customizable Dashboards
 
-Once you select the charts you would like to track, you can save them to a personalized dashboard. You can configure the chart title, filters, range, legend, and more. You can also use this personalized dashboard to set up alerts that will notify you if your Connected Cache node dips in performance.
+Once you select the charts you would like to track, you can save them to a personalized dashboard. You can configure the chart title, filters, range, legend, and more. You can also use this personalized dashboard to set up alerts that notify you if your Connected Cache node dips in performance.
 
 Some example scenarios where you would want to set up a custom alert:
 
 - My Connected Cache node is being shown as unhealthy and I want to know exactly when it stopped egressing last
 - A new Microsoft Word update was released last night and I want to know if my Connected Cache node is helping deliver this content to my Windows devices
 
-## Additional Metrics
+## Client-Side Metrics
 
 Your Connected Cache node can keep track of how much content has been sent to requesting Windows devices, but the node can't track whether the content was successfully received by the device. For more information on accessing client-side data from your Windows devices, see [Monitor Delivery Optimization](waas-delivery-optimization-monitor.md).
