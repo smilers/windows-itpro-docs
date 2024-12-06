@@ -116,6 +116,20 @@ You can use Task Scheduler on the host machine to check the status of this sched
 > [!Note]
 > If the password of the runtime account changes, you'll need to update the user in all of the Connected Cache scheduled tasks in order for the Connected Cache node to continue functioning properly.
 
+### Cache node successfully deployed but not serving requests
+
+If your cache node is not responding to requests outside of localhost, it may be because the host machine's port forwarding rules were not correctly set during Connected Cache installation.
+
+To check your host machine's port forwarding rules, use the following PowerShell command.
+
+`netsh interface portproxy show v4tov4`
+
+If you do not see any port forwarding rules for port 80 to 0.0.0.0, you can run the following command from an elevated PowerShell instance to set the proper forwarding to WSL.
+
+`netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=<WSL IP Address>`
+
+You can retrieve the WSL IP Address from the `wslip.txt` file that should be present in the installation directory you specified in the Connected Cache provisioning command ("c:\mccwsl01" by default).
+
 ## Troubleshooting cache node deployment to Linux host machine
 
 [Deploying a Connected Cache node to a Linux host machine](mcc-ent-deploy-to-linux.md) involves running a series of Bash scripts contained within the Linux provisioning package.
