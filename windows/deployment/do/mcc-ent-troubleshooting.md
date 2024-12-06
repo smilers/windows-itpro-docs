@@ -118,13 +118,13 @@ You can use Task Scheduler on the host machine to check the status of this sched
 
 ### Cache node successfully deployed but not serving requests
 
-If your cache node is not responding to requests outside of localhost, it may be because the host machine's port forwarding rules were not correctly set during Connected Cache installation.
+If your cache node isn't responding to requests outside of localhost, it may be because the host machine's port forwarding rules weren't correctly set during Connected Cache installation.
 
 To check your host machine's port forwarding rules, use the following PowerShell command.
 
 `netsh interface portproxy show v4tov4`
 
-If you do not see any port forwarding rules for port 80 to 0.0.0.0, you can run the following command from an elevated PowerShell instance to set the proper forwarding to WSL.
+If you don't see any port forwarding rules for port 80 to 0.0.0.0, you can run the following command from an elevated PowerShell instance to set the proper forwarding to WSL.
 
 `netsh interface portproxy add v4tov4 listenport=80 listenaddress=0.0.0.0 connectport=80 connectaddress=<WSL IP Address>`
 
