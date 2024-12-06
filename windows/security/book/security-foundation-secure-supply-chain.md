@@ -1,6 +1,6 @@
 ---
-title: Secure supply chain
-description: Windows 11 security book - Security foundation chapter - Secure supply chain.
+title: Windows 11 security book - Secure supply chain
+description: Security foundation chapter - Secure supply chain.
 ms.topic: overview
 ms.date: 11/18/2024
 ---

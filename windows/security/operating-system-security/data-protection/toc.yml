@@ -3,7 +3,7 @@ items:
   href: bitlocker/toc.yml
 - name: Encrypted hard drives
   href: encrypted-hard-drive.md
-- name: Personal data encryption (PDE)
+- name: Personal data encryption
   href: personal-data-encryption/toc.yml
 - name: Email Encryption (S/MIME)
   href: configure-s-mime.md

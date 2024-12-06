@@ -1,7 +1,7 @@
 ---
 title: What's new 2024
 description: This article lists the 2024 feature releases and any corresponding Message center post numbers.
-ms.date: 09/27/2024
+ms.date: 11/19/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: whats-new
@@ -20,6 +20,14 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## November 2024
+
+### November feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| Hotpatch | <ul><li>[Hotpatch updates](../manage/windows-autopatch-hotpatch-updates.md)</li><li>[Hotpatch quality update report](../monitor/windows-autopatch-hotpatch-quality-update-report.md)</li></ul> |
 
 ## September 2024
 

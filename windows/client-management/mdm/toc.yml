@@ -837,10 +837,10 @@ items:
       items:
       - name: PassportForWork DDF file
         href: passportforwork-ddf.md
-    - name: PDE
+    - name: Personal Data Encryption
       href: personaldataencryption-csp.md
       items:
-      - name: PDE DDF file
+      - name: Personal Data Encryption DDF file
         href: personaldataencryption-ddf-file.md
     - name: Personalization
       href: personalization-csp.md

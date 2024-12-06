@@ -1,6 +1,6 @@
 ---
-title: Silicon assisted security
-description: Windows 11 security book - Silicon assisted security.
+title: Windows 11 security book - Silicon assisted security
+description: Silicon assisted security.
 ms.topic: overview
 ms.date: 11/18/2024
 ---
@@ -42,15 +42,15 @@ With new installs of Windows 11, OS support for VBS and HVCI is turned on by def
 
 - [Enable virtualization-based protection of code integrity][LINK-2]
 
+### :::image type="icon" source="images/new-button-title.svg" border="false"::: Hypervisor-enforced Paging Translation (HVPT)
+
+Hypervisor-enforced Paging Translation (HVPT) is a security enhancement to enforce the integrity of guest virtual address to guest physical address translations. HVPT helps protect critical system data from write-what-where attacks where the attacker can write an arbitrary value to an arbitrary location often as the result of a buffer overflow. HVPT helps to protect page tables that configure critical system data structures.
+
 ### Hardware-enforced stack protection
 
 Hardware-enforced stack protection integrates software and hardware for a modern defense against cyberthreats like memory corruption and zero-day exploits. Based on Control-flow Enforcement Technology (CET) from Intel and AMD Shadow Stacks, hardware-enforced stack protection is designed to protect against exploit techniques that try to hijack return addresses on the stack.
 
 Application code includes a program processing stack that hackers seek to corrupt or disrupt in a type of attack called *stack smashing*. When defenses like executable space protection began thwarting such attacks, hackers turned to new methods like return-oriented programming. Return-oriented programming, a form of advanced stack smashing, can bypass defenses, hijack the data stack, and ultimately force a device to perform harmful operations. To guard against these control-flow hijacking attacks, the Windows kernel creates a separate *shadow stack* for return addresses. Windows 11 extends stack protection capabilities to provide both user mode and kernel mode support.
-
-[!INCLUDE [new-24h2](includes/new-24h2.md)]
-
-Hypervisor-Enforced Paging Translation (HVPT) - formerly HLAT - is a security feature designed to safeguard linear address translations from tampering. It ensures the integrity of sensitive system structures, protecting them from write-what-where attacks.
 
 [!INCLUDE [learn-more](includes/learn-more.md)]
 

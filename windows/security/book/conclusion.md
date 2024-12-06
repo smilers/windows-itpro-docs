@@ -1,5 +1,5 @@
 ---
-title: Conclusion
+title: Windows 11 security book - Conclusion
 description: Windows 11 security book conclusion.
 ms.topic: overview
 ms.date: 11/18/2024
@@ -22,11 +22,8 @@ New:
 - [VBS key protection](identity-protection-advanced-credential-protection.md#-vbs-key-protection)
 - [Virtualization-based security enclaves](application-security-application-isolation.md#-virtualization-based-security-enclaves)
 - [Win32 app isolation](application-security-application-isolation.md#-win32-app-isolation)
-- [Windows protected print](operating-system-security-system-security.md#-windows-protected-print)
-
-<!--
 - [Windows Hotpatch](cloud-services-protect-your-work-information.md#-windows-hotpatch)
--->
+- [Windows protected print](operating-system-security-system-security.md#-windows-protected-print)
 
 Enhanced:
 
@@ -35,7 +32,7 @@ Enhanced:
 - [Device encryption](operating-system-security-encryption-and-data-protection.md#device-encryption)
 - [Local Security Authority (LSA) protection](identity-protection-advanced-credential-protection.md#local-security-authority-lsa-protection)
 - [Passkeys](identity-protection-passwordless-sign-in.md#passkeys)
-- [Personal data encryption (PDE)](operating-system-security-encryption-and-data-protection.md#personal-data-encryption-pde)
+- [Personal data encryption](operating-system-security-encryption-and-data-protection.md#personal-data-encryption)
 - [Secured kernel](hardware-security-silicon-assisted-security.md#secured-kernel)
 - [Server Message Block file services](operating-system-security-network-security.md#server-message-block-file-services)
 - [Windows Hello PIN](identity-protection-passwordless-sign-in.md#windows-hello-pin)

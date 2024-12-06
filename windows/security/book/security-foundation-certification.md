@@ -1,6 +1,6 @@
 ---
-title: Security foundation
-description: Windows 11 security book - Security foundation chapter.
+title: Windows 11 security book - Certification
+description: Security foundation chapter - Certification.
 ms.topic: overview
 ms.date: 11/18/2024
 ---

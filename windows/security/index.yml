@@ -62,7 +62,7 @@ landingContent:
             url: /windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center
           - text: BitLocker
             url: /windows/security/operating-system-security/data-protection/bitlocker/
-          - text: Personal Data Encryption (PDE)
+          - text: Personal Data Encryption
             url: /windows/security/operating-system-security/data-protection/personal-data-encryption
           - text: Windows security baselines
             url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
@@ -78,7 +78,7 @@ landingContent:
         links:
           - text: Configure BitLocker
             url: /windows/security/operating-system-security/data-protection/bitlocker/configure
-          - text: Configure PDE
+          - text: Configure Personal Data Encryption
             url: /windows/security/operating-system-security/data-protection/personal-data-encryption/configure
       - linkListType: whats-new
         links:
