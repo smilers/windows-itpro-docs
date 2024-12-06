@@ -17,7 +17,7 @@ appliesto:
 
 This article describes how to deploy Microsoft Connected Cache for Enterprise and Education caching software to a Windows host machine.
 
-Deploying Connected Cache to a Windows host machine requires designating a [Group Managed Service Account (gMSA)](/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts) or a [Local User Account](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d) as the Connected Cache runtime account. This prevents tampering with the Connected Cache container and the cached content on the host machine.
+Deploying Connected Cache to a Windows host machine requires designating a [Group Managed Service Account (gMSA)](/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts) or a [local user account](https://support.microsoft.com/topic/20de74e0-ac7f-3502-a866-32915af2a34d) as the Connected Cache runtime account. This prevents tampering with the Connected Cache container and the cached content on the host machine.
 
 Before deploying Connected Cache to a Windows host machine, ensure that the host machine meets all [requirements](mcc-ent-prerequisites.md), and that you have [created and configured your Connected Cache Azure resource](mcc-ent-create-resource-and-cache.md).
 
@@ -39,12 +39,12 @@ Before deploying Connected Cache to a Windows host machine, ensure that the host
 1. Set the Execution Policy to *Unrestricted* to allow the provisioning scripts to run.
 1. Create a `$User` PowerShell variable containing the username of the account you intend to designate as the Connected Cache runtime account.
 
-    For gMSAs, the `$User` PowerShell variable should be formatted as `"Domain\Username$"`. For Local User accounts, `$User` PowerShell variable should be formatted as `"LocalMachineName\Username"`.
+    For gMSAs, the `$User` PowerShell variable should be formatted as `"Domain\Username$"`. For local user accounts, `$User` PowerShell variable should be formatted as `"LocalMachineName\Username"`.
 
-   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+   If you're using a local user account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
 
    >[!Note]
-   >* You'll need to apply a local security policy to permit the Local User account to `Log on as a batch job`.
+   >* You'll need to apply a local security policy to permit the local user account to `Log on as a batch job`.
 
 1. Run the provisioning command on the host machine.
 
@@ -72,12 +72,12 @@ To deploy a cache node programmatically, you'll need to use Azure CLI to get the
 1. Set the Execution Policy to *Unrestricted* to allow the provisioning scripts to run.
 1. Create a `$User` PowerShell variable containing the username of the account you intend to designate as the Connected Cache runtime account.
 
-    For gMSAs, the `$User` PowerShell variable should be formatted as `"Domain\Username$"`. For Local User accounts, the `$User` PowerShell variable should be formatted as `"LocalMachineName\Username"`.
+    For gMSAs, the `$User` PowerShell variable should be formatted as `"Domain\Username$"`. For local user accounts, the `$User` PowerShell variable should be formatted as `"LocalMachineName\Username"`.
 
-   If you're using a Local User account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
+   If you're using a local user account as the Connected Cache runtime account, you'll also need to create a [PSCredential Object](/dotnet/api/system.management.automation.pscredential) named `$myLocalAccountCredential`.
 
    >[!Note]
-   >* You'll need to apply a local security policy to permit the Local User account to `Log on as a batch job`.
+   >* You'll need to apply a local security policy to permit the local user account to `Log on as a batch job`.
 
 1. Replace the values in the following provisioning command before running it on the host machine.
 
