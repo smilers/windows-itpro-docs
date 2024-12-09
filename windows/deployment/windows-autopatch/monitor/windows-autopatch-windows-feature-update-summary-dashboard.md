@@ -1,7 +1,7 @@
 ---
 title: Windows feature update summary dashboard
-description: Provides a broader view of the current Windows OS upgrade status for all devices registered with Windows Autopatch.
-ms.date: 09/16/2024
+description: Provides a broader view of the current Windows OS upgrade status for all Intune devices.
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.collection:
 
 [!INCLUDE [windows-autopatch-enterprise-e3-f3-licenses](../includes/windows-autopatch-enterprise-e3-f3-licenses.md)]
 
-The Summary dashboard provides a broader view of the current Windows OS update status for all devices registered with Windows Autopatch.
+The Summary dashboard provides a broader view of the current Windows OS update status for all Intune devices.
 
 The first part of the Summary dashboard provides you with an all-devices trend report where you can follow the deployment trends within your organization. You can view if updates were successfully installed, failing, in progress, not ready or have their Windows feature update paused.
 
@@ -30,6 +30,9 @@ The first part of the Summary dashboard provides you with an all-devices trend r
 1. Under the **Windows Autopatch** section, select **Windows feature updates**.
 
 ## Report information
+
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Paused column from being displayed**. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
 
 The following information is available in the Summary dashboard:
 

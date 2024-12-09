@@ -18,7 +18,7 @@ appliesto:
 
 # What's new in Windows 11, version 24H2
 <!--8631988-->
-Windows 11, version 24H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 23H2. This article lists the new and updated features IT Pros should know. 
+Windows 11, version 24H2 is a feature update for Windows 11. It includes all features and fixes in previous cumulative updates to Windows 11, version 23H2. This article lists the new and updated features IT Pros should know.
 
 >**Looking for consumer information?** See [Windows 11 2024 update](https://support.microsoft.com/topic/93c5c27c-f96e-43c2-a08e-5812d92f220d#windowsupdate=26100).
 
@@ -42,21 +42,21 @@ To learn more about the status of the update rollout, known issues, and new info
 
 There aren't any features under temporary enterprise control between Windows 11, version 23H2 and Windows 11, version 24H2. For a list of features that were under temporary enterprise control between Windows 11, version 22H2 and Windows 11, version 23H2, see, [Windows 11 features behind temporary enterprise feature control](temporary-enterprise-feature-control.md).
 <!--
-| Feature | KB article where the feature was introduced | 
+| Feature | KB article where the feature was introduced |
 |---|---|
-| PLACEHOLDER | [February 28, 2023 - KB5022913](https://support.microsoft.com/kb/5022913)  | 
+| PLACEHOLDER | [February 28, 2023 - KB5022913](https://support.microsoft.com/kb/5022913)  |
 -->
 
 
 ## Checkpoint cumulative updates
-<!--8769182--> 
+<!--8769182-->
 Microsoft is introducing checkpoint cumulative updates, a new servicing model that enables devices running Windows 11, version 24H2 or later to save time, bandwidth and hard drive space when getting features and security enhancements via the latest cumulative update. Previously, the cumulative updates contained all changes to the binaries since the last release to manufacturing (RTM) version. The size of the cumulative updates could grow large over time since RTM was used as the baseline for each update.
 
 With checkpoint cumulative updates, the update file level differentials are based on a previous cumulative update instead of the RTM release. Cumulative updates that serve as a checkpoint will be released periodically. Using a checkpoint rather than RTM means the subsequent update packages are smaller, which makes downloads and installations faster. Using a checkpoint also means that in order for a device to install the latest cumulative update, the installation of a prerequisite cumulative update might be required. For more information about checkpoint cumulative updates, see [https://aka.ms/CheckpointCumulativeUpdates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-windows-11-checkpoint-cumulative-updates/ba-p/4182552).
 
 ## Features exclusive to Copilot+ PCs in 24H2
 
-Copilot+ PCs are a new class of Windows 11 AI PCs that are powered by a neural processing unit (NPU) that can perform more than 40 trillion operations per second (TOPS). The following features are exclusive to [Copilot+ PCs](https://www.microsoft.com/windows/copilot-plus-pcs) in Windows 11, version 24H2: 
+Copilot+ PCs are a new class of Windows 11 AI PCs that are powered by a neural processing unit (NPU) that can perform more than 40 trillion operations per second (TOPS). The following features are exclusive to [Copilot+ PCs](https://www.microsoft.com/windows/copilot-plus-pcs) in Windows 11, version 24H2:
 
 - Live Captions allow you to translate audio and video content into English subtitles from 44 languages. For more information, see [Use live captions to better understand audio](https://support.microsoft.com/topic/b52da59c-14b8-4031-aeeb-f6a47e6055df).
 - Windows Studio Effects is the collective name of AI-powered video call and audio effects that are available on Copilot+ PCs and select Windows 11 devices with compatible NPUs. Windows Studio Effects automatically improves lighting and cancels noises during video calls. For more information, see [Windows Studio Effects](https://support.microsoft.com/topic/273c1fa8-2b3f-41b1-a587-7cc7a24b62d8).
@@ -80,7 +80,7 @@ The following changes were made for SMB signing and encryption:
 
 - **SMB client encryption**: SMB now supports [requiring encryption](/windows-server/storage/file-server/configure-smb-client-require-encryption) on all outbound SMB client connections. Encryption of all outbound SMB client connections enforces the highest level of network security and brings management parity to SMB signing, which allows both client and server requirements. With this new option, administrators can mandate that all destination servers use SMB 3 and encryption, and if missing those capabilities, the client won't connect. For more information about this change, see [https://aka.ms/SmbClientEncrypt](https://techcommunity.microsoft.com/t5/storage-at-microsoft/smb-client-encryption-mandate-now-supported-in-windows-insider/ba-p/3964037).
 
-- **SMB signing and encryption auditing**: Administrators can now [enable auditing](/windows-server/storage/file-server/smb-signing-overview#smb-signing-and-encryption-auditing) of the SMB server and client for support of SMB signing and encryption. This shows if a third-party client or server doesn't support SMB encryption or signing. The SMB signing and encryption auditing settings can be modified in Group Policy or through PowerShell. 
+- **SMB signing and encryption auditing**: Administrators can now [enable auditing](/windows-server/storage/file-server/smb-signing-overview#smb-signing-and-encryption-auditing) of the SMB server and client for support of SMB signing and encryption. This shows if a third-party client or server doesn't support SMB encryption or signing. The SMB signing and encryption auditing settings can be modified in Group Policy or through PowerShell.
 
 #### SMB alternative client and server ports
 
@@ -104,7 +104,7 @@ For more information about this change, see [https://aka.ms/SmbDialectManage](ht
 
 [SMB over QUIC](/windows-server/storage/file-server/smb-over-quic), which introduced an alternative to TCP and RDMA, supplies secure connectivity to edge file servers over untrusted networks like the Internet. QUIC has significant advantages, the largest being mandatory certificate-based encryption instead of relying on passwords. SMB over QUIC [client access control](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control) improves the existing SMB over QUIC feature.
 
-Administrators now have more options for SMB over QUIC such as: 
+Administrators now have more options for SMB over QUIC such as:
 
 - [Specifying which clients](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#grant-individual-clients) can access SMB over QUIC servers. This gives organizations more protection but doesn't change the Windows authentication used to make the SMB connection or the end user experience.
 - [Disabling SMB over QUIC](/windows-server/storage/file-server/configure-smb-over-quic-client-access-control#disable-smb-over-quic) for client with Group Policy and PowerShell
@@ -124,7 +124,7 @@ For more information about this change, see [https://aka.ms/SMBfirewall](https:/
 
 [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection) helps protect against theft of secrets and credentials used for logon by preventing unauthorized code from running in the LSA process and by preventing dumping of process memory. An audit occurs for incompatibilities with LSA protection for a period of time, starting with this upgrade. If incompatibilities aren't detected, LSA protection is automatically enabled. You can check and change the enablement state of LSA protection in the Windows Security application under the **Device Security** > **Core Isolation** page. In the event log, LSA protection records whether programs are blocked from loading into LSA. If you would like to check if something was blocked, review the [logging](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#identify-plug-ins-and-drivers-that-lsassexe-fails-to-load).
 
- 
+
 ### Remote Mailslot protocol disabled by default
 
 [Remote Mailslot protocol](/openspecs/windows_protocols/ms-mail/47ac910f-1dec-4791-8486-9b3e8fd542da) was [deprecated](deprecated-features.md#deprecated-features) in November 2023 and is now disabled by default starting in Windows 11, version 24H2. For more information on Remote Mailslots, see [About Mailslots](/windows/win32/ipc/about-mailslots).
@@ -144,18 +144,18 @@ LAPS has the following policy improvements:
 - Added an improved readability setting for the [PasswordComplexity](/windows/client-management/mdm/laps-csp#policiespasswordcomplexity) policy, which generates passwords without using characters that are easily confused with another character. For example, the zero and the letter O aren't used in the password since the characters can be confused.
 - Added the `Reset the password, logoff the managed account, and terminate any remaining processes` setting to the [PostAuthenticationActions](/windows/client-management/mdm/laps-csp#policiespostauthenticationactions) policy. The event logging messages that are emitted during post-authentication-action execution were also expanded, to give insights into exactly what was done during the operation.
 
-Image rollback detection was introduced for LAPS. LAPS can detect when a device was rolled back to a previous image. When a device is rolled back, the password in Active Directory might not match the password on the device that was rolled back. This new feature adds an Active Directory attribute, `msLAPS-CurrentPasswordVersion`, to the [Windows LAPS schema](/windows-server/identity/laps/laps-technical-reference#mslaps-currentpasswordversion). This attribute contains a random GUID that Windows LAPS writes every time a new password is persisted in Active Directory, followed by saving a local copy. During every processing cycle, the GUID stored in `msLAPS-CurrentPasswordVersion` is queried and compared to the locally persisted copy. If the GUIDs are different, the password is immediately rotated. To enable this feature, you need to run the latest version of the [Update-LapsADSchema PowerShell cmdlet](/powershell/module/laps/update-lapsadschema). 
+Image rollback detection was introduced for LAPS. LAPS can detect when a device was rolled back to a previous image. When a device is rolled back, the password in Active Directory might not match the password on the device that was rolled back. This new feature adds an Active Directory attribute, `msLAPS-CurrentPasswordVersion`, to the [Windows LAPS schema](/windows-server/identity/laps/laps-technical-reference#mslaps-currentpasswordversion). This attribute contains a random GUID that Windows LAPS writes every time a new password is persisted in Active Directory, followed by saving a local copy. During every processing cycle, the GUID stored in `msLAPS-CurrentPasswordVersion` is queried and compared to the locally persisted copy. If the GUIDs are different, the password is immediately rotated. To enable this feature, you need to run the latest version of the [Update-LapsADSchema PowerShell cmdlet](/powershell/module/laps/update-lapsadschema).
 
 ### Rust in the Windows kernel
 
 There's a new implementation of [GDI region](/windows/win32/gdi/regions) in `win32kbase_rs.sys`. Since Rust offers advantages in reliability and security over traditional programs written in C/C++, you'll continue to see more use of it in the kernel.
 
-### Personal Data Encryption (PDE) for folders
+### Personal Data Encryption for folders
 
-PDE for folders is a security feature where the contents of the known Windows folders (Documents, Desktop and Pictures) are protected using a user authenticated encryption mechanism. Windows Hello is the user authentication used to provide the keys for encrypting user data in the folders. PDE for folders can be [enabled from a policy in Intune](/mem/intune/protect/endpoint-security-disk-encryption-policy). IT admins can select all of the folders, or a subset, then apply the policy to a group of users in their organization.
-PDE for Folders settings is available on Intune under **Endpoint Security** > **Disk encryption**.
+Personal Data Encryption for folders is a security feature where the contents of the known Windows folders (Documents, Desktop and Pictures) are protected using a user authenticated encryption mechanism. Windows Hello is the user authentication used to provide the keys for encrypting user data in the folders. Personal Data Encryption for folders can be [enabled from a policy in Intune](/mem/intune/protect/endpoint-security-disk-encryption-policy). IT admins can select all of the folders, or a subset, then apply the policy to a group of users in their organization.
+Personal Data Encryption for Folders settings is available on Intune under **Endpoint Security** > **Disk encryption**.
 
-For more information about PDE, see [PDE overview](/windows/security/operating-system-security/data-protection/personal-data-encryption)
+For more information about Personal Data Encryption, see [Personal Data Encryption overview](/windows/security/operating-system-security/data-protection/personal-data-encryption)
 
 
 ### Windows protected print mode
@@ -184,7 +184,7 @@ Support  for Wi-Fi 7 was added for consumer access points. Wi-Fi 7, also known a
 
 ### Bluetooth &#174; LE audio support for assistive devices
 
-Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**. For more information, see [Using hearing devices with your Windows 11 PC](https://support.microsoft.com/topic/fcb566e7-13c3-491a-ad5b-8219b098d647).  
+Customers who use these assistive hearing devices are now able to directly pair, stream audio, take calls, and control audio presets when they use an LE Audio-compatible PC. Users who have Bluetooth LE Audio capable assistive hearing devices can determine if their PC is LE Audio-compatible, set up, and manage their devices via **Settings** > **Accessibility** > **Hearing devices**. For more information, see [Using hearing devices with your Windows 11 PC](https://support.microsoft.com/topic/fcb566e7-13c3-491a-ad5b-8219b098d647).
 
 ### Windows location improvements
 
@@ -213,7 +213,7 @@ In addition to the monthly cumulative update, optional updates are available to 
 ### Remote Desktop Connection improvements
 
 Remote Desktop Connection has the following improvements:
-- The Remote Desktop Connection setup window (mstsc.exe) follows the text scaling settings under **Settings** > **Accessibility** > **Text size**. 
+- The Remote Desktop Connection setup window (mstsc.exe) follows the text scaling settings under **Settings** > **Accessibility** > **Text size**.
 - Remote Desktop Connection supports zoom options of 350, 400, 450, and 500%
 - Improvements to the connection bar design
 
@@ -223,11 +223,11 @@ Remote Desktop Connection has the following improvements:
 
 - **File Explorer**: The following changes were made to File Explorer context menu:
   - Support for creating 7-zip and TAR archives
-  - **Compress to** > **Additional options** allows you to compress individual files with gzip, BZip2, xz, or Zstandard 
+  - **Compress to** > **Additional options** allows you to compress individual files with gzip, BZip2, xz, or Zstandard
   - Labels were added to the context menu icons for actions like copy, paste, delete, and rename
 - **OOBE improvement**: when you need to connect to a network and there's no Wi-Fi drivers, you're given an *Install drivers* option to install drivers that are already downloaded
 - **Registry Editor**: The Registry Editor supports limiting a search to the currently selected key and its descendants
-- **Task Manager**: The Task Manager settings page has [Mica material](/windows/apps/design/style/mica) and a redesigned icon 
+- **Task Manager**: The Task Manager settings page has [Mica material](/windows/apps/design/style/mica) and a redesigned icon
 
 
 ### Developer APIs

@@ -30,11 +30,13 @@ When first installed, network applications and services issue a *listen call* sp
 
 :::row:::
   :::column span="2":::
-    If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
+  If there's no active application or administrator-defined allow rule(s), a dialog box prompts the user to either allow or block an application's packets the first time the app is launched or tries to communicate in the network:
+  
+- If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
+- If the user isn't a local admin and they are prompted, block rules are created. It doesn't matter what option is selected
 
-    - If the user has admin permissions, they're prompted. If they respond *No* or cancel the prompt, block rules are created. Two rules are typically created, one each for TCP and UDP traffic
-    - If the user isn't a local admin, they won't be prompted. In most cases, block rules are created
-
+To disable the notification prompt, you can use the [command line](/windows/security/operating-system-security/network-security/windows-firewall/configure-with-command-line) or the **Windows Firewall with Advanced Security** console
+  
   :::column-end:::
   :::column span="2":::
     :::image type="content" source="images/uac.png" alt-text="Screenshot showing the User Account Control (UAC) prompt to allow Microsoft Teams." border="false":::

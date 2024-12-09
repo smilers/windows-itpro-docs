@@ -1,7 +1,7 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -2522,7 +2522,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
@@ -2601,7 +2601,7 @@ This policy will override the following policies:
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
@@ -3237,7 +3237,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 
 <!-- ScheduledInstallTime-Description-Begin -->
 <!-- Description-Source-DDF -->
- the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
+Enables the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->

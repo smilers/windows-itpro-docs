@@ -1,7 +1,7 @@
 ---
 title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch.
-ms.date: 09/16/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -27,7 +27,7 @@ The Windows quality reports provide you with information about:
 - Device update health
 - Device update alerts
 
-Together, these reports provide insight into the quality update state and compliance of Windows devices that are enrolled into Windows Autopatch.
+Together, these reports provide insight into the quality update state and compliance of Intune devices.
 
 The Windows quality report types are organized into the following focus areas:
 
@@ -61,7 +61,7 @@ Users with the following permissions can access the reports:
 
 ## About data latency
 
-The data source for these reports is Windows [diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data). The data typically uploads from enrolled devices once per day. Then, the data is processed in batches before being made available in Windows Autopatch. The maximum end-to-end latency is approximately 48 hours.
+The data source for these reports is Windows [diagnostic data](../overview/windows-autopatch-privacy.md#microsoft-windows-1011-diagnostic-data). The data typically uploads from enrolled devices once per day. Then, the data is processed in batches before being made available in Windows Autopatch. The maximum end-to-end latency is approximately four hours.
 
 ## Windows quality and feature update statuses
 
