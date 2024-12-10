@@ -34,7 +34,7 @@ Customers concerned about NTLM usage in their environments are encouraged to uti
 
 In many cases, applications should be able to replace NTLM with Negotiate using a one-line change in their `AcquireCredentialsHandle` request to the SSPI. One known exception is for applications that have made hard assumptions about the maximum number of round trips needed to complete authentication. In most cases, Negotiate will add at least one additional round trip. Some scenarios may require additional configuration. For more information, see [Kerberos authentication troubleshooting guidance](/troubleshoot/windows-server/windows-security/kerberos-authentication-troubleshooting-guidance).
 
-Negotiate's built-in fallback to NTLM is preserved to mitigate compatibility issues during this transition. For updates on NTLM deprecation, see [https://aka.ms/ntlm](https://aka.ms/ntlm).
+Negotiate's built-in fallback to NTLM is preserved to mitigate compatibility issues during this transition. For updates on NTLM deprecation, see [https://aka.ms/ntlm](https://aka.ms/ntlm). 
 
 ## WordPad
 
