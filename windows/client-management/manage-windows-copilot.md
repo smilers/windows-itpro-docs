@@ -109,7 +109,9 @@ If you choose to provide users in your organization with the choice to manage th
 
 `ms-settings:personalization-textinput-copilot-hardwarekey`
 
-:::image type="content" border="true" source="images/9598546-copilot-key-settings.png" alt-text="Screenshot of the text input page in Settings." lightbox="images/9598546-copilot-key-settings.png":::
+:::image type="content" border="true" source="./images/9598546-copilot-key-settings.png" alt-text="Screenshot of the text input page in Settings." lightbox="./images/9598546-copilot-key-settings.png":::
+
+
 
 If a user signed in with their Microsoft Entra account doesn't already have the key mapped to the Microsoft 365 app, they can select the app by going to **Settings** > **Personalization** > **Text input**, then selecting from the dropdown menu in the setting called **Customize Copilot key on keyboard**. This dropdown has options for: **Search**, **Custom**, or a currently mapped app if one is selected.
 
