@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 09/24/2024
+ms.date: 12/10/2024
 ---
 
 # Programmatic controls for expedited Windows quality updates
@@ -33,6 +33,9 @@ In this article, you will:
 ## Prerequisites
 
 All of the [Windows Autopatch prerequisites](../prepare/windows-autopatch-prerequisites.md) must be met, including ensuring that the *Update Health Tools* is installed on the clients.
+
+> [!IMPORTANT]
+> This step isn't required if your device is running Windows 11 24H2 and later.
 
 - The *Update Health Tools* are installed starting with [KB4023057](https://support.microsoft.com/kb/4023057). To confirm the presence of the Update Health Tools on a device, use one of the following methods:
   - Run a [readiness test for expedited updates](#readiness-test-for-expediting-updates)
@@ -269,7 +272,7 @@ The request returns a 201 Created response code and a [deployment](/graph/api/re
 
 ## Add members to the deployment audience
 
-The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update will be expedited.
+The **Audience ID**, `d39ad1ce-0123-4567-89ab-cdef01234567`, was created when the deployment was created. The **Audience ID** is used to add members to the deployment audience. After the deployment audience is updated, Windows Update starts offering the update to the devices according to the deployment settings. As long as the deployment exists and the device is in the audience, the update is expedited.
 
 The following example adds two devices to the deployment audience using the **Microsoft Entra ID** for each device:
 
@@ -299,7 +302,7 @@ To verify the devices were added to the audience, run the following query using 
 
 ## Delete a deployment
 
-To stop an expedited deployment, DELETE the deployment. Deleting the deployment will prevent the content from being offered to devices if they haven't already received it. To resume offering the content, a new approval will need to be created.
+To stop an expedited deployment, DELETE the deployment. Deleting the deployment prevents the content from being offered to devices if they haven't already received it. To resume offering the content, a new approval must be created.
 
 The following example deletes the deployment with a **Deployment ID** of `de910e12-3456-7890-abcd-ef1234567890`:
 
@@ -309,7 +312,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/de910e
 
 ## Readiness test for expediting updates
 <!--8705528-->
-You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service will check to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](/windows/deployment/update/wufb-reports-workbook#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results.
+You can verify the readiness of clients to receive expedited updates by using [isReadinessTest](/graph/api/resources/windowsupdates-expeditesettings). Create a deployment that specifies  it's an expedite readiness test, then add members to the deployment audience. The service checks to see if the clients meet the prerequisites for expediting updates. The results of the test are displayed in the [Windows Update for Business reports workbook](/windows/deployment/update/wufb-reports-workbook#quality-updates-tab). Under the **Quality updates** tab, select the **Expedite status** tile, which opens a flyout with a **Readiness** tab with the readiness test results.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
