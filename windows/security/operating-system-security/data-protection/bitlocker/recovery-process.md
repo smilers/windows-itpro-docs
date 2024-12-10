@@ -2,7 +2,7 @@
 title: BitLocker recovery process
 description: Learn how to obtain BitLocker recovery information for Microsoft Entra joined, Microsoft Entra hybrid joined, and Active Directory joined devices, and how to restore access to a locked drive.
 ms.topic: how-to
-ms.date: 07/18/2024
+ms.date: 12/05/2024
 ---
 
 # BitLocker recovery process
@@ -25,6 +25,9 @@ A recovery key can't be stored in any of the following locations:
 - The drive being encrypted
 - The root directory of a nonremovable drive
 - An encrypted volume
+
+> [!WARNING]
+> A recovery key is sensitive information that allows users to unlock an encrypted drive and perform administrative tasks on the drive. For enhanced security, it's recommended to enable self-service in trusted environments only, or rely on helpdesk recovery.
 
 ### Self-recovery with recovery password
 

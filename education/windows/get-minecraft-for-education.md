@@ -2,7 +2,7 @@
 title: Deploy Minecraft Education To Windows Devices
 description: Learn how to obtain and distribute Minecraft Education to Windows devices.
 ms.topic: how-to
-ms.date: 04/10/2024
+ms.date: 12/5/2024
 ms.collection:
   - education
   - tier2
