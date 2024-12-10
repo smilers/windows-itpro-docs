@@ -1,7 +1,7 @@
 ---
 title: Manage Update rings
 description: How to manage update rings
-ms.date: 09/16/2024
+ms.date: 12/10/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -43,7 +43,7 @@ Imported rings automatically register all targeted devices into Windows Autopatc
 2. Select **Devices** from the left navigation menu.
 3. Under the **Manage updates** section, select **Windows updates**.
 4. In the **Windows updates** blade, go to the **Update rings** tab.
-5. Select **Enroll policies**.
+5. Select **Enroll policies**. **This step only applies if you've gone through [feature activation](../prepare/windows-autopatch-feature-activation.md)**.
 6. Select the existing rings you would like to import.
 7. Select **Import**.
 
