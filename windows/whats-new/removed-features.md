@@ -38,6 +38,7 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Support removed |
 | ----------- | --------------------- | ------ |
+| NTLMv1 <!--9544861--> | NTLMv1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. | 24H2 |
 | Windows Information Protection | Windows Information Protection is removed starting in Windows 11, version 24H2. <!--9561151--> | 24H2 |
 | Microsoft Defender Application Guard for Edge | [Microsoft Defender Application Guard](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview), including the [Windows Isolated App Launcher APIs](/windows/win32/api/isolatedapplauncher/), is deprecated for Microsoft Edge for Business and is no longer available starting with Windows 11, version 24H2. | 24H2 |
 | WordPad <!--8254696, 8494641--> |  WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. We recommend Microsoft Word for rich text documents like .doc and .rtf and Windows Notepad for plain text documents like .txt.  If you're a developer and need information about the affected binaries, see [Resources for deprecated features](deprecated-features-resources.md#wordpad). | October 1, 2024 |
