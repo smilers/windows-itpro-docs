@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/27/2024
+ms.date: 12/09/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -718,6 +718,7 @@ This policy setting allows you to turn off Windows Copilot.
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > - The TurnOffWindowsCopilot policy isn't for the [new Copilot experience](https://techcommunity.microsoft.com/blog/windows-itpro-blog/evolving-copilot-in-windows-for-your-workforce/4141999) that's in some [Windows Insider builds](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/) and that will be gradually rolling out to Windows 11 and Windows 10 devices. <!--9048085-->
+> - This policy also applies to upgrade scenarios to prevent installation of the Copilot app from an image that would have had the Copilot in Windows pane.
 <!-- TurnOffWindowsCopilot-Editable-End -->
 
 <!-- TurnOffWindowsCopilot-DFProperties-Begin -->
