@@ -64,18 +64,42 @@ The Microsoft Copilot app will be automatically enabled after you install the Wi
 Note that the Microsoft Copilot app doesn't support Microsoft Entra authentication and users trying to sing in to the app using a Microsoft Entra account will be redirected to https://copilot.cloud.microsoft/ in their default browser. For users authenticating with a Microsoft Entra account, they should access Copilot through the Microsoft 365 app as the entry point. We recommend you pin Copilot to the navigation bar of the Microsoft 365 app to enable easy access.
 
 
-
 ## Policy information for previous Copilot in Windows (preview) experience
 
 Admins should configure the [pinning options](/copilot/microsoft-365/pin-copilot) to enable access to Microsoft Copilot within the Microsoft 365 app in the Microsoft 365 admin center. 
 
-The following policy to manage Copilot in Windows (preview) will be removed in the future:
+The following policy to manage Copilot in Windows (preview) will be removed in the future and is considered a legacy policy:
 
 
 | &nbsp; | Setting  |
 |---|---|
 | **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
 | **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Turn off Windows Copilot** |
+
+## Remove or prevent the previous Copilot in Windows (preview) experience
+
+You can remove or uninstall the Copilot app from your device by using one of the following methods:
+
+1. Enterprise users  can uninstall the Copilot app by going to **Settings** > **Apps** >**Installed Apps**. Select the three dots appearing on the right side of the app and select **Uninstall** from the dropdown list.
+
+1. If you are an IT administrator, you can prevent installation of the app or remove the Copilot app using one of the following methods:
+   1. Prevent installation of the Copilot app:
+     - Configure [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows update. AppLocker helps you control which apps and files users can run. Note: AppLocker policy should be used instead of the [Turn Off Windows Copilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) legacy policy setting and its MDM equivalent, [TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot). The policy is subject to near-term deprecation. 
+     - The Applocker policy can be configured by following one of the methods listed in [Edit an AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/edit-an-applocker-policy) and adding the below text to the policy:
+     </br>**Publisher**: CN=MICROSOFT CORPORATION, O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US
+     </br> **Package name**: MICROSOFT.COPILOT
+    </br> **Package version**: * (and above)
+
+   1. Remove the Copilot app using PowerShell script:
+      1. Open a Windows PowerShell window. You can do this by opening the Start menu, typing `PowerShell`, and selecting **Windows PowerShell** from the results.
+      1. Once the PowerShell window is open, enter the following commands:
+       ```powershell
+       # Get the package full name of the Microsoft Copilot app
+       $packageFullName = Get-AppxPackage -Name "Microsoft.Copilot" | Select-Object -ExpandProperty PackageFullName
+       # Remove the Microsoft Copilot app
+       Remove-AppxPackage -Package $packageFullName
+       ```
+
 
 ## Implications for the Copilot hardware key
 
@@ -98,10 +122,6 @@ To configure the Copilot key, use the following policy:
 | **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[SetCopilotHardwareKey](mdm/policy-csp-windowsai.md#setcopilothardwarekey) |
 | **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Set Copilot Hardware Key** |
 
-**Placeholder** Remove Microsoft Copilot app:
-
-Group Policy: <>
-Configuration Service Provider Policy: <>
 
 ## End user settings for the Copilot key
 
@@ -122,7 +142,7 @@ Users can also choose to have the Copilot key launch an app that is MSIX package
 
 ## Copilot installation with Windows updates and controls
 
-If you're an IT administrator and have enabled group policies to prevent the installation of Copilot, the Copilot app won't be installed on the configured devices. If you haven't enabled a group policy, you can remove the Copilot app by following one of the steps in the workaround section or configure the [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows updates. When the AppLocker policy for Copilot is enabled, it will:
+If you're an IT administrator and have enabled group policies to prevent the installation of Copilot, the Copilot app won't be installed on the configured devices. If you haven't enabled a group policy, you can remove the Copilot app by following one of the steps in the [Remove or prevent the previous Copilot in Windows (preview) experience](#remove-or-prevent-the-previous-copilot-in-windows-preview-experience) section or configure the [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows updates. When the AppLocker policy for Copilot is enabled, it will:
 
 - Prevent the app from being installed if it isn't already on the device.
 - Block the app from being launched if it's already installed.
