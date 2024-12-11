@@ -76,7 +76,7 @@ The following policy to manage Copilot in Windows (preview) will be removed in t
 | **CSP** | ./User/Vendor/MSFT/Policy/Config/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
 | **Group policy** | User Configuration > Administrative Templates > Windows Components > Windows Copilot > **Turn off Windows Copilot** |
 
-## Remove or prevent the previous Copilot in Windows (preview) experience
+## Remove or prevent installation of the Copilot app
 
 You can remove or uninstall the Copilot app from your device by using one of the following methods:
 
@@ -142,7 +142,7 @@ Users can also choose to have the Copilot key launch an app that is MSIX package
 
 ## Copilot installation with Windows updates and controls
 
-If you're an IT administrator and have enabled group policies to prevent the installation of Copilot, the Copilot app won't be installed on the configured devices. If you haven't enabled a group policy, you can remove the Copilot app by following one of the steps in the [Remove or prevent the previous Copilot in Windows (preview) experience](#remove-or-prevent-the-previous-copilot-in-windows-preview-experience) section or configure the [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows updates. When the AppLocker policy for Copilot is enabled, it will:
+If you're an IT administrator and have enabled group policies to prevent the installation of Copilot, the Copilot app won't be installed on the configured devices. If you haven't enabled a group policy, you can remove the Copilot app by following one of the steps in the [Remove or prevent installation of the Copilot app](#remove-or-prevent-installation-of-the-copilot-app) section or configure the [AppLocker policy](/windows/security/application-security/application-control/app-control-for-business/applocker/applocker-overview) before installing Windows updates. When the AppLocker policy for Copilot is enabled, it will:
 
 - Prevent the app from being installed if it isn't already on the device.
 - Block the app from being launched if it's already installed.
