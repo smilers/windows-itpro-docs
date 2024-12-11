@@ -102,7 +102,7 @@ You can remove or uninstall the Copilot app from your device by using one of the
 
 
 ## Implications for the Copilot hardware key
-
+<!--9598546-->
 The Microsoft Copilot app is now available only to consumer users authenticating with a Microsoft account and won't work for commercial users authenticating with a Microsoft Entra account. With this change, IT admins need to take steps to ensure users authenticating with a Microsoft Entra account can still access Copilot with the Copilot key. Users attempting to sign in to the Copilot app with their Microsoft Entra account will be redirected to the browser version of Microsoft Copilot with enterprise data protection (https://copilot.cloud.microsoft). 
 
 For the optimal experience, enterprise customers should go to Windows client policies, such as Group Policy or Configuration Service Provider (CSP) policies to update the target of the key to the Microsoft 365 app so that users can access Copilot within the Microsoft 365 app. End users can also configure this from the **Settings** page. 
@@ -110,6 +110,16 @@ For the optimal experience, enterprise customers should go to Windows client pol
 The Microsoft 365 app comes preinstalled on all Windows 11 PCs. If your organization uninstalled the Microsoft 365 app, we suggest you reinstall it from the Microsoft Store or your preferred application management solution so that the Copilot key can be remapped to the Microsoft 365 app. We also suggest you [Pin Microsoft Copilot](/copilot/microsoft-365/pin-copilot) to the navigation bar of the Microsoft 365 app. 
 
 To avoid confusion for users as to which entry point for Microsoft Copilot to use, we recommend you uninstall the Copilot app.
+
+Use the table below to help determine the experience for your managed organization:
+
+| Configuration | Copilot experience | Copilot key invokes |
+| ---| --- | --- |
+| Copilot **not enabled** in environment | Neither Copilot in Windows (preview) nor the Microsoft Copilot app are present. | Windows Search |
+| Copilot **enabled** + **do not authenticate** with Microsoft Entra | Copilot in Windows (preview) is removed and replaced by the Microsoft Copilot app, which is not pinned to the taskbar unless you elect to do so. | Microsoft Copilot app | 
+| Copilot **enabled** + **authenticate** with Microsoft Entra + **new device** |  Copilot in Windows (preview) is not present. Microsoft Copilot is accessed through the Microsoft 365 app (after post-setup update). | Microsoft Copilot within the Microsoft 365 app (after post-setup update). |
+|  Copilot **enabled** + **authenticate** with Microsoft Entra + **existing device** | Copilot in Windows (preview) is removed. Existing users with Copilot enabled on their devices will still see the Microsoft Copilot app. | IT admins should use policy to remap the Copilot key to the Microsoft 365 app, or prompt users to choose. |
+
 
 ## Policies to manage the Copilot key
 
