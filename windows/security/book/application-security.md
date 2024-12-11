@@ -1,5 +1,5 @@
 ---
-title: Windows 11 security book - Application security
+title: Windows 11 Security Book - Application Security
 description: Application security chapter.
 ms.topic: overview
 ms.date: 11/18/2024
