@@ -48,6 +48,9 @@ The following information is available in the Summary dashboard:
 | Not ready | Total device count reporting the Not ready status. For more information, see [Not ready](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-up-to-date-devices). |
 | % with the target feature update | Percent of [Up to Date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) devices on the targeted feature update. |
 
+> [!NOTE]
+> The Windows Autopatch feature update report always displays the higher Windows version a device is taking. If target versions are identical, the report shows the most recent release or binding time. Release takes precedence over standalone DSS policy.<!-- MAXADO-9618138 -->
+
 ## Report options
 
 The following options are available:
