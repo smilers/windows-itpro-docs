@@ -213,6 +213,11 @@ To do this, follow these steps:
 
      * **7**:  Notify for install and notify for restart. (Windows Server 2016 and later only)
 
+   * ScheduledInstallEveryWeek (REG_DWORD):
+
+     * **0**: Do not enforce a once-per-week scheduled installation.
+     * **1**: Enforce automatic installations once a week on the specified day and time. (Requires ***ScheduledInstallDay*** and ***ScheduledInstallTime*** to be set.)
+
    * ScheduledInstallDay (REG_DWORD):
 
      * **0**: Every day.
