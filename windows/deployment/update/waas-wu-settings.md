@@ -215,7 +215,8 @@ To do this, follow these steps:
 
    * ScheduledInstallEveryWeek (REG_DWORD):
 
-     * **0**: Do not enforce a once-per-week scheduled installation.
+     * **0**: Do not enforce a once-per-week scheduled installation
+
      * **1**: Enforce automatic installations once a week on the specified day and time. (Requires ***ScheduledInstallDay*** and ***ScheduledInstallTime*** to be set.)
 
    * ScheduledInstallDay (REG_DWORD):
