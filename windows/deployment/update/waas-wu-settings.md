@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 09/03/2024
+ms.date: 12/14/2024
 ---
 
 # Manage additional Windows Update settings
@@ -215,7 +215,8 @@ To do this, follow these steps:
 
    * ScheduledInstallEveryWeek (REG_DWORD):
 
-     * **0**: Do not enforce a once-per-week scheduled installation.
+     * **0**: Do not enforce a once-per-week scheduled installation
+
      * **1**: Enforce automatic installations once a week on the specified day and time. (Requires ***ScheduledInstallDay*** and ***ScheduledInstallTime*** to be set.)
 
    * ScheduledInstallDay (REG_DWORD):
