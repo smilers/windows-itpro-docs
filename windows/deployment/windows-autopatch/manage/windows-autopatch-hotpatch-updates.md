@@ -45,7 +45,7 @@ Path: `**HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management
 Key value: `**HotPatchRestrictions=1**`
 
 > [!IMPORTANT:]
-> This setting is required because it forces the operating system to use the emulation x86-only binaries insetad of CHPE binaries on Arm 64 devices. CHPE binaries include native Arm 64 code to improve performance, excluding the CHPE binaries might affect performance or compatibility. Be sure to test application compatibility and performance before rolling out hotpatch updates widely on Arm 64 CPU based devices.
+> This setting is required because it forces the operating system to use the emulation x86-only binaries insetad of CHPE binaries on Arm 64 devices. CHPE binaries include native Arm 64 code to improve performance, excluding the CHPE binaries might affect performance or compatibility. Be sure to test application compatibility and performance before rolling out Hotpatch updates widely on Arm 64 CPU based devices.
 
 If you choose to no longer use Hotpatch updates, clear the CHPE disasble flag (`HotPatchRestrictions=0`) then restart the device to turn on CHPE usage.  
 
