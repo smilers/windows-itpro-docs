@@ -36,7 +36,7 @@ To prepare a device to receive Hotpatch updates, configure the following operati
 
 ### Virtualization based security (VBS)
 
-VBS must be turned on for a device to be offered Hotpatch updates. For information on how to set and detect VBS enabled, see [Virtualization-based Security (VBS)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity?tabs=security).
+VBS must be turned on for a device to be offered Hotpatch updates. For information on how to set and detect if VBS is enabled, see [Virtualization-based Security (VBS)](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity?tabs=security).
 
 ### Arm 64 devices must disable compiled hybrid PE usage (CHPE) (Arm 64 CPU Only)
 
