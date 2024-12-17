@@ -35,7 +35,7 @@ Hotpatch updates are [Monthly B release security updates](/windows/deployment/up
 To benefit from Hotpatch updates, devices must meet the following prerequisites:
 
 - Operating System: Devices must be running Windows 11 24H2 or later.
-- VBS (Virtualization-based security): VBS must be enabled to ensure secure installation of Hotpatch updates. For more information on how to set and detect if VBS is enabled, see [Virtualization-based Security](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity).
+- VBS (Virtualization-based security): VBS must be enabled to ensure secure installation of Hotpatch updates. For more information on how to set and detect if VBS is enabled, see [Virtualization-based Security](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity?tabs=security).
 - Latest Baseline Release: Devices must be on the latest baseline release version to qualify for Hotpatch updates. Microsoft releases Baseline updates quarterly as standard cumulative updates. For more information on the latest schedule for these releases, see [Release notes for Hotpatch](https://support.microsoft.com/topic/release-notes-for-hotpatch-in-azure-automanage-for-windows-server-2022-4e234525-5bd5-4171-9886-b475dabe0ce8?preview=true).
 
 > [!NOTE]
