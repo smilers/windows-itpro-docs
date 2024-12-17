@@ -1,7 +1,7 @@
 ---
 title: Hotpatch updates
 description: Use Hotpatch updates to receive security updates without restarting your device
-ms.date: 11/19/2024
+ms.date: 12/17/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: how-to
@@ -35,8 +35,11 @@ Hotpatch updates are [Monthly B release security updates](/windows/deployment/up
 To benefit from Hotpatch updates, devices must meet the following prerequisites:
 
 - Operating System: Devices must be running Windows 11 24H2 or later.
-- VBS (Virtualization-based security): VBS must be enabled to ensure secure installation of Hotpatch updates.
+- VBS (Virtualization-based security): VBS must be enabled to ensure secure installation of Hotpatch updates. For more information on how to set and detect if VBS is enabled, see [Virtualization-based Security](/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity?tabs=security).
 - Latest Baseline Release: Devices must be on the latest baseline release version to qualify for Hotpatch updates. Microsoft releases Baseline updates quarterly as standard cumulative updates. For more information on the latest schedule for these releases, see [Release notes for Hotpatch](https://support.microsoft.com/topic/release-notes-for-hotpatch-in-azure-automanage-for-windows-server-2022-4e234525-5bd5-4171-9886-b475dabe0ce8?preview=true).
+
+> [!NOTE]
+> Hotpatch is available on Windows Server. For more information, see [Hotpatch for Windows Server Azure Edition](/windows-server/get-started/enable-hotpatch-azure-edition).
 
 ## Ineligible devices
 
@@ -45,7 +48,7 @@ Devices that don't meet one or more prerequisites automatically receive the Late
 LCUs requires you to restart the device, but the LCU ensures that the device remains fully secure and compliant.
 
 > [!NOTE]
-> If devices aren't eligible for Hotpatch updates, these devices are offered the LCU. The LCU keeps your configured Update ring settings, it doesn't change the settings.
+> If devices aren't eligible for Hotpatch updates, these devices are offered the LCU. The LCU keeps your configured Update ring settings, it doesn't change the settings.<p>For **ARM64 devices**, Compiled Hybrid PE Usage (CHPE) is turned on by default. You must turn off CHPE to receive regular LCU to keep your ARM64 device compliant and secure.</p>
 
 ## Release cycles
 
