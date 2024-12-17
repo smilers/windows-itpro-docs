@@ -39,7 +39,7 @@ To benefit from Hotpatch updates, devices must meet the following prerequisites:
 - Latest Baseline Release: Devices must be on the latest baseline release version to qualify for Hotpatch updates. Microsoft releases Baseline updates quarterly as standard cumulative updates. For more information on the latest schedule for these releases, see [Release notes for Hotpatch](https://support.microsoft.com/topic/release-notes-for-hotpatch-in-azure-automanage-for-windows-server-2022-4e234525-5bd5-4171-9886-b475dabe0ce8?preview=true).
 
 > [!NOTE]
-> Hotpatch is available on Windows Server. For more information, see [Hotpatch for Windows Server Azure Edition](/windows-server/azure-edition/hotpatch).
+> Hotpatch is available on Windows Server. For more information, see [Hotpatch for Windows Server Azure Edition](/windows-server/get-started/enable-hotpatch-azure-edition).
 
 ## Ineligible devices
 
