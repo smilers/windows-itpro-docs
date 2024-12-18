@@ -31,7 +31,7 @@ Microsoft Connected Cache deployed directly to Windows relies on [Windows Subsys
 
 Microsoft Connected Cache for Enterprise and Education (preview) is intended to support the following content delivery scenarios:
 
-- Pre-provisioning of devices using Windows Autopilot
+- Windows Autopilot deployment scenarios
 - Co-managed clients that get monthly updates and Win32 apps from Microsoft Intune
 - Cloud-only managed devices, such as Intune-enrolled devices without the Configuration Manager client, that get monthly updates and Win32 apps from Microsoft Intune
 
