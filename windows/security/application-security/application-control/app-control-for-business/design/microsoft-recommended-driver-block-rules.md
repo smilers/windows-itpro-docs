@@ -3150,7 +3150,6 @@ The following recommended blocklist xml policy file can also be downloaded from 
           <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
           <DeniedSigner SignerId="ID_SIGNER_ECSIODRV" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
-          <DeniedSigner SignerId="ID_SIGNER_ECSIODRV" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
           <DeniedSigner SignerId="ID_SIGNER_ETDSUPPORT" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_1" />
