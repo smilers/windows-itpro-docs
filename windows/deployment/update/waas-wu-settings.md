@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
-ms.date: 12/14/2024
+ms.date: 12/27/2024
 ---
 
 # Manage additional Windows Update settings
@@ -300,7 +300,7 @@ On new devices, Windows Update doesn't begin installing background updates until
 
 In scenarios where initial sign-in is delayed, setting the following registry values allow devices to begin background update work before a user first signs in:
 
-- **Registry key**: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator
+- **Registry key**: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Orchestrator`
 - **DWORD value name**: ScanBeforeInitialLogonAllowed
 - **Value data**: 1
 
