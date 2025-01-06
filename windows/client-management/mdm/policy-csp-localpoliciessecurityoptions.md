@@ -9,7 +9,7 @@ ms.date: 11/05/2024
 <!-- LocalPoliciesSecurityOptions-Begin -->
 # Policy CSP - LocalPoliciesSecurityOptions
 
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+[!INCLUDE [Windows Windows Insider Preview tip](includes/mdm-insider-csp-note.md)]
 
 <!-- LocalPoliciesSecurityOptions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -1556,7 +1556,7 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-OmaUri-Begin -->
@@ -1568,6 +1568,9 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-Begin -->
 <!-- Description-Source-DDF -->
 Interactive logon: Number of previous logons to cache (in case domain controller isn't available) Each unique user's logon information is cached locally so that, in the event that a domain controller is unavailable during subsequent logon attempts, they're able to log on. The cached logon information is stored from the previous logon session. If a domain controller is unavailable and a user's logon information isn't cached, the user is prompted with this message: There are currently no logon servers available to service the logon request. In this policy setting, a value of 0 disables logon caching. Any value above 50 only caches 50 logon attempts. Windows supports a maximum of 50 cache entries and the number of entries consumed per user depends on the credential. For example, a maximum of 50 unique password user accounts can be cached on a Windows system, but only 25 smart card user accounts can be cached because both the password information and the smart card information are stored. When a user with cached logon information logs on again, the user's individual cached information is replaced. Default: Windows Server 2008: 25 All Other Versions: 10.
+
+> [!NOTE]
+> This setting previously showed as applicable to Windows 11, version 24H2 [10.0.26100] and later in error.  MDM solutions may show as applicable to that version until a future release. 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-Begin -->
