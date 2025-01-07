@@ -517,7 +517,7 @@ Audit: Shut down system immediately if unable to log security audits This securi
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
+Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators or Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-End -->
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Editable-Begin -->
