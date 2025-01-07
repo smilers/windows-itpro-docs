@@ -25,11 +25,11 @@ Unlike BitLocker that releases data encryption keys at boot, Personal Data Encry
 To use Personal Data Encryption, the following prerequisites must be met:
 
 - Windows 11, version 22H2 and later
-- The devices must be [Microsoft Entra joined][AAD-1]. Domain-joined and Microsoft Entra hybrid joined devices aren't supported
+- The devices must be [Microsoft Entra joined][ENTRA-1] or [Microsoft Entra hybrid joined][ENTRA-2]. Domain-joined devices aren't supported
 - Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
 
 > [!IMPORTANT]
-> If you sign in with a password or a [security key][AAD-2], you can't access Personal Data Encryption protected content.
+> If you sign in with a password or a [FIDO2 security key][ENTRA-3], you can't access Personal Data Encryption protected content.
 
 [!INCLUDE [personal-data-encryption-pde](../../../../../includes/licensing/personal-data-encryption-pde.md)]
 
@@ -111,5 +111,6 @@ Certain Windows applications support Personal Data Encryption out of the box. If
 
 <!--links used in this document-->
 
-[AAD-1]: /azure/active-directory/devices/concept-azure-ad-join
-[AAD-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
+[ENTRA-1]: /entra/identity/devices/concept-directory-join
+[ENTRA-2]: /entra/identity/devices/concept-hybrid-join
+[ENTRA-3]: /entra/identity/authentication/howto-authentication-passwordless-security-key-windows#sign-in-with-fido2-security-key
