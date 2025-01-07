@@ -9,7 +9,7 @@ appliesto:
 
 # CiTool technical reference
 
-CiTool makes App Control for Business policy management easier for IT admins. You can use this tool to manage App Control for Business policies and CI tokens. This article describes how to use CiTool to update and manage policies. It's currently included as part of the Windows image in Windows 11, version 22H2.
+CiTool makes App Control for Business policy management easier for IT admins. You can use this tool to manage App Control for Business policies and CI tokens. This article describes how to use CiTool to update and manage policies. It's included in the Windows images starting with Windows 11, version 22H2, and Windows Server 2025.
 
 ## Policy commands
 
