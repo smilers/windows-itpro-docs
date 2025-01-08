@@ -79,7 +79,7 @@ Before you start managing Autopatch groups, ensure you meet the [Windows Autopat
 > Windows Autopatch creates the device-based Microsoft Entra ID assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
 
 > [!CAUTION]
-> If a device that was previously added to an Autopatch group using an Entra group (via Assigned groups or Dynamic distribution method) is removed from the Entra group, then the device will be removed and de-registered from the Autopatch service. Consequently, the removed device will no longer have any service-created policies applied to it and will not appear in the Autopatch devices reports.
+> If a device that was previously added to an Autopatch group uses an Entra group (via Assigned groups or Dynamic distribution method) is removed from the Entra group, the device is removed and de-registered from the Autopatch service. The removed device no longer has any Autopatch service-created policies applied to it and the device won't appear in the Autopatch devices reports.
 
 ## Rename an Autopatch group
 
