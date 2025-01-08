@@ -20,7 +20,7 @@ ms.collection:
 [!INCLUDE [windows-autopatch-applies-to-all-licenses](../includes/windows-autopatch-applies-to-all-licenses.md)]
 
 > [!IMPORTANT]
-> This feature is in public preview. It is being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
+> This feature is in public preview. It's being actively developed and might not be complete. They're made available on a "Preview" basis. You can test and use these features in production environments and scenarios and provide feedback.
 
 Hotpatch updates are [Monthly B release security updates](/windows/deployment/update/release-cycle#monthly-security-update-release) that can be installed without requiring you to restart the device. Hotpatch updates are designed to reduce downtime and disruptions. By minimizing the need to restart, these updates help ensure faster compliance, making it easier for organizations to maintain security while keeping workflows uninterrupted.
 
@@ -44,10 +44,10 @@ This requirement only applies to Arm 64 CPU devices when using Hotpatch updates.
 Path: `**HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management**`
 Key value: `**HotPatchRestrictions=1**`
 
-> [!IMPORTANT:]
-> This setting is required because it forces the operating system to use the emulation x86-only binaries insetad of CHPE binaries on Arm 64 devices. CHPE binaries include native Arm 64 code to improve performance, excluding the CHPE binaries might affect performance or compatibility. Be sure to test application compatibility and performance before rolling out Hotpatch updates widely on Arm 64 CPU based devices.
+> [!IMPORTANT]
+> This setting is required because it forces the operating system to use the emulation x86-only binaries instead of CHPE binaries on Arm 64 devices. CHPE binaries include native Arm 64 code to improve performance, excluding the CHPE binaries might affect performance or compatibility. Be sure to test application compatibility and performance before rolling out Hotpatch updates widely on Arm 64 CPU based devices.
 
-If you choose to no longer use Hotpatch updates, clear the CHPE disasble flag (`HotPatchRestrictions=0`) then restart the device to turn on CHPE usage.  
+If you choose to no longer use Hotpatch updates, clear the CHPE disable flag (`HotPatchRestrictions=0`) then restart the device to turn on CHPE usage.  
 
 ## Eligible devices
 
@@ -76,7 +76,7 @@ For more information about the release calendar for Hotpatch updates, see [Relea
 ## Enroll devices to receive Hotpatch updates
 
 > [!NOTE]
-> If you're using Autopatch groups and want your devices to receive Hotpatch updates, you must create a Hotpatch policy and assign devices to it.  Turning on Hotpatch updates doesn't change the deferral setting applied to devices within an Autopatch group.
+> If you're using Autopatch groups and want your devices to receive Hotpatch updates, you must create a Hotpatch policy and assign devices to it. Turning on Hotpatch updates doesn't change the deferral setting applied to devices within an Autopatch group.
 
 **To enroll devices to receive Hotpatch updates:**
 
@@ -94,4 +94,4 @@ For more information about the release calendar for Hotpatch updates, see [Relea
 These steps ensure that targeted devices, which are [eligible](#eligible-devices) to receive Hotpatch updates, are configured properly. [Ineligible devices](#ineligible-devices) are offered the latest cumulative updates (LCU).
 
 > [!NOTE]
-> Turning on Hotpatch updates doesn't change the existing deadline-driven or scheduled install configurations on your managed devices.  Deferral and active hour settings will still apply.
+> Turning on Hotpatch updates doesn't change the existing deadline-driven or scheduled install configurations on your managed devices. Deferral and active hour settings still applies.
