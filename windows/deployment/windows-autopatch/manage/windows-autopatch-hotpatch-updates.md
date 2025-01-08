@@ -94,4 +94,4 @@ For more information about the release calendar for Hotpatch updates, see [Relea
 These steps ensure that targeted devices, which are [eligible](#eligible-devices) to receive Hotpatch updates, are configured properly. [Ineligible devices](#ineligible-devices) are offered the latest cumulative updates (LCU).
 
 > [!NOTE]
-> Turning on Hotpatch updates doesn't change the existing deadline-driven or scheduled install configurations on your managed devices. Deferral and active hour settings still applies.
+> Turning on Hotpatch updates doesn't change the existing deadline-driven or scheduled install configurations on your managed devices. Deferral and active hour settings still apply.
