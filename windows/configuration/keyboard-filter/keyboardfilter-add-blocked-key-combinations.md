@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Add blocked key combinations
 
-<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
+[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
 
 The following sample Windows PowerShell script uses the Windows Management Instrumentation (WMI) providers for Keyboard Filter to create three functions to configure Keyboard Filter so that Keyboard Filter blocks key combinations. It demonstrates several ways to use each function.
 

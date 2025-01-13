@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_CustomKey
 
-<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
+[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
 
 Adds or removes custom-defined key combinations.
 
@@ -53,9 +53,9 @@ The following tables list any methods and properties that belong to this class.
 
 ### Remarks
 
-You can specify key combinations by including the modifier keys in the name. The most common modifier names are “Ctrl”, “Shift”, “Alt”, and “Win”. You cannot block a combination of non-modifier keys. For example, you can block a key combination of “Ctrl+Shift+F”, but you cannot block a key combination of “A+D”.
+You can specify key combinations by including the modifier keys in the name. The most common modifier names are "Ctrl”, "Shift”, "Alt”, and "Win”. You cannot block a combination of non-modifier keys. For example, you can block a key combination of "Ctrl+Shift+F”, but you cannot block a key combination of "A+D”.
 
-When you block a shift-modified key, you must enter the key as “Shift” + the unmodified key. For example, to block the % key on an English keyboard layout, you must specify the key as “Shift+5”. Attempting to block “%”, results in Keyboard Filter blocking “5” instead.
+When you block a shift-modified key, you must enter the key as "Shift” + the unmodified key. For example, to block the % key on an English keyboard layout, you must specify the key as "Shift+5”. Attempting to block "%”, results in Keyboard Filter blocking "5” instead.
 
 When you specify the key combination to block, you must use the English names for the keys. For a list of the key names you can specify, see Keyboard Filter key names.
 

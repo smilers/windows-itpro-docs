@@ -12,9 +12,9 @@ ms.topic: article
 ---
 # Keyboard Filter
 
-<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
+[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
 
-You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, a customer can use certain Microsoft Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to alter the operation of a device by locking the screen or using Task Manager to close a running application. This behavior might not be desirable if your device is intended for a dedicated purpose.
+You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, a customer can use certain Microsoft Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to alter the operation of a device by locking the screen or using Task Manager to close a running application. This behavior might not be desirable if your device is intended for a dedicated purpose.
 
 The Keyboard Filter feature works with physical keyboards, the Windows on-screen keyboard, and the touch keyboard. Switching from one language to another might cause the location of suppressed keys on the keyboard layout to change. Keyboard Filter detects these dynamic layout changes and continues to suppress keys correctly.
 
@@ -27,9 +27,9 @@ The Keyboard Filter feature works with physical keyboards, the Windows on-screen
 
 * **Configure:** To customize the setting or subsettings.
 
-* **Embedded Keyboard Filter:** This feature is called Embedded Keyboard Filter in Windows 10, version 1511.
+* **Embedded Keyboard Filter:** This feature is called Embedded Keyboard Filter in Windows 10, version 1511.
 
-* **Keyboard Filter:** This feature is called Keyboard Filter in Windows 10, version 1607 and later.
+* **Keyboard Filter:** This feature is called Keyboard Filter in Windows 10, version 1607 and later.
 
 ## Turn on Keyboard Filter
 
@@ -92,7 +92,7 @@ Keyboard Filter has the following features:
 
 ## Keyboard scan codes and layouts
 
-When a key is pressed on a physical keyboard, the keyboard sends a scan code to the keyboard driver. The driver then sends the scan code to the OS and the OS converts the scan code into a virtual key based on the current active layout. The layout defines the mapping of keys on the physical keyboard, and has many variants. A key on a keyboard always sends the same scan code when pressed, however this scan code can map to different virtual keys for different layouts. For example, in the English (United States) keyboard layout, the key to the right of the P key maps to “{“. However, in the Swedish (Sweden) keyboard layout, the same key maps to “Å”.
+When a key is pressed on a physical keyboard, the keyboard sends a scan code to the keyboard driver. The driver then sends the scan code to the OS and the OS converts the scan code into a virtual key based on the current active layout. The layout defines the mapping of keys on the physical keyboard, and has many variants. A key on a keyboard always sends the same scan code when pressed, however this scan code can map to different virtual keys for different layouts. For example, in the English (United States) keyboard layout, the key to the right of the P key maps to `{`. However, in the Swedish (Sweden) keyboard layout, the same key maps to `Å`.
 
 Keyboard Filter can block keys either by the scan code or the virtual key. Blocking keys by the scan code is useful for custom keyboards that have special scan codes that don't translate into any single virtual key. Blocking keys by the virtual key is more convenient because it's easier to read and Keyboard Filter suppresses the key correctly even when the location of the key changes because of a layout change.
 
@@ -138,9 +138,9 @@ Keyboard filter can't block the Sleep key.
 
 Some hardware keys, such as rotation lock, don't have a defined virtual key. You can still block these keys by using the scan code of the key.
 
-The add (+), multiply (\*), subtract (-), divide (/), and decimal (.) keys have different virtual keys and scan codes on the numeric keypad than on the main keyboard. You must block both keys to block these keys. For example, to block the multiply key, you must add a rule to block “\*” and a rule to block Multiply.
+The add (+), multiply (\*), subtract (-), divide (/), and decimal (.) keys have different virtual keys and scan codes on the numeric keypad than on the main keyboard. You must block both keys to block these keys. For example, to block the multiply key, you must add a rule to block "\*" and a rule to block Multiply.
 
-When locking the screen by using the on-screen keyboard, or a combination of a physical keyboard and the on-screen keyboard, the on-screen keyboard sends an extra Windows logo key keystroke to the OS. If your device is using the Windows 10 shell and you use keyboard filter to block Windows logo key+L, the extra Windows logo key keystroke causes the shell to switch between the **Start** screen and the last active app when a user attempts to lock the device by using the on-screen keyboard, which may be unexpected behavior.
+When locking the screen by using the on-screen keyboard, or a combination of a physical keyboard and the on-screen keyboard, the on-screen keyboard sends an extra Windows logo key keystroke to the OS. If your device is using the Windows 10 shell and you use keyboard filter to block Windows logo key+L, the extra Windows logo key keystroke causes the shell to switch between the **Start** screen and the last active app when a user attempts to lock the device by using the on-screen keyboard, which may be unexpected behavior.
 
 Some custom keyboard software, such as Microsoft IntelliType Pro, can install Keyboard Filter drivers that prevent Keyboard Filter from being able to block some or all keys, typically extended keys like BrowserHome and Search.
 

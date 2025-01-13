@@ -7,12 +7,11 @@ ms.service: windows-iot
 ms.subservice: iot
 ms.date: 11/12/2024
 ms.topic: article
-
-
 ---
+
 # WEKF_Settings
 
-<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
+[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
 
 Enables or disables settings for Keyboard Filter.
 

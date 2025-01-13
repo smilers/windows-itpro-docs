@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Keyboard Filter key names
 
-<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
+[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
 
 You can configure Keyboard Filter to block keys or key combinations. A key combination consists of one or more modifier keys, separated by a plus sign (+), and either a key name or a key scan code. In addition to the keys listed in the following tables, you can use the predefined key combinations names as custom key combinations. However, we recommend using the predefined key settings when enabling or disabling predefined key combinations.
 
