@@ -54,7 +54,7 @@ To create supplemental policies, download and install the [WDAC Policy Wizard][E
 
 The following video provides an overview and explains how to create supplemental policies for apps blocked by the Windows 11 SE base policy.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWWReO]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1eedb284-5592-43e7-9446-ce178953502d]
 
 ### Create a supplemental policy for Win32 apps
 
