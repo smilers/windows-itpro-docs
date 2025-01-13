@@ -12,7 +12,7 @@ ms.topic: article
 ---
 # Keyboard Filter
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 You can use Keyboard Filter to suppress undesirable key presses or key combinations. Normally, a customer can use certain Microsoft Windows key combinations like Ctrl+Alt+Delete or Ctrl+Shift+Tab to alter the operation of a device by locking the screen or using Task Manager to close a running application. This behavior might not be desirable if your device is intended for a dedicated purpose.
 

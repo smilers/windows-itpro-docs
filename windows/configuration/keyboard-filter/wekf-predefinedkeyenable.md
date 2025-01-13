@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_PredefinedKey.Enable
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 This method blocks the specified predefined key combination.
 
@@ -46,4 +46,4 @@ Returns an HRESULT value that indicates [WMI non-error constant](/windows/win32/
 ## Related topics
 
 - [WEKF_PredefinedKey](wekf-predefinedkey.md)
-- [Keyboard Filter](keyboardfilter.md)
+- [Keyboard Filter](index.md)

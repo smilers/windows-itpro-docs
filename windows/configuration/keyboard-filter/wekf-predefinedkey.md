@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_PredefinedKey
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 This class blocks or unblocks predefined key combinations, such as Ctrl+Alt+Delete.
 
@@ -126,4 +126,4 @@ Enable-Predefined-Key "Ctrl+Esc"
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard Filter](keyboardfilter.md)
+[Keyboard Filter](index.md)

@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_Scancode.Remove
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 This method removes a custom scan code key combination, causing Keyboard Filter to stop blocking the removed combination.
 
@@ -55,4 +55,4 @@ Because this method is static, you cannot call it on an object instance, but mus
 ## Related topics
 
 - [WEKF_Scancode](wekf-scancode.md)
-- [Keyboard Filter](keyboardfilter.md)
+- [Keyboard Filter](index.md)

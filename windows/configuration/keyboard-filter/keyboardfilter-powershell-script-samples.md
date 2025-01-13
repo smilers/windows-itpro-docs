@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Windows PowerShell script samples for Keyboard Filter
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 The list below describes sample Windows PowerShell scripts that demonstrate how to use the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
 
@@ -29,4 +29,4 @@ The list below describes sample Windows PowerShell scripts that demonstrate how 
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard Filter](keyboardfilter.md)
+[Keyboard Filter](index.md)

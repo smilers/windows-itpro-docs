@@ -11,7 +11,7 @@ ms.subservice: iot
 ---
 # WEKF_CustomKey.Remove
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 Removes a custom key combination, causing Keyboard Filter to stop blocking the removed key combination.
 
@@ -97,4 +97,4 @@ foreach ($objCustomKey in $objDisabledCustomKeys) {
 ## Related topics
 
 - [WEKF_CustomKey](wekf-customkey.md)
-- [Keyboard Filter](keyboardfilter.md)
+- [Keyboard Filter](index.md)

@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_CustomKey.Add
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 Creates a new custom key combination and enables Keyboard Filter to block the new key combination.
 
@@ -107,4 +107,4 @@ foreach ($objCustomKeyItem in $objCustomKeyList) {
 ## Related topics
 
 - [WEKF_CustomKey](wekf-customkey.md)
-- [Keyboard Filter](keyboardfilter.md)
+- [Keyboard Filter](index.md)

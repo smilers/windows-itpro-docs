@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Modify global settings
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 The following sample Windows PowerShell scripts use the Windows Management Instrumentation (WMI) providers to modify global settings for Keyboard Filter.
 
@@ -175,4 +175,4 @@ Set-ForceOffAccessibility $Enabled
 
 [WEKF_Settings](wekf-settings.md)
 
-[Keyboard filter](keyboardfilter.md)
+[Keyboard filter](index.md)

@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Predefined key combinations
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 This topic lists a set of key combinations that are predefined by a keyboard filter.  You can list the value of the WEKF_PredefinedKey.Id to get a complete list of key combinations defined by a keyboard filter.
 
@@ -163,4 +163,4 @@ The following table contains predefined key combinations for Microsoft Surface d
 
 ## Related topics
 
-[Keyboard filter](keyboardfilter.md)
+[Keyboard filter](index.md)

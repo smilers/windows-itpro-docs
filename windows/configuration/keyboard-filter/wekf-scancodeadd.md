@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_Scancode.Add
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 This method adds a new custom scan code combination and enables Keyboard Filter to block the new combination.
 
@@ -55,4 +55,4 @@ If a **WEKF_Scancode** object already exists with same *Modifiers* and *Scancode
 ## Related topics
 
 - [WEKF_Scancode](wekf-scancode.md)
-- [Keyboard Filter](keyboardfilter.md)
+- [Keyboard Filter](index.md)

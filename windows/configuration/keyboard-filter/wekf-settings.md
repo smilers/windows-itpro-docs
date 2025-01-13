@@ -12,7 +12,7 @@ ms.topic: article
 ---
 # WEKF_Settings
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 Enables or disables settings for Keyboard Filter.
 
@@ -107,4 +107,4 @@ $BreakoutMode.put()
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard Filter](keyboardfilter.md)
+[Keyboard Filter](index.md)

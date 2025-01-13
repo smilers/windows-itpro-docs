@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Keyboard Filter key names
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 You can configure Keyboard Filter to block keys or key combinations. A key combination consists of one or more modifier keys, separated by a plus sign (+), and either a key name or a key scan code. In addition to the keys listed in the following tables, you can use the predefined key combinations names as custom key combinations. However, we recommend using the predefined key settings when enabling or disabling predefined key combinations.
 
@@ -29,7 +29,7 @@ The key names are grouped as follows:
 
 ## Modifier keys
 
-You can use the modifier keys listed in the following table when you configure keyboard filter. Multiple modifiers are separated by a plus sign (+). You can also configure Keyboard Filter to block any modifier key even if it’s not part of a key combination.
+You can use the modifier keys listed in the following table when you configure keyboard filter. Multiple modifiers are separated by a plus sign (+). You can also configure Keyboard Filter to block any modifier key even if it's not part of a key combination.
 
 | Modifier key name | Virtual key | Description |
 | ----------------- | ----------- | ----------- |
@@ -73,7 +73,7 @@ You can use the modifier keys listed in the following table when you configure k
 | `RWin`     | VK_RWIN      | The right <kbd>Windows</kbd> logo key |
 | `Windows`  | VK_WIN       | The <kbd>Windows</kbd> logo key |
 | `LWindows` | VK_LWIN      | The left <kbd>Windows</kbd> logo key |
-| `RWindows` | VK_RWIN      | The right <kbd>Windows</kbd> logo key
+| `RWindows` | VK_RWIN      | The right <kbd>Windows</kbd> logo key |
 
 ## Cursor and edit keys
 
@@ -182,4 +182,4 @@ You can use the modifier keys listed in the following table when you configure k
 
 ## Related articles
 
-- [Keyboard filter](keyboardfilter.md)
+- [Keyboard filter](index.md)

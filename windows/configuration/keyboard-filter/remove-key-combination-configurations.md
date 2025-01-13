@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Remove key combination configurations
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 The following sample Windows PowerShell script uses the Windows Management Instrumentation (WMI) providers for Keyboard Filter to create two functions to remove custom-defined key combination configurations from Keyboard Filter. It demonstrates several ways to use each function.
 
@@ -109,4 +109,4 @@ Remove-Scancode "Ctrl" 37
 
 [Keyboard filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard filter](keyboardfilter.md)
+[Keyboard filter](index.md)

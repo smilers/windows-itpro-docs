@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Keyboard Filter WMI provider reference
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 Describes the Windows Management Instrumentation (WMI) provider classes that you use to configure Keyboard Filter during run time.
 
@@ -26,4 +26,4 @@ Describes the Windows Management Instrumentation (WMI) provider classes that you
 
 ## Related topics
 
-[Keyboard filter](keyboardfilter.md)
+[Keyboard filter](index.md)

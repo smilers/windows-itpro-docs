@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_Scancode
 
-[!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)]
+<!-- [!INCLUDE [Supported Editions - Enterprise Plus](../../../includes/incl-supported-OS-Enterprise-Plus.md)] -->
 
 Blocks or unblocks key combinations by using the keyboard scan code, which is an integer number that is generated whenever a key is pressed or released.
 
@@ -139,4 +139,4 @@ Enable-Scancode "Ctrl" 37
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 
-[Keyboard Filter](keyboardfilter.md)
+[Keyboard Filter](index.md)
