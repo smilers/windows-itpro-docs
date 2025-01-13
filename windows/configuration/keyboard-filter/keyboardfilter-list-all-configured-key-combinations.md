@@ -1,16 +1,12 @@
 ---
 title: List all configured key combinations
 description: List all configured key combinations
-ms.assetid: b5ffa47e-87ea-4df4-9291-f37f6b23683b
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # List all configured key combinations
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

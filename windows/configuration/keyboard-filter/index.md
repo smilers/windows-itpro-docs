@@ -1,12 +1,10 @@
 ---
 title: Keyboard Filter
 description: Keyboard Filter
-author: sydbruck
-ms.author: sybruckm
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
+author: TerryWarwick
+ms.author: twarwick
+ms.date: 01/13/2025
+ms.topic: overview
 ---
 
 # Keyboard Filter

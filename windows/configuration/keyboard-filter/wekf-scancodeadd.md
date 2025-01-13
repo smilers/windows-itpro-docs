@@ -1,16 +1,12 @@
 ---
 title: WEKF_Scancode.Add
 description: WEKF_Scancode.Add
-ms.assetid: cb5ea693-e871-4338-957a-f78f87a932ba
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # WEKF_Scancode.Add
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

@@ -1,14 +1,12 @@
 ---
 title: WEKF_CustomKey.Remove
 description: WEKF_CustomKey.Remove
-ms.assetid: 944d2987-5b2c-4c88-8199-dcec12d626b2
-ms.date: 11/12/2024
-ms.topic: article
+ms.date: 01/13/2025
+ms.topic: reference
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
 ---
+
 # WEKF_CustomKey.Remove
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

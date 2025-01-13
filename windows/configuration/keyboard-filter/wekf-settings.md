@@ -3,10 +3,8 @@ title: WEKF_Settings
 description: WEKF_Settings
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
+ms.date: 01/13/2025
+ms.topic: reference
 ---
 
 # WEKF_Settings

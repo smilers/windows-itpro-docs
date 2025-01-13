@@ -1,16 +1,12 @@
 ---
 title: WEKF_CustomKey.Add
 description: WEKF_CustomKey.Add
-ms.assetid: 59040e1b-1706-476b-9d7c-2279b20c47b4
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # WEKF_CustomKey.Add
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

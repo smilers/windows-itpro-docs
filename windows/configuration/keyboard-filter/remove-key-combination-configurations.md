@@ -1,16 +1,12 @@
 ---
 title: Remove key combination configurations
 description: Remove key combination configurations
-ms.assetid: 14f61d51-834b-4d15-8024-6728f0c8bc9c
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # Remove key combination configurations
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

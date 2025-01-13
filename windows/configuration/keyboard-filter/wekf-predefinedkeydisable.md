@@ -1,16 +1,12 @@
 ---
 title: WEKF_PredefinedKey.Disable
 description: WEKF_PredefinedKey.Disable
-ms.assetid: 81a040b3-b845-4cb2-872f-68082b048316
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # WEKF_PredefinedKey.Disable
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

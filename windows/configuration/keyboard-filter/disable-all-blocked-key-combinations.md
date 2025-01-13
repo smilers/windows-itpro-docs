@@ -1,13 +1,10 @@
 ---
 title: Disable all blocked key combinations
 description: Disable all blocked key combinations
-ms.assetid: 60327cc7-ef5b-4f26-8437-83b32711b6d8
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
+ms.date: 01/13/2025
+ms.topic: reference
 ---
 
 # Disable all blocked key combinations

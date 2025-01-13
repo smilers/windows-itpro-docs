@@ -1,16 +1,12 @@
 ---
 title: Modify global settings
 description: Modify global settings
-ms.assetid: b1388f15-e3a4-4513-8721-8ba3ce19747a
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: how-to
 ---
+
 # Modify global settings
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

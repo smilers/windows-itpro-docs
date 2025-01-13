@@ -1,16 +1,12 @@
 ---
 title: WEKF_PredefinedKey
 description: WEKF_PredefinedKey
-ms.assetid: 2fc29e2b-1c76-437f-99b0-db13a3aeb1af
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # WEKF_PredefinedKey
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

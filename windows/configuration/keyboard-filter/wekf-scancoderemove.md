@@ -1,16 +1,12 @@
 ---
 title: WEKF_Scancode.Remove
 description: WEKF_Scancode.Remove
-ms.assetid: 86185501-edc3-4c1d-be0b-5621c64f9540
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # WEKF_Scancode.Remove
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

@@ -1,16 +1,12 @@
 ---
 title: Windows PowerShell script samples for Keyboard Filter
 description: Windows PowerShell script samples for Keyboard Filter
-ms.assetid: ba5dbfc3-05a6-44d7-aac9-1f9b328d0df7
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # Windows PowerShell script samples for Keyboard Filter
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

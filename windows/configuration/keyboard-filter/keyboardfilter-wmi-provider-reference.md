@@ -1,16 +1,12 @@
 ---
 title: Keyboard Filter WMI provider reference
 description: Keyboard Filter WMI provider reference
-ms.assetid: d17428d9-47e3-4510-b2cf-d4b4883687c1
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # Keyboard Filter WMI provider reference
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

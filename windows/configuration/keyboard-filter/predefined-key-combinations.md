@@ -1,16 +1,12 @@
 ---
 title: Predefined key combinations
 description: Predefined key combinations
-ms.assetid: 9fc86f03-6d9e-4899-a4b7-fa8ad7835c65
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # Predefined key combinations
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]

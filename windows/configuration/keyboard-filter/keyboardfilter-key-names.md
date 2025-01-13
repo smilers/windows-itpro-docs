@@ -1,16 +1,12 @@
 ---
 title: Keyboard Filter key names
 description: Keyboard Filter key names
-ms.assetid: 5f3772bb-fdd2-4816-9994-bd2523099400
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
-ms.date: 11/12/2024
-ms.topic: article
-
-
+ms.date: 01/13/2025
+ms.topic: reference
 ---
+
 # Keyboard Filter key names
 
 [!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
