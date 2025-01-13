@@ -103,7 +103,7 @@ iotedge check -verbose
 You can now provision Microsoft Connected Cache for ISP on Ubuntu 22.04.
 If you have a cache node provisioned on Ubuntu 20.04, you will need to uninstall it first before updating to Ubuntu 22.04.
 Once you have updated the system, download the provisioning package from Azure portal and run the provisioning script on the portal.
-For more information on provisioning cache node, visit, [Create, provision and deploy cache node](mcc-isp-create-provision-deploy#provision-your-server).
+For more information on provisioning cache node, visit, [Create, provision and deploy cache node](mcc-isp-create-provision-deploy.md#provision-your-server).
 
 <br>
 
