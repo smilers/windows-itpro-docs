@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_Scancode.Add
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 This method adds a new custom scan code combination and enables Keyboard Filter to block the new combination.
 

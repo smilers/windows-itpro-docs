@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_PredefinedKey.Enable
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 This method blocks the specified predefined key combination.
 

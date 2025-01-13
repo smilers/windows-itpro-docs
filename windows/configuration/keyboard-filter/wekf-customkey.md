@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_CustomKey
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 Adds or removes custom-defined key combinations.
 

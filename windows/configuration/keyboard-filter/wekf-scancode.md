@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_Scancode
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 Blocks or unblocks key combinations by using the keyboard scan code, which is an integer number that is generated whenever a key is pressed or released.
 

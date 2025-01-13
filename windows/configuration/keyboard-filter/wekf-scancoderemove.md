@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_Scancode.Remove
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 This method removes a custom scan code key combination, causing Keyboard Filter to stop blocking the removed combination.
 

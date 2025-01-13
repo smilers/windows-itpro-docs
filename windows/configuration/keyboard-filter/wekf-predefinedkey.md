@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_PredefinedKey
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 This class blocks or unblocks predefined key combinations, such as Ctrl+Alt+Delete.
 

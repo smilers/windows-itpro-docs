@@ -11,7 +11,7 @@ ms.subservice: iot
 ---
 # WEKF_CustomKey.Remove
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 Removes a custom key combination, causing Keyboard Filter to stop blocking the removed key combination.
 

@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # WEKF_CustomKey.Add
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 Creates a new custom key combination and enables Keyboard Filter to block the new key combination.
 

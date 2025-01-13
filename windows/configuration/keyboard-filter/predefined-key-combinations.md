@@ -13,7 +13,7 @@ ms.topic: article
 ---
 # Predefined key combinations
 
-[!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
+[!INCLUDE [supported-os-enterprise-plus](../../../includes/iot/supported-os-enterprise-plus.md)]
 
 This topic lists a set of key combinations that are predefined by a keyboard filter.  You can list the value of the WEKF_PredefinedKey.Id to get a complete list of key combinations defined by a keyboard filter.
 
