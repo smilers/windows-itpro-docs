@@ -17,7 +17,7 @@ The first function, **Remove-Custom-Key**, removes custom key combination config
 
 The second function, **Remove-Scancode**, removes custom scan code configurations.
 
-You cannot remove the predefined key combination configurations for Keyboard Filter, but you can disable them.
+You can't remove the predefined key combination configurations for Keyboard Filter, but you can disable them.
 
 ## Remove-rules.ps1
 
@@ -99,7 +99,7 @@ Remove-Custom-Key "%"
 Remove-Scancode "Ctrl" 37
 ```
 
-## Related topics
+## Related articles
 
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 

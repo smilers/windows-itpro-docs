@@ -46,19 +46,19 @@ The following tables list any methods and properties that belong to this class.
 | Property | Data&nbsp;type | Qualifiers | Description  |
 |----------|----------------|------------|--------------|
 | **Id** | string | [key] | The name of the custom key combination. |
-| **Enabled** | Boolean | [read, write] | Indicates if the key is blocked or unblocked. This property can be one of the following values </br>- **true**  Indicates that the key is blocked.</br>- **false** Indicates that the key is not blocked. |
+| **Enabled** | Boolean | [read, write] | Indicates if the key is blocked or unblocked. This property can be one of the following values </br>- **true**  Indicates that the key is blocked.</br>- **false** Indicates that the key isn't blocked. |
 
 ### Remarks
 
-You can specify key combinations by including the modifier keys in the name. The most common modifier names are "Ctrl", "Shift", "Alt", and "Win". You cannot block a combination of non-modifier keys. For example, you can block a key combination of "Ctrl+Shift+F", but you cannot block a key combination of "A+D".
+You can specify key combinations by including the modifier keys in the name. The most common modifier names are <kbd>>Ctrl</kbd>, <kbd>>Shift</kbd>, <kbd>>Alt</kbd>, and <kbd>>Win</kbd>. You can't block a combination of non-modifier keys. For example, you can block a key combination of <kbd>>Ctrl</kbd>+<kbd>>Shift</kbd>+<kbd>>F</kbd>, but you can't block a key combination of <kbd>>A</kbd>+<kbd>>D</kbd>.
 
-When you block a shift-modified key, you must enter the key as "Shift" + the unmodified key. For example, to block the % key on an English keyboard layout, you must specify the key as "Shift+5". Attempting to block "%", results in Keyboard Filter blocking "5" instead.
+When you block a <kbd>>Shift</kbd>-modified key, you must enter the key as <kbd>>Shift</kbd> + the unmodified key. For example, to block the <kbd>>%</kbd> key on an English keyboard layout, you must specify the key as <kbd>>Shift</kbd>+<kbd>>5</kbd>. Attempting to block <kbd>>%</kbd>, results in Keyboard Filter blocking <kbd>>5</kbd> instead.
 
 When you specify the key combination to block, you must use the English names for the keys. For a list of the key names you can specify, see Keyboard Filter key names.
 
 ## Example
 
-The following code demonstrates how to add or enable a custom key combination that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter. This example modifies the properties directly and does not call any of the methods defined in **WEKF_CustomKey**.
+The following code demonstrates how to add or enable a custom key combination that Keyboard Filter will block by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter. This example modifies the properties directly and doesn't call any of the methods defined in **WEKF_CustomKey**.
 
 ```powershell
 <#
@@ -123,17 +123,7 @@ Enable-Custom-Key "Numpad0"
 Enable-Custom-Key "Shift+Numpad1"
 ```
 
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
+## Related articles
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 

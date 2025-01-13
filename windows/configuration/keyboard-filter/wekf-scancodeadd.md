@@ -36,19 +36,9 @@ Returns an HRESULT value that indicates [WMI non-error constant](/windows/win32/
 
 **WEKF_Scancode.Add** creates a new **WEKF_Scancode** object and sets the **Enabled** property of the new object to **true**.
 
-If a **WEKF_Scancode** object already exists with same *Modifiers* and *Scancode* properties, then **WEKF_Scancode.Add** returns an error code and does not create a new object or modify any properties of the existing object. If the existing **WEKF_Scancode** object has the **Enabled** property set to **false**, Keyboard Filter does not block the scan code.
+If a **WEKF_Scancode** object already exists with same *Modifiers* and *Scancode* properties, then **WEKF_Scancode.Add** returns an error code and doesn't create a new object or modify any properties of the existing object. If the existing **WEKF_Scancode** object has the **Enabled** property set to **false**, Keyboard Filter does not block the scan code.
 
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
+## Related articles
 
 - [WEKF_Scancode](wekf-scancode.md)
 - [Keyboard Filter](index.md)

@@ -21,7 +21,7 @@ The list below describes sample Windows PowerShell scripts that demonstrate how 
 | [Modify global settings](modify-global-settings.md) | Demonstrates how to modify global settings for Keyboard Filter. |
 | [Remove key combination configurations](remove-key-combination-configurations.md) | Demonstrates how to remove a custom defined key combination configuration for Keyboard Filter. |
 
-## Related topics
+## Related articles
 
 [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
 

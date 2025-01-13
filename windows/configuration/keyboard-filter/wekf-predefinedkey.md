@@ -45,7 +45,7 @@ The following tables list any constructors, methods, fields, and properties that
 | Property    | Data type | Qualifiers    | Description                                                                                                                                                           |
 |:------------|:----------|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Id**      | string    | [key]         | The name of the predefined key combination.                                                                                                                           |
-| **Enabled** | Boolean   | [read, write] | Indicates whether the key is blocked or unblocked. To indicate that the key is blocked, specify **true**. To indicate that the key is not blocked, specify **false**. |
+| **Enabled** | Boolean   | [read, write] | Indicates whether the key is blocked or unblocked. To indicate that the key is blocked, specify **true**. To indicate that the key isn't blocked, specify **false**. |
 
 ### Remarks
 
@@ -108,18 +108,7 @@ Enable-Predefined-Key "Ctrl+Alt+Delete"
 Enable-Predefined-Key "Ctrl+Esc"
 ```
 
-## Requirements
+## Related articles
 
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
-
-[Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
-
-[Keyboard Filter](index.md)
+- [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
+- [Keyboard Filter](index.md)

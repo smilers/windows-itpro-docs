@@ -31,13 +31,13 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 
 ## Remarks
 
-**WEKF_CustomKey.Remove** removes an existing **WEKF_CustomKey** object. If the object does not exist, **WEKF_CustomKey.Remove** returns an error with the value 0x8007007B.
+**WEKF_CustomKey.Remove** removes an existing **WEKF_CustomKey** object. If the object doesn't exist, **WEKF_CustomKey.Remove** returns an error with the value 0x8007007B.
 
-Because this method is static, you cannot call it on an object instance, but must instead call it at the class level.
+Because this method is static, you can't call it on an object instance, but must instead call it at the class level.
 
 ## Example
 
-The following code demonstrates how to remove a custom key from Keyboard Filter so it is no longer blocked by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
+The following code demonstrates how to remove a custom key from Keyboard Filter so it's no longer blocked by using the Windows Management Instrumentation (WMI) providers for Keyboard Filter.
 
 ```powershell
 $COMPUTER = "localhost"
@@ -81,16 +81,6 @@ foreach ($objCustomKey in $objDisabledCustomKeys) {
     }
 }
 ```
-
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
 
 ## Related topics
 

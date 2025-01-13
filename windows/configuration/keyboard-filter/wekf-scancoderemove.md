@@ -34,21 +34,11 @@ Returns an HRESULT value that indicates [WMI non-error constant](/windows/win32/
 
 ## Remarks
 
-**WEKF_Scancode.Remove** removes an existing **WEKF_Scancode** object. If the object does not exist, **WEKF_Scancode.Remove** returns an error with the value 0x8007007B.
+**WEKF_Scancode.Remove** removes an existing **WEKF_Scancode** object. If the object doesn't exist, **WEKF_Scancode.Remove** returns an error with the value 0x8007007B.
 
-Because this method is static, you cannot call it on an object instance, but must instead call it at the class level.
+Because this method is static, you can't call it on an object instance, but must instead call it at the class level.
 
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
+## Related articles
 
 - [WEKF_Scancode](wekf-scancode.md)
 - [Keyboard Filter](index.md)

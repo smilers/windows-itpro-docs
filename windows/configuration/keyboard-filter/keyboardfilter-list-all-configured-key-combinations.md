@@ -64,7 +64,7 @@ Get-WMIObject -class WEKF_Scancode @CommonParams |
     }
 ```
 
-## Related topics
+## Related articles
 
 [Windows PowerShell script samples for keyboard filter](keyboardfilter-powershell-script-samples.md)
 

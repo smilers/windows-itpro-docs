@@ -33,7 +33,7 @@ Returns an HRESULT value that indicates a [WMI Non-Error Constant](/windows/win3
 
 **WEKF_CustomKey.Add** creates a new **WEKF_CustomKey** object and sets the **Enabled** property of the new object to **true**, and the **Id** property to *CustomKey*.
 
-If a **WEKF_CustomKey** object already exists with the **Id** property equal to *CustomKey*, then **WEKF_CustomKey.Add** returns an error code and does not create a new object or modify any properties of the existing object. If the existing **WEKF_CustomKey** object has the **Enabled** property set to **false**, Keyboard Filter does not block the custom key combination.
+If a **WEKF_CustomKey** object already exists with the **Id** property equal to *CustomKey*, then **WEKF_CustomKey.Add** returns an error code and doesn't create a new object or modify any properties of the existing object. If the existing **WEKF_CustomKey** object has the **Enabled** property set to **false**, Keyboard Filter does not block the custom key combination.
 
 ## Example
 
@@ -90,17 +90,7 @@ foreach ($objCustomKeyItem in $objCustomKeyList) {
     }
 ```
 
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
+## Related articles
 
 - [WEKF_CustomKey](wekf-customkey.md)
 - [Keyboard Filter](index.md)

@@ -29,17 +29,7 @@ This method blocks the specified predefined key combination.
 
 Returns an HRESULT value that indicates [WMI non-error constant](/windows/win32/wmisdk/wmi-non-error-constants) or a [WMI error constant](/windows/win32/wmisdk/wmi-error-constants).
 
-## Requirements
-
-| Windows Edition        | Supported |
-|:-----------------------|:---------:|
-| Windows Home           | No        |
-| Windows Pro            | No        |
-| Windows Enterprise     | Yes       |
-| Windows Education      | Yes       |
-| Windows IoT Enterprise | Yes       |
-
-## Related topics
+## Related articles
 
 - [WEKF_PredefinedKey](wekf-predefinedkey.md)
 - [Keyboard Filter](index.md)
