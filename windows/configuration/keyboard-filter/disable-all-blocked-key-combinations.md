@@ -8,9 +8,8 @@ ms.service: windows-iot
 ms.subservice: iot
 ms.date: 11/12/2024
 ms.topic: article
-
-
 ---
+
 # Disable all blocked key combinations
 
 [!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]

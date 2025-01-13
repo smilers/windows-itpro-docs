@@ -7,9 +7,8 @@ ms.service: windows-iot
 ms.subservice: iot
 ms.date: 11/12/2024
 ms.topic: article
-
-
 ---
+
 # Keyboard Filter
 
 [!INCLUDE [Supported Editions - Enterprise Plus](includes-supported-os-enterprise-plus.md)]
@@ -23,13 +22,10 @@ The Keyboard Filter feature works with physical keyboards, the Windows on-screen
 
 ## Terminology
 
-* **Turn on, enable:** Make the setting available to the device and optionally apply the settings to the device. Generally *turn on* is used in the user interface or control panel, whereas *enable* is used for command line.
-
-* **Configure:** To customize the setting or subsettings.
-
-* **Embedded Keyboard Filter:** This feature is called Embedded Keyboard Filter in Windows 10, version 1511.
-
-* **Keyboard Filter:** This feature is called Keyboard Filter in Windows 10, version 1607 and later.
+- **Turn on, enable:** Make the setting available to the device and optionally apply the settings to the device. Generally *turn on* is used in the user interface or control panel, whereas *enable* is used for command line
+- **Configure:** To customize the setting or subsettings
+- **Embedded Keyboard Filter:** This feature is called Embedded Keyboard Filter in Windows 10, version 1511
+- **Keyboard Filter:** This feature is called Keyboard Filter in Windows 10, version 1607 and later
 
 ## Turn on Keyboard Filter
 
@@ -78,17 +74,17 @@ This example uses a Windows image called install.wim, but you can use the same p
 
 Keyboard Filter has the following features:
 
-* Supports hardware keyboards, the standard Windows on-screen keyboard, and the touch keyboard (TabTip.exe).
-* Suppresses key combinations even when they come from multiple keyboards.
+- Supports hardware keyboards, the standard Windows on-screen keyboard, and the touch keyboard (TabTip.exe)
+- Suppresses key combinations even when they come from multiple keyboards
 
     For example, if a user presses the Ctrl key and the Alt key on a hardware keyboard, while at the same time pressing Delete on a software keyboard, Keyboard Filter can still detect and suppress the Ctrl+Alt+Delete functionality.
 
-* Supports numeric keypads and keys designed to access media player and browser functionality.
-* Can configure a key to breakout of a locked down user session to return to the Welcome screen.
-* Automatically handles dynamic layout changes.
-* Can be enabled or disabled for administrator accounts.
-* Can force disabling of Ease of Access functionality.
-* Supports x86 and x64 architectures.
+- Supports numeric keypads and keys designed to access media player and browser functionality
+- Can configure a key to breakout of a locked down user session to return to the Welcome screen
+- Automatically handles dynamic layout changes
+- Can be enabled or disabled for administrator accounts
+- Can force disabling of Ease of Access functionality
+- Supports x86 and x64 architectures
 
 ## Keyboard scan codes and layouts
 
@@ -112,11 +108,11 @@ You can enable ease of access features for administrator accounts, while still d
 
 You can configure the following options for Keyboard Filter:
 
-* Set/unset predefined key combinations to be suppressed.
-* Add/remove custom defined key combinations to be suppressed.
-* Enable/disable keyboard filter for administrator accounts.
-* Force disabling ease of access features.
-* Configure a breakout key sequence to break out of a locked down account.
+- Set/unset predefined key combinations to be suppressed
+- Add/remove custom defined key combinations to be suppressed
+- Enable/disable keyboard filter for administrator accounts
+- Force disabling ease of access features
+- Configure a breakout key sequence to break out of a locked down account
 
 Most configuration changes take effect immediately. Some changes, such as enabling or disabling Keyboard Filter for administrators, don't take effect until the user signs out of the account and then back in. If you change the breakout key scan code, you must restart the device before the change take effect.
 
@@ -146,7 +142,7 @@ Some custom keyboard software, such as Microsoft IntelliType Pro, can install Ke
 
 ## In this section
 
-* [Keyboard Filter key names](keyboardfilter-key-names.md)
-* [Predefined key combinations](predefined-key-combinations.md)
-* [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
-* [Windows PowerShell script samples for Keyboard Filter](keyboardfilter-powershell-script-samples.md)
+- [Keyboard Filter key names](keyboardfilter-key-names.md)
+- [Predefined key combinations](predefined-key-combinations.md)
+- [Keyboard Filter WMI provider reference](keyboardfilter-wmi-provider-reference.md)
+- [Windows PowerShell script samples for Keyboard Filter](keyboardfilter-powershell-script-samples.md)
