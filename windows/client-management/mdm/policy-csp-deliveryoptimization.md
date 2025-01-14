@@ -1,7 +1,7 @@
 ---
 title: DeliveryOptimization Policy CSP
 description: Learn more about the DeliveryOptimization Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -93,7 +93,7 @@ The value 0 (zero) means "unlimited" cache; Delivery Optimization will clear the
 
 <!-- DOAllowVPNPeerCaching-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.
+Specifies whether the device, with an active VPN connection, is allowed to participate in P2P or not.
 <!-- DOAllowVPNPeerCaching-Description-End -->
 
 <!-- DOAllowVPNPeerCaching-Editable-Begin -->
@@ -240,9 +240,17 @@ If this policy isn't configured, the client will attempt to automatically find a
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0-4294967295]` |
 | Default Value  | 0 |
 <!-- DOCacheHostSource-DFProperties-End -->
+
+<!-- DOCacheHostSource-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | DHCP Option 235. |
+| 2 | DHCP Option 235 Force. |
+<!-- DOCacheHostSource-AllowedValues-End -->
 
 <!-- DOCacheHostSource-GpMapping-Begin -->
 **Group policy mapping**:
@@ -342,7 +350,7 @@ The recommended value is 1 hour (3600).
 
 <!-- DODelayCacheServerFallbackBackground-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download. Note that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
+For background downloads that use a cache server, specifies the time to wait before falling back to download from the original HTTP source.
 <!-- DODelayCacheServerFallbackBackground-Description-End -->
 
 <!-- DODelayCacheServerFallbackBackground-Editable-Begin -->
@@ -397,7 +405,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 
 <!-- DODelayCacheServerFallbackForeground-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download. Note that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.
+For foreground downloads that use a cache server, specifies the time to wait before falling back to download from the original HTTP source.
 <!-- DODelayCacheServerFallbackForeground-Description-End -->
 
 <!-- DODelayCacheServerFallbackForeground-Editable-Begin -->
@@ -513,7 +521,7 @@ The recommended value is 1 minute (60).
 
 <!-- DODisallowCacheServerDownloadsOnVPN-Description-Begin -->
 <!-- Description-Source-DDF -->
-Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN.
+Specify to disallow downloads from Microsoft Connected Cache servers when the device has an active VPN connection. By default, the button is 'Not Set'. This means the device is allowed to download from Microsoft Connected Cache when the device has an active VPN connection. To block these downloads, turn the button on to 'Enabled'.
 <!-- DODisallowCacheServerDownloadsOnVPN-Description-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-Editable-Begin -->
@@ -535,8 +543,8 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Allowed. |
-| 1 | Not allowed. |
+| 0 (Default) | Not Set. |
+| 1 | Enabled. |
 <!-- DODisallowCacheServerDownloadsOnVPN-AllowedValues-End -->
 
 <!-- DODisallowCacheServerDownloadsOnVPN-GpMapping-Begin -->
@@ -572,7 +580,7 @@ Disallow downloads from Microsoft Connected Cache servers when the device connec
 
 <!-- DODownloadMode-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates. The default value is 1.
+Specifies the method that Delivery Optimization can use to download content on behalf of various Microsoft products.
 <!-- DODownloadMode-Description-End -->
 
 <!-- DODownloadMode-Editable-Begin -->
@@ -598,10 +606,10 @@ Specifies the download method that Delivery Optimization can use in downloads of
 |:--|:--|
 | 0 (Default) | HTTP only, no peering. |
 | 1 | HTTP blended with peering behind the same NAT. |
-| 2 | When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2. |
+| 2 | HTTP blended with peering across a private group. |
 | 3 | HTTP blended with Internet peering. |
-| 99 | Simple download mode with no peering. Delivery Optimization downloads using HTTP only and doesn't attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607. |
-| 100 | Bypass mode. Windows 10: Don't use Delivery Optimization and use BITS instead. Windows 11: Deprecated, use Simple mode instead. |
+| 99 | HTTP only, no peering, no use of DO cloud service. |
+| 100 | Bypass mode, deprecated in Windows 11. |
 <!-- DODownloadMode-AllowedValues-End -->
 
 <!-- DODownloadMode-GpMapping-Begin -->
@@ -698,7 +706,7 @@ Note this is a best effort optimization and shouldn't be relied on for an authen
 
 <!-- DOGroupIdSource-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = Microsoft Entra ID. When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID. Starting with Windows 10, version 1903, you can use the Microsoft Entra tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.
+Specifies the source of group ID used for peer selection.
 <!-- DOGroupIdSource-Description-End -->
 
 <!-- DOGroupIdSource-Editable-Begin -->
@@ -722,12 +730,12 @@ Set this policy to restrict peer selection to a specific source. Available optio
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Unset. |
+| 0 (Default) | Not Set. |
 | 1 | AD site. |
 | 2 | Authenticated domain SID. |
-| 3 | DHCP user option. |
-| 4 | DNS suffix. |
-| 5 | Microsoft Entra ID. |
+| 3 | DHCP Option ID. |
+| 4 | DNS Suffix. |
+| 5 | Entra ID Tenant ID. |
 <!-- DOGroupIdSource-AllowedValues-End -->
 
 <!-- DOGroupIdSource-GpMapping-Begin -->
@@ -824,7 +832,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 <!-- DOMaxCacheAge-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means unlimited; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size hasn't exceeded. The value 0 is new in Windows 10, version 1607. The default value is 604800 seconds (7 days).
+Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully.
 <!-- DOMaxCacheAge-Description-End -->
 
 <!-- DOMaxCacheAge-Editable-Begin -->
@@ -879,7 +887,7 @@ Specifies the maximum time in seconds that each file is held in the Delivery Opt
 
 <!-- DOMaxCacheSize-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100). The default value is 20.
+Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of the available drive space.
 <!-- DOMaxCacheSize-Description-End -->
 
 <!-- DOMaxCacheSize-Editable-Begin -->
@@ -991,7 +999,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 <!-- DOMinBackgroundQos-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set. The default value is 20480 (20 MB/s).
+Specifies the minimum download QoS (Quality of Service) in KiloBytes/sec for background downloads.
 <!-- DOMinBackgroundQos-Description-End -->
 
 <!-- DOMinBackgroundQos-Editable-Begin -->
@@ -1165,7 +1173,7 @@ Recommended values: 64 GB to 256 GB.
 
 <!-- DOMinFileSizeToCache-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the minimum content file size in MB enabled to use Peer Caching. Recommended values: 1 MB to 100,000 MB. The default value is 100 MB.
+Specifies the minimum content file size in MB eligible to use P2P.
 <!-- DOMinFileSizeToCache-Description-End -->
 
 <!-- DOMinFileSizeToCache-Editable-Begin -->
@@ -1220,7 +1228,7 @@ Specifies the minimum content file size in MB enabled to use Peer Caching. Recom
 
 <!-- DOMinRAMAllowedToPeer-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the minimum RAM size in GB required to use Peer Caching. For example, if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB. The default value is 4 GB.
+Specifies the minimum total RAM size in GB required to use P2P.
 <!-- DOMinRAMAllowedToPeer-Description-End -->
 
 <!-- DOMinRAMAllowedToPeer-Editable-Begin -->
@@ -1330,7 +1338,7 @@ By default, %SystemDrive% is used to store the cache. The drive location can be 
 
 <!-- DOMonthlyUploadDataCap-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month. The value 0 (zero) means unlimited; No monthly upload limit's applied if 0 is set. The default value is 5120 (5 TB).
+Specifies the maximum bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.
 <!-- DOMonthlyUploadDataCap-Description-End -->
 
 <!-- DOMonthlyUploadDataCap-Editable-Begin -->
@@ -1501,7 +1509,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 
 <!-- DORestrictPeerSelectionBy-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-Set this policy to restrict peer selection via selected option. Options available are: 1=Subnet mask, 2 = Local discovery (DNS-SD). These options apply to both Download Mode LAN (1) and Group (2).
+Specifies to restrict peer selection using the selected method, in addition to the DownloadMode policy.
 <!-- DORestrictPeerSelectionBy-Description-End -->
 
 <!-- DORestrictPeerSelectionBy-Editable-Begin -->
@@ -1528,7 +1536,7 @@ In Windows 11 the 'Local Peer Discovery' option was introduced to restrict peer 
 |:--|:--|
 | 0 (Default) | None. |
 | 1 | Subnet mask. |
-| 2 | Local peer discovery (DNS-SD). |
+| 2 | Local discovery (DNS-SD). |
 <!-- DORestrictPeerSelectionBy-AllowedValues-End -->
 
 <!-- DORestrictPeerSelectionBy-GpMapping-Begin -->

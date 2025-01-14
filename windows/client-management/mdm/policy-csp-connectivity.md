@@ -1,7 +1,7 @@
 ---
 title: Connectivity Policy CSP
 description: Learn more about the Connectivity Area in Policy CSP.
-ms.date: 11/05/2024
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -683,6 +683,61 @@ This policy makes all configurable settings in the 'Cellular' Settings page read
 <!-- DisableCellularSettingsPage-Examples-End -->
 
 <!-- DisableCellularSettingsPage-End -->
+
+<!-- DisableCrossDeviceResume-Begin -->
+## DisableCrossDeviceResume
+
+<!-- DisableCrossDeviceResume-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableCrossDeviceResume-Applicability-End -->
+
+<!-- DisableCrossDeviceResume-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Connectivity/DisableCrossDeviceResume
+```
+<!-- DisableCrossDeviceResume-OmaUri-End -->
+
+<!-- DisableCrossDeviceResume-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows IT admins to turn off CrossDeviceResume feature to continue tasks, such as browsing file, continue using 1P/3P apps that require linking between Phone and PC.
+
+- If you enable this policy setting, the Windows device won't receive any CrossDeviceResume notification.
+
+- If you disable this policy setting, the Windows device will receive notification to resume activity from linked phone.
+
+- If you don't configure this policy setting, the default behavior is that the CrossDeviceResume feature is turned 'ON'. Changes to this policy take effect on reboot.
+<!-- DisableCrossDeviceResume-Description-End -->
+
+<!-- DisableCrossDeviceResume-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCrossDeviceResume-Editable-End -->
+
+<!-- DisableCrossDeviceResume-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableCrossDeviceResume-DFProperties-End -->
+
+<!-- DisableCrossDeviceResume-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | CrossDeviceResume is Enabled. |
+| 1 | CrossDeviceResume is Disabled. |
+<!-- DisableCrossDeviceResume-AllowedValues-End -->
+
+<!-- DisableCrossDeviceResume-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCrossDeviceResume-Examples-End -->
+
+<!-- DisableCrossDeviceResume-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Begin -->
 ## DisableDownloadingOfPrintDriversOverHTTP

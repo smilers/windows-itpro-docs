@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 11/27/2024
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -31,6 +31,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## Connectivity
 
+- [DisableCrossDeviceResume](policy-csp-connectivity.md#disablecrossdeviceresume)
 - [UseCellularWhenWiFiPoor](policy-csp-connectivity.md#usecellularwhenwifipoor)
 - [DisableCellularSettingsPage](policy-csp-connectivity.md#disablecellularsettingspage)
 - [DisableCellularOperatorSettingsPage](policy-csp-connectivity.md#disablecellularoperatorsettingspage)
@@ -45,6 +46,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [DODisallowCacheServerDownloadsOnVPN](policy-csp-deliveryoptimization.md#dodisallowcacheserverdownloadsonvpn)
 - [DOVpnKeywords](policy-csp-deliveryoptimization.md#dovpnkeywords)
+
+## DeviceGuard
+
+- [MachineIdentityIsolation](policy-csp-deviceguard.md#machineidentityisolation)
 
 ## DevicePreparation CSP
 
@@ -80,6 +85,12 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [AttestErrorMessage](healthattestation-csp.md#attesterrormessage)
 
+## HumanPresence
+
+- [ForcePrivacyScreen](policy-csp-humanpresence.md#forceprivacyscreen)
+- [ForcePrivacyScreenDim](policy-csp-humanpresence.md#forceprivacyscreendim)
+- [ForcePrivacyScreenNotification](policy-csp-humanpresence.md#forceprivacyscreennotification)
+
 ## InternetExplorer
 
 - [AllowLegacyURLFields](policy-csp-internetexplorer.md#allowlegacyurlfields)
@@ -114,6 +125,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## PassportForWork CSP
 
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
+
+## Printers
+
+- [ConfigureIppTlsCertificatePolicy](policy-csp-printers.md#configureipptlscertificatepolicy)
 
 ## Reboot CSP
 
