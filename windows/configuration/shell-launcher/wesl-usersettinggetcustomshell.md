@@ -83,4 +83,4 @@ If the return value does not exist in *CustomReturnCodes*, or if the correspondi
 ## Related topics
 
 - [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](shell-launcher.md)
+- [Shell Launcher](index.md)

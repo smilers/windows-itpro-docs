@@ -53,4 +53,4 @@ Enabling or disabling Shell Launcher does not take effect until a user signs in.
 ## Related topics
 
 - [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](shell-launcher.md)
+- [Shell Launcher](index.md)

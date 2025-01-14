@@ -63,4 +63,4 @@ Shell Launcher uses the default configuration when the security identifier (SID)
 ## Related topics
 
 - [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](shell-launcher.md)
+- [Shell Launcher](index.md)

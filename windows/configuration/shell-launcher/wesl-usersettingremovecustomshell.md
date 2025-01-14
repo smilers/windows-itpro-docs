@@ -51,4 +51,4 @@ You must restart your device for the changes to take effect.
 ## Related topics
 
 - [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](shell-launcher.md)
+- [Shell Launcher](index.md)

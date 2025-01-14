@@ -180,4 +180,4 @@ $ShellLauncherClass.RemoveCustomShell($Cashier_SID)
 
 ## Related topics
 
-- [Shell Launcher](shell-launcher.md)
+- [Shell Launcher](index.md)

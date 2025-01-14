@@ -47,4 +47,4 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 ## Related topics
 
 - [WESL_UserSetting](wesl-usersetting.md)
-- [Shell Launcher](shell-launcher.md)
+- [Shell Launcher](index.md)

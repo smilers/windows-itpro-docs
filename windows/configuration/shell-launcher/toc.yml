@@ -3,7 +3,7 @@ items:
 - name: Shell Launcher
   items:
   - name: Overview
-    href: shell-launcher.md
+    href: index.md
   - name: WMI Provider Reference
     items:
     - name: Class WESL_UserSetting
