@@ -5,8 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 8dc373fe-37f9-45ca-bb0a-38f0e54feef1
-author: TerryWarwick
-ms.author: twarwick
 ms.service: windows-iot
 ms.subservice: iot
 ms.date: 05/20/2024
@@ -36,7 +34,7 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 
 ## Remarks
 
-This method enables or disables Shell Launcher by modifying the **Shell** value in the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon`. If Unified Write Filter (UWF) is enabled, you may need to disable UWF or commit this registry key by using [UWF_RegistryFilter.CommitRegistry](uwf-registryfiltercommitregistry.md) in order to enable or disable Shell Launcher.
+This method enables or disables Shell Launcher by modifying the **Shell** value in the registry key `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon`. If Unified Write Filter (UWF) is enabled, you may need to disable UWF or commit this registry key by using [UWF_RegistryFilter.CommitRegistry](../unified-write-filter/uwf-registryfiltercommitregistry.md) in order to enable or disable Shell Launcher.
 
 Enabling or disabling Shell Launcher does not take effect until a user signs in.
 

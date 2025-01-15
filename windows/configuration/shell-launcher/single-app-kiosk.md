@@ -1,7 +1,5 @@
 ---
 title: Assigned access Single-App Kiosk
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 03/30/2023
 ms.topic: article
 ms.service: windows-iot

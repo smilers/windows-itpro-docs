@@ -1,9 +1,6 @@
 ---
 title: Custom Logon
 description: Custom Logon
-author: sydbruck
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 03/05/2024
 ms.topic: overview
 ---

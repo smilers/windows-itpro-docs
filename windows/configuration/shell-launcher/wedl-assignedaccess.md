@@ -5,8 +5,6 @@ MSHAttr:
 - 'PreferredSiteName:MSDN'
 - 'PreferredLib:/library/windows/hardware'
 ms.assetid: 2be8d294-db13-4494-bd5f-ba97ed89528e
-author: TerryWarwick
-ms.author: twarwick
 ms.service: windows-iot
 ms.subservice: iot
 ms.date: 05/20/2024
@@ -70,7 +68,7 @@ The following Windows PowerShell script demonstrates how to use this class to se
 $COMPUTER = "localhost"
 $NAMESPACE = "root\standardcimv2\embedded"
 
-# Define the assigned access account. 
+# Define the assigned access account.
 # To use a different account, change $AssignedAccessAccount to a user account that is present on your device.
 
 $AssignedAccessAccount = "KioskAccount"

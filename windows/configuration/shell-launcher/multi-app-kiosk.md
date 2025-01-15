@@ -1,7 +1,5 @@
 ---
 title: Multi-App Kiosk
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 08/16/2023
 ms.topic: article
 ms.service: windows-iot

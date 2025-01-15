@@ -1,8 +1,6 @@
 ---
 title: WEKF_PredefinedKey.Enable
 description: WEKF_PredefinedKey.Enable
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---

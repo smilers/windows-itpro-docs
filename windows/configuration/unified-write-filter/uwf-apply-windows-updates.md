@@ -1,8 +1,6 @@
 ---
 title: Apply Windows updates to UWF-protected devices
 description: Apply Windows updates to UWF-protected devices
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/02/2017
 ms.topic: reference
 ---

@@ -1,8 +1,6 @@
 ---
 title: UWF_Volume.Unprotect
 description: UWF_Volume.Unprotect
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

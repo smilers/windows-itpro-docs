@@ -1,7 +1,5 @@
 ---
 title: Browser Support
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 03/30/2023
 ms.topic: article
 description: Learn about browser support in Kiosk Mode

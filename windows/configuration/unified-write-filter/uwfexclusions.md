@@ -1,8 +1,6 @@
 ---
 title: Common write filter exclusions
 description: Common write filter exclusions
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 08/11/2023
 ms.topic: reference
 ---

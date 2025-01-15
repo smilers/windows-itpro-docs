@@ -1,8 +1,6 @@
 ---
 title: Overlay for Unified Write Filter (UWF)
 description: Overlay for Unified Write Filter (UWF)
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 10/02/2018
 ms.topic: reference
 ---

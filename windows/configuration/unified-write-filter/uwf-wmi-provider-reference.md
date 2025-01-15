@@ -1,8 +1,6 @@
 ---
 title: Unified Write Filter WMI provider reference
 description: Unified Write Filter WMI provider reference
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

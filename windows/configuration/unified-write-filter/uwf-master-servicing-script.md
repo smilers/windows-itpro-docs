@@ -1,8 +1,6 @@
 ---
 title: UWF master servicing script
 description: UWF master servicing script
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/02/2017
 ms.topic: reference
 ---

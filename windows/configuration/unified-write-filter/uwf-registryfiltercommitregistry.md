@@ -1,8 +1,6 @@
 ---
 title: UWF_RegistryFilter.CommitRegistry
 description: UWF_RegistryFilter.CommitRegistry
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

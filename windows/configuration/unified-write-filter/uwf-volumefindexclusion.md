@@ -1,8 +1,6 @@
 ---
 title: UWF_Volume.FindExclusion
 description: UWF_Volume.FindExclusion
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

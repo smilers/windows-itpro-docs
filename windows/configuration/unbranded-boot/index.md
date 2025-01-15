@@ -1,8 +1,6 @@
 ---
 title: Unbranded Boot
 description: Unbranded Boot
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 09/10/2024
 ms.topic: overview
 ---

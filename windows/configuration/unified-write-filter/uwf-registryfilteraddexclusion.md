@@ -1,8 +1,6 @@
 ---
 title: UWF_RegistryFilter.AddExclusion
 description: UWF_RegistryFilter.AddExclusion
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

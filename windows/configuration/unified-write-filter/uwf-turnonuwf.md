@@ -1,8 +1,6 @@
 ---
 title: Unified Write Filter (UWF) feature (uwf-turnonuwf)
 description: Unified Write Filter (UWF) feature (uwf-turnonuwf)
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: article
 ms.custom: RS5

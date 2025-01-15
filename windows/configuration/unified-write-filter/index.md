@@ -1,8 +1,6 @@
 ---
 title: Unified Write Filter (UWF) feature (unified-write-filter)
 description: Unified Write Filter (UWF) feature (unified-write-filter)
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 10/02/2018
 ms.topic: overview
 ---
@@ -121,6 +119,6 @@ For more information about how to find event log information for troubleshooting
 
 ## Related articles
 
-- [Unbranded Boot](unbranded-boot.md)
-- [Custom Logon](custom-logon.md)
-- [Shell Launcher](shell-launcher.md)
+- [Unbranded Boot](../unbranded-boot/index.md)
+- [Custom Logon](../custom-logon/index.md)
+- [Shell Launcher](../shell-launcher/index.md)

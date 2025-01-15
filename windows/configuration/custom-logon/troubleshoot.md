@@ -1,8 +1,6 @@
 ---
 title: Troubleshooting Custom Logon
 description: Troubleshooting Custom Logon
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/02/2017
 ms.topic: troubleshooting
 ---

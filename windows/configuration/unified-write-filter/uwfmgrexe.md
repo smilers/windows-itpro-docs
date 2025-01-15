@@ -1,8 +1,6 @@
 ---
 title: uwfmgr.exe
 description: uwfmgr.exe
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 10/02/2018
 ms.topic: reference
 ---

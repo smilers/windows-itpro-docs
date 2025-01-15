@@ -1,8 +1,6 @@
 ---
 title: UWF_Volume.GetExclusions
 description: UWF_Volume.GetExclusions
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

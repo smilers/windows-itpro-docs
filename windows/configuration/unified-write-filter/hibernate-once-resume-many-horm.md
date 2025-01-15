@@ -1,8 +1,6 @@
 ---
 title: Hibernate Once/Resume Many (HORM)
 description: Hibernate Once/Resume Many (HORM)
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 04/12/2018
 ms.topic: reference
 ---

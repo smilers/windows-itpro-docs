@@ -1,8 +1,6 @@
 ---
 title: UWF_Volume.CommitFileDeletion
 description: UWF_Volume.CommitFileDeletion
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

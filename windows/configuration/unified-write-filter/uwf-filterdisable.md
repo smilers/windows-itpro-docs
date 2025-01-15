@@ -1,8 +1,6 @@
 ---
 title: UWF_Filter.Disable
 description: UWF_Filter.Disable
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---

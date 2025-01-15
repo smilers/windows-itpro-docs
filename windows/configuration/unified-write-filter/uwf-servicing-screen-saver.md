@@ -1,8 +1,6 @@
 ---
 title: UWF servicing screen saver
 description: UWF servicing screen saver
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/02/2017
 ms.topic: reference
 ---

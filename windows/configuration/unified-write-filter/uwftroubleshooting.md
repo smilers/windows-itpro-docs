@@ -1,8 +1,6 @@
 ---
 title: Troubleshooting Unified Write Filter (UWF)
 description: Troubleshooting Unified Write Filter (UWF)
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/02/2017
 ms.topic: reference
 ---

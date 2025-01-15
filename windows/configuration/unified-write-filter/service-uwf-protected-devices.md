@@ -1,8 +1,6 @@
 ---
 title: Service UWF-protected devices
 description: Service UWF-protected devices
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 10/02/2018
 ms.topic: reference
 ---

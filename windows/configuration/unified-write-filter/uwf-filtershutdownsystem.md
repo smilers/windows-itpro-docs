@@ -1,8 +1,6 @@
 ---
 title: UWF_Filter.ShutdownSystem
 description: UWF_Filter.ShutdownSystem
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 05/20/2024
 ms.topic: reference
 ---
