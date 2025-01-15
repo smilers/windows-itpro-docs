@@ -24,7 +24,7 @@ UWF uses Windows Event Log to log events, errors and messages.
 
 ## Related topics
 
-[Unified Write Filter](unified-write-filter.md)
+[Unified Write Filter]( index.md)
 
 [Common write filter exclusions](uwfexclusions.md)
 

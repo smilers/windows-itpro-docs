@@ -41,4 +41,4 @@ goto UPDATE_EXIT
 
 - [Service UWF-protected devices](service-uwf-protected-devices.md)
 - [UWF master servicing script](uwf-master-servicing-script.md)
-- [Unified Write Filter](unified-write-filter.md)
+- [Unified Write Filter]( index.md)

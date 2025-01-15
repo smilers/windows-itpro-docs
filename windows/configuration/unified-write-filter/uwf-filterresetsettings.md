@@ -46,4 +46,4 @@ If you added UWF to your device by using SMI settings in an unattend.xml file, t
 ## Related articles
 
 - [UWF_Filter](uwf-filter.md)
-- [Unified Write Filter](unified-write-filter.md)
+- [Unified Write Filter]( index.md)

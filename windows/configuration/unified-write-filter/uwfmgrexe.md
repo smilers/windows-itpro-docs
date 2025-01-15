@@ -9,7 +9,7 @@ ms.topic: reference
 
 # uwfmgr.exe
 
-The UWFMgr tool can be used at the command-line or in PowerShell to configure and retrieve settings for [Unified Write Filter (UWF)](unified-write-filter.md).
+The UWFMgr tool can be used at the command-line or in PowerShell to configure and retrieve settings for [Unified Write Filter (UWF)]( index.md).
 
 > [!IMPORTANT]
 > Users with standard accounts can use commands that retrieve information, but only users who have administrator accounts can use commands that change the configuration settings.
@@ -213,4 +213,4 @@ The following list contains the UWF WMI provider methods that are not currently 
 
 ## Related topics
 
-- [Unified Write Filter](unified-write-filter.md)
+- [Unified Write Filter]( index.md)

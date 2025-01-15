@@ -52,7 +52,6 @@ BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of
 
 ## Configure Unbranded Boot settings at runtime using BCDEdit
 
-
 1. Open a command prompt as an administrator.
 1. Run the following command to disable the F8 key during startup to prevent access to the **Advanced startup options** menu.
 

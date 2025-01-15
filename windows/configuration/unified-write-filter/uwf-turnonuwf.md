@@ -132,7 +132,7 @@ You must restart your device after you turn on or turn off UWF before the change
 
 You can change these settings after you turn on UWF if you want to. For example, you can move the page file location to an unprotected volume and re-enable paging files.
 
-> [!Important]
+> [!IMPORTANT]
 > If you add UWF to your image by using SMI settings in an unattend.xml file, turning on UWF only sets the **bootstatuspolicy** BCD setting and turns off the defragmentation service. In this case, you must manually turn off the other features and services if you want to increase the performance of UWF.
 
 All configuration settings for UWF are stored in the registry. UWF automatically excludes these registry entries from filtering.
@@ -141,7 +141,7 @@ UWF maintains configuration settings in the registry for the current session and
 
 ## Related topics
 
-[Unified Write Filter](unified-write-filter.md)
+[Unified Write Filter]( index.md)
 
 [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 

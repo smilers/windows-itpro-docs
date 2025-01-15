@@ -105,4 +105,3 @@ Set the **HideAutoLogonUI** and **AnimationDisabled** settings to **0** (zero). 
    ```cmd
    net accounts /MaxPWAge:unlimited
    ```
-
