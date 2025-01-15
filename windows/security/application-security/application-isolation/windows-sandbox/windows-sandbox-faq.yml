@@ -59,7 +59,8 @@ sections:
 
       - question: Installing the latest version of Windows Sandbox fails. How do I fix this?
         answer: |
-          Ensure that your device has access to the Internet, Windows Update, and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails on the first attempt, subsequent attempts continue in the background. Meanwhile, the app can still be used. Additionally, the installation app is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install.
+          Ensure that your device has access to the Internet, Windows Update, and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails on the first attempt, subsequent attempts continue in the background. Meanwhile, the app can still be used. Additionally, the update is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install.
+
 
       - question: How do I know which version of Windows Sandbox am I running?
         answer: |
@@ -77,9 +78,7 @@ sections:
 
       - question: How do I uninstall Windows Sandbox?
         answer: |
-          Run the following PowerShell cmdlet to uninstall the Windows Sandbox app: `Get-AppxPackage -name WindowsSandbox | Remove-AppxPackage`
-
-          To completely remove Windows Sandbox, and all its components, navigate to **Settings > System > Optional features**, then select **More Windows features**, scroll down and unselect Windows Sandbox, then select OK.
+          To remove Windows Sandbox, and all its components, navigate to **Settings > System > Optional features**, then select **More Windows features**, scroll down and unselect Windows Sandbox, then select OK.
 
   - name: Feedback
     questions:
