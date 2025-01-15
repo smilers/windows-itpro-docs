@@ -33,6 +33,9 @@ WSB can be used without any technical skills in various scenarios where users ne
 - **Testing or demoing new software for the first time**: Test drive or demo new software, preview versions, extensions, or add-ons without the hassle of installing and then uninstalling on your host machine.
 - **Maintaining multiple dev environments**: Streamline your development process by utilizing WSB to maintain multiple sandboxes for different development environments. For example, maintain a sandbox for each python version and its dependencies!
 
+> [!NOTE]
+> Windows Sandbox currently doesn't allow multiple instances to run simultaneously.
+
 
 [!INCLUDE [windows-sandbox](../../../../../includes/licensing/windows-sandbox.md)]
 

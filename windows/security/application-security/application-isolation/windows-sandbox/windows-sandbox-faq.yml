@@ -35,7 +35,7 @@ sections:
               - Windows Sandbox: Provides a secure, isolated environment for testing untrusted software. Any changes made within the sandbox are discarded when you close it.
               - Hyper-V VMs: While VMs also offer isolation, they persistently store changes unless you revert them manually.
           1. **Resource Efficiency**:
-              - Windows Sandbox: More resource efficient than full VM. It adjusts memory usage according to the demand. It also reuses many of the host's read only OS files.
+              - Windows Sandbox: More resource efficient than a full VM. It adjusts memory usage according to the demand. It also reuses many of the host's read only OS files.
               - Hyper-V VMs: VMs have fixed resource allocations, which can impact overall system performance.
           1. **Ease of Use**:
               - Windows Sandbox: Simple to use—just open it, test your software, and close it. No complex setup or management.
@@ -59,12 +59,13 @@ sections:
 
       - question: Installing the latest version of Windows Sandbox fails. How do I fix this?
         answer: |
-          Ensure that your device has access to the Internet, Windows Update, and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails initially, installation continues in the background while the user can still use the app. Additionally, the app is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install it manually.
+          Ensure that your device has access to the Internet, Windows Update, and Microsoft Store. Beginning from Windows 11 24H2, the old Windows Sandbox app attempts to download the latest version from the Store. If the upgrade fails on the first attempt, subsequent attempts continue in the background. Meanwhile, the app can still be used. Additionally, the installation app is queued in the "Updates & Downloads" section of the Microsoft Store app for users who wish to manually install.
 
       - question: How do I know which version of Windows Sandbox am I running?
         answer: |
           Run `Get-AppxPackage -Name WindowsSandbox | Select-Object Version` in a PowerShell prompt. If the version is empty, you're running an older version of Windows Sandbox. If it returns a version number, you're running the newer version.
-          Alternatively, if your Windows Sandbox app has a '...' button in the top-right corner that opens a drop-down menu, you're using the new version.
+          Alternatively, you can run `wsb --version`. If `wsb` is not available, you're running an older version of Windows Sandbox.
+          The new version of Windows Sandbox also appears in Windows Settings under **System** > **System components**.
 
       - question: How do I save the Sandbox state?
         answer: |
@@ -76,7 +77,9 @@ sections:
 
       - question: How do I uninstall Windows Sandbox?
         answer: |
-          Run the following PowerShell cmdlet to uninstall the app: `Get-AppxPackage -name WindowsSandbox | Remove-AppxPackage`
+          Run the following PowerShell cmdlet to uninstall the Windows Sandbox app: `Get-AppxPackage -name WindowsSandbox | Remove-AppxPackage`
+
+          To completely remove Windows Sandbox, and all its components, navigate to **Settings > System > Optional features**, then select **More Windows features**, scroll down and unselect Windows Sandbox, then select OK.
 
   - name: Feedback
     questions:
@@ -95,7 +98,7 @@ sections:
               - Behavior you were expecting.
           1. Select an appropriate category and subcategory by using the dropdown menus. There's a dedicated option in Feedback Hub to file **Windows Sandbox** bugs and feedback. It's located under **Security and Privacy** category.
           1. Select **Next**.
-          1. If necessary, you can collect traces for the issue as follows: Select the Recreate my problem tile, then select Start capture, reproduce the issue, and then select **Stop capture**.
+          1. If you are able to reproduce the issue, please collect traces as follows: Select the Recreate my problem tile, then select Start capture, reproduce the issue, and then select **Stop capture**.
           1. Attach any relevant screenshots or files for the problem, then select **Submit**.
 
           Alternatively, you can also use the [Windows Sandbox GitHub repository](https://github.com/microsoft/Windows-Sandbox) to:
