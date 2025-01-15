@@ -1,19 +1,12 @@
 ---
 title: Troubleshooting Custom Logon
 description: Troubleshooting Custom Logon
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 5763E187-D09E-415D-B73C-BDD6BAB67E04
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/02/2017
-ms.topic: article
-
-
+ms.topic: troubleshooting
 ---
+
 # Troubleshooting Custom Logon
 
 This section highlights some common issues that you may encounter when using Custom Logon.
@@ -42,7 +35,7 @@ This can occur when your device is configured to require a password when waking 
 
 1. Under the **Power Options** heading, select **Require a password on wake up**.
 
-1. On the **Define power buttons and turn on password protection** page, under **Password protection on wakeup**, select **Don’t require a password**.
+1. On the **Define power buttons and turn on password protection** page, under **Password protection on wakeup**, select **Don't require a password**.
 
 1. If you have disabled write filters, perform the following steps to enable them again:
 
@@ -87,7 +80,7 @@ Set the **HideAutoLogonUI** and **AnimationDisabled** settings to **0** (zero). 
 
 1. In the **Power Options** item, select **Require a password on wake up**.
 
-1. On the **Define power buttons and turn on password protection** page, under **Password protection on wake up**, select **Don’t require a password**.
+1. On the **Define power buttons and turn on password protection** page, under **Password protection on wake up**, select **Don't require a password**.
 
 ### The device displays a black screen when a password expiration screen is displayed
 
@@ -113,7 +106,3 @@ Set the **HideAutoLogonUI** and **AnimationDisabled** settings to **0** (zero). 
    net accounts /MaxPWAge:unlimited
    ```
 
-## Related articles
-
-- [Custom Logon](custom-logon.md)
-- [Complementary features to Custom Logon](complementary-features-to-custom-logon.md)

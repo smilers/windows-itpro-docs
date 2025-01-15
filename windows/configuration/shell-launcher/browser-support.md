@@ -4,10 +4,7 @@ author: TerryWarwick
 ms.author: twarwick
 ms.date: 03/30/2023
 ms.topic: article
-ms.service: windows-iot
-ms.subservice: iot
 description: Learn about browser support in Kiosk Mode
-keywords: Lockdown, Kiosks, Kiosk Mode, Browser
 ---
 
 # Browser Support
@@ -38,7 +35,7 @@ In anticipation of that, you can use [Internet Explorer (IE) mode](/deployedge/e
 
 ## Supported Versions
 
-| Browser | ![Internet Explorer 11](./media/IE11.png) | ![Microsoft Edge Legacy](./media/Microsoft-Edge-Legacy.png) | ![New Microsoft Edge](./media/Microsoft-Edge-New.png) |
+| Browser | Internet Explorer 11 | Microsoft Edge Legacy | Microsoft Edge |
 |--|--|--|--|
 | OS Release | [IE11 App](/internet-explorer/internet-explorer) | [Edge Browser - Legacy](/deployedge/microsoft-edge-kiosk-mode-transition-plan) | [New Edge Browser](/deployedge/microsoft-edge-configure-kiosk-mode) |
 | Windows 10 IoT Enterprise LTSC 2019 | [Follows OS Release Support Lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2019) | No browser security updates after March, 9, 2021 (removed where applicable). In-box engine supported until OS EOL | Edge and WebView2 Runtime not in-box (requires app migration from EdgeHTML) |

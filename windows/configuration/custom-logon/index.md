@@ -1,32 +1,26 @@
 ---
 title: Custom Logon
 description: Custom Logon
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: aaf4ddd3-eac4-4c60-90c8-38837078c43b
 author: sydbruck
-ms.author: sybruckm
-ms.service: windows-iot
-ms.subservice: iot
+author: TerryWarwick
+ms.author: twarwick
 ms.date: 03/05/2024
-ms.topic: article
-
-
+ms.topic: overview
 ---
+
 # Custom Logon
 
-You can use the Custom Logon feature to suppress Windows UI elements that relate to the Welcome screen and shutdown screen. For example, you can suppress all elements of the Welcome screen UI and provide a custom logon UI. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.
+You can use the Custom Logon feature to suppress Windows UI elements that relate to the Welcome screen and shutdown screen. For example, you can suppress all elements of the Welcome screen UI and provide a custom logon UI. You can also suppress the Blocked Shutdown Resolver (BSDR) screen and automatically end applications while the OS waits for applications to close before a shutdown.
 
-Custom Logon settings don't modify the credential behavior of **Winlogon**, so you can use any credential provider that is compatible with Windows 10 to provide a custom sign-in experience for your device. For more information about creating a custom logon experience, see [Winlogon and Credential Providers](/windows/win32/secauthn/winlogon-and-credential-providers).
+Custom Logon settings don't modify the credential behavior of **Winlogon**, so you can use any credential provider that is compatible with Windows 10 to provide a custom sign-in experience for your device. For more information about creating a custom logon experience, see [Winlogon and Credential Providers](/windows/win32/secauthn/winlogon-and-credential-providers).
 
 ## Requirements
 
 Custom Logon can be enabled on:
 
-- Windows 10 Enterprise
+- Windows 10 Enterprise
 - Windows 10 IoT Enterprise
-- Windows 10 Education
+- Windows 10 Education
 - Windows 11 Enterprise
 - Windows 11 IoT Enterprise
 - Windows 11 Education
@@ -37,13 +31,13 @@ Custom Logon can be enabled on:
 
 **Configure:** To customize the setting or subsettings.
 
-**Embedded Logon:** This feature is called Embedded Logon in Windows 10, version 1511.
+**Embedded Logon:** This feature is called Embedded Logon in Windows 10, version 1511.
 
-**Custom Logon:** This feature is called Custom Logon in Windows 10, version 1607 and later.
+**Custom Logon:** This feature is called Custom Logon in Windows 10, version 1607 and later.
 
 ## Turn on Custom Logon
 
-Custom Logon is an optional component and isn't turned on by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure Custom Logon in a customized Windows 10 image (.wim) if Microsoft Windows hasn't been installed. If Windows has already been installed and you're applying a provisioning package to configure Custom Logon, you must first turn on Custom Logon in order for a provisioning package to be successfully applied.
+Custom Logon is an optional component and isn't turned on by default in Windows 10. It must be turned on prior to configuring. You can turn on and configure Custom Logon in a customized Windows 10 image (.wim) if Microsoft Windows hasn't been installed. If Windows has already been installed and you're applying a provisioning package to configure Custom Logon, you must first turn on Custom Logon in order for a provisioning package to be successfully applied.
 
 The Custom Logon feature is available in the Control Panel. You can set Custom Logon by following these steps:
 
@@ -97,7 +91,7 @@ HKLM\Software\Microsoft\Windows Embedded\EmbeddedLogon
 1. Select the correct **Base** and enter the value for your desired customizations according to the following table, and click **OK** to apply the changes.
 
 > [!NOTE]
-> Changing the **Base** of **BrandingNeutral** will automatically convert the value field to the selected base. To ensure you are getting the correct value, select the base before entering the value. 
+> Changing the **Base** of **BrandingNeutral** will automatically convert the value field to the selected base. To ensure you are getting the correct value, select the base before entering the value.
 
 The following table shows the possible values. To disable multiple Logon screen UI elements together, you can select the **Decimal** base when modifying the **BrandingNeutral** value, and combine actions by adding the decimal values of the desired actions and inputting the sum as the value of **BrandingNeutral**. For example, to disable the Power button and the Language button, select the decimal option for the base, then add the decimal values of each, in this case 2 and 4 respectively, and input the total (6) as the value for **BrandingNeutral**.
 
@@ -126,7 +120,7 @@ You use the following steps to remove Wireless UI from the Welcome screen
 
 ## Additional Customizations
 
-The following table shows additional customizations that can be made using registry keys. 
+The following table shows additional customizations that can be made using registry keys.
 
 |Action  |Path  |Registry Key and Value |
 |---------|---------|---------|
@@ -137,6 +131,6 @@ The following table shows additional customizations that can be made using regis
 
 ## Related articles
 
-- [Troubleshooting Custom Logon](troubleshooting-custom-logon.md)
-- [Unbranded Boot](unbranded-boot.md)
-- [Shell Launcher](shell-launcher.md)
+- [Troubleshooting Custom Logon](troubleshoot.md)
+- [Unbranded Boot](../unbranded-boot/index.md)
+- [Shell Launcher](../shell-launcher/index.md)

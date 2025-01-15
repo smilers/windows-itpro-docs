@@ -3,13 +3,10 @@ title: Unbranded Boot
 description: Unbranded Boot
 author: TerryWarwick
 ms.author: twarwick
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 09/10/2024
-ms.topic: reference
-
-
+ms.topic: overview
 ---
+
 # Unbranded Boot
 
 You can suppress Windows elements that appear when Windows starts or resumes and can suppress the crash screen when Windows encounters an error that it can't recover from. This feature is known as Unbranded Boot.
@@ -21,9 +18,9 @@ You can suppress Windows elements that appear when Windows starts or resumes and
 
 Unbranded Boot can be enabled on:
 
-- Windows 10 Enterprise
+- Windows 10 Enterprise
 - Windows 10 IoT Enterprise
-- Windows 10 Education
+- Windows 10 Education
 - Windows 11 Enterprise
 - Windows 11 IoT Enterprise
 - Windows 11 Education
@@ -40,11 +37,11 @@ Unbranded Boot can be enabled on:
 
 ## Turn on Unbranded Boot settings
 
-Unbranded Boot is an optional component and isn't enabled by default in Windows. It must be enabled prior to configuring. 
+Unbranded Boot is an optional component and isn't enabled by default in Windows. It must be enabled prior to configuring.
 
 If Windows has already been installed, you can't apply a provisioning package to configure Unbranded Boot; instead you must use BDCEdit to configure Unbranded boot if Windows is installed.
 
-BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of Windows and is included in Windows in the %WINDIR%\\System32 folder. Administrator privileges are required to use BCDEdit to modify the BCD. 
+BCDEdit is the primary tool for editing the Boot Configuration Database (BCD) of Windows and is included in Windows in the %WINDIR%\\System32 folder. Administrator privileges are required to use BCDEdit to modify the BCD.
 
 ### Turn on Unbranded Boot by using Control Panel
 
@@ -100,7 +97,7 @@ The following table shows Unbranded Boot settings and their values.
 
 ## Customize the boot screen using Windows Configuration Designer and Deployment Image Servicing and Management (DISM)
 
-You must enable Unbranded boot on the installation media with DISM before you can apply settings for Unbranded boot using either Windows Configuration Designer or applying a provisioning package during setup.  
+You must enable Unbranded boot on the installation media with DISM before you can apply settings for Unbranded boot using either Windows Configuration Designer or applying a provisioning package during setup.
 
 1. Create a provisioning package or create a new Windows image in Windows Configuration Designer by following the instructions in [Create a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
 
@@ -152,7 +149,7 @@ The only supported way to replace the startup logo with a custom logo is to modi
 
 ## Suppress Errors During Boot
 
-Errors that occur during early Windows Boot are typically a sign of bad device configuration or failing hardware and require user intervention to recover. You can suppress all error screens during early boot by enabling the **noerrordisplay** BCD setting. 
+Errors that occur during early Windows Boot are typically a sign of bad device configuration or failing hardware and require user intervention to recover. You can suppress all error screens during early boot by enabling the **noerrordisplay** BCD setting.
 
 1. Open a command prompt as an administrator.
 1. Run the following command to suppress error screens during boot.
@@ -163,4 +160,4 @@ Errors that occur during early Windows Boot are typically a sign of bad device c
 
 ## Related articles
 
-- [Custom Logon](custom-logon.md)
+- [Custom Logon](../custom-logon/index.md)
