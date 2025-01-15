@@ -1,7 +1,7 @@
 ---
 title: Display Policy CSP
 description: Learn more about the Display Area in Policy CSP.
-ms.date: 11/05/2024
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -32,7 +32,7 @@ ms.date: 11/05/2024
 
 <!-- ConfigureMultipleDisplayMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy set the default display to set the arrangement between cloning or extending.
+This policy sets the default display arrangement to pick between clone or extend.
 <!-- ConfigureMultipleDisplayMode-Description-End -->
 
 <!-- ConfigureMultipleDisplayMode-Editable-Begin -->
@@ -66,7 +66,7 @@ This policy set the default display to set the arrangement between cloning or ex
 |:--|:--|
 | Name | ConfigureMultipleDisplayMode |
 | Path | Display > AT > System > DisplayCat |
-| Element Name | ConfigureMultipleDisplayModePrompt |
+| Element Name | DisplayConfigureMultipleDisplayModeSettings |
 <!-- ConfigureMultipleDisplayMode-GpMapping-End -->
 
 <!-- ConfigureMultipleDisplayMode-Examples-Begin -->
@@ -297,6 +297,66 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!-- EnablePerProcessDpiForApps-Examples-End -->
 
 <!-- EnablePerProcessDpiForApps-End -->
+
+<!-- SetClonePreferredResolutionSource-Begin -->
+## SetClonePreferredResolutionSource
+
+<!-- SetClonePreferredResolutionSource-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- SetClonePreferredResolutionSource-Applicability-End -->
+
+<!-- SetClonePreferredResolutionSource-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Display/SetClonePreferredResolutionSource
+```
+<!-- SetClonePreferredResolutionSource-OmaUri-End -->
+
+<!-- SetClonePreferredResolutionSource-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy sets the cloned monitor preferred resolution source to an internal or external monitor by default.
+<!-- SetClonePreferredResolutionSource-Description-End -->
+
+<!-- SetClonePreferredResolutionSource-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetClonePreferredResolutionSource-Editable-End -->
+
+<!-- SetClonePreferredResolutionSource-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SetClonePreferredResolutionSource-DFProperties-End -->
+
+<!-- SetClonePreferredResolutionSource-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Default. |
+| 1 (Default) | Internal. |
+| 2 | External. |
+<!-- SetClonePreferredResolutionSource-AllowedValues-End -->
+
+<!-- SetClonePreferredResolutionSource-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SetClonePreferredResolutionSource |
+| Path | Display > AT > System > DisplayCat |
+| Element Name | DisplaySetClonePreferredResolutionSourceSettings |
+<!-- SetClonePreferredResolutionSource-GpMapping-End -->
+
+<!-- SetClonePreferredResolutionSource-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetClonePreferredResolutionSource-Examples-End -->
+
+<!-- SetClonePreferredResolutionSource-End -->
 
 <!-- TurnOffGdiDPIScalingForApps-Begin -->
 ## TurnOffGdiDPIScalingForApps

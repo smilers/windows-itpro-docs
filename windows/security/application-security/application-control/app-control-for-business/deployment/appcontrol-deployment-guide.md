@@ -43,7 +43,7 @@ All App Control for Business policy changes should be deployed in audit mode bef
 ## Choose how to deploy App Control policies
 
 > [!IMPORTANT]
-> Due to a known issue, you should always activate new **signed** App Control Base policies with a reboot on systems with [**memory integrity**](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. We recommend [deploying via script](deploy-appcontrol-policies-with-script.md) in this case.
+> Due to a known issue in Windows 11 updates earlier than 2024 (24H2), you should activate new **signed** App Control Base policies with a reboot on systems with [**memory integrity**](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. We recommend [deploying via script](deploy-appcontrol-policies-with-script.md) in this case.
 >
 > This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 

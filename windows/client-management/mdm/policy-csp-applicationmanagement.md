@@ -1,7 +1,7 @@
 ---
 title: ApplicationManagement Policy CSP
 description: Learn more about the ApplicationManagement Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -371,7 +371,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- Description-Source-ADMX -->
 Manages a Windows app's ability to share data between users who have installed the app.
 
-- If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the Windows. Storage API.
+- If you enable this policy, a Windows app can share app data with other instances of that app. Data is shared through the SharedLocal folder. This folder is available through the `Windows.Storage` API.
 
 - If you disable this policy, a Windows app can't share app data with other instances of that app. If this policy was previously enabled, any previously shared app data will remain in the SharedLocal folder.
 <!-- AllowSharedUserAppData-Description-End -->
@@ -629,7 +629,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 | Name | Value |
 |:--|:--|
 | Name | DisableStoreApps |
-| Friendly Name | Disable all apps from Microsoft Store  |
+| Friendly Name | Disable all apps from Microsoft Store |
 | Location | Computer Configuration |
 | Path | Windows Components > Store |
 | Registry Key Name | Software\Policies\Microsoft\WindowsStore |
@@ -867,7 +867,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 <!-- Description-Source-ADMX -->
 Denies access to the retail catalog in the Microsoft Store, but displays the private store.
 
-- If you enable this setting, users won't be able to view the retail catalog in the Microsoft Store, but they will be able to view apps in the private store.
+- If you enable this setting, users won't be able to view the retail catalog in the Microsoft Store, but they'll be able to view apps in the private store.
 
 - If you disable or don't configure this setting, users can access the retail catalog in the Microsoft Store.
 <!-- RequirePrivateStoreOnly-Description-End -->

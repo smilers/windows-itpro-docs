@@ -12,7 +12,7 @@ ms.reviewer: mstewart
 ms.collection: tier3
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/mcc-isp target=_blank>Microsoft Connected Cache for ISPs</a>
-ms.date: 05/23/2024
+ms.date: 01/14/2025
 ---
 
 # Enhancing cache performance
@@ -21,7 +21,7 @@ To make sure you're maximizing the performance of your cache node, review the fo
 
 #### OS requirements
 
-The Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. Install Ubuntu 20.04 LTS on a physical server or VM of your choice.
+The Microsoft Connected Cache module is optimized for Ubuntu 22.04 LTS. Install Ubuntu 22.04 LTS on a physical server or VM of your choice.
 
 #### NIC requirements
 

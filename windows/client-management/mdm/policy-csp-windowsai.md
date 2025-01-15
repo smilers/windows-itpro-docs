@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 11/22/2024
+ms.date: 12/09/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -38,7 +38,7 @@ This policy setting allows you to determine whether the Recall optional componen
 
 - If this policy is disabled, the Recall component will be in disabled state and the bits for Recall will be removed from the device. If snapshots were previously saved on the device, they'll be deleted when this policy is disabled. Removing Recall requires a device restart.
 
-- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users are able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
+- If the policy is enabled, end users will have Recall available on their device. Depending on the state of the DisableAIDataAnalysis policy (Turn off saving snapshots for use with Recall), end users will be able to choose if they want to save snapshots of their screen and use Recall to find things they've seen on their device.
 <!-- AllowRecallEnablement-Description-End -->
 
 <!-- AllowRecallEnablement-Editable-Begin -->
@@ -90,7 +90,7 @@ This policy setting allows you to determine whether the Recall optional componen
 <!-- DisableAIDataAnalysis-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- DisableAIDataAnalysis-Applicability-End -->
 
 <!-- DisableAIDataAnalysis-OmaUri-Begin -->
@@ -219,6 +219,68 @@ This policy setting allows you to control whether Cocreator functionality is dis
 
 <!-- DisableCocreator-End -->
 
+<!-- DisableGenerativeFill-Begin -->
+## DisableGenerativeFill
+
+<!-- DisableGenerativeFill-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableGenerativeFill-Applicability-End -->
+
+<!-- DisableGenerativeFill-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAI/DisableGenerativeFill
+```
+<!-- DisableGenerativeFill-OmaUri-End -->
+
+<!-- DisableGenerativeFill-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether generative fill functionality is disabled in the Windows Paint app.
+
+- If this policy is enabled, generative fill functionality won't be accessible in the Paint app.
+
+- If this policy is disabled or not configured, users will be able to access generative fill functionality.
+<!-- DisableGenerativeFill-Description-End -->
+
+<!-- DisableGenerativeFill-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableGenerativeFill-Editable-End -->
+
+<!-- DisableGenerativeFill-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableGenerativeFill-DFProperties-End -->
+
+<!-- DisableGenerativeFill-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Generative fill is enabled. |
+| 1 | Generative fill is disabled. |
+<!-- DisableGenerativeFill-AllowedValues-End -->
+
+<!-- DisableGenerativeFill-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableGenerativeFill |
+| Path | WindowsAI > AT > WindowsComponents > Paint |
+<!-- DisableGenerativeFill-GpMapping-End -->
+
+<!-- DisableGenerativeFill-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableGenerativeFill-Examples-End -->
+
+<!-- DisableGenerativeFill-End -->
+
 <!-- DisableImageCreator-Begin -->
 ## DisableImageCreator
 
@@ -287,7 +349,7 @@ This policy setting allows you to control whether Image Creator functionality is
 <!-- SetCopilotHardwareKey-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5044380](https://support.microsoft.com/help/5044380) [10.0.22621.4391] and later |
 <!-- SetCopilotHardwareKey-Applicability-End -->
 
 <!-- SetCopilotHardwareKey-OmaUri-Begin -->
@@ -360,7 +422,7 @@ This policy setting determines which app opens when the user presses the Copilot
 <!-- Description-Source-ADMX -->
 This policy allows you to define a list of apps that won't be included in snapshots for Recall.
 
-Users are able to add additional applications to exclude from snapshots using Recall settings.
+Users will be able to add additional applications to exclude from snapshots using Recall settings.
 
 The list can include Application User Model IDs (AUMID) or name of the executable file.
 
@@ -429,7 +491,7 @@ For example: `code.exe;Microsoft.WindowsNotepad_8wekyb3d8bbwe!App;ms-teams.exe`
 <!-- Description-Source-ADMX -->
 This policy setting lets you define a list of URIs that won't be included in snapshots for Recall when a supported browser is used. People within your organization can use Recall settings to add more websites to the list. Define the list using a semicolon to separate URIs.
 
-For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`.
+For example: `https://www.Contoso.com;https://www.WoodgroveBank.com;https://www.Adatum.com`
 
 Adding `https://www.WoodgroveBank.com` to the list would also filter `https://Account.WoodgroveBank.com` and `https://www.WoodgroveBank.com/Account`.
 
@@ -628,6 +690,9 @@ When this setting isn't configured, the OS configures the storage allocation for
 <!-- TurnOffWindowsCopilot-Begin -->
 ## TurnOffWindowsCopilot
 
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
+
 <!-- TurnOffWindowsCopilot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
@@ -646,13 +711,14 @@ This policy setting allows you to turn off Windows Copilot.
 
 - If you enable this policy setting, users won't be able to use Copilot. The Copilot icon won't appear on the taskbar either.
 
-- If you disable or don't configure this policy setting, users are able to use Copilot when it's available to them.
+- If you disable or don't configure this policy setting, users will be able to use Copilot when it's available to them.
 <!-- TurnOffWindowsCopilot-Description-End -->
 
 <!-- TurnOffWindowsCopilot-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > - The TurnOffWindowsCopilot policy isn't for the [new Copilot experience](https://techcommunity.microsoft.com/blog/windows-itpro-blog/evolving-copilot-in-windows-for-your-workforce/4141999) that's in some [Windows Insider builds](https://blogs.windows.com/windows-insider/2024/05/22/releasing-windows-11-version-24h2-to-the-release-preview-channel/) and that will be gradually rolling out to Windows 11 and Windows 10 devices. <!--9048085-->
+> - This policy also applies to upgrade scenarios to prevent installation of the Copilot app from an image that would have had the Copilot in Windows pane.
 <!-- TurnOffWindowsCopilot-Editable-End -->
 
 <!-- TurnOffWindowsCopilot-DFProperties-Begin -->

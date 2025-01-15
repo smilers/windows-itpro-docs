@@ -159,7 +159,8 @@ Just like the [**Quality updates**](#quality-updates-tab) and [**Feature updates
 
 The **Update status** group for driver updates contains the following items:
 
-- **Update states for all driver updates**: Chart containing the number of devices in a specific state, such as installing, for driver updates.
+- **Update states for all driver updates**: Chart containing the number of driver updates in a specific state, such as installing.
+
 - **Distribution of Driver Classes**: Chart containing the number of drivers in a specific class.
 - **Update alerts for all driver updates**: Chart containing the count of active errors and warnings for driver updates.
 

@@ -242,5 +242,6 @@ The following developer APIs were added or updated:
 
 The following [deprecated features](deprecated-features.md) are [removed](removed-features.md) in Windows 11, version 24H2:
 
+- **NTLMv1**: NTLMv1 is removed starting in Windows 11, version 24H2 and Windows Server 2025. 
 - **WordPad**: WordPad is removed from all editions of Windows starting in Windows 11, version 24H2 and Windows Server 2025. <!--8254696, 8494641-->
 - **Alljoyn**: Microsoft's implementation of AllJoyn, which included the [Windows.Devices.AllJoyn API namespace](/uwp/api/windows.devices.alljoyn), a [Win32 API](/windows/win32/api/_alljoyn/), a [management configuration service provider (CSP)](/windows/client-management/mdm/alljoynmanagement-csp), and an [Alljoyn Router Service](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server#alljoyn-router-service) is retired.<!--8396030-->

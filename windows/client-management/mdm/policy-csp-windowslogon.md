@@ -1,7 +1,7 @@
 ---
 title: WindowsLogon Policy CSP
 description: Learn more about the WindowsLogon Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -349,7 +349,7 @@ This policy setting allows you to control whether users see the first sign-in an
 | Name | Value |
 |:--|:--|
 | Name | EnableFirstLogonAnimation |
-| Friendly Name | Show first sign-in animation  |
+| Friendly Name | Show first sign-in animation |
 | Location | Computer Configuration |
 | Path | System > Logon |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |

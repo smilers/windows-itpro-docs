@@ -1,7 +1,7 @@
 ---
 title: Sudo Policy CSP
 description: Learn more about the Sudo Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -19,7 +19,7 @@ ms.date: 09/27/2024
 <!-- EnableSudo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
 <!-- EnableSudo-Applicability-End -->
 
 <!-- EnableSudo-OmaUri-Begin -->

@@ -1,7 +1,7 @@
 ---
 title: ADMX_DnsClient Policy CSP
 description: Learn more about the ADMX_DnsClient Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -602,11 +602,11 @@ You can use this policy setting to prevent users, including local administrators
 <!-- Description-Source-ADMX -->
 Specifies if the DNS client performing dynamic DNS registration will register A and PTR resource records with a concatenation of its computer name and a connection-specific DNS suffix, in addition to registering these records with a concatenation of its computer name and the primary DNS suffix.
 
-By default, a DNS client performing dynamic DNS registration registers A and PTR resource records with a concatenation of its computer name and the primary DNS suffix. For example, a computer name of mycomputer and a primary DNS suffix of microsoft.com will be registered as: mycomputer.microsoft.com.
+By default, a DNS client performing dynamic DNS registration registers A and PTR resource records with a concatenation of its computer name and the primary DNS suffix. For example, a computer name of mycomputer and a primary DNS suffix of microsoft.com will be registered as: `mycomputer.microsoft.com`.
 
 - If you enable this policy setting, the DNS client will register A and PTR resource records with its connection-specific DNS suffix, in addition to the primary DNS suffix. This applies to all network connections used by the DNS client.
 
-For example, with a computer name of mycomputer, a primary DNS suffix of microsoft.com, and a connection specific DNS suffix of VPNconnection, the DNS client will register A and PTR resource records for mycomputer. VPNconnection and mycomputer.microsoft.com when this policy setting is enabled.
+For example, with a computer name of mycomputer, a primary DNS suffix of microsoft.com, and a connection specific DNS suffix of VPNconnection, the DNS client will register A and PTR resource records for `mycomputer.VPNconnection` and `mycomputer.microsoft.com` when this policy setting is enabled.
 
 > [!IMPORTANT]
 > This policy setting is ignored by the DNS client if dynamic DNS registration is disabled.

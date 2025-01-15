@@ -1,5 +1,5 @@
 ---
-title: Windows commercial licensing overview
+title: Windows Commercial Licensing Overview
 description: Learn about products and use rights available through Windows commercial licensing.
 ms.subservice: itpro-security
 author: paolomatarazzo
@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
 - tier2
 ms.topic: overview
-ms.date: 02/29/2024
+ms.date: 12/02/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.service: windows-client

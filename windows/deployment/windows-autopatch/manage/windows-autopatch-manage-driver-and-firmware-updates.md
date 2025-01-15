@@ -68,7 +68,7 @@ For deployment rings set to **Automatic**, you can choose the deferral period fo
 
 The deferral period allows you to delay the installation of driver and firmware updates on the devices in the specified deployment ring in case you want to test the update on a smaller group of devices first or avoid potential disruptions during a busy period.  
 
-The deferral period can be set from 0 to 14 days, and it can be different for each deployment ring.  
+The deferral period can be set from 0 to 30 days, and it can be different for each deployment ring.  
 
 > [!NOTE]
 > The deferral period only applies to automatically approved driver and firmware updates. An admin must specify the date to start offering a driver with any manual approval.
