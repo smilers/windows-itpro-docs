@@ -15,7 +15,7 @@ metadata:
   appliesto: 
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
     - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-  ms.date: 05/23/2024
+  ms.date: 01/14/2025
 title: Microsoft Connected Cache Frequently Asked Questions
 summary: |
   Frequently asked questions about Microsoft Connected Cache
@@ -35,10 +35,10 @@ sections:
         answer: | 
          - Azure subscription  
          - Hardware to host Microsoft Connected Cache
-         - Ubuntu 20.04 LTS on a physical server or VM of your choice. 
+         - Ubuntu 22.04 LTS on a physical server or VM of your choice. 
          
          > [!NOTE]
-         > The Microsoft Connected Cache is deployed and managed using Azure IoT Edge and Ubuntu 20.04 is an [Azure IoT Edge Tier 1 operating system](/azure/iot-edge/support?view=iotedge-2020-11#tier-1). Additionally, the Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. 
+         > The Microsoft Connected Cache is deployed and managed using Azure IoT Edge and Ubuntu 22.04 is an [Azure IoT Edge Tier 1 operating system](/azure/iot-edge/support#tier-1). Additionally, the Microsoft Connected Cache module is optimized for Ubuntu 22.04 LTS. 
          
          The following are recommended hardware configurations:   
           
