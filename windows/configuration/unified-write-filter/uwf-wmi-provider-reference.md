@@ -38,6 +38,6 @@ This section describes the WMI provider classes for UWF.
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [uwfmgr.exe](uwfmgrexe.md)

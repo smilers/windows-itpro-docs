@@ -44,7 +44,7 @@ You must use an administrator account to change any properties or call any metho
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_RegistryFilter](uwf-registryfilter.md)
 - [Unified Write Filter]( index.md)

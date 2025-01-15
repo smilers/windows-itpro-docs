@@ -52,7 +52,7 @@ You must restart the device before the registry key is excluded from UWF filteri
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_RegistryFilter](uwf-registryfilter.md)
 - [Unified Write Filter]( index.md)

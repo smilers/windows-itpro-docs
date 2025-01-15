@@ -1,11 +1,8 @@
 ---
 title: Assigned access Single-App Kiosk
 ms.date: 03/30/2023
-ms.topic: article
-ms.service: windows-iot
-ms.subservice: iot
+ms.topic: concept-article
 description: Learn about the Single-App Kiosk in Windows IoT Enterprise.
-keywords: Kiosk Mode, Single-App
 ---
 
 # Assigned access single-app kiosk

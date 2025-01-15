@@ -39,7 +39,7 @@ If this method does not find any registry keys in the registry key exclusion lis
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_RegistryFilter](uwf-registryfilter.md)
 - [Unified Write Filter]( index.md)

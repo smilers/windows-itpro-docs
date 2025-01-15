@@ -1,17 +1,10 @@
 ---
 title: WESL_UserSetting.IsEnabled
 description: WESL_UserSetting.IsEnabled
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 567f57b5-f9c8-4129-8279-dd351028df5d
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/20/2024
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WESL_UserSetting.IsEnabled
 
 This method retrieves a value that indicates if Shell Launcher is enabled or disabled.

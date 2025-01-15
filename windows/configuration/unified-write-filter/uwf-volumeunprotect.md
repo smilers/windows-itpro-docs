@@ -37,7 +37,7 @@ Unprotecting the volume does not remove the [UWF_Volume](uwf-volume.md) entry or
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Volume](uwf-volume.md)
 - [Unified Write Filter]( index.md)

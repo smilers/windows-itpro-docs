@@ -39,7 +39,7 @@ You must use an administrator account to remove file or folder exclusions, and y
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Volume](uwf-volume.md)
 - [Unified Write Filter]( index.md)

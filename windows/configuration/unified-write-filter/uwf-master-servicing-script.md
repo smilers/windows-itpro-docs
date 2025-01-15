@@ -81,7 +81,7 @@ shutdown -r -t 5
 EXIT /B
 ```
 
-## Related topics
+## Related articles
 
 [Service UWF-protected devices](service-uwf-protected-devices.md)
 

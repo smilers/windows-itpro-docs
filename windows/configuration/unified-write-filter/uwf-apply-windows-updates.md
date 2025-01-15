@@ -62,7 +62,7 @@ When Windows update servicing is finished, the system will disable UWF servicing
 > [!NOTE]
 > If Windows updates cannot be installed or return an error, servicing will be disabled and the system will restart with UWF-protection re-enabled and all file and registry exclusions restored to their original pre-servicing state.
 
-## Related topics
+## Related articles
 
 - [Unified Write Filter]( index.md)
 - [UWF master servicing script](uwf-master-servicing-script.md)

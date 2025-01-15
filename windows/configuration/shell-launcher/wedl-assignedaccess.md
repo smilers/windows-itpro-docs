@@ -1,17 +1,10 @@
 ---
 title: WEDL\_AssignedAccess
 description: WEDL\_AssignedAccess
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 2be8d294-db13-4494-bd5f-ba97ed89528e
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/20/2024
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WEDL\_AssignedAccess
 
 This Windows Management Instrumentation (WMI) provider class configures settings for assigned access.

@@ -47,7 +47,7 @@ This method does not disable or enable Unified Write Filter (UWF). If you call t
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Servicing](uwf-servicing.md)
 - [Unified Write Filter]( index.md)

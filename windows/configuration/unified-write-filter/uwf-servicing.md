@@ -94,6 +94,6 @@ if ($nextSession) {
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [Unified Write Filter]( index.md)

@@ -209,6 +209,6 @@ The following list contains the UWF WMI provider methods that are not currently 
 - [UWF_Volume.RemoveAllExclusions](uwf-volumeremoveallexclusions.md)
 - [UWF_Volume.SetBindByDriveLetter](uwf-volumesetbindbydriveletter.md)
 
-## Related topics
+## Related articles
 
 - [Unified Write Filter]( index.md)

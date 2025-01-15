@@ -35,7 +35,7 @@ echo Restarting system
 goto UPDATE_EXIT
 ```
 
-## Related topics
+## Related articles
 
 - [Service UWF-protected devices](service-uwf-protected-devices.md)
 - [UWF master servicing script](uwf-master-servicing-script.md)

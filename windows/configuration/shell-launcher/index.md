@@ -1,16 +1,10 @@
 ---
 title: Shell Launcher
 description: Shell Launcher
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: c65f1400-9d2a-406e-8b43-74eaafb0ccae
-ms.service: windows-iot
 ms.date: 06/07/2018
-ms.topic: article
-
-
+ms.topic: overview
 ---
+
 # Shell Launcher
 
 Using Shell Launcher, you can configure a kiosk device to use almost any application or executable as your custom shell. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on.

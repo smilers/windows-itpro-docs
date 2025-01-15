@@ -38,7 +38,7 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_RegistryFilter](uwf-registryfilter.md)
 - [Unified Write Filter]( index.md)

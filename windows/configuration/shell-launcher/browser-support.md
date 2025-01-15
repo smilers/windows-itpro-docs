@@ -1,7 +1,7 @@
 ---
 title: Browser Support
 ms.date: 03/30/2023
-ms.topic: article
+ms.topic: concept-article
 description: Learn about browser support in Kiosk Mode
 ---
 

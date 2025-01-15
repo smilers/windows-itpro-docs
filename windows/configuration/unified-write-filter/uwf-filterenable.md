@@ -60,7 +60,7 @@ After you run `uwfmgr filter disable`, restart the computer and enter the servin
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Filter](uwf-filter.md)
 - [Unified Write Filter]( index.md)

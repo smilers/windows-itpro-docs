@@ -51,7 +51,7 @@ Before you can change the overlay type to RAM-based, your device must meet the f
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_OverlayConfig](uwf-overlayconfig.md)
 - [Overlay for Unified Write Filter (UWF)](uwfoverlay.md)

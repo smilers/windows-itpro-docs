@@ -1,17 +1,10 @@
 ---
 title: WESL_UserSetting.GetCustomShell
 description: WESL_UserSetting.GetCustomShell
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 7bd2b50c-d566-4688-8fbd-1ea0197c1cde
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/20/2024
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WESL_UserSetting.GetCustomShell
 
 This method retrieves the Shell Launcher configuration for a specific user or group, based on the security identifier (SID).

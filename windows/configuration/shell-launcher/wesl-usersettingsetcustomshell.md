@@ -1,17 +1,10 @@
 ---
 title: WESL_UserSetting.SetCustomShell
 description: WESL_UserSetting.SetCustomShell
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 09fa040b-0fa1-4886-bfdd-8614eead0da8
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/20/2024
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WESL_UserSetting.SetCustomShell
 
 This method configures Shell Launcher for a specific user or group, based on the security identifier (SID).

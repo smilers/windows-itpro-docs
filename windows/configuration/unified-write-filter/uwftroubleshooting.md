@@ -20,7 +20,7 @@ UWF uses Windows Event Log to log events, errors and messages.
   * Error messages are logged in the **Applications and Services Logs\\Microsoft\\Windows\\UnifiedWriteFilter\\Admin** event log.
   * Informational messages are logged in the **Applications and Services Logs\\Microsoft\\Windows\\UnifiedWriteFilter\\Operational** event log.
 
-## Related topics
+## Related articles
 
 [Unified Write Filter]( index.md)
 

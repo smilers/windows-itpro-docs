@@ -45,7 +45,7 @@ You can use the [UWF_Volume.AddExclusion](uwf-volumeaddexclusion.md) and [UWF_Vo
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 - [Unified Write Filter]( index.md)

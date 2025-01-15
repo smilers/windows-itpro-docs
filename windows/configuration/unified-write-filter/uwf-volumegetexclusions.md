@@ -39,7 +39,7 @@ If **GetExclusions** does not find any files or folders in the file exclusion li
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Volume](uwf-volume.md)
 - [Unified Write Filter]( index.md)

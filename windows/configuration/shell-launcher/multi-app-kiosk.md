@@ -1,11 +1,8 @@
 ---
 title: Multi-App Kiosk
 ms.date: 08/16/2023
-ms.topic: article
-ms.service: windows-iot
-ms.subservice: iot
+ms.topic: concept-article
 description: Learn about the Multi-App Kiosk in Windows IoT Enterprise.
-keywords: Lockdown, Multi-App, Kiosk
 ---
 
 # Assigned access multi-app kiosk

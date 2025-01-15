@@ -44,7 +44,7 @@ Do not select **UwfServicingScr** as the screen saver and then click **Preview**
 
 The next time the device enters UWF servicing mode, the UwfServicingScr.scr screen saver will use the custom settings.
 
-## Related topics
+## Related articles
 
 [Service UWF-protected devices](service-uwf-protected-devices.md)
 

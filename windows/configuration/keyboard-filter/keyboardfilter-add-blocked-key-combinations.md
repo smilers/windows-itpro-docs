@@ -1,7 +1,6 @@
 ---
 title: Add blocked key combinations
 description: Add blocked key combinations
-ms.assetid: f51892fc-0262-4b25-b117-6e131b86fb68
 ms.date: 01/13/2025
 ms.topic: reference
 ---

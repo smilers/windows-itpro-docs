@@ -45,7 +45,7 @@ For more information about specific limitations and conditions when using the **
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [Unified Write Filter WMI provider reference](uwf-wmi-provider-reference.md)
 - [Unified Write Filter]( index.md)

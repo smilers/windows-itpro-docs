@@ -37,7 +37,7 @@ You must use an administrator account to disable UWF.
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Filter](uwf-filter.md)
 - [Unified Write Filter]( index.md)

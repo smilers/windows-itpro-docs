@@ -49,7 +49,7 @@ If the overlay type is RAM-based, your device must meet the following requiremen
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_OverlayConfig](uwf-overlayconfig.md)
 - [Unified Write Filter]( index.md)

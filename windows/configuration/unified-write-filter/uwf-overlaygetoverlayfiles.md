@@ -61,7 +61,7 @@ You should also be aware of the following items when you use the **GetOverlayFil
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Overlay](uwf-overlay.md)
 - [Unified Write Filter]( index.md)

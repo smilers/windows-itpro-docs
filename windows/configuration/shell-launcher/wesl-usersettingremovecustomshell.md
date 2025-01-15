@@ -1,17 +1,10 @@
 ---
 title: WESL_UserSetting.RemoveCustomShell
 description: WESL_UserSetting.RemoveCustomShell
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 161eb289-e3b5-4d16-b367-f79f2b90f291
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/20/2024
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WESL_UserSetting.RemoveCustomShell
 
 This method removes a Shell Launcher configuration for a specific user or group, based on the security identifier (SID).

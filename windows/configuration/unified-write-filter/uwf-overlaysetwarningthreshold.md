@@ -45,7 +45,7 @@ The warning threshold must be lower than the critical threshold.
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Overlay](uwf-overlay.md)
 - [Unified Write Filter]( index.md)

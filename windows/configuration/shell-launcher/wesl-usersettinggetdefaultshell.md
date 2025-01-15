@@ -1,17 +1,10 @@
 ---
 title: WESL_UserSetting.GetDefaultShell
 description: WESL_UserSetting.GetDefaultShell
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 26dc7e10-6e89-44e0-aec2-322676e8b2d1
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/20/2024
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WESL_UserSetting.GetDefaultShell
 
 This method retrieves the default Shell Launcher configuration.

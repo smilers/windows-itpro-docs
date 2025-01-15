@@ -2,7 +2,7 @@
 title: Unified Write Filter (UWF) feature (uwf-turnonuwf)
 description: Unified Write Filter (UWF) feature (uwf-turnonuwf)
 ms.date: 05/20/2024
-ms.topic: article
+ms.topic: reference
 ms.custom: RS5
 ---
 
@@ -137,7 +137,7 @@ All configuration settings for UWF are stored in the registry. UWF automatically
 
 UWF maintains configuration settings in the registry for the current session and for the next session after a device restart. Static configuration changes do not take effect until after a device restart, and these changes are saved in the registry entries for the next session. Dynamic configuration changes occur immediately and persist after a device restart.
 
-## Related topics
+## Related articles
 
 [Unified Write Filter]( index.md)
 

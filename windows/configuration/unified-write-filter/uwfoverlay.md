@@ -128,6 +128,6 @@ You can often avoid this issue by using UWF to automatically initiate the shut d
 
 Windows 10 19H1 and later will automatically restart if the maximum size of the overlay is exceeded.
 
-## Related topics
+## Related articles
 
 - [Unified Write Filter]( index.md)

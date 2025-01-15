@@ -39,7 +39,7 @@ This method does not enable UWF if it is disabled; you must explicitly enable UW
 | Windows Education      | Yes       |
 | Windows IoT Enterprise | Yes       |
 
-## Related topics
+## Related articles
 
 - [UWF_Volume](uwf-volume.md)
 - [Unified Write Filter]( index.md)

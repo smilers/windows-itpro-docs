@@ -1,17 +1,10 @@
 ---
 title: WESL_UserSetting
 description: WESL_UserSetting
-MSHAttr:
-- 'PreferredSiteName:MSDN'
-- 'PreferredLib:/library/windows/hardware'
-ms.assetid: 73c5bb46-bf9e-4657-a5ae-88dbd14b79e8
-ms.service: windows-iot
-ms.subservice: iot
 ms.date: 05/02/2017
-ms.topic: article
-
-
+ms.topic: reference
 ---
+
 # WESL_UserSetting
 
 This class configures which application Shell Launcher starts based on the security identifier (SID) of the signed in user, and also configures the set of return codes and return actions that Shell Launcher performs when the application exits.
@@ -92,7 +85,7 @@ Only one **WESL_UserSetting** instance exists on a device with Shell Launcher.
 
 Shell Launcher uses the custom configuration defined for the SID of the user currently signed in, if one exists. Otherwise, Shell Launcher uses a custom configuration defined for a group SID that the user is a member of, if any exist. If multiple group custom configurations for the user exist, Shell Launcher uses the first valid configuration it finds. The search order is not defined.
 
-If there is no custom configuration for the user’s SID or any group SIDs that the user is a member of, Shell Launcher uses the default configuration.
+If there is no custom configuration for the user's SID or any group SIDs that the user is a member of, Shell Launcher uses the default configuration.
 
 You can find the SID for a user and any groups that the user is a member of by using the [whoami](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771299(v=ws.10)) command-line tool.
 
