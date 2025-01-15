@@ -54,7 +54,7 @@ While servicing is underway, the UwfServicingScr.scr screen saver displays on th
 > [!NOTE]
 > The UwfServicingScr.scr screen saver that is included with Windows 10 Enterprise is a standard Windows screen saver and can be replaced by a custom OEM screen saver if necessary.
 
-When Windows update servicing is finished, the system disables UWF servicing and restart the system with UWF-protection enabled and all file and registry exclusions restored to their original pre-servicing state.
+When Windows update servicing is finished, the system disables UWF servicing and restarts the system with UWF-protection enabled and all file and registry exclusions restored to their original pre-servicing state.
 
 > [!NOTE]
 > During UWF servicing in Windows 10 Enterprise, Windows Update automatically accepts all Microsoft Software License Terms.
