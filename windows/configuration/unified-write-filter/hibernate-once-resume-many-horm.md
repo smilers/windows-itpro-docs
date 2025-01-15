@@ -2,7 +2,7 @@
 title: Hibernate Once/Resume Many (HORM)
 description: Hibernate Once/Resume Many (HORM)
 ms.date: 04/12/2018
-ms.topic: reference
+ms.topic: concept-article
 ---
 
 # Hibernate Once/Resume Many (HORM)
@@ -12,7 +12,7 @@ You can use the Hibernate Once/Resume Many (HORM) feature with Unified Write Fil
 A device with HORM enabled can quickly be turned off or shut down, and then restarted into the preconfigured state, even if a sudden power loss.
 
 > [!NOTE]
-> HORM can be used on Unified Extensible Firmware Interface (UEFI) devices running Windows 10, version 1709, or newer versions of Windows, only. In previous Windows versions, the installation procedure for UEFI creates a hidden system partition. Because UWF cannot protect hidden partitions, HORM cannot be used on any devices that contain a hidden partition, including UEFI-capable devices on older versions of Windows.
+> HORM can be used on Unified Extensible Firmware Interface (UEFI) devices running Windows 10, version 1709, or newer versions of Windows, only. In previous Windows versions, the installation procedure for UEFI creates a hidden system partition. Because UWF can't protect hidden partitions, HORM can't be used on any devices that contain a hidden partition, including UEFI-capable devices on older versions of Windows.
 
 ## Requirements
 
@@ -78,8 +78,8 @@ Disable the policy to show "Hibernation" in the power options menu:
 
 > [!NOTE]
 >
-> - Don't disable hibernate (i.e. powercfg /h off) because it will delete the hiberfil.sys which HORM requires.
-> - Even after you set all these settings, the timestamp of hiberfil.sys is updated after the system reboot. This is because UWF cannot filter the hiberfil.sys file, and the file needs to be compressed and decompressed during the system reboot. However, this doesn't change the content of hiberfil.sys so the preconfigured state of the device is protected.
+> - Don't disable hibernate (i.e. powercfg /h off) because it deletes the hiberfil.sys which HORM requires.
+> - Even after you set all these settings, the timestamp of hiberfil.sys is updated after the system reboot. This is because UWF can't filter the hiberfil.sys file, and the file needs to be compressed and decompressed during the system reboot. However, this doesn't change the content of hiberfil.sys so the preconfigured state of the device is protected.
 
 ## Configure HORM
 
@@ -135,7 +135,7 @@ Disable the policy to show "Hibernation" in the power options menu:
     The system restarts normally with HORM disabled.
 
 > [!WARNING]
-> Do not uninstall UWF when the filter is enabled or when HORM is enabled, either online or offline by using Windows PE.
+> Don't uninstall UWF when the filter is enabled or when HORM is enabled, either online or offline by using Windows PE.
 
 ## Fix an issue when you can't disable HORM
 

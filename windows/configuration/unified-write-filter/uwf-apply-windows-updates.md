@@ -42,25 +42,25 @@ UWF servicing supports the following types of Windows updates:
    shutdown /r /t 0
    ```
 
-On restart, the device will automatically sign in to the servicing account and servicing will start.
+On restart, the device automatically signs in to the servicing account and servicing starts.
 
 > [!IMPORTANT]
-> The default servicing account that is automatically created and used for servicing is named **UWF-Servicing**. It is important that you do not have a user account that has that same name on a device before starting UWF servicing.
+> The default servicing account that is automatically created and used for servicing is named **UWF-Servicing**. It's important that you don't have a user account that has that same name on a device before starting UWF servicing.
 
-Once servicing has started, no user interaction is required. The system may restart if it is required by the Windows updates that are installing. If a restart is required, the system will re-enter servicing mode on restart and continue until all updates have been installed.
+Once servicing has started, no user interaction is required. The system may restart if it's required by the Windows updates that are installing. If a restart is required, the system reenters servicing mode on restart and continues until all updates are installed.
 
 While servicing is underway, the UwfServicingScr.scr screen saver displays on the device.
 
 > [!NOTE]
-> The UwfServicingScr.scr screen saver that is included with Windows 10 Enterprise is a standard Windows screen saver and can be replaced by a custom OEM screen saver if required.
+> The UwfServicingScr.scr screen saver that is included with Windows 10 Enterprise is a standard Windows screen saver and can be replaced by a custom OEM screen saver if necessary.
 
-When Windows update servicing is finished, the system will disable UWF servicing and restart the system with UWF-protection enabled and all file and registry exclusions restored to their original pre-servicing state.
-
-> [!NOTE]
-> Be aware that during UWF servicing in Windows 10 Enterprise, Windows Update automatically accepts all Microsoft Software License Terms.
+When Windows update servicing is finished, the system disables UWF servicing and restart the system with UWF-protection enabled and all file and registry exclusions restored to their original pre-servicing state.
 
 > [!NOTE]
-> If Windows updates cannot be installed or return an error, servicing will be disabled and the system will restart with UWF-protection re-enabled and all file and registry exclusions restored to their original pre-servicing state.
+> During UWF servicing in Windows 10 Enterprise, Windows Update automatically accepts all Microsoft Software License Terms.
+
+> [!NOTE]
+> If Windows updates can't be installed or return an error, servicing is disabled and the system restarts with UWF-protection re-enabled and all file and registry exclusions restored to their original pre-servicing state.
 
 ## Related articles
 

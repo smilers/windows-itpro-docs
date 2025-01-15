@@ -66,13 +66,13 @@ Set the **HideAutoLogonUI** and **AnimationDisabled** settings to **0** (zero). 
 **HideAutoLogonUI** and **ForceAutoLogon** have known issues when used together. To avoid a black screen, we recommend you disable the Blocked Shutdown Resolver Screen (BSDR).
 
 > [!WARNING]
-> When the BSDR screen is disabled, restarting or shutting down the device causes the OS to immediately force close any open applications that are blocking system shutdown. No UI is displayed, and users are not given a chance to cancel the shutdown process. This can result in lost data if any open applications have unsaved data.
+> When the BSDR screen is disabled, restarting, or shutting down the device causes the OS to immediately force close any open applications that are blocking system shutdown. No UI is displayed, and users aren't given a chance to cancel the shutdown process. This can result in lost data if any open applications have unsaved data.
 
 ## The device displays a black screen when the device is suspended and then resumed
 
-**HideAutoLogonUI** and **ForceAutoLogon** have known issues when used together. To avoid a black screen, we recommend you disable the password protection on wake up.
+**HideAutoLogonUI** and **ForceAutoLogon** have known issues when used together. To avoid a black screen, we recommend you disable the password protection on wake-up.
 
-### To disable password protection on wake up
+### To disable password protection on wake-up
 
 1. In **Control Panel**, select **Power Options**.
 

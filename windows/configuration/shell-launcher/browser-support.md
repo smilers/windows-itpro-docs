@@ -22,9 +22,9 @@ Both experiences are running a Microsoft Edge InPrivate session, which protects 
 
 ## Internet Explorer 11
 
-[Internet Explorer 11](/internet-explorer/internet-explorer) will be considered a legacy browser, in subsequent releases.
+[Internet Explorer 11](/internet-explorer/internet-explorer) is considered a legacy browser, in subsequent releases.
 
-In anticipation of that, you can use [Internet Explorer (IE) mode](/deployedge/edge-ie-mode) on Microsoft Edge. IE mode allows you to run legacy web apps as well as modern web apps in a single browser.
+In anticipation of that, you can use [Internet Explorer (IE) mode](/deployedge/edge-ie-mode) on Microsoft Edge. IE mode allows you to run legacy web apps and modern web apps in a single browser.
 
 > [!NOTE]
 > For in-support Windows 10 IoT Enterprise [Semi-Annual Channel (SAC) releases](/lifecycle/products/windows-10-iot-enterprise), Internet Explorer 11 will reach end of support on June 15, 2022.
@@ -36,8 +36,8 @@ In anticipation of that, you can use [Internet Explorer (IE) mode](/deployedge/e
 | Browser | Internet Explorer 11 | Microsoft Edge Legacy | Microsoft Edge |
 |--|--|--|--|
 | OS Release | [IE11 App](/internet-explorer/internet-explorer) | [Edge Browser - Legacy](/deployedge/microsoft-edge-kiosk-mode-transition-plan) | [New Edge Browser](/deployedge/microsoft-edge-configure-kiosk-mode) |
-| Windows 10 IoT Enterprise LTSC 2019 | [Follows OS Release Support Lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2019) | No browser security updates after March, 9, 2021 (removed where applicable). In-box engine supported until OS EOL | Edge and WebView2 Runtime not in-box (requires app migration from EdgeHTML) |
-| Windows 10 IoT Enterprise, version 21H2 | End of support June 15, 2022 | Removed & replaced with New Edge Browser in May 2021 Update | Included in-box or installed with May 2021 Update |
+| Windows 10 IoT Enterprise LTSC 2019 | [Follows OS Release Support Lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2019) | No browser security updates after March, 9, 2021 (removed where applicable). In-box engine supported until OS end of service | Microsoft Edge and WebView2 Runtime not in-box (requires app migration from EdgeHTML) |
+| Windows 10 IoT Enterprise, version 21H2 | End of support June 15, 2022 | Removed & replaced with New Microsoft Edge Browser in May 2021 Update | Included in-box or installed with May 2021 Update |
 | Windows 10 IoT Enterprise LTSC 2021 | [Follows OS Release Support Lifecycle](/lifecycle/products/windows-10-iot-enterprise-ltsc-2021) | Not included | Microsoft Edge included in-box and follows [Modern Lifecycle Policy](/lifecycle/policies/modern) |
 | Windows 11 IoT Enterprise | N/A | N/A | Microsoft Edge included in-box and follows [Modern Lifecycle Policy](/lifecycle/policies/modern) |
 
