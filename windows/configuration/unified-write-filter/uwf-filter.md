@@ -34,7 +34,7 @@ The following tables list any methods and properties that belong to this class.
 |----------|-------------|
 | [UWF_Filter.Enable](uwf-filterenable.md) | Enables UWF on the next restart. |
 | [UWF_Filter.Disable](uwf-filterdisable.md) | Disables UWF on the next restart. |
-| [UWF_Filter.ResetSettings](uwf-filterresetsettings.md) | Restores UWF settings to the orig inal state that was captured at install time. |
+| [UWF_Filter.ResetSettings](uwf-filterresetsettings.md) | Restores UWF settings to the original state that was captured at install time. |
 | [UWF_Filter.ShutdownSystem](uwf-filtershutdownsystem.md) |Safely shuts down a system protected by UWF, even if the overlay is full. |
 | [UWF_Filter.RestartSystem](uwf-filterrestartsystem.md) | Safely restarts a system protected by UWF, even if the overlay is full. |
 
