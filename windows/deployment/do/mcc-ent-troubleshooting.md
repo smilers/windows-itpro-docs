@@ -118,7 +118,7 @@ You can use Task Scheduler on the host machine to check the status of this sched
 
 ### Cache node successfully deployed but not serving requests
 
-If your cache node isn't responding to requests outside of localhost, it may be because the host machine's port forwarding rules weren't correctly set during Connected Cache installation. Since WSL 2 uses a virtualized ethernet adapter by default, port forwarding rules are needed to allow traffic to reach the WSL 2instance from your LAN. For more information, see [Accessing network applications with WSL](/windows/wsl/networking#accessing-a-wsl-2-distribution-from-your-local-area-network-lan). 
+If your cache node isn't responding to requests outside of localhost, it may be because the host machine's port forwarding rules weren't correctly set during Connected Cache installation. Since WSL 2 uses a virtualized ethernet adapter by default, port forwarding rules are needed to allow traffic to reach the WSL 2 instance from your LAN. For more information, see [Accessing network applications with WSL](/windows/wsl/networking#accessing-a-wsl-2-distribution-from-your-local-area-network-lan). 
 
 To check your host machine's port forwarding rules, use the following PowerShell command.
 
