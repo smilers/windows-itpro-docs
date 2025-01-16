@@ -13,13 +13,13 @@ Normally, when the Unified Write Filter (UWF) is active, system updates are disa
 
 When UWF servicing mode is triggered, Windows does the following:
 
-1. Clears the UWF overlay.
-1. Reboots the devices.
-1. Triggers a [system maintenance hour](/windows/desktop/TaskSchd/task-maintenence).
-1. Disables the UWF filter.
-1. Scans for and applies Windows updates.
-1. Scans for and applies app updates from the Microsoft store.
-1. After servicing is complete, it re-enables the UWF filter and resumes UWF protection.
+1. Clears the UWF overlay
+1. Reboots the devices
+1. Triggers a system maintenance hour
+1. Disables the UWF filter
+1. Scans for and applies Windows updates
+1. Scans for and applies app updates from the Microsoft store
+1. After servicing is complete, it re-enables the UWF filter and resumes UWF protection
 
 >[!NOTE]
 > Servicing mode requires that all user accounts on the system have a password. If there's a user account that doesn't include a password, UWF servicing fails.
