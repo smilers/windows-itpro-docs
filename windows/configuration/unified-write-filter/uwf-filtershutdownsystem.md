@@ -27,9 +27,9 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 
 You must use an administrator account to call this method.
 
-If the overlay is full, or near full, shutting down or restarting the system normally can cause the system to take an extremely long time to shut down. This occurs when the system repeatedly tries to write files during shutdown, which constantly fail due to the overlay being full. You can call this method to safely shutdown a system by avoiding this scenario.
+If the overlay is full, or near full, shutting down or restarting the system normally can cause the system to take an extremely long time to shut down. This occurs when the system repeatedly tries to write files during shutdown, which constantly fail due to the overlay being full. You can call this method to safely shut down a system by avoiding this scenario.
 
-If the overlay becomes full while the system is performing a large amount of writes, such as copying a large group of files, calling this method can still result in a long shutdown time.
+If the overlay becomes full while the system is performing a large number of writes, such as copying a large group of files, calling this method can still result in a long shutdown time.
 
 ## Requirements
 
