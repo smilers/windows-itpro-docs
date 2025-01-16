@@ -1,8 +1,6 @@
 ---
 title: Remove key combination configurations
 description: Remove key combination configurations
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---

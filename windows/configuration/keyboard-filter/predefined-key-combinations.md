@@ -1,8 +1,6 @@
 ---
 title: Predefined key combinations
 description: Predefined key combinations
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---

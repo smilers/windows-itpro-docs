@@ -1,8 +1,6 @@
 ---
 title: WEKF_Scancode.Remove
 description: WEKF_Scancode.Remove
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---
