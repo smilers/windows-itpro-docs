@@ -28,7 +28,7 @@ Returns an HRESULT value that indicates [WMI status](/windows/win32/wmisdk/wmi-n
 You must use an administrator account to call this method.
 You can't run on WMI providers; it's only available from Intune/CSP.
 
-If the overlay is full, or near full, shutting down or restarting the system normally can cause the system to take an long time to shut down. This occurs when the system repeatedly tries to write files during shutdown, which constantly fail due to the overlay being full. You can call this method to safely restart a system by avoiding this scenario.
+If the overlay is full, or near full, shutting down or restarting the system normally can cause the system to take a long time to shut down. This occurs when the system repeatedly tries to write files during shutdown, which constantly fail due to the overlay being full. You can call this method to safely restart a system by avoiding this scenario.
 
 If the overlay becomes full while the system is performing a large number of writes, such as copying a large group of files, calling this method can still result in a long shutdown time.
 
