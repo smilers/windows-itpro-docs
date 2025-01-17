@@ -1,8 +1,6 @@
 ---
 title: WEKF_PredefinedKey.Disable
 description: WEKF_PredefinedKey.Disable
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---
