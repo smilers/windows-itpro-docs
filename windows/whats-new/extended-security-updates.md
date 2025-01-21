@@ -43,7 +43,7 @@ The following are frequently asked questions about the ESU program for Windows 1
 
 ### How much does ESU cost?
 
-Extended Security Updates for Windows 10 can be purchased today through the Microsoft Volume Licensing Program, at $61 USD per device for Year One. For more information, see [When to use Windows 10 Extended Security Updates](https://techcommunity.microsoft.com/blog/windows-itpro-blog/when-to-use-windows-10-extended-security-updates/4102628). The price doubles every consecutive year, for a maximum of three years. ESU is available at no additional cost for all Windows 365 customers for up to three years, with an active Windows 365 subscription license. For more information about Windows 365, see [What is Windows 365?](/windows-365/overview).
+Extended Security Updates for Windows 10 can be purchased today through the Microsoft Volume Licensing Program, at $61 USD per device for Year One. For more information, see [When to use Windows 10 Extended Security Updates](https://techcommunity.microsoft.com/blog/windows-itpro-blog/when-to-use-windows-10-extended-security-updates/4102628). The price doubles every consecutive year, for a maximum of three years. ESU is available at no additional cost for Windows 10 virtual machines running in Windows 365 or Azure Virtual Desktop. Additionally, Windows 10 endpoints connecting to Windows 365 Cloud PCs will be entitled to the ESU for up to three years, with an active Windows 365 subscription license. For more information about Windows 365, see [What is Windows 365?](/windows-365/overview).
 
 
 ### Is there a minimum license purchase requirement for Windows 10 ESU?
