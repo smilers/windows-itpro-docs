@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft 365 Copilot Chat experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 01/15/2025
+ms.date: 01/22/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -16,7 +16,7 @@ appliesto:
 # Updated Windows and Microsoft 365 Copilot Chat experience
 <!--8445848, 9294806-->
 
->**Looking for consumer information?** See [Welcome to Copilot in Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0). **Looking for more information on Microsoft 365 Copilot Chat experiences?** See [Understanding the different Microsoft 365 Copilot Chat experiences](https://support.microsoft.com/topic/cfff4791-694a-4d90-9c9c-1eb3fb28e842).
+>**Looking for consumer information?** See [Welcome to Copilot on Windows](https://support.microsoft.com/topic/675708af-8c16-4675-afeb-85a5a476ccb0). **Looking for more information on Microsoft 365 Copilot Chat experiences?** See [Understanding the different Microsoft 365 Copilot Chat experiences](https://support.microsoft.com/topic/cfff4791-694a-4d90-9c9c-1eb3fb28e842).
 
 ## Enhanced data protection with enterprise data protection
 
@@ -94,9 +94,9 @@ You can remove or uninstall the Copilot app from your device by using one of the
       1. Open a Windows PowerShell window. You can do this by opening the Start menu, typing `PowerShell`, and selecting **Windows PowerShell** from the results.
       1. Once the PowerShell window is open, enter the following commands:
        ```powershell
-       # Get the package full name of the Microsoft 365 Copilot app
+       # Get the package full name of the Copilot app
        $packageFullName = Get-AppxPackage -Name "Microsoft.Copilot" | Select-Object -ExpandProperty PackageFullName
-       # Remove the Microsoft 365 Copilot app
+       # Remove the Copilot app
        Remove-AppxPackage -Package $packageFullName
        ```
 
