@@ -9982,7 +9982,47 @@
     },
     {
       "source_path": "windows/security/application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md",
-      "redirect_url": "/windows/security/application-security/application-control/introduction-to-virtualization-based-security-and-appcontrol.md",
+      "redirect_url": "/windows/security/application-security/application-control/introduction-to-virtualization-based-security-and-appcontrol",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/application-security/index.md",
+      "redirect_url": "/windows/security/book/application-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/hardware-security/index.md",
+      "redirect_url": "/windows/security/book/hardware-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cloud-services/index.md",
+      "redirect_url": "/windows/security/book/cloud-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/index.md",
+      "redirect_url": "/windows/security/book/identity-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/index.md",
+      "redirect_url": "/windows/security/book/operating-system-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/security-foundations/index.md",
+      "redirect_url": "/windows/security/book/security-foundation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/introduction.md",
+      "redirect_url": "/windows/security/book",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/security-foundations/zero-trust-windows-device-health.md",
+      "redirect_url": "/windows/security/book/security-foundation",
       "redirect_document_id": false
     }
   ]

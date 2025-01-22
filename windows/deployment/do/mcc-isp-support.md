@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for ISPs</a>	
-ms.date: 05/23/2024
+ms.date: 01/14/2025
 ---
 
 # Support and troubleshooting
@@ -97,6 +97,15 @@ Rerun the IoT Edge Check command to validate proper connectivity:
 ```bash
 iotedge check -verbose
 ```
+<br>
+
+## Updating from Ubuntu 20.04 to 22.04
+You can now provision Microsoft Connected Cache for ISP on Ubuntu 22.04.
+If you have a cache node provisioned on Ubuntu 20.04, you will need to uninstall it first before updating to Ubuntu 22.04.
+Once you have updated the system, download the provisioning package from Azure portal and run the provisioning script on the portal.
+For more information on provisioning cache node, visit, [Create, provision and deploy cache node](mcc-isp-create-provision-deploy.md#provision-your-server).
+
+<br>
 
 ## Diagnose and Solve Problems
 
@@ -109,6 +118,7 @@ You can find **Diagnose and solve problems** on the left pane within your Connec
 Within **Diagnose and solve problems**, select **Troubleshoot** under the type of problem you're facing and follow the prompts that narrow down the solution to the issue.
 
 :::image type="content" source="images/mcc-isp-diagnose-solve-troubleshoot.png" alt-text="A screenshot of Azure portal showing the option to select Troubleshoot to continue troubleshooting common issues related to the installation of Microsoft Connected Cache." lightbox="images/mcc-isp-diagnose-solve-troubleshoot.png":::
+
 
 ## Steps to obtain an Azure subscription ID
 

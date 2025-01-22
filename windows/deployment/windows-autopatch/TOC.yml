@@ -68,6 +68,8 @@
               href: manage/windows-autopatch-windows-update-policies.md
             - name: Programmatic controls for expedited Windows quality updates
               href: manage/windows-autopatch-windows-quality-update-programmatic-controls.md
+            - name: Hotpatch updates
+              href: manage/windows-autopatch-hotpatch-updates.md
         - name: Driver and firmware updates
           href: manage/windows-autopatch-manage-driver-and-firmware-updates.md
           items:
@@ -116,6 +118,8 @@
                   href: monitor/windows-autopatch-windows-quality-update-trending-report.md
                 - name: Reliability report
                   href: monitor/windows-autopatch-reliability-report.md
+                - name: Hotpatch quality update report
+                  href: monitor/windows-autopatch-hotpatch-quality-update-report.md
             - name: Windows feature and quality update device alerts
               href: monitor/windows-autopatch-device-alerts.md
         - name: Policy health and remediation

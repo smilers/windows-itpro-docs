@@ -1,7 +1,7 @@
 ---
 title: WebThreatDefense Policy CSP
 description: Learn more about the WebThreatDefense Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 11/26/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -308,7 +308,7 @@ This policy setting determines whether Enhanced Phishing Protection in Microsoft
 
 - If you disable this policy setting, Enhanced Phishing Protection in Microsoft Defender SmartScreen is off and it won't capture events, send telemetry, or notify users. Additionally, your users are unable to turn it on.
 
-- If you don't configure this setting, users can decide whether or not they will enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
+- If you don't configure this setting, users can decide whether or not they'll enable Enhanced Phishing Protection in Microsoft Defender SmartScreen.
 <!-- ServiceEnabled-Description-End -->
 
 <!-- ServiceEnabled-Editable-Begin -->

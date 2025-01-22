@@ -1,5 +1,5 @@
 ---
-title: Windows commercial licensing overview
+title: Windows Commercial Licensing Overview
 description: Learn about products and use rights available through Windows commercial licensing.
 ms.subservice: itpro-security
 author: paolomatarazzo
@@ -8,7 +8,7 @@ manager: aaroncz
 ms.collection:
 - tier2
 ms.topic: overview
-ms.date: 02/29/2024
+ms.date: 12/02/2024
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.service: windows-client
@@ -143,7 +143,7 @@ The following table lists the Windows 11 Enterprise features and their Windows e
 |**[Credential Guard][WIN-1]**|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**|Yes|Yes|
 |**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
-|**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|
+|**[Personal Data Encryption][WIN-3]**|❌|Yes|
 |**[Direct Access][WINS-1]**|Yes|Yes|
 |**[Always On VPN][WINS-2]**|Yes|Yes|
 |**[Windows Experience customization][WIN-4]**|❌|Yes|

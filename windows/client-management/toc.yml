@@ -51,7 +51,9 @@ items:
               - name: Updated Windows and Microsoft Copilot experience
                 href: manage-windows-copilot.md
               - name: Manage Recall
-                href: manage-recall.md                
+                href: manage-recall.md
+              - name: Reference for sensitive information filtering in Recall
+                href: recall-sensitive-information-filtering.md                                 
               - name: Secured-Core PC Configuration Lock
                 href: config-lock.md
               - name: Certificate renewal

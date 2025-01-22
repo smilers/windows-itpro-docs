@@ -9,7 +9,7 @@ ms.date: 11/05/2024
 <!-- LocalPoliciesSecurityOptions-Begin -->
 # Policy CSP - LocalPoliciesSecurityOptions
 
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+[!INCLUDE [Windows Windows Insider Preview tip](includes/mdm-insider-csp-note.md)]
 
 <!-- LocalPoliciesSecurityOptions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -517,7 +517,7 @@ Audit: Shut down system immediately if unable to log security audits This securi
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
+Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-End -->
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Editable-Begin -->
@@ -1117,7 +1117,7 @@ Domain member: Require strong (Windows 2000 or later) session key This security 
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive Logon:Display user information when the session is locked User display name, domain and user names (1) User display name only (2) Don't display user information (3) Domain and user names only (4)
+Interactive Logon: Display user information when the session is locked User display name, domain and user names (1) User display name only (2) Don't display user information (3) Domain and user names only (4)
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Description-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Editable-Begin -->
@@ -1556,7 +1556,7 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 24H2 [10.0.26100] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Applicability-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-OmaUri-Begin -->
@@ -1568,6 +1568,9 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-Begin -->
 <!-- Description-Source-DDF -->
 Interactive logon: Number of previous logons to cache (in case domain controller isn't available) Each unique user's logon information is cached locally so that, in the event that a domain controller is unavailable during subsequent logon attempts, they're able to log on. The cached logon information is stored from the previous logon session. If a domain controller is unavailable and a user's logon information isn't cached, the user is prompted with this message: There are currently no logon servers available to service the logon request. In this policy setting, a value of 0 disables logon caching. Any value above 50 only caches 50 logon attempts. Windows supports a maximum of 50 cache entries and the number of entries consumed per user depends on the credential. For example, a maximum of 50 unique password user accounts can be cached on a Windows system, but only 25 smart card user accounts can be cached because both the password information and the smart card information are stored. When a user with cached logon information logs on again, the user's individual cached information is replaced. Default: Windows Server 2008: 25 All Other Versions: 10.
+
+> [!NOTE]
+> This setting previously showed as applicable to Windows 11, version 24H2 [10.0.26100] and later in error.  MDM solutions may show as applicable to that version until a future release. 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-Begin -->
@@ -1780,7 +1783,7 @@ Microsoft network client: Digitally sign communications (if server agrees) This 
 
 - If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated.
 
-- If this policy is disabled, the SMB client will never negotiate SMB packet signing. Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
+- If this policy is disabled, the SMB client will never negotiate SMB packet signing. Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing are enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Description-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Editable-Begin -->
@@ -2021,7 +2024,7 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 - If this policy is disabled, the SMB client will never negotiate SMB packet signing. on domain controllers only.
 
 > [!IMPORTANT]
-> For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
+> For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing are enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Description-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Editable-Begin -->

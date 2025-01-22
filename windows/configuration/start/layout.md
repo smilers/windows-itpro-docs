@@ -1,8 +1,8 @@
 ---
-title: Customize the Start layout
+title: Customize The Start Layout For Managed Windows Devices
 description: Learn how to customize the Windows Start layout, export its configuration, and deploy the customization to other devices.
 ms.topic: how-to
-ms.date: 04/10/2024
+ms.date: 12/02/2024
 zone_pivot_groups: windows-versions-11-10
 appliesto:
 ---

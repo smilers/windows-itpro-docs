@@ -1,7 +1,7 @@
 ---
 title: Windows feature updates overview
 description: This article explains how Windows feature updates are managed
-ms.date: 10/30/2024
+ms.date: 11/20/2024
 ms.service: windows-client
 ms.subservice: autopatch
 ms.topic: overview
@@ -119,6 +119,9 @@ For more information about Windows feature update policies that are created for 
 1. Select **Cancel deployment** to save your changes.
 
 ## Pause and resume a release
+
+> [!IMPORTANT]
+> **Due to a recent change, we have identified an issue that prevents the Paused and Pause status columns from being displayed** in reporting. Until a fix is deployed, **you must keep track of your paused releases so you can resume them at a later date**. The team is actively working on resolving this issue and we'll provide an update when a fix is deployed.
 
 > [!IMPORTANT]
 > **Pausing or resuming an update can take up to eight hours to be applied to devices**. Windows Autopatch uses Microsoft Intune as its device management solution and that's the average frequency Windows devices take to communicate back to Microsoft Intune with new instructions to pause, resume or rollback updates. For more information, see [how long does it take for devices to get a policy, profile, or app after they are assigned from Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).

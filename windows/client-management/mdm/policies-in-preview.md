@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 11/05/2024
+ms.date: 11/27/2024
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -62,6 +62,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## Display
 
 - [ConfigureMultipleDisplayMode](policy-csp-display.md#configuremultipledisplaymode)
+- [SetClonePreferredResolutionSource](policy-csp-display.md#setclonepreferredresolutionsource)
 
 ## DMClient CSP
 
@@ -106,6 +107,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [ConfigureDeviceStandbyAction](policy-csp-mixedreality.md#configuredevicestandbyaction)
 - [ConfigureDeviceStandbyActionTimeout](policy-csp-mixedreality.md#configuredevicestandbyactiontimeout)
 
+## NewsAndInterests
+
+- [DisableWidgetsOnLockScreen](policy-csp-newsandinterests.md#disablewidgetsonlockscreen)
+
 ## PassportForWork CSP
 
 - [DisablePostLogonProvisioning](passportforwork-csp.md#devicetenantidpoliciesdisablepostlogonprovisioning)
@@ -117,6 +122,11 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## RemoteDesktopServices
 
 - [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-remotedesktopservices.md#ts_server_remoteapp_use_shellappruntime)
+
+## Start
+
+- [AlwaysShowNotificationIcon](policy-csp-start.md#alwaysshownotificationicon)
+- [TurnOffAbbreviatedDateTimeFormat](policy-csp-start.md#turnoffabbreviateddatetimeformat)
 
 ## SurfaceHub CSP
 
@@ -137,9 +147,14 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## WindowsAI
 
-- [SetCopilotHardwareKey](policy-csp-windowsai.md#setcopilothardwarekey)
+- [SetDenyAppListForRecall](policy-csp-windowsai.md#setdenyapplistforrecall)
+- [SetDenyUriListForRecall](policy-csp-windowsai.md#setdenyurilistforrecall)
+- [SetMaximumStorageSpaceForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragespaceforrecallsnapshots)
+- [SetMaximumStorageDurationForRecallSnapshots](policy-csp-windowsai.md#setmaximumstoragedurationforrecallsnapshots)
 - [DisableImageCreator](policy-csp-windowsai.md#disableimagecreator)
 - [DisableCocreator](policy-csp-windowsai.md#disablecocreator)
+- [DisableGenerativeFill](policy-csp-windowsai.md#disablegenerativefill)
+- [AllowRecallEnablement](policy-csp-windowsai.md#allowrecallenablement)
 
 ## WindowsLicensing CSP
 
