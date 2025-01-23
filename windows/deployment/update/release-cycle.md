@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 06/04/2024
+ms.date: 01/23/2025
 ---
 
 # Update release cycle for Windows clients
@@ -74,7 +74,7 @@ Multiple checkpoints may be shipped during the lifecycle of a given Windows rele
 - LCU preview
 
 To access the optional nonsecurity preview release:
-- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
+- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
 - Use [Windows Insider Program for Business](https://insider.windows.com/for-business)
 - Use the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx).
 
