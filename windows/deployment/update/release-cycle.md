@@ -1,6 +1,6 @@
 ---
 title: Update release cycle for Windows clients
-description: Learn about the release cycle for updates so Windows clients in your organization stay productive and protected.
+description: Learn about the release cycle for updates so Windows clients in your organization stay productive and protected.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
