@@ -54,6 +54,14 @@ Monthly security update releases are available through the following channels:
 
 Many update management tools, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Intune](/mem/intune/), rely on these channels for update deployment.
 
+Starting Windows 11, version 24H2, Microsoft may periodically release cumulative updates as checkpoints. The subsequent updates will consist of:
+- The update package files associated with the checkpoints, and
+- New update package files that contain incremental binary differentials against the version of binaries in the last checkpoint.
+
+Multiple checkpoints may be shipped during the lifecycle of a given Windows release. Devices updating from Windows Update and WSUS can continue to seamlessly install the latest monthly security update regardless of whether there are any preceding checkpoint cumulative updates, no change is needed to their update process. Catalog users can review [Checkpoint cumulative updates and Microsoft Update Catalog usage](catalog-checkpoint-cumulative-updates.md) for reference.
+
+
+
 ## Optional nonsecurity preview release
 
 **Optional nonsecurity preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, nonsecurity preview releases. New features might initially be deployed in the prior month's **optional nonsecurity preview release**, then ship in the following **monthly security update release**. **Optional nonsecurity preview releases** are typically released on the fourth Tuesday of the month at 10:00 AM Pacific Time (PST/PDT). These releases are only offered to the most recent, supported versions of Windows.
