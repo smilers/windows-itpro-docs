@@ -78,6 +78,12 @@ To access the optional nonsecurity preview release:
 - Use [Windows Insider Program for Business](https://insider.windows.com/for-business)
 - Use the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx).
 
+Starting Windows 11, version 24H2, Microsoft may periodically release cumulative updates as checkpoints. The subsequent updates will consist of:
+- The update package files associated with the checkpoints, and
+- New update package files that contain incremental binary differentials against the version of binaries in the last checkpoint.
+
+Multiple checkpoints may be shipped during the lifecycle of a given Windows release. Devices updating from Windows Update and WSUS can continue to seamlessly install the latest monthly security update regardless of whether there are any preceding checkpoint cumulative updates, no change is needed to their update process. Catalog users can review [Checkpoint cumulative updates and Microsoft Update Catalog usage](catalog-checkpoint-cumulative-updates.md) for reference.
+
 ## OOB releases
 
 **Out-of-band (OOB) releases** might be provided to fix a recently identified issue or vulnerability. They're used in atypical cases when an issue is detected and can't wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. **Out-of-band (OOB) releases** are provided outside of the monthly schedule when there's an exceptional need.
