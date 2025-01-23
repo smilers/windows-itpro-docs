@@ -54,11 +54,8 @@ When installing a given monthly security or optional nonsecurity preview update,
 For a given update, users can look up the KB article and find all preceding checkpoints, if any, listed under the **Catalog** release channel. For instance, the 2024-12 monthly security update (KB5048667) has one preceding checkpoint CU per [December 10, 2024—KB5048667 (OS Build 26100.2605)](https://support.microsoft.com/topic/708755a6-d809-4a8a-8d20-53c4108590e6#ID0ELBD=Catalog):
 
 
-<p align="center">
-<b>Method 2: Install each MSU file individually, in order</b></p>
-<p align="center">
-Download and install each MSU file individually either using DISM or [Windows Update Standalone Installer](https://support.microsoft.com/topic/799ba3df-ec7e-b05e-ee13-1cdae8f23b19) in the following order: </p>
-<p align="center">
-<ul><li> windows11.0-kb5043080-x64_953449672073f8fb99badb4cc6d5d7849b9c83e8.msu </li>
-<li>windows11.0-kb5048667-x64_d4ad0ca69de9a02bc356757581e0e0d6960c9f93.msu </li></ul></p>
+|&nbsp|
+|---|
+|<b>Method 2: Install each MSU file individually, in order</b> <p>Download and install each MSU file individually either using DISM or [Windows Update Standalone Installer](https://support.microsoft.com/topic/799ba3df-ec7e-b05e-ee13-1cdae8f23b19) in the following order: <ul><li> windows11.0-kb5043080-x64_953449672073f8fb99badb4cc6d5d7849b9c83e8.msu </li> <li>windows11.0-kb5048667-x64_d4ad0ca69de9a02bc356757581e0e0d6960c9f93.msu </li></ul>|
 
+> <b>Method 2: Install each MSU file individually, in order</b> <p>Download and install each MSU file individually either using DISM or [Windows Update Standalone Installer](https://support.microsoft.com/topic/799ba3df-ec7e-b05e-ee13-1cdae8f23b19) in the following order: <ul><li> windows11.0-kb5043080-x64_953449672073f8fb99badb4cc6d5d7849b9c83e8.msu </li> <li>windows11.0-kb5048667-x64_d4ad0ca69de9a02bc356757581e0e0d6960c9f93.msu </li></ul>
