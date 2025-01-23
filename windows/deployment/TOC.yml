@@ -294,6 +294,8 @@ items:
           href: update/windows-update-logs.md
         - name: Servicing stack updates
           href: update/servicing-stack-updates.md
+        - name: Checkpoint cumulative updates and Microsoft Update Catalog usage
+          href: update/catalog-checkpoint-cumulative-updates.md          
         - name: Update CSP policies
           href: /windows/client-management/mdm/policy-csp-update?context=/windows/deployment/context/context
         - name: Update other Microsoft products
