@@ -1,8 +1,6 @@
 ---
 title: Modify global settings
 description: Modify global settings
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: how-to
 ---

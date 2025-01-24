@@ -1,8 +1,6 @@
 ---
 title: WEKF_CustomKey.Add
 description: WEKF_CustomKey.Add
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---

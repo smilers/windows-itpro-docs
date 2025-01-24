@@ -1,8 +1,6 @@
 ---
 title: Keyboard Filter
 description: Keyboard Filter
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: overview
 ---
