@@ -12,12 +12,12 @@ ms.collection:
 ms.localizationpriority: medium
 appliesto: 
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 24H2 and later</a>
-ms.date: 01/23/2025
+ms.date: 01/27/2025
 ---
 
 # Checkpoint cumulative updates and Microsoft Update Catalog usage
 
-Starting Windows 11, version 24H2, monthly security updates and optional nonsecurity preview release updates might be preceded by a checkpoint cumulative update. Devices (and images) updating from Windows Update (WU) and Windows Server Update Services (WSUS) release channels can continue to seamlessly install the latest monthly security update or the optional nonsecurity preview release regardless of whether there are any preceding checkpoint cumulative updates, so update processes involving WU and WSUS remain unchanged. This article covers how Microsoft Update Catalog users can easily update their devices (or images) through checkpoint cumulative updates.
+Starting Windows 11, version 24H2, monthly security updates and optional nonsecurity preview release updates might be preceded by a checkpoint cumulative update. Devices (and images) updating from Windows Update (WU) and Windows Server Update Services (WSUS) release channels can continue to seamlessly install the latest monthly security update or the optional nonsecurity preview release regardless of whether there are any preceding checkpoint cumulative updates, so **update processes involving WU and WSUS remain unchanged**. This article covers how Microsoft Update Catalog users can easily update their devices (or images) through checkpoint cumulative updates.
 
 ## Checkpoint cumulative updates
 
@@ -39,7 +39,7 @@ A checkpoint cumulative update is just another monthly security update that info
 
 This feature doesn't introduce any change to the applicability of monthly security updates. As before, these updates apply to the main OS (install.wim) and to WinPE (boot.wim) but not to WinRE (winre.wim).
 
-WinRE is serviced by applying the servicing stack update from OnePackage (latest cumulative update doesn't apply) and SafeOS Dynamic Update. This is how it has been for a while now, and there's no recent change to WinRE servicing and certainly no change due to the checkpoint cumulative updates feature. We understand that not everybody may have had a shared understanding about this, but applying servicing stack update then SafeOS Dynamic Update is the only way to ensure WinRE is serviced. For more information, see [Update Windows installation media with Dynamic Update](media-dynamic-update.md).
+WinRE is serviced by applying the servicing stack update from a cumulative update (latest cumulative update doesn't apply) and SafeOS Dynamic Update. This is how it has been for a while now, and there's no recent change to WinRE servicing and certainly no change due to the checkpoint cumulative updates feature. We understand that not everybody may have had a shared understanding about this, but applying servicing stack update then SafeOS Dynamic Update is the only way to ensure WinRE is serviced. For more information, see [Update Windows installation media with Dynamic Update](media-dynamic-update.md).
 
 ### Current checkpoint cumulative updates
  

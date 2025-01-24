@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 01/23/2025
+ms.date: 01/27/2025
 ---
 
 # Update release cycle for Windows clients
@@ -58,7 +58,7 @@ Starting Windows 11, version 24H2, Microsoft may periodically release cumulative
 - The update package files associated with the checkpoints, and
 - New update package files that contain incremental binary differentials against the version of binaries in the last checkpoint.
 
-Multiple checkpoints may be shipped during the lifecycle of a given Windows release. Devices updating from Windows Update and WSUS can continue to seamlessly install the latest monthly security update regardless of whether there are any preceding checkpoint cumulative updates, no change is needed to their update process. Catalog users can review [Checkpoint cumulative updates and Microsoft Update Catalog usage](catalog-checkpoint-cumulative-updates.md) for reference.
+Multiple checkpoints may be shipped during the lifecycle of a given Windows release. Devices updating from Windows Update and WSUS can continue to seamlessly install the latest monthly security update regardless of whether there are any preceding checkpoint cumulative updates, **no change is needed to their update process**. Catalog users can review [Checkpoint cumulative updates and Microsoft Update Catalog usage](catalog-checkpoint-cumulative-updates.md) for reference.
 
 
 
@@ -82,7 +82,7 @@ Starting Windows 11, version 24H2, Microsoft may periodically release cumulative
 - The update package files associated with the checkpoints, and
 - New update package files that contain incremental binary differentials against the version of binaries in the last checkpoint.
 
-Multiple checkpoints may be shipped during the lifecycle of a given Windows release. Devices updating from Windows Update and WSUS can continue to seamlessly install the latest monthly security update regardless of whether there are any preceding checkpoint cumulative updates, no change is needed to their update process. Catalog users can review [Checkpoint cumulative updates and Microsoft Update Catalog usage](catalog-checkpoint-cumulative-updates.md) for reference.
+Multiple checkpoints may be shipped during the lifecycle of a given Windows release. Devices updating from Windows Update and WSUS can continue to seamlessly install the latest monthly security update regardless of whether there are any preceding checkpoint cumulative updates, **no change is needed to their update process**. Catalog users can review [Checkpoint cumulative updates and Microsoft Update Catalog usage](catalog-checkpoint-cumulative-updates.md) for reference.
 
 ## OOB releases
 
