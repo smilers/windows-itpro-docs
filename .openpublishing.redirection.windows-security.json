@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md",
+      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md",
       "redirect_url": "/windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity",
       "redirect_document_id": false
