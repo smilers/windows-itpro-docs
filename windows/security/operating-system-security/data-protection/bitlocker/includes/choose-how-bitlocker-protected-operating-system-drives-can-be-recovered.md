@@ -19,6 +19,8 @@ If this policy setting is disabled or not configured, the default recovery optio
 
 For Microsoft Entra hybrid joined devices, the BitLocker recovery password is backed up to both Active Directory and Entra ID.
 
+For Microsoft Entra joined devices, the BitLocker recovery password is backed up to Entra ID.
+
 |  | Path |
 |--|--|
 | **CSP** | `./Device/Vendor/MSFT/BitLocker/`[SystemDrivesRecoveryOptions](/windows/client-management/mdm/bitlocker-csp#systemdrivesrecoveryoptions)|
