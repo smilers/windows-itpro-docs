@@ -7,7 +7,7 @@
     },
     {
       "source_path": "windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md",
-      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/index.md",
+      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/index",
       "redirect_document_id": false
     },
     {
