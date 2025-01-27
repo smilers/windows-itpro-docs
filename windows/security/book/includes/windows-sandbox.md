@@ -14,4 +14,4 @@ Once Windows Sandbox is closed, nothing persists on the device. All the software
 
 [!INCLUDE [learn-more](learn-more.md)]
 
-- [Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)
+- [Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox)
