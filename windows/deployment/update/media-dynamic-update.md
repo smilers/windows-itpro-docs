@@ -656,6 +656,13 @@ Foreach ($File in $MEDIA_NEW_FILES)
     }
 }
 
+```
+
+### Finish up
+
+As a last step, the script removes the working folder of temporary files, and unmounts our language pack and Features on Demand ISOs.
+
+```powershell
 #
 # Perform final cleanup
 #
@@ -669,12 +676,4 @@ Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Out-Null
 
 Write-Output "$(Get-TS): Media refresh completed!"
 
-```
-
-### Finish up
-
-As a last step, the script removes the working folder of temporary files, and unmounts our language pack and Features on Demand ISOs.
-
-```powershell
-TODO
 ```
