@@ -1,7 +1,7 @@
 ---
 title: VPN and conditional access
 description: Learn how to integrate the VPN client with the Conditional Access platform, and how to create access rules for Microsoft Entra connected apps.
-ms.date: 05/06/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 ---
 
@@ -92,14 +92,3 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 2)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-2)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 3)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-3)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 4)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-4)
-
-## Related articles
-
-- [VPN technical guide](vpn-guide.md)
-- [VPN connection types](vpn-connection-type.md)
-- [VPN routing decisions](vpn-routing.md)
-- [VPN authentication options](vpn-authentication.md)
-- [VPN name resolution](vpn-name-resolution.md)
-- [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
-- [VPN security features](vpn-security-features.md)
-- [VPN profile options](vpn-profile-options.md)

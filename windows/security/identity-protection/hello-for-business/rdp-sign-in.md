@@ -1,7 +1,7 @@
 ---
 title: Remote Desktop sign-in with Windows Hello for Business
 description: Learn how to configure Remote Desktop (RDP) sign-in with Windows Hello for Business.
-ms.date: 06/11/2024
+ms.date: 01/27/2025
 ms.topic: how-to
 ---
 
