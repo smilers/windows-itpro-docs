@@ -49,7 +49,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 - texttransform.exe
 - visualuiaverifynative.exe
 - system.management.automation.dll
-- webclnt.dll/davsvc.dll
+- webclnt.dll/davsvc.dll<sup>3</sup>
 - wfc.exe
 - windbg.exe
 - wmic.exe
@@ -61,6 +61,8 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 <sup>1</sup> A vulnerability in bginfo.exe was fixed in version 4.22. If you use BGInfo, for security, make sure to download and run the latest version of [BGInfo](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
 <sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. Otherwise, we recommend that you block msbuild.exe.
+
+<sup>3</sup> If you block WebDAV DLLs, we recommend that you also disable the **WebClient** service using a group policy or MDM policies.
 
 <sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
