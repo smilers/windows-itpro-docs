@@ -1,7 +1,7 @@
 ---
 title: HealthAttestation CSP
 description: Learn more about the HealthAttestation CSP.
-ms.date: 01/31/2024
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -51,7 +51,7 @@ The following list shows the HealthAttestation configuration service provider no
 <!-- Device-AttestErrorMessage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5046732](https://support.microsoft.com/help/5046732) [10.0.22621.4541] and later <br> ✅ Windows 11, version 24H2 with [KB5046617](https://support.microsoft.com/help/5046617) [10.0.26100.2314] and later <br> ✅ Windows Insider Preview |
 <!-- Device-AttestErrorMessage-Applicability-End -->
 
 <!-- Device-AttestErrorMessage-OmaUri-Begin -->
