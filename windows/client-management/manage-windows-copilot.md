@@ -3,7 +3,7 @@ title: Updated Windows and Microsoft 365 Copilot Chat experience
 description: Learn about changes to the Copilot in Windows experience for commercial environments and how to configure it for your organization.
 ms.topic: overview
 ms.subservice: windows-copilot
-ms.date: 01/22/2025
+ms.date: 01/28/2025
 ms.author: mstewart
 author: mestew
 ms.collection:
@@ -80,7 +80,7 @@ The following policy to manage Copilot in Windows (preview) will be removed in t
 
 You can remove or uninstall the Copilot app from your device by using one of the following methods:
 
-1. Enterprise users  can uninstall the Copilot app by going to **Settings** > **Apps** >**Installed Apps**. Select the three dots appearing on the right side of the app and select **Uninstall** from the dropdown list.
+1. Enterprise users can uninstall the [Copilot app](https://apps.microsoft.com/detail/9NHT9RB2F4HD), which is a consumer experience, by going to **Settings** > **Apps** >**Installed Apps**. Select the three dots appearing on the right side of the app and select **Uninstall** from the dropdown list.
 
 1. If you are an IT administrator, you can prevent installation of the app or remove the Copilot app using one of the following methods:
    1. Prevent installation of the Copilot app:
