@@ -193,7 +193,7 @@ Alternatively, you can configure devices using a [custom policy][MEM-1] with the
 - **Value:** content of the XML file
 
 > [!NOTE]
-> The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines*.
+> The content of the file must be entered as a single line in the `Value` field. Use a text editor to remove any line breaks from the XML file, usually with a function called *join lines* or *linearize*. If customizations.xml is being modified directly instead of using the WCD editor, the XML brackets need to be escaped / replaced with \&lt; and \&gt; entity encodings. Single and double quote characters do not need to be escaped.
 
 [!INCLUDE [provisioning-package-2](../../../includes/configure/provisioning-package-2.md)]
 
