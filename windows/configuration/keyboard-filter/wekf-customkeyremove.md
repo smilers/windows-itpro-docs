@@ -3,8 +3,6 @@ title: WEKF_CustomKey.Remove
 description: WEKF_CustomKey.Remove
 ms.date: 01/13/2025
 ms.topic: reference
-author: TerryWarwick
-ms.author: twarwick
 ---
 
 # WEKF_CustomKey.Remove

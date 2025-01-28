@@ -551,6 +551,10 @@ The possible values for 'zz' are:
 
 - 1 = Store recovery passwords and key packages
 - 2 = Store recovery passwords only
+
+For Microsoft Entra hybrid joined devices, the BitLocker recovery password is backed up to both Active Directory and Entra ID.
+
+For Microsoft Entra joined devices, the BitLocker recovery password is backed up to Entra ID.
 <!-- Device-FixedDrivesRecoveryOptions-Editable-End -->
 
 <!-- Device-FixedDrivesRecoveryOptions-DFProperties-Begin -->
@@ -2092,6 +2096,10 @@ The possible values for 'zz' are:
 
 - 1 = Store recovery passwords and key packages.
 - 2 = Store recovery passwords only.
+
+For Microsoft Entra hybrid joined devices, the BitLocker recovery password is backed up to both Active Directory and Entra ID.
+
+For Microsoft Entra joined devices, the BitLocker recovery password is backed up to Entra ID.
 <!-- Device-SystemDrivesRecoveryOptions-Editable-End -->
 
 <!-- Device-SystemDrivesRecoveryOptions-DFProperties-Begin -->

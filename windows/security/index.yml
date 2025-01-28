@@ -131,7 +131,7 @@ landingContent:
           - text: Microsoft Defender Application Guard (MDAG)
             url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
           - text: Windows Sandbox
-            url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
+            url: /windows/security/application-security/application-isolation/windows-sandbox/
       - linkListType: how-to-guide
         links:
           - text: Configure Windows Sandbox

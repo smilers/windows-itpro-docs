@@ -1,8 +1,6 @@
 ---
 title: Disable all blocked key combinations
 description: Disable all blocked key combinations
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---

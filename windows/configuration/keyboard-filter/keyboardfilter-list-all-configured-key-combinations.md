@@ -1,8 +1,6 @@
 ---
 title: List all configured key combinations
 description: List all configured key combinations
-author: TerryWarwick
-ms.author: twarwick
 ms.date: 01/13/2025
 ms.topic: reference
 ---

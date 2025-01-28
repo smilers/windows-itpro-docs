@@ -1,0 +1,25 @@
+
+items:
+- name: Shell Launcher
+  items:
+  - name: Overview
+    href: index.md
+  - name: WMI Provider Reference
+    items:
+    - name: Class WESL_UserSetting
+      href: wesl-usersetting.md
+    - name: GetCustomShell
+      href: wesl-usersettinggetcustomshell.md
+    - name: GetDefaultShell
+      href: wesl-usersettinggetdefaultshell.md
+    - name: IsEnabled
+      href: wesl-usersettingisenabled.md
+    - name: RemoveCustomShell
+      href: wesl-usersettingremovecustomshell.md
+    - name: SetCustomShell
+      href: wesl-usersettingsetcustomshell.md
+    - name: SetDefaultShell
+      href: wesl-usersettingsetdefaultshell.md
+    - name: SetEnabled
+      href: wesl-usersettingsetenabled.md
+
