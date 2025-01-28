@@ -35,7 +35,7 @@ The following client-side components are also required:
 
 ## VPN device compliance
 
-At this time, the Microsoft Entra certificates issued to users don't contain a CRL Distribution Point (CDP) and aren't suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the Windows profiles of the users, and their VPNv2 profiles must contain the <SSO> section.
+At this time, the Microsoft Entra certificates issued to users don't contain a CRL Distribution Point (CDP) and aren't suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the Windows profiles of the users, and their VPNv2 profiles must contain the `<SSO>` section.
 
 Server-side infrastructure requirements to support VPN device compliance include:
 
