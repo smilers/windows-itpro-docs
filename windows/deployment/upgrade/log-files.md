@@ -51,13 +51,13 @@ A `setupact.log` or `setuperr.log` entry includes the following elements:
 
 1. **The date and time** - 2023-09-08 09:20:05
 
-1. **The log level** - Info, Warning, Error, Fatal Error
+2. **The log level** - Info, Warning, Error, Fatal Error
 
-1. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
+3. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
 
   The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
 
-1. **The message** - Operation completed successfully.
+4. **The message** - Operation completed successfully.
 
 See the following example:
 
