@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
+ms.date: 01/29/2025
 ms.topic: conceptual
 ms.subservice: itpro-deploy
 appliesto:
@@ -50,7 +50,7 @@ For exceptions to what can be migrated offline, see [What Does USMT Migrate?](us
 
 ## What offline environments are supported?
 
-All currently supported 
+All currently supported
 
 The following table defines the supported combination of online and offline operating systems in USMT.
 
@@ -183,9 +183,9 @@ The following XML example illustrates some of the elements discussed earlier in 
 ```xml
 <offline>
      <winDir>
-          <path>C:\Windows</path> 
-          <path>D:\Windows</path> 
-          <path>E:\</path> 
+          <path>C:\Windows</path>
+          <path>D:\Windows</path>
+          <path>E:\</path>
      </winDir>
      <failOnMultipleWinDir>1</failOnMultipleWinDir>
 </offline>
