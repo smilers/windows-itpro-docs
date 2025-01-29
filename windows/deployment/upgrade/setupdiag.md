@@ -12,7 +12,7 @@ ms.topic: troubleshooting
 ms.collection:
   - highpri
   - tier2
-ms.date: 01/18/2024
+ms.date: 01/29/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -479,7 +479,7 @@ Refer to "https://learn.microsoft.com/windows/desktop/Debug/system-error-codes" 
     "FailureDetails":"Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel",
     "DeviceDriverInfo":null,
     "Remediation":[
-        
+
     ],
     "SetupPhaseInfo":null,
     "SetupOperationInfo":null
