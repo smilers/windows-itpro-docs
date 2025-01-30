@@ -1,7 +1,7 @@
 ---
 title: VPNv2 CSP
 description: Learn more about the VPNv2 CSP.
-ms.date: 01/18/2024
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -863,11 +863,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- Device-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Don't Bypass for Local traffic.
-
-True: ByPass VPN Interface for Local Traffic.
-
-Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+Not supported.
 <!-- Device-{ProfileName}-ByPassForLocal-Description-End -->
 
 <!-- Device-{ProfileName}-ByPassForLocal-Editable-Begin -->
@@ -5160,11 +5156,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- User-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False: Don't Bypass for Local traffic.
-
-True: ByPass VPN Interface for Local Traffic.
-
-Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
+Not supported.
 <!-- User-{ProfileName}-ByPassForLocal-Description-End -->
 
 <!-- User-{ProfileName}-ByPassForLocal-Editable-Begin -->
