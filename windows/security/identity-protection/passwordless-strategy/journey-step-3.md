@@ -123,7 +123,7 @@ function Generate-RandomPassword{
 
 $NewPassword = ConvertTo-SecureString -String (Generate-RandomPassword) -AsPlainText -Force
 
-Set-ADAccountPassword -identity $samAccountName = <sAMAccountName of the user> -NewPassword $NewPassword -Reset
+Set-ADAccountPassword -identity $samAccountName -NewPassword $NewPassword -Reset
 ```
 
 If your organizational policies allow it, you can configure the randomized passwords to never expire, or use a long expiration period. This configuration prevents the user from being prompted to change their password.
