@@ -13,11 +13,11 @@ ms.localizationpriority: medium
 appliesto: 
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 24H2 and later</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2025</a>
-ms.date: 01/30/2025
+ms.date: 01/31/2025
 ---
 
 # Checkpoint cumulative updates and Microsoft Update Catalog usage
-
+<!--9693727-->
 Starting Windows 11, version 24H2, monthly security updates and optional nonsecurity preview release updates might be preceded by a checkpoint cumulative update. Devices (and images) updating from Windows Update (WU) and Windows Server Update Services (WSUS) release channels can continue to seamlessly install the latest monthly security update or the optional nonsecurity preview release regardless of whether there are any preceding checkpoint cumulative updates, so **update processes involving WU and WSUS remain unchanged**. This article covers how Microsoft Update Catalog users can easily update their devices (or images) through checkpoint cumulative updates.
 
 ## Checkpoint cumulative updates

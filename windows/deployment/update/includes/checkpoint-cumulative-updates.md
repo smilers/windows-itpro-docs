@@ -5,10 +5,10 @@ manager: aaroncz
 ms.subservice: itpro-updates
 ms.service: windows-client
 ms.topic: include
-ms.date: 01/30/2025
+ms.date: 01/31/2025
 ms.localizationpriority: medium
 ---
-<!-- This file is used multiple times in release-cycle.md. Headings are driven by article context. -->
+<!-- This file is used multiple times in release-cycle.md. Headings are driven by article context. 9693727-->
 
 Starting Windows 11, version 24H2, Microsoft may periodically release cumulative updates as checkpoints. The subsequent updates will consist of:
 - The update package files associated with the checkpoints, and
