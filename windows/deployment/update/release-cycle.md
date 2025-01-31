@@ -1,6 +1,6 @@
 ---
 title: Update release cycle for Windows clients
-description: Learn about the release cycle for updates so Windows clients in your organization stay productive and protected.
+description: Learn about the release cycle for updates so Windows clients in your organization stay productive and protected.
 ms.service: windows-client
 ms.subservice: itpro-updates
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 06/04/2024
+ms.date: 01/31/2025
 ---
 
 # Update release cycle for Windows clients
@@ -54,6 +54,9 @@ Monthly security update releases are available through the following channels:
 
 Many update management tools, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Intune](/mem/intune/), rely on these channels for update deployment.
 
+<!--Using include for checkpoint cumulative updates-->
+[!INCLUDE [Checkpoint cumulative updates](./includes/checkpoint-cumulative-updates.md)]
+
 ## Optional nonsecurity preview release
 
 **Optional nonsecurity preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, nonsecurity preview releases. New features might initially be deployed in the prior month's **optional nonsecurity preview release**, then ship in the following **monthly security update release**. **Optional nonsecurity preview releases** are typically released on the fourth Tuesday of the month at 10:00 AM Pacific Time (PST/PDT). These releases are only offered to the most recent, supported versions of Windows.
@@ -66,9 +69,13 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 - LCU preview
 
 To access the optional nonsecurity preview release:
-- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
+- Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
 - Use [Windows Insider Program for Business](https://insider.windows.com/for-business)
 - Use the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx).
+
+<!--Using include for checkpoint cumulative updates-->
+[!INCLUDE [Checkpoint cumulative updates](./includes/checkpoint-cumulative-updates.md)]
+
 
 ## OOB releases
 
@@ -83,6 +90,9 @@ Some key considerations about OOB releases include:
   - Critical OOB releases are automatically available to WSUS and Windows Update for Business, just like the monthly security update releases.  
 - Some OOB releases are classified as noncritical.
   - Noncritical releases only go to the Microsoft Update Catalog for users or organizations to voluntarily obtain the update.
+  
+<!--Using include for checkpoint cumulative updates-->
+[!INCLUDE [Checkpoint cumulative updates](./includes/checkpoint-cumulative-updates.md)]
 
 ## Continuous innovation for Windows 11
 
