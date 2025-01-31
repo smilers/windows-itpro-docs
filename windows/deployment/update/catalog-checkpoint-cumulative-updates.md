@@ -91,4 +91,4 @@ Devices that aren't on the latest checkpoint cumulative update and don't need Fo
 - [Servicing stack updates](/windows/deployment/update/servicing-stack-updates)
 - [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities)
 - [How to download updates that include drivers and hotfixes from the Microsoft Update Catalog](/troubleshoot/windows-client/installing-updates-features-roles/download-updates-drivers-hotfixes-windows-update-catalog)
-- [Update Windows installation media with Dynamic Update](media-dynamic-update.md)
+- [Update Windows installation media with Dynamic Update](media-dynamic-update.md) 
