@@ -13,7 +13,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server</a>
-ms.date: 1/28/2024
+ms.date: 1/31/2024
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -62,7 +62,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system version 23H2    |
 
 ### Azure Stack HCI, version 22H2 Dynamic Update packages
-**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+**Title**, **Product**, and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
 
 | Update packages                   |Title                                                          |Product                                                                |Description       |
 |-----------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------|------------------|
@@ -72,7 +72,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system, version 22H2     |                                              |                  |
 
 ### Windows Server 2022 later Dynamic Update packages
-**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+**Title**, **Product**, and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
 
 | Update packages                   |Title                                                          |Product                                                                |Description       |
 |-----------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------|------------------|
@@ -81,8 +81,8 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Latest cumulative update           | YYYY-MM Cumulative Update for Microsoft server operating system, version 21H2          |                                              |                  |
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Microsoft server operating system, version 21H2     |                                              |                  |
 
-### Windows 11, version 22H2 and later Dynamic Update packages
-**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update. Titles below are for Windows 11, version 22H2. Windows 11, version 23H2 and 24H2 have a similar format.
+### Windows 11, version 22H2, and later Dynamic Update packages
+**Title** can distinguish each Dynamic Package. Latest cumulative updates have the servicing stack embedded. The servicing stack is published only if necessary for a given cumulative update. The following titles are for Windows 11, version 22H2. Windows 11, version 23H2, and version 24H2 have a similar format:
 
 | Update packages                   |Title                                                          |
 |-----------------------------------|---------------------------------------------------------------|
@@ -92,7 +92,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |
 
 ### Windows 11, version 21H2 Dynamic Update packages
-**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+**Title**, **Product**, and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
 
 | Update packages                   |Title                                                          |Product                                       |Description       |
 |-----------------------------------|---------------------------------------------------------------|----------------------------------------------|------------------|
@@ -102,7 +102,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 21H2    |                                              |                  |
 
 ### Windows 10, version 22H2 Dynamic Update packages
-**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
+**Title**, **Product**, and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the servicing stack embedded. Servicing stack published separately only if necessary as a prerequisite for a given cumulative update.
 
 | Update packages                   |Title                                                          |Product                                       |Description       |
 |-----------------------------------|---------------------------------------------------------------|----------------------------------------------|------------------|
@@ -136,7 +136,7 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Optional Components                                 |                   | 12                             |                  |           |
 |Add Safe OS Dynamic Update                              | 6                 |                                |                  |           |
 |Add Setup Dynamic Update                                |                   |                                |                  | 26        |
-|Add setup.exe and setuphost.exe from WinPE              |                   |                                |                  | 27        |
+|Add Setup.exe and setuphost.exe from WinPE              |                   |                                |                  | 27        |
 |Add boot manager from WinPE                             |                   |                                |                  | 28        |
 |Add latest cumulative update                            |                   | 13                             | 23               |           |
 |Clean up the image                                      | 7                 | 14                             | 24               |           |
@@ -147,7 +147,7 @@ This table shows the correct sequence for applying the various tasks to the file
 > Starting in February 2021, the latest cumulative update and servicing stack update is combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 17 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
 
 > [!NOTE]
-> Microsoft will remove the Flash component from Windows through KB4577586, "Update for Removal of Adobe Flash Player". You can also remove Flash anytime by deploying the update in KB4577586 (available on the Catalog) between steps 20 and 21. As of July 2021, KB4577586, "Update for Removal of Adobe Flash Player" will be included in the latest cumulative update for Windows 10, versions 1607 and 1507. The update will also be included in the Monthly Rollup and the Security Only Update for Windows 8.1, Windows Server 2012, and Windows Embedded 8 Standard. For more information, see [Update on Adobe Flash Player End of Support](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/).
+> Microsoft removes the Flash component from Windows through [KB4577586: Update for Removal of Adobe Flash Player](https://support.microsoft.com/kb/4577586). You can also remove Flash anytime by deploying the update in KB4577586 (available on the Catalog) between steps 20 and 21. As of July 2021, KB4577586, "Update for Removal of Adobe Flash Player" will be included in the latest cumulative update for Windows 10, versions 1607 and 1507. The update will also be included in the Monthly Rollup and the Security Only Update for Windows 8.1, Windows Server 2012, and Windows Embedded 8 Standard. For more information, see [Update on Adobe Flash Player End of Support](https://blogs.windows.com/msedgedev/2020/09/04/update-adobe-flash-end-support/).
 
 ### Multiple Windows editions
 
@@ -157,13 +157,13 @@ The main operating system file (install.wim) might contain multiple editions of 
 
 You don't have to add more languages and features to the image to accomplish the updates, but it's an opportunity to customize the image with more languages, Optional Components, and Features on Demand beyond what's in your starting image. When you add more languages and features, it's important to make these changes in the correct order: first apply servicing stack updates, followed by language additions, then by feature additions, and finally the latest cumulative update. The provided sample script installs a second language (in this case Japanese (ja-JP)). Since this language is backed by an lp.cab, there's no need to add a Language Experience Pack. Japanese is added to both the main operating system and to the recovery environment to allow the user to see the recovery screens in Japanese. This includes adding localized versions of the packages currently installed in the recovery image.
 
-Optional Components, along with the .NET feature, can be installed offline, however doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid the cleanup failure. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
+Optional Components, along with the .NET feature, can be installed offline. However, doing so creates pending operations that require the device to restart. As a result, the call to perform image cleanup would fail. There are two options to avoid the cleanup failure. One option is to skip the image cleanup step, though that results in a larger install.wim. Another option is to install the .NET and Optional Components in a step after cleanup but before export. This is the option in the sample script. By doing this, you'll have to start with the original install.wim (with no pending actions) when you maintain or update the image the next time (for example, the next month).
 
 
 ### Checkpoint cumulative updates
-Starting with Windows 11, version 24H2, and Windows Server 2025, the latest cumulative update may have a prerequisite cumulative update that is required to be installed first. These are known as checkpoint cumulative updates. In these cases, the cumulative update file level differentials are based on a previous cumulative update instead of the Windows RTM release. The benefit is a smaller update package and faster installation. When you obtain the latest cumulative update from the [Microsoft Update Catalog](https://catalog.update.microsoft.com), checkpoint cumulative updates will be available from the download button. In addition, the knowledge base article for the cumulative update will provide additional information. 
+Starting with Windows 11, version 24H2, and Windows Server 2025, the latest cumulative update might have a prerequisite cumulative update that is required to be installed first. These updates are known as checkpoint cumulative updates. In these cases, the cumulative update file level differentials are based on a previous cumulative update instead of the Windows RTM release. The benefit is a smaller update package and faster installation. When you obtain the latest cumulative update from the [Microsoft Update Catalog](https://catalog.update.microsoft.com), checkpoint cumulative updates are available from the download button. In addition, the knowledge base article for the cumulative update provides additional information. 
 
-To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call `Add-WindowsPackage` with the target cumulative update. The folder from `-PackagePath` will be used to discover and install one or more checkpoints as needed. Only the target cumulative update and checkpoint cumulative updates should be in the `-PackagePath` folder. Cumulative update packages with a revision <= the target cumulative update will be processed. If you are not customizing the image with additional languages and/or optional features, then separate calls to `Add-WindowsPackage` (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls cannot be used for steps 12 and 23.
+To install the checkpoint(s) when servicing the Windows OS (steps 9 & 12) and WinPE (steps 17 & 23), call `Add-WindowsPackage` with the target cumulative update. The folder from `-PackagePath` is used to discover and install one or more checkpoints as needed. Only the target cumulative update and checkpoint cumulative updates should be in the `-PackagePath` folder. Cumulative update packages with a revision <= the target cumulative update are processed. If you aren't customizing the image with additional languages and/or optional features, then separate calls to `Add-WindowsPackage` (checkpoint cumulative updates first) can be used for steps 9 & 17 above. Separate calls can't be used for steps 12 and 23.
 
 
 ## Windows PowerShell scripts to apply Dynamic Updates to an existing image
@@ -178,7 +178,7 @@ These examples are for illustration only, and therefore lack error handling. The
 
 ### Get started
 
-The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it provides a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only. The script also showcases adding additional languages, Features on Demand, and Optional Components. These are not required, but added to highlight when in the sequence they should be addeed. Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO has been superseded by the Features on Demand ISO. Language packs and the \Windows Preinstallation Environment packages are part of the Features on Demand ISO. Further, the path for main OS language and optional features moved to \LanguagesAndOptionalFeatures instead of the root. If you are using this script for Windows 10, modify to mount and use the language pack (LANGPACK) ISO.
+The script starts by declaring global variables and creating folders to use for mounting images. Then, make a copy of the original media, from \oldMedia to \newMedia, keeping the original media in case there's a script error and it's necessary to start over from a known state. Also, it provides a comparison of old versus new media to evaluate changes. To ensure that the new media updates, make sure they aren't read-only. The script also showcases adding additional languages, Features on Demand, and Optional Components. These aren't required, but added to highlight when in the sequence they should be added. Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO is superseded by the Features on Demand ISO. Language packs and the \Windows Preinstallation Environment packages are part of the Features on Demand ISO. Further, the path for main OS language and optional features moved to \LanguagesAndOptionalFeatures instead of the root. If you're using this script for Windows 10, modify to mount and use the language pack (LANGPACK) ISO.
 
 
 ```powershell
@@ -253,11 +253,11 @@ Get-ChildItem -Path $MEDIA_NEW_PATH -Recurse | Where-Object { -not $_.PSIsContai
 
 ### Update WinRE and each main OS Windows edition
 
-The script will update each edition of Windows within the main operating system file (install.wim). For each edition, the main OS image is mounted. 
+The script updates each edition of Windows within the main operating system file (install.wim). For each edition, the main OS image is mounted. 
 
-For the first image, Winre.wim is copied to the working folder, and mounted. It then applies servicing stack servicing stack via the latest cumulative update, since its components are used for updating other components. Depending on the Windows release that you are updating, there are two different approaches for updating the servicing stack. The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined cumulative update format change, that requires a standalone servicing stack update to be published, and installed first before the combined cumulative update can be installed. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package. It finishes by cleaning and exporting the image to reduce the image size. 
+For the first image, Winre.wim is copied to the working folder, and mounted. It then applies servicing stack via the latest cumulative update, since its components are used for updating other components. Depending on the Windows release that you're updating, there are two different approaches for updating the servicing stack. The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that includes the servicing stack updates (that is, SSU + LCU are combined). Windows 11, version 21H2, and Windows 11, version 22H2 are examples. In these cases, the servicing stack update isn't published separately; the combined cumulative update should be used for this step. However, in rare cases, there might be a breaking change in the combined cumulative update format change, that requires a standalone servicing stack update to be published, and installed first before the combined cumulative update can be installed. Since the script is optionally adding Japanese, it adds the language pack to the image, and installs the Japanese versions of all optional packages already installed in Winre.wim. Then, it applies the Safe OS Dynamic Update package. It finishes by cleaning and exporting the image to reduce the image size. 
 
-Next, for the mounted OS image, the script starts by applying the servicing stack via the latest cumulative update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it uses `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod). Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then attempts to clean the image, then a final step to apply the latest cumulative update. It is important to apply the latest cumulative update last, to ensure Features on Demand, Optional Components and Languages are updated from their initial release state. The .NET feature is an exception, that is added along with its cumulative update next. Finally, the script exports the image. 
+Next, for the mounted OS image, the script starts by applying the servicing stack via the latest cumulative update. Then, it adds Japanese language support and then the Japanese language features. Unlike the Dynamic Update packages, it uses `Add-WindowsCapability` to add these features. For a full list of such features, and their associated capability name, see [Available Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-non-language-fod). Now is the time to enable other Optional Components or add other Features on Demand. If such a feature has an associated cumulative update (for example, .NET), this is the time to apply those. The script then attempts to clean the image, then a final step to apply the latest cumulative update. It's important to apply the latest cumulative update last, to ensure Features on Demand, Optional Components, and Languages are updated from their initial release state. The .NET feature is an exception that's added along with its cumulative update next. Finally, the script exports the image. 
 
 This process is repeated for each edition of Windows within the main operating system file. To reduce size, the serviced Winre.wim file from the first image is saved, and used to update each subsequent Windows edition. This reduces the final size of install.wim. 
 
@@ -472,7 +472,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, it adds font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe and setuphost.exe for later use, to ensure these versions matches the \sources\setup.exe and \sources\setuphost.exe version from the installation media. If these binaries aren't identical, Windows Setup will fail during installation. We'll also save the serviced boot manager files for later use in the script. Finally, the script cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, it adds font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we save setup.exe and setuphost.exe for later use, to ensure these versions matches the \sources\setup.exe and \sources\setuphost.exe version from the installation media. If these binaries aren't identical, Windows Setup will fail during installation. We'll also save the serviced boot manager files for later use in the script. Finally, the script cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -613,7 +613,7 @@ Move-Item -Path $WORKING_PATH"\boot2.wim" -Destination $MEDIA_NEW_PATH"\sources\
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe, setuphost.exe and boot manager files using the previously saved versions from WinPE.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe, setuphost.exe, and boot manager files using the previously saved versions from WinPE.
 
 ```powershell
 #
