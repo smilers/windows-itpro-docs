@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
+ms.date: 01/29/2025
 ms.topic: conceptual
 ms.subservice: itpro-deploy
 appliesto:
@@ -70,7 +70,7 @@ The following custom **.xml** file reroutes **.mp3** files located in the fixed 
     </rules>
   </role>
 </component>
-</migration> 
+</migration>
 ```
 
 ## Reroute a specific file
@@ -83,8 +83,8 @@ The following custom **.xml** file migrates the `Sample.doc` file from `C:\Engin
 <displayName>Sample.doc into the Documents folder</displayName>
     <role role="Data">
       <rules>
-        <include> 
-          <objectSet>     
+        <include>
+          <objectSet>
                  <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
           </objectSet>
         </include>

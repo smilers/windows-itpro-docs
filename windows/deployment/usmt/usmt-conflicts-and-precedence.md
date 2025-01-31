@@ -6,7 +6,7 @@ manager: aaroncz
 ms.author: frankroj
 ms.service: windows-client
 author: frankroj
-ms.date: 01/09/2024
+ms.date: 01/29/2025
 ms.topic: conceptual
 ms.subservice: itpro-deploy
 appliesto:
@@ -79,7 +79,7 @@ Specifying `migrate="no"` in the `Config.xml` file is the same as deleting the c
    <objectSet>
       <pattern type="File">%CSIDL_PERSONAL%\* [*.doc] </pattern>
    </objectSet>
-</include> 
+</include>
 ```
 
 ### How does USMT process each component in an .xml file with multiple components?
@@ -116,7 +116,7 @@ In the following example, mp3 files aren't excluded from the migration. The mp3 
      <objectSet>
           <pattern type="File"> C:\* [*.mp3]</pattern>
      </objectSet>
-</exclude>  
+</exclude>
 ```
 
 ### \<include\> and \<exclude\> rules precedence examples
@@ -185,11 +185,11 @@ The destination computer contains the following files:
 A custom **.xml** file contains the following code:
 
 ```xml
-<include> 
-   <objectSet> 
-      <pattern type="File">c:\data\* [*]</pattern> 
-   </objectSet> 
-</include> 
+<include>
+   <objectSet>
+      <pattern type="File">c:\data\* [*]</pattern>
+   </objectSet>
+</include>
 ```
 
 For this example, the following information describes the resulting behavior if the code is added to the custom **.xml** file.

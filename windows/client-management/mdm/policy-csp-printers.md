@@ -1,7 +1,7 @@
 ---
 title: Printers Policy CSP
 description: Learn more about the Printers Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 01/14/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,6 +10,8 @@ ms.date: 09/27/2024
 # Policy CSP - Printers
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Printers-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -347,6 +349,56 @@ The following are the supported values:
 <!-- ConfigureIppPageCountsPolicy-Examples-End -->
 
 <!-- ConfigureIppPageCountsPolicy-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Begin -->
+## ConfigureIppTlsCertificatePolicy
+
+<!-- ConfigureIppTlsCertificatePolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureIppTlsCertificatePolicy-Applicability-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Printers/ConfigureIppTlsCertificatePolicy
+```
+<!-- ConfigureIppTlsCertificatePolicy-OmaUri-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- ConfigureIppTlsCertificatePolicy-Description-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureIppTlsCertificatePolicy-Editable-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureIppTlsCertificatePolicy-DFProperties-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureIppTlsCertificatePolicy |
+| ADMX File Name | Printing.admx |
+<!-- ConfigureIppTlsCertificatePolicy-AdmxBacked-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureIppTlsCertificatePolicy-Examples-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-End -->
 
 <!-- ConfigureRedirectionGuardPolicy-Begin -->
 ## ConfigureRedirectionGuardPolicy
