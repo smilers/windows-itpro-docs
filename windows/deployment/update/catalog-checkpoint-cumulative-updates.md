@@ -38,9 +38,9 @@ If any checkpoint cumulative updates precede a target update, a device or image 
 
 A checkpoint cumulative update is just another monthly security update that informs how subsequent updates are built. There's no policy change or new requirement around when users must take these updates, though it's best practice to take monthly security updates at the earliest opportunity to keep your devices protected and productive.
 
-This feature doesn't introduce any change to the applicability of monthly security updates. As before, these updates apply to the main OS (install.wim) and to WinPE (boot.wim) but not to WinRE (winre.wim).
-
 ### Update Windows installation media
+
+This feature doesn't introduce any change to the applicability of monthly security updates. As before, these updates apply to the main OS (install.wim) and to WinPE (boot.wim) but not to WinRE (winre.wim).
 
 WinRE is serviced by applying the servicing stack update from a cumulative update (latest cumulative update doesn't apply) and SafeOS Dynamic Update. This is how it has been for a while now, and there's no recent change to WinRE servicing and certainly no change due to the checkpoint cumulative updates feature. We understand that not everybody may have had a shared understanding about this, but applying servicing stack update then SafeOS Dynamic Update is the only way to ensure WinRE is serviced. For more information, see [Update Windows installation media with Dynamic Update](media-dynamic-update.md).
 
