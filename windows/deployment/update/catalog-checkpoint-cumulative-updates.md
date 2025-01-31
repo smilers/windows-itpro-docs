@@ -12,13 +12,13 @@ ms.collection:
 ms.localizationpriority: medium
 appliesto: 
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 24H2 and later</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2025</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2025 and later</a>
 ms.date: 01/31/2025
 ---
 
 # Checkpoint cumulative updates and Microsoft Update Catalog usage
 <!--9693727-->
-Starting Windows 11, version 24H2, monthly security updates and optional nonsecurity preview release updates might be preceded by a checkpoint cumulative update. Devices (and images) updating from Windows Update (WU) and Windows Server Update Services (WSUS) release channels can continue to seamlessly install the latest monthly security update or the optional nonsecurity preview release regardless of whether there are any preceding checkpoint cumulative updates, so **update processes involving WU and WSUS remain unchanged**. This article covers how Microsoft Update Catalog users can easily update their devices (or images) through checkpoint cumulative updates.
+Starting Windows 11, version 24H2, monthly security updates and optional nonsecurity preview release updates might be preceded by a checkpoint cumulative update. Devices updating from Windows Update (WU) and Windows Server Update Services (WSUS) release channels can continue to seamlessly install the latest monthly security update or the optional nonsecurity preview release regardless of whether there are any preceding checkpoint cumulative updates, so **update processes involving WU and WSUS remain unchanged**. This article covers how Microsoft Update Catalog users can easily update their devices (or images) through checkpoint cumulative updates.
 
 ## Checkpoint cumulative updates
 
@@ -32,7 +32,7 @@ Going forward, Microsoft might periodically release cumulative updates as checkp
 
 This process might be repeated multiple times, thereby generating multiple checkpoints during the lifecycle of a given Windows release. The Windows 11, version 24H2 servicing stack can merge all the checkpoints and only download and install content that's missing on the device.
 
-If any checkpoint cumulative updates precede a target update, a device or image needs to take all prior checkpoint cumulative updates before it can take the target update. In other words, a post-checkpoint latest cumulative update can be applied to images/devices that are on that checkpoint or on a subsequent latest cumulative update. For updates sourced from WU and WSUS this process happens seamlessly. You can continue to use the same tools and processes that you currently use for approving and deploying updates.
+If any checkpoint cumulative updates precede a target update, a device or image needs to take all prior checkpoint cumulative updates before it can take the target update. In other words, a post-checkpoint latest cumulative update can be applied to images/devices that are on that checkpoint or on a subsequent latest cumulative update. For updates sourced from WU and WSUS this process happens seamlessly. You can continue to use the same tools and processes that you currently use for approving and deploying updates. We expect that your experience updating through a checkpoint cumulative update will position you to efficiently take future checkpoint cumulative updates.
 
 ### Applicability
 
@@ -40,11 +40,10 @@ A checkpoint cumulative update is just another monthly security update that info
 
 This feature doesn't introduce any change to the applicability of monthly security updates. As before, these updates apply to the main OS (install.wim) and to WinPE (boot.wim) but not to WinRE (winre.wim).
 
+### Update Windows installation media
+
 WinRE is serviced by applying the servicing stack update from a cumulative update (latest cumulative update doesn't apply) and SafeOS Dynamic Update. This is how it has been for a while now, and there's no recent change to WinRE servicing and certainly no change due to the checkpoint cumulative updates feature. We understand that not everybody may have had a shared understanding about this, but applying servicing stack update then SafeOS Dynamic Update is the only way to ensure WinRE is serviced. For more information, see [Update Windows installation media with Dynamic Update](media-dynamic-update.md).
 
-### Current checkpoint cumulative updates
- 
-For Windows 11, version 24H2 and later, for a given update, the knowledge base (KB) article notes all preceding checkpoint cumulative updates under the **Catalog** release channel tab. We expect that your experience updating through a checkpoint cumulative update will position you to efficiently take future checkpoint cumulative updates.
 
 ## Updating from the Microsoft Update Catalog
 
@@ -54,7 +53,7 @@ When installing a given monthly security or optional nonsecurity preview update,
 
 For a given update, users can look up the KB article and find all preceding checkpoints, if any, listed under the **Catalog** release channel. For instance, the 2024-12 monthly security update (KB5048667) has one preceding checkpoint cumulative update per [December 10, 2024-KB5048667 (OS Build 26100.2605)](https://support.microsoft.com/topic/708755a6-d809-4a8a-8d20-53c4108590e6#ID0ELBD=Catalog):
 
-   > <b>Method 2: Install each MSU file individually, in order</b> <p>Download and install each MSU file individually either using DISM or [Windows Update Standalone Installer](https://support.microsoft.com/topic/799ba3df-ec7e-b05e-ee13-1cdae8f23b19) in the following order: <ul><li> windows11.0-kb5043080-x64_953449672073f8fb99badb4cc6d5d7849b9c83e8.msu </li> <li>windows11.0-kb5048667-x64_d4ad0ca69de9a02bc356757581e0e0d6960c9f93.msu </li></ul>
+   > <b>Install each MSU file individually, in order</b> <p>Download and install each MSU file individually either using DISM or [Windows Update Standalone Installer](https://support.microsoft.com/topic/799ba3df-ec7e-b05e-ee13-1cdae8f23b19) in the following order: <ul><li> windows11.0-kb5043080-x64_953449672073f8fb99badb4cc6d5d7849b9c83e8.msu </li> <li>windows11.0-kb5048667-x64_d4ad0ca69de9a02bc356757581e0e0d6960c9f93.msu </li></ul>
 
 Alternately, users can search the KB number in the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) and select the **Download** button for the selected architecture. The download pop-up shows all prior checkpoints for the update so that users can conveniently download all `.msu` files and apply them to their image or device. For instance, Microsoft Update Catalog shows the [2024-12 cumulative update (KB5048667)](https://support.microsoft.com/help/5048667) has one preceding checkpoint cumulative update, [KB5043080](https://support.microsoft.com/help/5043080).
 
@@ -73,7 +72,7 @@ Examples of eligible devices:
 
 **Device needs FoD or language pack customization:**
 
-Installing FoDs or language packs requires the full latest cumulative update payload, which now can be split across files associated with each preceding checkpoint cumulative update. So, when customizing FoDs or language packs, all prior checkpoint cumulative updates and the target cumulative update need to be installed regardless of whether the device already had any of the prior checkpoints cumulative update installed. This needs to be done using DISM.
+Installing FoDs or language packs requires the full latest cumulative update payload, which now can be split across files associated with each preceding checkpoint cumulative update. So, when customizing FoDs or language packs for offline media, all prior checkpoint cumulative updates and the target cumulative update need to be installed regardless of whether the device already had any of the prior checkpoints cumulative update installed. This needs to be done using DISM.
 
 1.	Copy the .msu files of the latest cumulative update (the target) and all prior checkpoint cumulative updates to a local folder. Make sure there are no other .msu files present.
 1.	Mount the install.wim file.
