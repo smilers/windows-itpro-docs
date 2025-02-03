@@ -23,18 +23,16 @@ The Security Compliance Toolkit consists of:
 - Windows 10 security baselines
   - Windows 10, version 22H2
   - Windows 10, version 21H2
-  - Windows 10, version 20H2
   - Windows 10, version 1809
   - Windows 10, version 1607
   - Windows 10, version 1507
 - Windows Server security baselines
+  - Windows Server 2025
   - Windows Server 2022
   - Windows Server 2019
   - Windows Server 2016
-  - Windows Server 2012 R2
 - Microsoft Office security baseline
-  - Office 2016
-  - Microsoft 365 Apps for Enterprise Version 2206
+  - Microsoft 365 Apps for Enterprise Version 2412
 - Microsoft Edge security baseline
   - Microsoft Edge version 128
 - Tools
