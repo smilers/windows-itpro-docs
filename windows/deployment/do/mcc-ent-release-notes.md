@@ -24,7 +24,7 @@ Released on **2/5/2025**
 
 These changes only affect the installation scripts for Connected Cache. To take advantage of these changes, you will need to re-deploy your existing cache nodes using the updated installation script.
 
-### Feature updates
+### Improvements
 
 - **Removes dependency on AMQP/MQTT ports**: Cache nodes deployed using this updated installation script will no longer use AMQP (5671) or MQTT (8883) ports. This change simplifies the network configuration for cache nodes and reduces the number of ports that need to be opened in your network security group.
 - **Improves cleanup during uninstall**: Windows-hosted cache nodes will now remove port proxy rules when uninstalled using the `uninstallmcconwsl.ps1` script. This change ensures that the host machine's WSL port-forwarding rules are cleaned up properly when uninstalling Connected Cache.
