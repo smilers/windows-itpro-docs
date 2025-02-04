@@ -23,8 +23,6 @@ This article contains instructions on how to troubleshoot different issues you m
 
 This section describes known issues with the latest release of Microsoft Connected Cache for Enterprise and Education. See the [Release Notes page](mcc-ent-release-notes.md) for more details on the fixes included in the latest release.
 
-### Cache node monitoring chart in the Azure portal user interface displays incorrect information
-
 ### Script provisionmcconwsl.ps1 fails when executed on a Windows 11 host machine configured to use Japanese language
 
 In the Connected Cache installation script (provisionmcconwsl.ps1), the check processing is executed until the value of the last execution code (Last Result) of the installation task becomes 0 in the following processing. However, in Japanese OS, the return value is null because "Last Result" is displayed, and an exception occurs.
