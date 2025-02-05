@@ -29,6 +29,7 @@ These changes only affect the installation scripts for Connected Cache. To take 
 - **Removes dependency on AMQP/MQTT ports**: Cache nodes deployed using this updated installation script will no longer use AMQP (5671) or MQTT (8883) ports. This change simplifies the network configuration for cache nodes and reduces the number of ports that need to be opened in your network security group.
 - **Improves cleanup during uninstall**: Windows-hosted cache nodes will now remove port proxy rules when uninstalled using the `uninstallmcconwsl.ps1` script. This change ensures that the host machine's WSL port-forwarding rules are cleaned up properly when uninstalling Connected Cache.
 - **Changes install error codes from decimal to hex code**: Install error codes for Windows-hosted cache nodes are now displayed in hex code format, improving error code readability.
+- **Uses proxy to perform install if configured**: If proxy is enabled in its configuration, the Windows-hosted cache node will use the configured proxy host name during installation.
 
 ## Release v1.2.1.2076_E (public preview launch)
 
