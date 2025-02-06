@@ -82,7 +82,7 @@ You can expect to see the following types of log files:
 
 ### Group Policy Object conflicts with Scheduled Task registration
 
-Enabling the Group Policy Object: ["Network access: Do not allow storage of passwords and credentials for network authentication"](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication) will prevent the Connected Cache software from registering the scheduled tasks necessary for successful cache node registration and operation.
+Enabling the Group Policy Object: [Network access: Do not allow storage of passwords and credentials for network authentication](/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication) will prevent the Connected Cache software from registering the scheduled tasks necessary for successful cache node registration and operation.
 
 ### WSL2 fails to install with message "A specified logon session doesn't exist"
 
