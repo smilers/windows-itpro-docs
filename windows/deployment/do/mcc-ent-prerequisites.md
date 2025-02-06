@@ -30,6 +30,8 @@ This article details the requirements and recommended specifications for using M
     - [Windows Enterprise E3 or E5](/windows/whats-new/windows-licensing#windows-11-enterprise), included in [Microsoft 365 F3, E3, or E5](https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing?msockid=32c407b43d5968050f2b13443c746916)
     - Windows Education A3 or A5, included in [Microsoft 365 A3 or A5](https://www.microsoft.com/education/products/microsoft-365?msockid=32c407b43d5968050f2b13443c746916#Education-plans)
 
+    Note that there is no limit to the number of licensed machines that may concurrently download from a Connected Cache node.
+
 ## Cache node host machine requirements
 
 ### General requirements
