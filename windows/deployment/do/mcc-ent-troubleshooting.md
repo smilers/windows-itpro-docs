@@ -80,6 +80,10 @@ You can expect to see the following types of log files:
 1. **WSL_Mcc_UserUninstall_Transcript**: This log file records the output of the "uninstallmcconwsl.ps1" script that the user can run to uninstall MCC software from the host machine.
 1. **WSL_Mcc_Uninstall_FromRegisteredTask_Transcript**: This log file records the output of the "MCC_Uninstall_Task" scheduled task that is responsible for uninstalling the MCC software from the host machine when called by the "uninstallmcconwsl.ps1" script.
 
+### Group Policy Object conflicts with Scheduled Task registration
+
+Enabling the Group Policy Object: ["Network access: Do not allow storage of passwords and credentials for network authentication"](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-access-do-not-allow-storage-of-passwords-and-credentials-for-network-authentication) will prevent the Connected Cache software from registering the scheduled tasks necessary for successful cache node registration and operation.
+
 ### WSL2 fails to install with message "A specified logon session doesn't exist"
 
 If you're encountering this failure message when attempting to run the PowerShell command `wsl.exe --install --no-distribution` on your Windows host machine, verify that you're logged on as a local administrator and running the command from an elevated PowerShell window.
