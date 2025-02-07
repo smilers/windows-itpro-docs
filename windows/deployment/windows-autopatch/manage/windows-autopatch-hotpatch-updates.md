@@ -37,7 +37,7 @@ Hotpatch is an extension of Windows Update and requires Autopatch to create and 
 
 ## Release cycles
 
-For more information about the release calendar for Hotpatch updates, see [Release notes for Hotpatch](https://support.microsoft.com/en-us/topic/release-notes-for-hotpatch-public-preview-on-windows-11-version-24h2-enterprise-clients-c117ee02-fd35-4612-8ea9-949c5d0ba6d1).
+For more information about the release calendar for Hotpatch updates, see [Release notes for Hotpatch](https://support.microsoft.com/topic/release-notes-for-hotpatch-public-preview-on-windows-11-version-24h2-enterprise-clients-c117ee02-fd35-4612-8ea9-949c5d0ba6d1).
 
 | Quarter | Baseline updates (requires restart) | Hotpatch (no restart required) |
 | ----- | ----- | ----- |
