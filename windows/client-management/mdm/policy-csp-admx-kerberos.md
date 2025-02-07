@@ -172,6 +172,8 @@ This policy setting allows you to specify which DNS host names and which DNS suf
 
 <!-- HostToRealm-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> The list of DNS host names and DNS suffixes has a 2048 character limit. This policy would not apply if you exceed this limit.
 <!-- HostToRealm-Editable-End -->
 
 <!-- HostToRealm-DFProperties-Begin -->
