@@ -142,7 +142,7 @@ The following wildcards can be used in App Control filepath rules:
 
 | Wildcard character | Meaning | Supported operating systems |
 |------------ | ----------- | ----------- |
-| **`*`** | Matches zero or more characters. | Windows 10 and later, or Windows Server 2022 and later |
+| **`*`** | Matches zero or more characters. | Windows 10, Windows 11 and later, or Windows Server 2022 and later |
 | **`?`** | Matches a single character. | Windows 11 and later, or Windows Server 2025 and later |
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`. These macros can be used in combination with the wildcards above.
@@ -156,8 +156,8 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 
 | Examples | Description | Supported operating systems |
 |------------ | ----------- | ----------- |
-| **C:\\Windows\\\*** <br> **D:\\EnterpriseApps\\MyApp\\\*** <br> **%OSDRIVE%\\Windows\\\*** | Wildcards placed at the end of a path authorize all files in the immediate path and its subdirectories recursively. | Windows 10 and later, or Windows Server 2022 and later |
-| **\*\\bar.exe** | Wildcards placed at the beginning of a path allow the exact specified filename in any location. | Windows 10 and later, or Windows Server 2022 and later |
+| **C:\\Windows\\\*** <br> **D:\\EnterpriseApps\\MyApp\\\*** <br> **%OSDRIVE%\\Windows\\\*** | Wildcards placed at the end of a path authorize all files in the immediate path and its subdirectories recursively. | Windows 10, Windows 11 and later, or Windows Server 2022 and later |
+| **\*\\bar.exe** | Wildcards placed at the beginning of a path allow the exact specified filename in any location. | Windows 10, Windows 11 and later, or Windows Server 2022 and later |
 | **C:\\\*\\CCMCACHE\\\*\\7z????-x64.exe** <br> **%OSDRIVE%\\\*\\CCMCACHE\\\*\\7z????-x64.exe** | Wildcards used in the middle of a path allow all files that match that pattern. Consider carefully all the possible matches, particularly if your policy disables the admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option. In this example, both of these hypothetical paths would match: <br> *`C:\WINDOWS\CCMCACHE\12345\7zabcd-x64.exe`* <br> *`C:\USERS\AppControlUSER\Downloads\Malware\CCMCACHE\Pwned\7zhaha-x64.exe`* | Windows 11 and later, or Windows Server 2025 and later |
 
 Without a wildcard, the filepath rule allows only a specific file (ex. `C:\foo\bar.exe`).
