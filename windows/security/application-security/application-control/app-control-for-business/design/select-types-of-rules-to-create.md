@@ -130,7 +130,9 @@ There's a defined list of SIDs that App Control recognizes as admins. If a filep
 
 App Control's list of well-known admin SIDs are:
 
+```
 S-1-3-0; S-1-5-18; S-1-5-19; S-1-5-20; S-1-5-32-544; S-1-5-32-549; S-1-5-32-550; S-1-5-32-551; S-1-5-32-577; S-1-5-32-559; S-1-5-32-568; S-1-15-2-1430448594-2639229838-973813799-439329657-1197984847-4069167804-1277922394; S-1-15-2-95739096-486727260-2033287795-3853587803-1685597119-444378811-2746676523.
+```
 
 When filepath rules are generated using [New-CIPolicy](/powershell/module/configci/new-cipolicy), a unique, fully qualified path rule is generated for every file discovered in the scanned path(s). To create rules that instead allow all files under a specified folder path, use [New-CIPolicyRule](/powershell/module/configci/new-cipolicyrule) to define rules containing wildcards, using the [-FilePathRules](/powershell/module/configci/new-cipolicyrule#parameters) switch.
 
@@ -140,8 +142,8 @@ The following wildcards can be used in App Control filepath rules:
 
 | Wildcard character | Meaning | Supported operating systems |
 |------------ | ----------- | ----------- |
-| **`*`** | Matches zero or more characters. | Windows 11, Windows 10, and Windows Server 2022 |
-| **`?`** | Matches a single character. | Windows 11 only |
+| **`*`** | Matches zero or more characters. | Windows 10, Windows 11 and later, or Windows Server 2022 and later |
+| **`?`** | Matches a single character. | Windows 11 and later, or Windows Server 2025 and later |
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`. These macros can be used in combination with the wildcards above.
 
@@ -154,9 +156,9 @@ You can also use the following macros when the exact volume may vary: `%OSDRIVE%
 
 | Examples | Description | Supported operating systems |
 |------------ | ----------- | ----------- |
-| **C:\\Windows\\\*** <br> **D:\\EnterpriseApps\\MyApp\\\*** <br> **%OSDRIVE%\\Windows\\\*** | Wildcards placed at the end of a path authorize all files in the immediate path and its subdirectories recursively. | Windows 11, Windows 10, and Windows Server 2022 |
-| **\*\\bar.exe** | Wildcards placed at the beginning of a path allow the exact specified filename in any location. | Windows 11, Windows 10, and Windows Server 2022 |
-| **C:\\\*\\CCMCACHE\\\*\\7z????-x64.exe** <br> **%OSDRIVE%\\\*\\CCMCACHE\\\*\\7z????-x64.exe** | Wildcards used in the middle of a path allow all files that match that pattern. Consider carefully all the possible matches, particularly if your policy disables the admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option. In this example, both of these hypothetical paths would match: <br> *`C:\WINDOWS\CCMCACHE\12345\7zabcd-x64.exe`* <br> *`C:\USERS\AppControlUSER\Downloads\Malware\CCMCACHE\Pwned\7zhaha-x64.exe`* | Windows 11 only |
+| **C:\\Windows\\\*** <br> **D:\\EnterpriseApps\\MyApp\\\*** <br> **%OSDRIVE%\\Windows\\\*** | Wildcards placed at the end of a path authorize all files in the immediate path and its subdirectories recursively. | Windows 10, Windows 11 and later, or Windows Server 2022 and later |
+| **\*\\bar.exe** | Wildcards placed at the beginning of a path allow the exact specified filename in any location. | Windows 10, Windows 11 and later, or Windows Server 2022 and later |
+| **C:\\\*\\CCMCACHE\\\*\\7z????-x64.exe** <br> **%OSDRIVE%\\\*\\CCMCACHE\\\*\\7z????-x64.exe** | Wildcards used in the middle of a path allow all files that match that pattern. Consider carefully all the possible matches, particularly if your policy disables the admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option. In this example, both of these hypothetical paths would match: <br> *`C:\WINDOWS\CCMCACHE\12345\7zabcd-x64.exe`* <br> *`C:\USERS\AppControlUSER\Downloads\Malware\CCMCACHE\Pwned\7zhaha-x64.exe`* | Windows 11 and later, or Windows Server 2025 and later |
 
 Without a wildcard, the filepath rule allows only a specific file (ex. `C:\foo\bar.exe`).
 
