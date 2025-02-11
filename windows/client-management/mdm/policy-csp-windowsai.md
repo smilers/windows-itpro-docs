@@ -1,7 +1,7 @@
 ---
 title: WindowsAI Policy CSP
 description: Learn more about the WindowsAI Area in Policy CSP.
-ms.date: 12/09/2024
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -659,12 +659,12 @@ When this setting isn't configured, the OS configures the storage allocation for
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Let the OS define the maximum storage amount based on hard drive storage size. |
-| 10000 | 10GB. |
-| 25000 | 25GB. |
-| 50000 | 50GB. |
-| 75000 | 75GB. |
-| 100000 | 100GB. |
-| 150000 | 150GB. |
+| 10240 | 10GB. |
+| 25600 | 25GB. |
+| 51200 | 50GB. |
+| 76800 | 75GB. |
+| 102400 | 100GB. |
+| 153600 | 150GB. |
 <!-- SetMaximumStorageSpaceForRecallSnapshots-AllowedValues-End -->
 
 <!-- SetMaximumStorageSpaceForRecallSnapshots-GpMapping-Begin -->
