@@ -314,7 +314,7 @@ This policy is deprecated.
 
 <!-- AllowPhonePCLinking-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that requires linking between Phone and PC.
+This policy allows IT admins to turn off the ability to Link a Phone with a PC to continue reading, emailing and other tasks that require linking between Phone and PC.
 
 - If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
 
@@ -1014,7 +1014,7 @@ Determines whether a user can install and configure the Network Bridge.
 > [!IMPORTANT]
 > This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 
-The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
+The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segments together. This connection appears in the Network Connections folder.
 
 If you disable this setting or don't configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting doesn't remove an existing Network Bridge from the user's computer.
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Description-End -->
