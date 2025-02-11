@@ -1,7 +1,7 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 01/14/2025
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -18,6 +18,10 @@ This article lists the policies that are applicable for Windows Insider Preview 
 - [TurnOffAPISamping](policy-csp-appdeviceinventory.md#turnoffapisamping)
 - [TurnOffApplicationFootprint](policy-csp-appdeviceinventory.md#turnoffapplicationfootprint)
 - [TurnOffWin32AppBackup](policy-csp-appdeviceinventory.md#turnoffwin32appbackup)
+
+## ApplicationManagement
+
+- [AllowedNonAdminPackageFamilyNameRules](policy-csp-applicationmanagement.md#allowednonadminpackagefamilynamerules)
 
 ## ClientCertificateInstall CSP
 
@@ -108,6 +112,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 ## LocalPoliciesSecurityOptions
 
+- [InteractiveLogon_NumberOfPreviousLogonsToCache](policy-csp-localpoliciessecurityoptions.md#interactivelogon_numberofpreviouslogonstocache)
 - [UserAccountControl_BehaviorOfTheElevationPromptForAdministratorProtection](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_behavioroftheelevationpromptforadministratorprotection)
 - [UserAccountControl_TypeOfAdminApprovalMode](policy-csp-localpoliciessecurityoptions.md#useraccountcontrol_typeofadminapprovalmode)
 
@@ -121,6 +126,7 @@ This article lists the policies that are applicable for Windows Insider Preview 
 ## NewsAndInterests
 
 - [DisableWidgetsOnLockScreen](policy-csp-newsandinterests.md#disablewidgetsonlockscreen)
+- [DisableWidgetsBoard](policy-csp-newsandinterests.md#disablewidgetsboard)
 
 ## PassportForWork CSP
 
@@ -130,13 +136,13 @@ This article lists the policies that are applicable for Windows Insider Preview 
 
 - [ConfigureIppTlsCertificatePolicy](policy-csp-printers.md#configureipptlscertificatepolicy)
 
-## Reboot CSP
-
-- [WeeklyRecurrent](reboot-csp.md#scheduleweeklyrecurrent)
-
 ## RemoteDesktopServices
 
 - [TS_SERVER_REMOTEAPP_USE_SHELLAPPRUNTIME](policy-csp-remotedesktopservices.md#ts_server_remoteapp_use_shellappruntime)
+
+## SettingsSync
+
+- [EnableWindowsbackup](policy-csp-settingssync.md#enablewindowsbackup)
 
 ## Start
 

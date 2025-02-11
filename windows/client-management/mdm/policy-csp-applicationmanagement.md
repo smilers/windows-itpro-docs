@@ -1,13 +1,17 @@
 ---
 title: ApplicationManagement Policy CSP
 description: Learn more about the ApplicationManagement Area in Policy CSP.
-ms.date: 11/26/2024
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
 
 <!-- ApplicationManagement-Begin -->
 # Policy CSP - ApplicationManagement
+
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- ApplicationManagement-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -282,6 +286,56 @@ Allows or denies development of Microsoft Store applications and installing them
 <!-- AllowDeveloperUnlock-Examples-End -->
 
 <!-- AllowDeveloperUnlock-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Begin -->
+## AllowedNonAdminPackageFamilyNameRules
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowedNonAdminPackageFamilyNameRules-Applicability-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ApplicationManagement/AllowedNonAdminPackageFamilyNameRules
+```
+<!-- AllowedNonAdminPackageFamilyNameRules-OmaUri-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- AllowedNonAdminPackageFamilyNameRules-Description-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowedNonAdminPackageFamilyNameRules-Editable-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowedNonAdminPackageFamilyNameRules-DFProperties-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowedNonAdminPackageFamilyNameRules |
+| ADMX File Name | AppxPackageManager.admx |
+<!-- AllowedNonAdminPackageFamilyNameRules-AdmxBacked-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowedNonAdminPackageFamilyNameRules-Examples-End -->
+
+<!-- AllowedNonAdminPackageFamilyNameRules-End -->
 
 <!-- AllowGameDVR-Begin -->
 ## AllowGameDVR
