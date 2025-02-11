@@ -1012,7 +1012,7 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 Determines whether a user can install and configure the Network Bridge.
 
 > [!IMPORTANT]
-> This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
+> This setting is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segments together. This connection appears in the Network Connections folder.
 
