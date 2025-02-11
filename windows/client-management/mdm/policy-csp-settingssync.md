@@ -1,7 +1,7 @@
 ---
 title: SettingsSync Policy CSP
 description: Learn more about the SettingsSync Area in Policy CSP.
-ms.date: 09/27/2024
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,6 +10,8 @@ ms.date: 09/27/2024
 # Policy CSP - SettingsSync
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- SettingsSync-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -136,6 +138,56 @@ If you don't set or disable this setting, syncing of the "language preferences" 
 <!-- DisableLanguageSettingSync-Examples-End -->
 
 <!-- DisableLanguageSettingSync-End -->
+
+<!-- EnableWindowsbackup-Begin -->
+## EnableWindowsbackup
+
+<!-- EnableWindowsbackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableWindowsbackup-Applicability-End -->
+
+<!-- EnableWindowsbackup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SettingsSync/EnableWindowsbackup
+```
+<!-- EnableWindowsbackup-OmaUri-End -->
+
+<!-- EnableWindowsbackup-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- EnableWindowsbackup-Description-End -->
+
+<!-- EnableWindowsbackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableWindowsbackup-Editable-End -->
+
+<!-- EnableWindowsbackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableWindowsbackup-DFProperties-End -->
+
+<!-- EnableWindowsbackup-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnableWindowsbackup |
+| ADMX File Name | SettingSync.admx |
+<!-- EnableWindowsbackup-AdmxBacked-End -->
+
+<!-- EnableWindowsbackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableWindowsbackup-Examples-End -->
+
+<!-- EnableWindowsbackup-End -->
 
 <!-- SettingsSync-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

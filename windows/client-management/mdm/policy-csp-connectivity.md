@@ -1,7 +1,7 @@
 ---
 title: Connectivity Policy CSP
 description: Learn more about the Connectivity Area in Policy CSP.
-ms.date: 01/14/2025
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->

@@ -1,7 +1,7 @@
 ---
 title: NewsAndInterests Policy CSP
 description: Learn more about the NewsAndInterests Area in Policy CSP.
-ms.date: 11/27/2024
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -83,6 +83,64 @@ This policy applies to the entire widgets experience, including content on the t
 <!-- AllowNewsAndInterests-Examples-End -->
 
 <!-- AllowNewsAndInterests-End -->
+
+<!-- DisableWidgetsBoard-Begin -->
+## DisableWidgetsBoard
+
+<!-- DisableWidgetsBoard-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- DisableWidgetsBoard-Applicability-End -->
+
+<!-- DisableWidgetsBoard-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/NewsAndInterests/DisableWidgetsBoard
+```
+<!-- DisableWidgetsBoard-OmaUri-End -->
+
+<!-- DisableWidgetsBoard-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disable widgets board.
+<!-- DisableWidgetsBoard-Description-End -->
+
+<!-- DisableWidgetsBoard-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWidgetsBoard-Editable-End -->
+
+<!-- DisableWidgetsBoard-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableWidgetsBoard-DFProperties-End -->
+
+<!-- DisableWidgetsBoard-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Enabled. |
+| 1 | Disabled. |
+<!-- DisableWidgetsBoard-AllowedValues-End -->
+
+<!-- DisableWidgetsBoard-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableWidgetsBoard |
+| Path | NewsAndInterests > AT > WindowsComponents > NewsAndInterests |
+<!-- DisableWidgetsBoard-GpMapping-End -->
+
+<!-- DisableWidgetsBoard-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWidgetsBoard-Examples-End -->
+
+<!-- DisableWidgetsBoard-End -->
 
 <!-- DisableWidgetsOnLockScreen-Begin -->
 ## DisableWidgetsOnLockScreen

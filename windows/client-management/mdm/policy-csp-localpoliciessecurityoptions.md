@@ -1,7 +1,7 @@
 ---
 title: LocalPoliciesSecurityOptions Policy CSP
 description: Learn more about the LocalPoliciesSecurityOptions Area in Policy CSP.
-ms.date: 11/05/2024
+ms.date: 02/11/2025
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -9,7 +9,7 @@ ms.date: 11/05/2024
 <!-- LocalPoliciesSecurityOptions-Begin -->
 # Policy CSP - LocalPoliciesSecurityOptions
 
-[!INCLUDE [Windows Windows Insider Preview tip](includes/mdm-insider-csp-note.md)]
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- LocalPoliciesSecurityOptions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -517,7 +517,7 @@ Audit: Shut down system immediately if unable to log security audits This securi
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-Begin -->
 <!-- Description-Source-DDF -->
-Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
+Devices: Allowed to format and eject removable media This security setting determines who is allowed to format and eject removable NTFS media. This capability can be given to: Administrators Administrators and Interactive Users Default: This policy isn't defined and only Administrators have this ability.
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Description-End -->
 
 <!-- Devices_AllowedToFormatAndEjectRemovableMedia-Editable-Begin -->
@@ -1117,7 +1117,7 @@ Domain member: Require strong (Windows 2000 or later) session key This security 
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Description-Begin -->
 <!-- Description-Source-DDF -->
-Interactive Logon: Display user information when the session is locked User display name, domain and user names (1) User display name only (2) Don't display user information (3) Domain and user names only (4)
+Interactive Logon:Display user information when the session is locked User display name, domain and user names (1) User display name only (2) Don't display user information (3) Domain and user names only (4)
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Description-End -->
 
 <!-- InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked-Editable-Begin -->
@@ -1568,13 +1568,12 @@ Interactive logon: Message title for users attempting to log on This security se
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-Begin -->
 <!-- Description-Source-DDF -->
 Interactive logon: Number of previous logons to cache (in case domain controller isn't available) Each unique user's logon information is cached locally so that, in the event that a domain controller is unavailable during subsequent logon attempts, they're able to log on. The cached logon information is stored from the previous logon session. If a domain controller is unavailable and a user's logon information isn't cached, the user is prompted with this message: There are currently no logon servers available to service the logon request. In this policy setting, a value of 0 disables logon caching. Any value above 50 only caches 50 logon attempts. Windows supports a maximum of 50 cache entries and the number of entries consumed per user depends on the credential. For example, a maximum of 50 unique password user accounts can be cached on a Windows system, but only 25 smart card user accounts can be cached because both the password information and the smart card information are stored. When a user with cached logon information logs on again, the user's individual cached information is replaced. Default: Windows Server 2008: 25 All Other Versions: 10.
-
-> [!NOTE]
-> This setting previously showed as applicable to Windows 11, version 24H2 [10.0.26100] and later in error.  MDM solutions may show as applicable to that version until a future release. 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Description-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This setting previously showed as applicable to Windows 11, version 24H2 [10.0.26100] and later in error.  MDM solutions may show as applicable to that version until a future release.
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-Editable-End -->
 
 <!-- InteractiveLogon_NumberOfPreviousLogonsToCache-DFProperties-Begin -->
@@ -1783,7 +1782,7 @@ Microsoft network client: Digitally sign communications (if server agrees) This 
 
 - If this setting is enabled, the Microsoft network client will ask the server to perform SMB packet signing upon session setup. If packet signing has been enabled on the server, packet signing will be negotiated.
 
-- If this policy is disabled, the SMB client will never negotiate SMB packet signing. Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing are enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
+- If this policy is disabled, the SMB client will never negotiate SMB packet signing. Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Description-End -->
 
 <!-- MicrosoftNetworkClient_DigitallySignCommunicationsIfServerAgrees-Editable-Begin -->
@@ -2024,7 +2023,7 @@ Microsoft network server: Digitally sign communications (if client agrees) This 
 - If this policy is disabled, the SMB client will never negotiate SMB packet signing. on domain controllers only.
 
 > [!IMPORTANT]
-> For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing are enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
+> For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature Notes All Windows operating systems support both a client-side SMB component and a server-side SMB component. For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled. Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted. SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections. For more information, reference:< https://go.microsoft.com/fwlink/?LinkID=787136>.
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Description-End -->
 
 <!-- MicrosoftNetworkServer_DigitallySignCommunicationsIfClientAgrees-Editable-Begin -->
@@ -3865,9 +3864,9 @@ System objects: Strengthen default permissions of internal system objects (e.g.,
 
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. 
+User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop. This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user.
 
-- Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. 
+- Enabled: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop.
 
 - Disabled: (Default) The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.
 <!-- UserAccountControl_AllowUIAccessApplicationsToPromptForElevation-Description-End -->
@@ -3927,9 +3926,9 @@ User Account Control: Allow UIAccess applications to prompt for elevation withou
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministratorProtection-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Behavior of the elevation prompt for administrators running with Administrator protection. This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
+User Account Control: Behavior of the elevation prompt for administrators running with Administrator protection. This policy setting controls the behavior of the elevation prompt for administrators. The options are:
 
-- Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged credentials. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
+- Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged credentials. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
 - Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Allow changes or Don't allow. If the user selects Allow changes, the operation continues with the user's highest available privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministratorProtection-Description-End -->
@@ -3991,20 +3990,20 @@ User Account Control: Behavior of the elevation prompt for administrators runnin
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
+User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode This policy setting controls the behavior of the elevation prompt for administrators. The options are:
 
-- Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. 
+- Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials.
 
   >[!NOTE]
-  > Use this option only in the most constrained environments. 
+  > Use this option only in the most constrained environments.
 
-- Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
+- Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
-- Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+- Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
-- Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+- Prompt for credentials: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-- Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+- Prompt for consent: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 
 - Prompt for consent for non-Windows binaries: (Default) When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForAdministrators-Description-End -->
@@ -4070,11 +4069,11 @@ User Account Control: Behavior of the elevation prompt for administrators in Adm
 
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users. The options are: 
+User Account Control: Behavior of the elevation prompt for standard users This policy setting controls the behavior of the elevation prompt for standard users. The options are:
 
-- Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+- Prompt for credentials: (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
-- Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that's running desktops as standard user may choose this setting to reduce help desk calls. 
+- Automatically deny elevation requests: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that's running desktops as standard user may choose this setting to reduce help desk calls.
 
 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 <!-- UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers-Description-End -->
@@ -4193,9 +4192,9 @@ User Account Control: Detect application installations and prompt for elevation 
 
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are: 
+User Account Control: Only elevate executable files that are signed and validated This policy setting enforces public key infrastructure (PKI) signature checks for any interactive applications that request elevation of privilege. Enterprise administrators can control which applications are allowed to run by adding certificates to the Trusted Publishers certificate store on local computers. The options are:
 
-- Enabled: Enforces the PKI certification path validation for a given executable file before it's permitted to run. 
+- Enabled: Enforces the PKI certification path validation for a given executable file before it's permitted to run.
 
 - Disabled: (Default) Does not enforce PKI certification path validation before a given executable file is permitted to run.
 <!-- UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated-Description-End -->
@@ -4255,9 +4254,9 @@ User Account Control: Only elevate executable files that are signed and validate
 
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are: 
+User Account Control: Only elevate UIAccess applications that are installed in secure locations This policy setting controls whether applications that request to run with a User Interface Accessibility (UIAccess) integrity level must reside in a secure location in the file system. Secure locations are limited to the following: - ..\Program Files\, including subfolders - ..\Windows\system32\ - ..\Program Files (x86)\, including subfolders for 64-bit versions of Windows Note: Windows enforces a public key infrastructure (PKI) signature check on any interactive application that requests to run with a UIAccess integrity level regardless of the state of this security setting. The options are:
 
-- Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity. 
+- Enabled: (Default) If an application resides in a secure location in the file system, it runs only with UIAccess integrity.
 
 - Disabled: An application runs with UIAccess integrity even if it doesn't reside in a secure location in the file system.
 <!-- UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations-Description-End -->
@@ -4317,9 +4316,9 @@ User Account Control: Only elevate UIAccess applications that are installed in s
 
 <!-- UserAccountControl_RunAllAdministratorsInAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are: 
+User Account Control: Turn on Admin Approval Mode This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are:
 
-- Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
+- Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.
 
 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
 
@@ -4382,9 +4381,9 @@ User Account Control: Turn on Admin Approval Mode This policy setting controls t
 
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Switch to the secure desktop when prompting for elevation This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop. The options are: 
+User Account Control: Switch to the secure desktop when prompting for elevation This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop. The options are:
 
-- Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users. 
+- Enabled: (Default) All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.
 
 - Disabled: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.
 <!-- UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation-Description-End -->
@@ -4502,9 +4501,9 @@ User Account Control: Configure type of Admin Approval Mode. This policy setting
 
 <!-- UserAccountControl_UseAdminApprovalMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Use Admin Approval Mode for the built-in Administrator account This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: 
+User Account Control: Use Admin Approval Mode for the built-in Administrator account This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are:
 
-- Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. 
+- Enabled: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation.
 
 - Disabled: (Default) The built-in Administrator account runs all applications with full administrative privilege.
 <!-- UserAccountControl_UseAdminApprovalMode-Description-End -->
@@ -4564,9 +4563,9 @@ User Account Control: Use Admin Approval Mode for the built-in Administrator acc
 
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Description-Begin -->
 <!-- Description-Source-DDF -->
-User Account Control: Virtualize file and registry write failures to per-user locations This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software. The options are: 
+User Account Control: Virtualize file and registry write failures to per-user locations This policy setting controls whether application write failures are redirected to defined registry and file system locations. This policy setting mitigates applications that run as administrator and write run-time application data to %ProgramFiles%, %Windir%, %Windir%\system32, or HKLM\Software. The options are:
 
-- Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry. 
+- Enabled: (Default) Application write failures are redirected at run time to defined user locations for both the file system and registry.
 
 - Disabled: Applications that write data to protected locations fail.
 <!-- UserAccountControl_VirtualizeFileAndRegistryWriteFailuresToPerUserLocations-Description-End -->
