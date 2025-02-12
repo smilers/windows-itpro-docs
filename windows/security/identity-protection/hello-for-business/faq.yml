@@ -210,9 +210,9 @@ sections:
       - question: Does Windows Hello for Business cloud Kerberos trust work in my on-premises environment?
         answer: |
           This feature doesn't work in a pure on-premises AD domain services environment.
-      - question: Does Windows Hello for Business cloud Kerberos trust work in a Windows sign-in with RODC present in the hybrid environment?
+      - question: Does Windows Hello for Business cloud Kerberos trust work with RODC present in the hybrid environment?
         answer: |
-          Windows Hello for Business cloud Kerberos trust looks for a writeable DC to exchange the partial TGT. As long as you have at least one writeable DC per site, login with cloud Kerberos trust will work.
+          Windows Hello for Business cloud Kerberos trust functions correctly when the client authenticates directly to a writable domain controller or to a Read-Only Domain Controller (RODC) that doesn't cache the user's credentials, in accordance with the Password Replication Policy. If the client attempts to authenticate to an RODC that can cache the user's credentials, cloud Kerberos trust authentication might fail. To mitigate this, deploy KDC certificates to all RODCs to support Windows Hello for Business key trust authentication, which is also required for those RODCs to support LDAP over SSL. This configuration ensures that authentication can seamlessly failover to Windows Hello for Business key trust authentication, thereby guaranteeing successful user authentication.
       - question: Do I need line of sight to a domain controller to use Windows Hello for Business cloud Kerberos trust?
         answer: |
           Windows Hello for Business cloud Kerberos trust requires line of sight to a domain controller when:
