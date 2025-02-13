@@ -1,7 +1,8 @@
 ---
 title: DeliveryOptimization Policy CSP
 description: Learn more about the DeliveryOptimization Area in Policy CSP.
-ms.date: 01/21/2025
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

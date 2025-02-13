@@ -1,7 +1,8 @@
 ---
 title: SurfaceHub CSP
 description: Learn more about the SurfaceHub CSP.
-ms.date: 08/16/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

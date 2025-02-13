@@ -1,7 +1,8 @@
 ---
 title: ADMX_Securitycenter Policy CSP
 description: Learn more about the ADMX_Securitycenter Area in Policy CSP.
-ms.date: 08/06/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

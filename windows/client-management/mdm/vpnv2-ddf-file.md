@@ -1,7 +1,8 @@
 ---
 title: VPNv2 DDF file
 description: View the XML file containing the device description framework (DDF) for the VPNv2 configuration service provider.
-ms.date: 01/14/2025
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
