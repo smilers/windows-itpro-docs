@@ -1,7 +1,8 @@
 ---
 title: Personal Data Encryption DDF file
 description: View the XML file containing the device description framework (DDF) for the Personal Data Encryption configuration service provider.
-ms.date: 11/26/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

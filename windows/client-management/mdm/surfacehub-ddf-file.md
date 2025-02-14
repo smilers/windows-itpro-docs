@@ -1,7 +1,8 @@
 ---
 title: SurfaceHub DDF file
 description: View the XML file containing the device description framework (DDF) for the SurfaceHub configuration service provider.
-ms.date: 08/16/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

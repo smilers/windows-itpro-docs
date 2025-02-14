@@ -1,7 +1,8 @@
 ---
 title: LAPS DDF file
 description: View the XML file containing the device description framework (DDF) for the LAPS configuration service provider.
-ms.date: 11/05/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

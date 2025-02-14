@@ -1,7 +1,8 @@
 ---
 title: CertificateStore CSP
 description: Learn more about the CertificateStore CSP.
-ms.date: 01/31/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

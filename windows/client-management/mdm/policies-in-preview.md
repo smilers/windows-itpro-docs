@@ -1,7 +1,8 @@
 ---
 title: Configuration service provider preview policies
 description: Learn more about configuration service provider (CSP) policies that are available for Windows Insider Preview.
-ms.date: 02/11/2025
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

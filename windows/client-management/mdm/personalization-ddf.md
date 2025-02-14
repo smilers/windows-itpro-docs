@@ -1,7 +1,8 @@
 ---
 title: Personalization DDF file
 description: View the XML file containing the device description framework (DDF) for the Personalization configuration service provider.
-ms.date: 09/27/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
