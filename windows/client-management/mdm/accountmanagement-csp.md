@@ -135,7 +135,7 @@ Configures when profiles will be deleted. Allowed values: 0 (delete immediately 
 
 <!-- Device-UserProfileManagement-EnableProfileManager-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enable profile lifetime mangement for shared or communal device scenarios.
+Enable profile lifetime management for shared or communal device scenarios.
 <!-- Device-UserProfileManagement-EnableProfileManager-Description-End -->
 
 <!-- Device-UserProfileManagement-EnableProfileManager-Editable-Begin -->
