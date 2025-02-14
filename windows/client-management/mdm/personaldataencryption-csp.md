@@ -1,7 +1,8 @@
 ---
 title: Personal Data Encryption CSP
 description: Learn more about the Personal Data Encryption CSP.
-ms.date: 11/27/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

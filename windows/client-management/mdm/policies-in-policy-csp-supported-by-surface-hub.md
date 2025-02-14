@@ -1,7 +1,8 @@
 ---
 title: Policies supported by Windows 10 Team
 description: Learn about the policies supported by Windows 10 Team.
-ms.date: 11/27/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

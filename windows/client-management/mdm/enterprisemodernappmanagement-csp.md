@@ -1,7 +1,8 @@
 ---
 title: EnterpriseModernAppManagement CSP
 description: Learn more about the EnterpriseModernAppManagement CSP.
-ms.date: 11/26/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

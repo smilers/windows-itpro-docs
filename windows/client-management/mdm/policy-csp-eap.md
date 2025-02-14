@@ -1,7 +1,8 @@
 ---
 title: Eap Policy CSP
 description: Learn more about the Eap Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -30,7 +31,7 @@ ms.date: 01/18/2024
 
 <!-- AllowTLS1_3-Description-Begin -->
 <!-- Description-Source-DDF -->
-Added in Windows 10, version 21. H1. Allow or disallow use of TLS 1.3 during EAP client authentication.
+Added in Windows 10, version 21H1. Allow or disallow use of TLS 1.3 during EAP client authentication.
 <!-- AllowTLS1_3-Description-End -->
 
 <!-- AllowTLS1_3-Editable-Begin -->

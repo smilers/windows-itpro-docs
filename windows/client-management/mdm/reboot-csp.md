@@ -1,7 +1,8 @@
 ---
 title: Reboot CSP
 description: Learn more about the Reboot CSP.
-ms.date: 02/11/2025
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -120,7 +121,7 @@ The supported operation is Get.
 
 <!-- Device-Schedule-DailyRecurrent-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601 date and time format (such as 2025-10-07. T10:35:00) is required. While it's supported to set either DailyRecurrent or WeeklyRecurrent schedules, it isn't supported to enable both settings simultaneously. A reboot will be scheduled to occur every day at the configured time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required. While it's supported to set either DailyRecurrent or WeeklyRecurrent schedules, it isn't supported to enable both settings simultaneously. A reboot will be scheduled to occur every day at the configured time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-DailyRecurrent-Description-End -->
 
 <!-- Device-Schedule-DailyRecurrent-Editable-Begin -->
@@ -159,7 +160,7 @@ Value in ISO8601 date and time format (such as 2025-10-07. T10:35:00) is require
 
 <!-- Device-Schedule-Single-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601 date and time format (such as 2025-10-07. T10:35:00) is required. Both the date and time are required. A reboot will be scheduled to occur at the specified date and time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required. Both the date and time are required. A reboot will be scheduled to occur at the specified date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-Single-Description-End -->
 
 <!-- Device-Schedule-Single-Editable-Begin -->
@@ -198,7 +199,7 @@ Value in ISO8601 date and time format (such as 2025-10-07. T10:35:00) is require
 
 <!-- Device-Schedule-WeeklyRecurrent-Description-Begin -->
 <!-- Description-Source-DDF -->
-Value in ISO8601 date and time format (such as 2025-10-07. T10:35:00) is required. While it's supported to set either DailyRecurrent or WeeklyRecurrent schedules, it isn't supported to enable both settings simultaneously. A reboot will be scheduled to occur every week at the configured day and time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.
+Value in ISO8601 date and time format (such as 2025-10-07T10:35:00) is required. While it's supported to set either DailyRecurrent or WeeklyRecurrent schedules, it isn't supported to enable both settings simultaneously. A reboot will be scheduled to occur every week at the configured day and time starting at the specified date and time. Setting a null (empty) date will delete the existing schedule.
 <!-- Device-Schedule-WeeklyRecurrent-Description-End -->
 
 <!-- Device-Schedule-WeeklyRecurrent-Editable-Begin -->

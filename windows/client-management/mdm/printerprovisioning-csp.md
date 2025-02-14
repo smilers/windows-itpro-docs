@@ -1,7 +1,8 @@
 ---
 title: PrinterProvisioning CSP
 description: Learn more about the PrinterProvisioning CSP.
-ms.date: 08/06/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

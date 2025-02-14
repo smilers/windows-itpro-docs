@@ -1,7 +1,8 @@
 ---
 title: Printers Policy CSP
 description: Learn more about the Printers Area in Policy CSP.
-ms.date: 01/14/2025
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
