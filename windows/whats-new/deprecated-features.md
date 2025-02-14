@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer actively developing in Windows 10 and Windows 11.
-ms.date: 02/03/2025
+ms.date: 02/12/2025
 ms.service: windows-client
 ms.subservice: itpro-fundamentals
 ms.localizationpriority: medium
@@ -47,6 +47,7 @@ The features in this article are no longer being actively developed, and might b
 
 | Feature | Details and mitigation  | Deprecation announced |
 |---|---|---|
+| Location History <!--9798092--> | We are deprecating and removing the Location History feature, an [API](/uwp/api/windows.devices.geolocation.geolocator.getgeopositionhistoryasync) that allowed Cortana to access 24 hours of device history when location was enabled. With the removal of the Location History feature, location data will no longer be saved locally and the corresponding settings will also be removed from the **Privacy & Security** > **Location** page in **Settings**. | February 2025 |
 | Suggested actions <!--9614241-->| Suggested actions that appear when you copy a phone number or future date in Windows 11 are deprecated and will be removed in a future Windows 11 update. | December 2024 |
 | Legacy DRM services <!--9183757-->| Legacy DRM services, used by either Windows Media Player, Silverlight clients, Windows 7, or Windows 8 clients are deprecated. The following functionality won't work when these services are fully retired: </br><ul><li>Playback of protected content in the legacy Windows Media Player on Windows 7</li><li> Playback of protected content  in a Silverlight client and Windows 8 clients</li><li> In-home streaming playback from a Silverlight client or Windows 8 client to an Xbox 360</li><li>Playback of protected content ripped from a personal CD on Windows 7 clients using Windows Media Player </li></ul>  | September 2024 |
 | Paint 3D <!--8995017--> | Paint 3D is deprecated and will be removed from the Microsoft Store on November 4, 2024. To view and edit 2D images, you can use [Paint](https://apps.microsoft.com/detail/9pcfs5b6t72h) or [Photos](https://apps.microsoft.com/detail/9wzdncrfjbh4). For viewing 3D content, you can use [3D Viewer](https://apps.microsoft.com/detail/9nblggh42ths). For more information, see [Resources for deprecated features](deprecated-features-resources.md#paint-3d). | August 2024 |
