@@ -1,7 +1,7 @@
 ---
 title: DeclaredConfiguration CSP
 description: Learn more about the DeclaredConfiguration CSP.
-ms.date: 02/13/2025
+ms.date: 02/14/2025
 ms.topic: generated-reference
 ---
 
@@ -226,7 +226,7 @@ Uniquely identifies the configuration document. No other document can have this 
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Description-Begin -->
 <!-- Description-Source-DDF -->
-The Document node's value is an XML based document containing a collection of settings and values to configure the specified scenario. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68. B9-4320-9. FC4-296. F6FDFAFE2/Document.
+The Document node's value is an XML based document containing a collection of settings and values to configure the specified scenario. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document.
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Editable-Begin -->
@@ -591,7 +591,7 @@ Uniquely identifies the inventory document. No other document can have this id. 
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Description-Begin -->
 <!-- Description-Source-DDF -->
-The Document node's value is an XML based document containing a collection of settings that will be used to retrieve their values. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/27FEA311-68. B9-4320-9. FC4-296. F6FDFAFE2/Document.
+The Document node's value is an XML based document containing a collection of settings that will be used to retrieve their values. The Declared Configuration stack verifies the syntax of the document, the stack marks the document to be processed asynchronously by the client. The stack then returns control back to the OMA-DM service. The stack, in turn, asynchronously processes the request. Below is an example of a specified desired state configuration using the Declared Configuration URI ./Device/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document.
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Description-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Editable-Begin -->

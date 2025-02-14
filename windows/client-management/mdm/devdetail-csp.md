@@ -1,7 +1,7 @@
 ---
 title: DevDetail CSP
 description: Learn more about the DevDetail CSP.
-ms.date: 02/13/2025
+ms.date: 02/14/2025
 ms.topic: generated-reference
 ---
 
@@ -400,7 +400,7 @@ Total free storage in MB from first internal drive on the device.
 
 <!-- Device-Ext-Microsoft-LocalTime-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44Z.
+Returns the client local time in ISO 8601 format. Example: 2003-06-16T18:37:44Z.
 <!-- Device-Ext-Microsoft-LocalTime-Description-End -->
 
 <!-- Device-Ext-Microsoft-LocalTime-Editable-Begin -->

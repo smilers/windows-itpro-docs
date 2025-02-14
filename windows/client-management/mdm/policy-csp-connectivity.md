@@ -1,7 +1,7 @@
 ---
 title: Connectivity Policy CSP
 description: Learn more about the Connectivity Area in Policy CSP.
-ms.date: 02/13/2025
+ms.date: 02/14/2025
 ms.topic: generated-reference
 ---
 
@@ -702,7 +702,7 @@ This policy makes all configurable settings in the 'Cellular' Settings page read
 
 <!-- DisableCrossDeviceResume-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy allows IT admins to turn off CrossDeviceResume feature to continue tasks, such as browsing file, continue using 1. P/ 3. P apps that require linking between Phone and PC.
+This policy allows IT admins to turn off CrossDeviceResume feature to continue tasks, such as browsing file, continue using 1P/ 3P apps that require linking between Phone and PC.
 
 - If you enable this policy setting, the Windows device won't receive any CrossDeviceResume notification.
 
