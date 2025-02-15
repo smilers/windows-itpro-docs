@@ -1,7 +1,8 @@
 ---
 title: Printers Policy CSP
 description: Learn more about the Printers Area in Policy CSP.
-ms.date: 01/31/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -10,6 +11,8 @@ ms.date: 01/31/2024
 # Policy CSP - Printers
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Printers-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -348,6 +351,56 @@ The following are the supported values:
 
 <!-- ConfigureIppPageCountsPolicy-End -->
 
+<!-- ConfigureIppTlsCertificatePolicy-Begin -->
+## ConfigureIppTlsCertificatePolicy
+
+<!-- ConfigureIppTlsCertificatePolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureIppTlsCertificatePolicy-Applicability-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Printers/ConfigureIppTlsCertificatePolicy
+```
+<!-- ConfigureIppTlsCertificatePolicy-OmaUri-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- ConfigureIppTlsCertificatePolicy-Description-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureIppTlsCertificatePolicy-Editable-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureIppTlsCertificatePolicy-DFProperties-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-AdmxBacked-Begin -->
+<!-- ADMX-Not-Found -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ConfigureIppTlsCertificatePolicy |
+| ADMX File Name | Printing.admx |
+<!-- ConfigureIppTlsCertificatePolicy-AdmxBacked-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureIppTlsCertificatePolicy-Examples-End -->
+
+<!-- ConfigureIppTlsCertificatePolicy-End -->
+
 <!-- ConfigureRedirectionGuardPolicy-Begin -->
 ## ConfigureRedirectionGuardPolicy
 
@@ -369,7 +422,7 @@ Determines whether Redirection Guard is enabled for the print spooler.
 
 You can enable this setting to configure the Redirection Guard policy being applied to spooler.
 
-- If you disable or don't configure this policy setting, Redirection Guard will default to being 'enabled'.
+- If you disable or don't configure this policy setting, Redirection Guard will default to being 'Enabled'.
 
 - If you enable this setting you may select the following options:
 
@@ -435,7 +488,12 @@ The following are the supported values:
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-OmaUri-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether packet level privacy is enabled for RPC for incoming connections.
+
+By default packet level privacy is enabled for RPC for incoming connections.
+
+If you enable or don't configure this policy setting, packet level privacy is enabled for RPC for incoming connections.
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Description-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-Editable-Begin -->
@@ -452,7 +510,6 @@ The following are the supported values:
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-DFProperties-End -->
 
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -460,6 +517,11 @@ The following are the supported values:
 | Name | Value |
 |:--|:--|
 | Name | ConfigureRpcAuthnLevelPrivacyEnabled |
+| Friendly Name | Configure RPC packet level privacy setting for incoming connections |
+| Location | Computer Configuration |
+| Path | Printers |
+| Registry Key Name | System\CurrentControlSet\Control\Print |
+| Registry Value Name | RpcAuthnLevelPrivacyEnabled |
 | ADMX File Name | Printing.admx |
 <!-- ConfigureRpcAuthnLevelPrivacyEnabled-AdmxBacked-End -->
 
@@ -685,7 +747,16 @@ If you disable or don't configure this policy setting, dynamic TCP ports are use
 <!-- ConfigureWindowsProtectedPrint-OmaUri-End -->
 
 <!-- ConfigureWindowsProtectedPrint-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+Determines whether Windows protected print is enabled on this computer.
+
+By default, Windows protected print isn't enabled and there aren't any restrictions on the print drivers that can be installed or print functionality.
+
+- If you enable this setting, the computer will operate in Windows protected print mode which only allows printing to printers that support a subset of inbox Windows print drivers.
+
+- If you disable this setting or don't configure it, there aren't any restrictions on the print drivers that can be installed or print functionality.
+
+For more information, please see [insert link to web page with WPP info]
 <!-- ConfigureWindowsProtectedPrint-Description-End -->
 
 <!-- ConfigureWindowsProtectedPrint-Editable-Begin -->
@@ -702,7 +773,6 @@ If you disable or don't configure this policy setting, dynamic TCP ports are use
 <!-- ConfigureWindowsProtectedPrint-DFProperties-End -->
 
 <!-- ConfigureWindowsProtectedPrint-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -710,6 +780,11 @@ If you disable or don't configure this policy setting, dynamic TCP ports are use
 | Name | Value |
 |:--|:--|
 | Name | ConfigureWindowsProtectedPrint |
+| Friendly Name | Configure Windows protected print |
+| Location | Computer Configuration |
+| Path | Printers |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Printers\WPP |
+| Registry Value Name | WindowsProtectedPrintGroupPolicyState |
 | ADMX File Name | Printing.admx |
 <!-- ConfigureWindowsProtectedPrint-AdmxBacked-End -->
 

@@ -1,7 +1,8 @@
 ---
 title: DeviceInstallation Policy CSP
 description: Learn more about the DeviceInstallation Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -340,7 +341,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- EnableInstallationPolicyLayering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.256] and later <br> ✅ Windows 10, version 1809 [10.0.17763.2145] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1714] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1151] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.256] and later <br> ✅ Windows 10, version 1809 with [KB5005102](https://support.microsoft.com/help/5005102) [10.0.17763.2145] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1714] and later <br> ✅ Windows 10, version 2004 with [KB5004296](https://support.microsoft.com/help/5004296) [10.0.19041.1151] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableInstallationPolicyLayering-Applicability-End -->
 
 <!-- EnableInstallationPolicyLayering-OmaUri-Begin -->

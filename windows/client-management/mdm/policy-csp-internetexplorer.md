@@ -1,7 +1,8 @@
 ---
 title: InternetExplorer Policy CSP
 description: Learn more about the InternetExplorer Area in Policy CSP.
-ms.date: 06/21/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -1005,7 +1006,12 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLegacyURLFields-OmaUri-End -->
 
 <!-- AllowLegacyURLFields-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+This policy setting allows the use of some disabled functionality, such as WorkingDirectory field or pluggable protocol handling, in Internet Shortcut files.
+
+If you enable this policy, disabled functionality for Internet Shortcut files will be re-enabled.
+
+If you disable, or don't configure this policy, some functionality for Internet Shortcut files, such as WorkingDirectory field or pluggable protocol handling, will be disabled.
 <!-- AllowLegacyURLFields-Description-End -->
 
 <!-- AllowLegacyURLFields-Editable-Begin -->
@@ -1022,7 +1028,6 @@ Note. It's recommended to configure template policy settings in one Group Policy
 <!-- AllowLegacyURLFields-DFProperties-End -->
 
 <!-- AllowLegacyURLFields-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -1030,6 +1035,11 @@ Note. It's recommended to configure template policy settings in one Group Policy
 | Name | Value |
 |:--|:--|
 | Name | AllowLegacyURLFields |
+| Friendly Name | Allow legacy functionality for Internet Shortcut files |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Internet Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Main |
+| Registry Value Name | AllowLegacyURLFields |
 | ADMX File Name | inetres.admx |
 <!-- AllowLegacyURLFields-AdmxBacked-End -->
 
@@ -1453,7 +1463,7 @@ This policy allows the user to go directly to an intranet site for a one-word en
 <!-- AllowSaveTargetAsInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later |
 <!-- AllowSaveTargetAsInIEMode-Applicability-End -->
 
 <!-- AllowSaveTargetAsInIEMode-OmaUri-Begin -->
@@ -2096,7 +2106,7 @@ This policy setting allows you to manage whether Internet Explorer checks for di
 <!-- ConfigureEdgeRedirectChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later |
 <!-- ConfigureEdgeRedirectChannel-Applicability-End -->
 
 <!-- ConfigureEdgeRedirectChannel-OmaUri-Begin -->
@@ -2463,11 +2473,11 @@ This policy setting determines whether Internet Explorer requires that all file-
 
 <!-- DisableActiveXVersionListAutoDownload-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This setting determines whether IE automatically downloads updated versions of Microsoft's VersionList. XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
+This setting determines whether IE automatically downloads updated versions of Microsoft's VersionList.XML. IE uses this file to determine whether an ActiveX control should be stopped from loading.
 
-- If you enable this setting, IE stops downloading updated versions of VersionList. XML. Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
+- If you enable this setting, IE stops downloading updated versions of VersionList.XML. Turning off this automatic download breaks the out-of-date ActiveX control blocking feature by not letting the version list update with newly outdated controls, potentially compromising the security of your computer.
 
-- If you disable or don't configure this setting, IE continues to download updated versions of VersionList. XML.
+- If you disable or don't configure this setting, IE continues to download updated versions of VersionList.XML.
 
 For more information, see "Out-of-date ActiveX control blocking" in the Internet Explorer TechNet library.
 <!-- DisableActiveXVersionListAutoDownload-Description-End -->
@@ -3603,7 +3613,7 @@ InPrivate Browsing prevents Internet Explorer from storing data about a user's b
 <!-- DisableInternetExplorerApp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later |
 <!-- DisableInternetExplorerApp-Applicability-End -->
 
 <!-- DisableInternetExplorerApp-OmaUri-Begin -->
@@ -4420,7 +4430,7 @@ This policy setting allows you to manage a list of domains on which Internet Exp
 
 - If you enable this policy setting, you can enter a custom list of domains for which outdated ActiveX controls won't be blocked in Internet Explorer. Each domain entry must be formatted like one of the following:
 
-1. "domain.name. TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
+1. "domain.name.TLD". For example, if you want to include *.contoso.com/*, use "contoso.com"
 2. "hostname". For example, if you want to include https://example, use "example".
 
 3. "file:///path/filename.htm". For example, use "file:///C:/Users/contoso/Desktop/index.htm".
@@ -4471,7 +4481,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- EnableExtendedIEModeHotkeys-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.143] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.143] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1474] and later <br> ✅ Windows 10, version 2004 with [KB5000842](https://support.microsoft.com/help/5000842) [10.0.19041.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableExtendedIEModeHotkeys-Applicability-End -->
 
 <!-- EnableExtendedIEModeHotkeys-OmaUri-Begin -->
@@ -4536,7 +4546,7 @@ For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
 <!-- EnableGlobalWindowListInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.558] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1566] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.558] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1566] and later <br> ✅ Windows 11, version 21H2 with [KB5010414](https://support.microsoft.com/help/5010414) [10.0.22000.527] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableGlobalWindowListInIEMode-Applicability-End -->
 
 <!-- EnableGlobalWindowListInIEMode-OmaUri-Begin -->
@@ -5263,7 +5273,7 @@ This policy setting allows you to manage the loading of Extensible Application M
 
 <!-- InternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -6816,7 +6826,7 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 <!-- InternetZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
@@ -7328,7 +7338,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- IntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -7772,7 +7782,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- IntranetZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 with [KB5032288](https://support.microsoft.com/help/5032288) [10.0.22621.2792] and later |
 <!-- IntranetZoneLogonOptions-Applicability-End -->
 
 <!-- IntranetZoneLogonOptions-OmaUri-Begin -->
@@ -7923,13 +7933,11 @@ This policy setting allows you to manage the opening of windows and frames and a
 
 <!-- JScriptReplacement-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting specifies whether JScript or JScript9Legacy is loaded for MSHTML/WebOC/MSXML/Cscript based invocations.
+This policy setting specifies whether JScript or JScript9Legacy is loaded.
 
-- If you enable this policy setting, JScript9Legacy will be loaded in situations where JScript is instantiated.
+- If you enable this policy setting or not configured, JScript9Legacy will be loaded in situations where JScript is instantiated.
 
 - If you disable this policy, then JScript will be utilized.
-
-- If this policy is left unconfigured, then MSHTML will use JScript9Legacy and MSXML/Cscript will use JScript.
 <!-- JScriptReplacement-Description-End -->
 
 <!-- JScriptReplacement-Editable-Begin -->
@@ -7953,7 +7961,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 | Name | Value |
 |:--|:--|
 | Name | JScriptReplacement |
-| Friendly Name | Replace JScript by loading JScript9Legacy in place of JScript via MSHTML/WebOC. |
+| Friendly Name | Replace JScript by loading JScript9Legacy in place of JScript. |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer |
 | Registry Key Name | Software\Policies\Microsoft\Internet Explorer\Main |
@@ -7973,7 +7981,7 @@ This policy setting specifies whether JScript or JScript9Legacy is loaded for MS
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later |
 <!-- KeepIntranetSitesInInternetExplorer-Applicability-End -->
 
 <!-- KeepIntranetSitesInInternetExplorer-OmaUri-Begin -->
@@ -8403,7 +8411,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -8847,7 +8855,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- LocalMachineZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 with [KB5032288](https://support.microsoft.com/help/5032288) [10.0.22621.2792] and later |
 <!-- LocalMachineZoneLogonOptions-Applicability-End -->
 
 <!-- LocalMachineZoneLogonOptions-OmaUri-Begin -->
@@ -9318,7 +9326,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownInternetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -10167,7 +10175,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownIntranetZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -10876,7 +10884,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownLocalMachineZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -11655,7 +11663,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownRestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -12434,7 +12442,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- LockedDownTrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -13366,7 +13374,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 | Name | Value |
 |:--|:--|
 | Name | VerMgmtDisableRunThisTime |
-| Friendly Name | Remove "Run this time" button for outdated ActiveX controls in Internet Explorer  |
+| Friendly Name | Remove "Run this time" button for outdated ActiveX controls in Internet Explorer |
 | Location | Computer and User Configuration |
 | Path | Windows Components > Internet Explorer > Security Features > Add-on Management |
 | Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Ext |
@@ -13386,7 +13394,7 @@ For more information, see "Outdated ActiveX Controls" in the Internet Explorer T
 <!-- ResetZoomForDialogInIEMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.261] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1832] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1266] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.282] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.261] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1832] and later <br> ✅ Windows 10, version 2004 with [KB5005611](https://support.microsoft.com/help/5005611) [10.0.19041.1266] and later <br> ✅ Windows 11, version 21H2 with [KB5006746](https://support.microsoft.com/help/5006746) [10.0.22000.282] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- ResetZoomForDialogInIEMode-Applicability-End -->
 
 <!-- ResetZoomForDialogInIEMode-OmaUri-Begin -->
@@ -13407,7 +13415,7 @@ If you enable this policy, the zoom of an HTML dialog in Internet Explorer mode 
 
 If you disable, or don't configure this policy, the zoom of an HTML dialog in Internet Explorer mode will be set based on the zoom of it's parent page.
 
-For more information, see <https://go.microsoft.com/fwlink/?linkid=2102115>
+For more information, see <https://go.microsoft.com/fwlink/?linkid=2220107>
 <!-- ResetZoomForDialogInIEMode-Description-End -->
 
 <!-- ResetZoomForDialogInIEMode-Editable-Begin -->
@@ -14300,7 +14308,7 @@ This policy setting allows you to manage whether a user's browser can be redirec
 
 <!-- RestrictedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -15855,7 +15863,7 @@ If you selected Prompt in the drop-down box, users are asked to choose whether t
 
 <!-- RestrictedSitesZoneRunNETFrameworkReliantComponentsSignedWithAuthenticode-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that are signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute signed managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute signed managed components.
 
@@ -16465,7 +16473,7 @@ Also, see the "Security zones: Don't allow users to change policies" policy.
 | Name | Value |
 |:--|:--|
 | Name | Security_HKLM_only |
-| Friendly Name | Security Zones: Use only machine settings  |
+| Friendly Name | Security Zones: Use only machine settings |
 | Location | Computer Configuration |
 | Path | Windows Components > Internet Explorer |
 | Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings |
@@ -16485,7 +16493,7 @@ Also, see the "Security zones: Don't allow users to change policies" policy.
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 [10.0.19041.789] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1350] and later <br> ✅ Windows 10, version 2004 with [KB4598291](https://support.microsoft.com/help/4598291) [10.0.19041.789] and later |
 <!-- SendSitesNotInEnterpriseSiteListToEdge-Applicability-End -->
 
 <!-- SendSitesNotInEnterpriseSiteListToEdge-OmaUri-Begin -->
@@ -16974,7 +16982,7 @@ This policy setting allows you to manage whether Web sites from less privileged 
 
 <!-- TrustedSitesZoneAllowNETFrameworkReliantComponents-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to manage whether . NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
+This policy setting allows you to manage whether .NET Framework components that aren't signed with Authenticode can be executed from Internet Explorer. These components include managed controls referenced from an object tag and managed executables referenced from a link.
 
 - If you enable this policy setting, Internet Explorer will execute unsigned managed components. If you select Prompt in the drop-down box, Internet Explorer will prompt the user to determine whether to execute unsigned managed components.
 
@@ -17418,7 +17426,7 @@ High Safety enables applets to run in their sandbox. Disable Java to prevent any
 <!-- TrustedSitesZoneLogonOptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 [10.0.22621.2792] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.2227] and later <br> ✅ [10.0.25398.643] and later <br> ✅ [10.0.25965] and later <br> ✅ Windows 10, version 2004 [10.0.19041.3758] and later <br> ✅ Windows 11, version 22H2 with [KB5032288](https://support.microsoft.com/help/5032288) [10.0.22621.2792] and later |
 <!-- TrustedSitesZoneLogonOptions-Applicability-End -->
 
 <!-- TrustedSitesZoneLogonOptions-OmaUri-Begin -->

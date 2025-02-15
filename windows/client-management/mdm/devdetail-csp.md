@@ -1,7 +1,8 @@
 ---
 title: DevDetail CSP
 description: Learn more about the DevDetail CSP.
-ms.date: 01/18/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -399,7 +400,7 @@ Total free storage in MB from first internal drive on the device.
 
 <!-- Device-Ext-Microsoft-LocalTime-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the client local time in ISO 8601 format. Example: 2003-06-16. T18:37:44Z.
+Returns the client local time in ISO 8601 format. Example: 2003-06-16T18:37:44Z.
 <!-- Device-Ext-Microsoft-LocalTime-Description-End -->
 
 <!-- Device-Ext-Microsoft-LocalTime-Editable-Begin -->
@@ -700,7 +701,7 @@ SMBIOS Serial Number of the device.
 <!-- Device-Ext-Microsoft-SMBIOSVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1387] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19041.1387] and later <br> ✅ Windows 10, version 20H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19042.1387] and later <br> ✅ Windows 10, version 21H1 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19043.1387] and later <br> ✅ Windows 10, version 21H2 with [KB5007253](https://support.microsoft.com/help/5007253) [10.0.19044.1387] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Ext-Microsoft-SMBIOSVersion-Applicability-End -->
 
 <!-- Device-Ext-Microsoft-SMBIOSVersion-OmaUri-Begin -->
@@ -1259,7 +1260,7 @@ Returns the name of the Original Equipment Manufacturer (OEM) as a string, as de
 
 <!-- Device-SwV-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the Windows 10 OS software version in the format MajorVersion. MinorVersion. BuildNumber. QFEnumber. Currently the BuildNumber returns the build number on the desktop and mobile build number on the phone. In the future, the build numbers may converge.
+Returns the Windows 10 OS software version in the format `MajorVersion.MinorVersion.BuildNumber.QFEnumber`. Currently the BuildNumber returns the build number on the desktop and mobile build number on the phone. In the future, the build numbers may converge.
 <!-- Device-SwV-Description-End -->
 
 <!-- Device-SwV-Editable-Begin -->

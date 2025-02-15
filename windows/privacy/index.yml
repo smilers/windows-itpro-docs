@@ -24,7 +24,7 @@ highlightedContent:
   items:
     - title: Windows privacy & compliance guide for IT and compliance professionals
       itemType: overview
-      url: Windows-10-and-privacy-compliance.md
+      url: windows-privacy-compliance-guide.md
     - title: Configure Windows diagnostic data
       itemType: how-to-guide
       url: configure-windows-diagnostic-data-in-your-organization.md
@@ -39,7 +39,7 @@ productDirectory:
     - title: Windows 11 required diagnostic data
       imageSrc: /media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
-      url: required-diagnostic-events-fields-windows-11-22H2.md
+      url: required-diagnostic-events-fields-windows-11-24H2.md
     - title: Windows 10 required diagnostic data
       imageSrc: /media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
@@ -47,7 +47,7 @@ productDirectory:
     - title: Optional diagnostic data
       imageSrc: /media/common/i_get-started.svg
       summary: Get examples of the types of optional diagnostic data collected from Windows
-      url: windows-diagnostic-data.md
+      url: optional-diagnostic-data.md
 
 additionalContent:
   sections:

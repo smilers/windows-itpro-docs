@@ -1,7 +1,8 @@
 ---
 title: Update Policy CSP
 description: Learn more about the Update Area in Policy CSP.
-ms.date: 06/19/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -9,18 +10,12 @@ ms.date: 06/19/2024
 <!-- Update-Begin -->
 # Policy CSP - Update
 
-[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
-
 <!-- Update-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Update-Editable-End -->
 
 Update CSP policies are listed below based on the group policy area:
 
-- [Windows Insider Preview](#windows-insider-preview)
-  - [AlwaysAutoRebootAtScheduledTimeMinutes](#alwaysautorebootatscheduledtimeminutes)
-  - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
-  - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
   - [AllowNonMicrosoftSignedUpdate](#allownonmicrosoftsignedupdate)
   - [AllowOptionalContent](#allowoptionalcontent)
@@ -61,7 +56,8 @@ Update CSP policies are listed below based on the group policy area:
   - [ConfigureDeadlineForQualityUpdates](#configuredeadlineforqualityupdates)
   - [ConfigureDeadlineGracePeriod](#configuredeadlinegraceperiod)
   - [ConfigureDeadlineGracePeriodForFeatureUpdates](#configuredeadlinegraceperiodforfeatureupdates)
-  - [ConfigureDeadlineNoAutoReboot](#configuredeadlinenoautoreboot)
+  - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
+  - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
   - [ConfigureFeatureUpdateUninstallPeriod](#configurefeatureupdateuninstallperiod)
   - [NoUpdateNotificationsDuringActiveHours](#noupdatenotificationsduringactivehours)
   - [ScheduledInstallDay](#scheduledinstallday)
@@ -76,6 +72,7 @@ Update CSP policies are listed below based on the group policy area:
   - [SetEDURestart](#setedurestart)
   - [UpdateNotificationLevel](#updatenotificationlevel)
 - [Legacy Policies](#legacy-policies)
+  - [AlwaysAutoRebootAtScheduledTimeMinutes](#alwaysautorebootatscheduledtimeminutes)
   - [AutoRestartDeadlinePeriodInDays](#autorestartdeadlineperiodindays)
   - [AutoRestartDeadlinePeriodInDaysForFeatureUpdates](#autorestartdeadlineperiodindaysforfeatureupdates)
   - [AutoRestartNotificationSchedule](#autorestartnotificationschedule)
@@ -98,188 +95,6 @@ Update CSP policies are listed below based on the group policy area:
   - [ScheduleImminentRestartWarning](#scheduleimminentrestartwarning)
   - [ScheduleRestartWarning](#schedulerestartwarning)
   - [SetAutoRestartNotificationDisable](#setautorestartnotificationdisable)
-
-## Windows Insider Preview
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Begin -->
-### AlwaysAutoRebootAtScheduledTimeMinutes
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/AlwaysAutoRebootAtScheduledTimeMinutes
-```
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-Begin -->
-<!-- Description-Source-ADMX -->
-
-- If you enable this policy, a restart timer will always begin immediately after Windows Update installs important updates, instead of first notifying users on the login screen for at least two days.
-
-The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users.
-
-- If you disable or don't configure this policy, Windows Update won't alter its restart behavior.
-
-If the "No auto-restart with logged-on users for scheduled automatic updates installations" policy is enabled, then this policy has no effect.
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[15-180]` |
-| Default Value  | 15 |
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | AlwaysAutoRebootAtScheduledTime |
-| Friendly Name | Always automatically restart at the scheduled time |
-| Element Name | work (minutes) |
-| Location | Computer Configuration |
-| Path | Windows Components > Windows Update > Manage end user experience |
-| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
-| ADMX File Name | WindowsUpdate.admx |
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-End -->
-
-<!-- AlwaysAutoRebootAtScheduledTimeMinutes-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
-### ConfigureDeadlineNoAutoRebootForFeatureUpdates
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates
-```
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for feature updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForFeatureUpdates is configured.
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | ConfigureDeadlineNoAutoRebootForFeatureUpdates |
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Begin -->
-### ConfigureDeadlineNoAutoRebootForQualityUpdates
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForQualityUpdates
-```
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
-<!-- Description-Source-DDF -->
-When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired for quality updates, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates is configured.
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-Begin -->
-**Group policy mapping**:
-
-| Name | Value |
-|:--|:--|
-| Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
-| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
-| Element Name | ConfigureDeadlineNoAutoRebootForQualityUpdates |
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-End -->
-
-<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-End -->
 
 ## Manage updates offered from Windows Update
 
@@ -673,7 +488,7 @@ If you disable or don't configure this policy, Windows Update won't alter its be
 <!-- DisableWUfBSafeguards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB4577069](https://support.microsoft.com/help/4577069) [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 with [KB4577062](https://support.microsoft.com/help/4577062) [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 with [KB4577062](https://support.microsoft.com/help/4577062) [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 with [KB4577063](https://support.microsoft.com/help/4577063) [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWUfBSafeguards-Applicability-End -->
 
 <!-- DisableWUfBSafeguards-OmaUri-Begin -->
@@ -1129,7 +944,7 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 <!-- ProductVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProductVersion-Applicability-End -->
 
 <!-- ProductVersion-OmaUri-Begin -->
@@ -1197,7 +1012,7 @@ Supported value type is a string containing a Windows product. For example, "Win
 <!-- TargetReleaseVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 with [KB4556807](https://support.microsoft.com/help/4556807) [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 with [KB4551853](https://support.microsoft.com/help/4551853) [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 with [KB4556799](https://support.microsoft.com/help/4556799) [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- TargetReleaseVersion-Applicability-End -->
 
 <!-- TargetReleaseVersion-OmaUri-Begin -->
@@ -1222,6 +1037,9 @@ If you enter an invalid value, you'll remain on your current version until you c
 <!-- TargetReleaseVersion-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Supported value type is a string containing Windows version number. For example, `1809`, `1903`, etc.
+
+> [!NOTE]
+> You need to set up the ProductVersion CSP along with the TargetReleaseVersion CSP for it to work.
 <!-- TargetReleaseVersion-Editable-End -->
 
 <!-- TargetReleaseVersion-DFProperties-Begin -->
@@ -1398,7 +1216,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 [10.0.19041.746] and later <br> ✅ Windows 10, version 2009 [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 with [KB4598231](https://support.microsoft.com/help/4598231) [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 with [KB4598243](https://support.microsoft.com/help/4598243) [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 with [KB4520010](https://support.microsoft.com/help/4520010) [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 with [KB4580328](https://support.microsoft.com/help/4580328) [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 with [KB4598245](https://support.microsoft.com/help/4598245) [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 with [KB4598230](https://support.microsoft.com/help/4598230) [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 with [KB4598229](https://support.microsoft.com/help/4598229) [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 with [KB4598242](https://support.microsoft.com/help/4598242) [10.0.19041.746] and later <br> ✅ Windows 10, version 20H2 with [KB4598242](https://support.microsoft.com/help/4598242) [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-End -->
 
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-OmaUri-Begin -->
@@ -1528,7 +1346,7 @@ Allows Windows Update Agent to determine the download URL when it's missing from
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-OmaUri-Begin -->
@@ -1597,7 +1415,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-OmaUri-Begin -->
@@ -1667,7 +1485,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-OmaUri-Begin -->
@@ -1736,7 +1554,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.371] and later <br> ✅ Windows 10, version 2004 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19041.1202] and later <br> ✅ Windows 10, version 20H2 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 with [KB5005101](https://support.microsoft.com/help/5005101) [10.0.19043.1202] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1288] and later <br> ✅ Windows 10, version 22H2 [10.0.19045.2130] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-OmaUri-Begin -->
@@ -1806,7 +1624,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 with [KB4577049](https://support.microsoft.com/help/4577049) [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 with [KB4577015](https://support.microsoft.com/help/4577015) [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 with [KB4577041](https://support.microsoft.com/help/4577041) [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 with [KB4577032](https://support.microsoft.com/help/4577032) [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 with [KB4570333](https://support.microsoft.com/help/4570333) [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 with [KB4574727](https://support.microsoft.com/help/4574727) [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 with [KB4574727](https://support.microsoft.com/help/4574727) [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 with [KB4571756](https://support.microsoft.com/help/4571756) [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-OmaUri-Begin -->
@@ -2406,7 +2224,7 @@ Allows the IT admin to manage whether to scan for app updates from Microsoft Upd
 <!-- AllowTemporaryEnterpriseFeatureControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1344] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 with [KB5022913](https://support.microsoft.com/help/5022913) [10.0.22621.1344] and later |
 <!-- AllowTemporaryEnterpriseFeatureControl-Applicability-End -->
 
 <!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-Begin -->
@@ -2515,8 +2333,8 @@ Number of days before feature updates are installed on devices automatically reg
 
 | Name | Value |
 |:--|:--|
-| Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Name | ComplianceDeadlineForFU |
+| Friendly Name | Specify deadline for automatic updates and restarts for feature update |
 | Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2575,7 +2393,7 @@ Number of days before quality updates are installed on devices automatically reg
 | Name | Value |
 |:--|:--|
 | Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Friendly Name | Specify deadline for automatic updates and restarts for quality update |
 | Element Name | Deadline (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2630,7 +2448,7 @@ Minimum number of days from update installation until restarts occur automatical
 | Name | Value |
 |:--|:--|
 | Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Friendly Name | Specify deadline for automatic updates and restarts for quality update |
 | Element Name | Grace period (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2650,7 +2468,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 10, version 2009 [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 with [KB5000854](https://support.microsoft.com/help/5000854) [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 with [KB5000850](https://support.microsoft.com/help/5000850) [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 with [KB5000842](https://support.microsoft.com/help/5000842) [10.0.19041.906] and later <br> ✅ Windows 10, version 20H2 with [KB5000842](https://support.microsoft.com/help/5000842) [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-OmaUri-Begin -->
@@ -2684,8 +2502,8 @@ Minimum number of days from update installation until restarts occur automatical
 
 | Name | Value |
 |:--|:--|
-| Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Name | ComplianceDeadlineForFU |
+| Friendly Name | Specify deadline for automatic updates and restarts for feature update |
 | Element Name | Grace Period (days) |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
@@ -2699,31 +2517,47 @@ Minimum number of days from update installation until restarts occur automatical
 
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-Begin -->
-### ConfigureDeadlineNoAutoReboot
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
+### ConfigureDeadlineNoAutoRebootForFeatureUpdates
 
-<!-- ConfigureDeadlineNoAutoReboot-Applicability-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
-<!-- ConfigureDeadlineNoAutoReboot-Applicability-End -->
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-OmaUri-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoReboot
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForFeatureUpdates
 ```
-<!-- ConfigureDeadlineNoAutoReboot-OmaUri-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-Description-Begin -->
-<!-- Description-Source-DDF-Forced -->
-When enabled, devices won't automatically restart outside of active hours until the deadline and grace period have expired, even if an update is ready for restart. When disabled, an automatic restart may be attempted outside of active hours after update is ready for restart before the deadline is reached. Takes effect only if Update/ConfigureDeadlineForQualityUpdates or Update/ConfigureDeadlineForFeatureUpdates is configured.
-<!-- ConfigureDeadlineNoAutoReboot-Description-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy lets you specify the number of days before feature updates are installed on devices automatically, and a grace period after which required restarts occur automatically.
 
-<!-- ConfigureDeadlineNoAutoReboot-Editable-Begin -->
+Set deadlines for feature updates and quality updates to meet your compliance goals. Updates will be downloaded and installed as soon as they're offered and automatic restarts will be attempted outside of active hours. Once the deadline has passed, restarts will occur regardless of active hours, and users won't be able to reschedule. If the deadline is set to 0 days, the update will be installed immediately upon offering, but might not finish within the day due to device availability and network connectivity.
+
+Set a grace period for feature updates to guarantee users a minimum time to manage their restarts once updates are installed. Users will be able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. The grace period might not take effect if users already have more than the number of days set as grace period to manage their restart, based on deadline configurations.
+
+You can set the device to delay restarting until both the deadline and grace period have expired.
+
+If you disable or don't configure this policy, devices will get updates and will restart according to the default schedule.
+
+This policy will override the following policies:
+
+1. Specify deadline before auto restart for update installation
+1. Specify Engaged restart transition and notification schedule for updates.
+
+1. Always automatically restart at the scheduled time
+1. Configure Automatic Updates.
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Description-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoReboot-Editable-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Editable-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-DFProperties-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
@@ -2731,36 +2565,115 @@ When enabled, devices won't automatically restart outside of active hours until 
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
-<!-- ConfigureDeadlineNoAutoReboot-DFProperties-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-DFProperties-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-AllowedValues-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-Begin -->
 **Allowed values**:
 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Disabled. |
 | 1 | Enabled. |
-<!-- ConfigureDeadlineNoAutoReboot-AllowedValues-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-AllowedValues-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-GpMapping-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-Begin -->
 **Group policy mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | ComplianceDeadline |
-| Friendly Name | Specify deadlines for automatic updates and restarts |
+| Name | ComplianceDeadlineForFU |
+| Friendly Name | Specify deadline for automatic updates and restarts for feature update |
 | Element Name | Don't auto-restart until end of grace period. |
 | Location | Computer Configuration |
 | Path | Windows Components > Windows Update > Manage end user experience |
 | Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
 | ADMX File Name | WindowsUpdate.admx |
-<!-- ConfigureDeadlineNoAutoReboot-GpMapping-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-GpMapping-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-Examples-Begin -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- ConfigureDeadlineNoAutoReboot-Examples-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Examples-End -->
 
-<!-- ConfigureDeadlineNoAutoReboot-End -->
+<!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Begin -->
+### ConfigureDeadlineNoAutoRebootForQualityUpdates
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/ConfigureDeadlineNoAutoRebootForQualityUpdates
+```
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy lets you specify the number of days before quality updates are installed on devices automatically, and a grace period after which required restarts occur automatically.
+
+Set deadlines for quality updates to meet your compliance goals. Updates will be downloaded and installed as soon as they're offered and automatic restarts will be attempted outside of active hours. Once the deadline has passed, restarts will occur regardless of active hours, and users won't be able to reschedule. If the deadline is set to 0 days, the update will be installed immediately upon offering, but might not finish within the day due to device availability and network connectivity.
+
+Set a grace period for quality updates to guarantee users a minimum time to manage their restarts once updates are installed. Users will be able to schedule restarts during the grace period and Windows can still automatically restart outside of active hours if users choose not to schedule restarts. The grace period might not take effect if users already have more than the number of days set as grace period to manage their restart, based on deadline configurations.
+
+You can set the device to delay restarting until both the deadline and grace period have expired.
+
+If you disable or don't configure this policy, devices will get updates and will restart according to the default schedule.
+
+This policy will override the following policies:
+
+1. Specify deadline before auto restart for update installation
+1. Specify Engaged restart transition and notification schedule for updates.
+
+1. Always automatically restart at the scheduled time
+1. Configure Automatic Updates.
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Description-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Editable-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-DFProperties-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-AllowedValues-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ComplianceDeadline |
+| Friendly Name | Specify deadline for automatic updates and restarts for quality update |
+| Element Name | Don't auto-restart until end of grace period. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Manage end user experience |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-GpMapping-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Examples-End -->
+
+<!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-End -->
 
 <!-- ConfigureFeatureUpdateUninstallPeriod-Begin -->
 ### ConfigureFeatureUpdateUninstallPeriod
@@ -3325,7 +3238,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 
 <!-- ScheduledInstallTime-Description-Begin -->
 <!-- Description-Source-DDF -->
- the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
+Enables the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3643,6 +3556,68 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- UpdateNotificationLevel-End -->
 
 ## Legacy Policies
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Begin -->
+### AlwaysAutoRebootAtScheduledTimeMinutes
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Applicability-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AlwaysAutoRebootAtScheduledTimeMinutes
+```
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-OmaUri-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-Begin -->
+<!-- Description-Source-ADMX -->
+
+- If you enable this policy, a restart timer will always begin immediately after Windows Update installs important updates, instead of first notifying users on the login screen for at least two days.
+
+The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users.
+
+- If you disable or don't configure this policy, Windows Update won't alter its restart behavior.
+
+If the "No auto-restart with logged-on users for scheduled automatic updates installations" policy is enabled, then this policy has no effect.
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Description-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Editable-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[15-180]` |
+| Default Value  | 15 |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-DFProperties-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AlwaysAutoRebootAtScheduledTime |
+| Friendly Name | Always automatically restart at the scheduled time |
+| Element Name | work (minutes) |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Update > Legacy Policies |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WindowsUpdate\AU |
+| ADMX File Name | WindowsUpdate.admx |
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-GpMapping-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-Examples-End -->
+
+<!-- AlwaysAutoRebootAtScheduledTimeMinutes-End -->
 
 <!-- AutoRestartDeadlinePeriodInDays-Begin -->
 ### AutoRestartDeadlinePeriodInDays
@@ -4074,7 +4049,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 <!-- Description-Source-ADMX -->
 Enable this policy to not allow update deferral policies to cause scans against Windows Update.
 
-If this policy is disabled or not configured, then the Windows Update client may initiate automatic scans against Windows Update while update deferral policies are enabled.
+- If this policy is disabled or not configured, then the Windows Update client may initiate automatic scans against Windows Update while update deferral policies are enabled.
 
 > [!NOTE]
 > This policy applies only when the intranet Microsoft update service this computer is directed to is configured to support client-side targeting. If the "Specify intranet Microsoft update service location" policy is disabled or not configured, this policy has no effect.

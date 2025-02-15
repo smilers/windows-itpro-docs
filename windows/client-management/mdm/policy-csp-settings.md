@@ -1,7 +1,8 @@
 ---
 title: Settings Policy CSP
 description: Learn more about the Settings Area in Policy CSP.
-ms.date: 05/20/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->

@@ -1,7 +1,8 @@
 ---
 title: AppVirtualization Policy CSP
 description: Learn more about the AppVirtualization Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -33,6 +34,9 @@ ms.date: 01/18/2024
 <!-- AllowAppVClient-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
+
+> [!NOTE]
+> Application Virtualization (App-V) will reach end-of-life April 2026. After that time, the App-V client will be excluded from new versions of the Windows operating system. See aka.ms/AppVDeprecation for more information.
 <!-- AllowAppVClient-Description-End -->
 
 <!-- AllowAppVClient-Editable-Begin -->
@@ -309,7 +313,7 @@ Enables a UX to display to the user when a publishing refresh is performed on th
 <!-- Description-Source-ADMX -->
 Reporting Server URL: Displays the URL of reporting server.
 
-Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9. AM.
+Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9AM.
 
 Delay reporting for the random minutes: The maximum minutes of random delay on top of the reporting time. For a busy system, the random delay will help reduce the server load.
 

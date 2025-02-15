@@ -1,7 +1,8 @@
 ---
 title: RemoteManagement Policy CSP
 description: Learn more about the RemoteManagement Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -285,7 +286,7 @@ For example, if you want the service to listen only on IPv4 addresses, leave the
 Ranges are specified using the syntax IP1-IP2. Multiple ranges are separated using "," (comma) as the delimiter.
 
 Example IPv4 filters:\n2.0.0.1-2.0.0.20, 24.0.0.1-24.0.0.22
-Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3. FFE:FFFF:7654:FEDA:1245:BA98:3210:4562.
+Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562.
 <!-- AllowRemoteServerManagement-Description-End -->
 
 <!-- AllowRemoteServerManagement-Editable-Begin -->

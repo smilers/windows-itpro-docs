@@ -1,7 +1,8 @@
 ---
 title: ApplicationDefaults Policy CSP
 description: Learn more about the ApplicationDefaults Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -35,6 +36,8 @@ This policy allows an administrator to set default file type and protocol associ
 
 <!-- DefaultAssociationsConfiguration-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> For this policy, MDM policy take precedence over group policies even when [MDMWinsOverGP](policy-csp-controlpolicyconflict.md#mdmwinsovergp) policy is not set.
 <!-- DefaultAssociationsConfiguration-Editable-End -->
 
 <!-- DefaultAssociationsConfiguration-DFProperties-Begin -->

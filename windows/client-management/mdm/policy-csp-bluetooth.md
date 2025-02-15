@@ -1,7 +1,8 @@
 ---
 title: Bluetooth Policy CSP
 description: Learn more about the Bluetooth Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -265,7 +266,7 @@ Sets the local Bluetooth device name. If this is set, the value that it's set to
 
 <!-- ServicesAllowedList-Description-Begin -->
 <!-- Description-Source-DDF -->
-Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7. CAA-436. C-8. BF0-78. CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide.
+Set a list of allowable services and profiles. String hex formatted array of Bluetooth service UUIDs in canonical format, delimited by semicolons. For example, {782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}. The default value is an empty string. For more information, see ServicesAllowedList usage guide.
 <!-- ServicesAllowedList-Description-End -->
 
 <!-- ServicesAllowedList-Editable-Begin -->

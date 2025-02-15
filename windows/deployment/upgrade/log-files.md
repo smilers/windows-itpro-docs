@@ -11,7 +11,7 @@ ms.collection:
   - highpri
   - tier2
 ms.subservice: itpro-deploy
-ms.date: 01/18/2024
+ms.date: 01/29/2025
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -51,13 +51,13 @@ A `setupact.log` or `setuperr.log` entry includes the following elements:
 
 1. **The date and time** - 2023-09-08 09:20:05
 
-1. **The log level** - Info, Warning, Error, Fatal Error
+2. **The log level** - Info, Warning, Error, Fatal Error
 
-1. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
+3. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
 
   The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
 
-1. **The message** - Operation completed successfully.
+4. **The message** - Operation completed successfully.
 
 See the following example:
 

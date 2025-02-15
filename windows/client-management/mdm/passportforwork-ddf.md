@@ -1,7 +1,8 @@
 ---
 title: PassportForWork DDF file
 description: View the XML file containing the device description framework (DDF) for the PassportForWork configuration service provider.
-ms.date: 06/28/2024
+ms.date: 02/13/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -831,7 +832,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.6</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">

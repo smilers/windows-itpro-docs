@@ -1,7 +1,8 @@
 ---
 title: DeviceHealthMonitoring Policy CSP
 description: Learn more about the DeviceHealthMonitoring Area in Policy CSP.
-ms.date: 01/18/2024
+ms.date: 02/14/2025
+ms.topic: generated-reference
 ---
 
 <!-- Auto-Generated CSP Document -->
@@ -30,7 +31,7 @@ ms.date: 01/18/2024
 
 <!-- AllowDeviceHealthMonitoring-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enable/disable 4. Nines device health monitoring on devices.
+Enable/disable device health monitoring on devices.
 <!-- AllowDeviceHealthMonitoring-Description-End -->
 
 <!-- AllowDeviceHealthMonitoring-Editable-Begin -->
